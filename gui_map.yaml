@@ -1,0 +1,25 @@
+####
+# Yaml format 1.
+####
+pmac:
+  dls_pmac_asyn_motor:
+    file: "./MOTOR.bob"
+    #displaytype: "related display"
+    MACROS: "$(P)$(M)"
+
+  autohome:
+    file: "./Homing-axis.bob"
+    MACROS: "$(P)$(M)"
+
+
+####
+#  Yaml file format 2
+####
+
+pmac.dls_pmac_asyn_motor:
+  file: "./MOTOR.bob"
+  MACROS: "$(P)$(M)"
+
+pmac.autohome:
+  file: "./Homing-axis.bob"
+  MACROS: "$(P)$(M)"
