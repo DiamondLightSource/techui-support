@@ -6,10 +6,17 @@ pmac:
     file: "MOTOR.bob"
     #displaytype: "related display"
     MACROS: "$(P)$(M)"
+    type: "related"
 
   autohome:
     file: "Homing-axis.bob"
     MACROS: "$(P)$(M)"
+    type: "related"
+
+  PowerPMAC:
+    file: "MOTOR.bob"
+    MACROS: "$(P)$(M)"
+    type: "related"
 
 ####
 #  Yaml file format 2
@@ -18,7 +25,14 @@ pmac:
 pmac.dls_pmac_asyn_motor:
   file: "MOTOR.bob"
   MACROS: "$(P)$(M)"
+  type: "related"
+
+pmac.PowerPMAC:
+  file: "MOTOR.bob"
+  MACROS: "$(P)$(M)"
+  type: "related"
 
 pmac.autohome:
   file: "Homing-axis.bob"
   MACROS: "$(P)$(M)"
+  type: "related"
