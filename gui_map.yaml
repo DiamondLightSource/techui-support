@@ -25,14 +25,14 @@ pmac:
 pmac.dls_pmac_asyn_motor:
   file: "MOTOR.bob"
   MACROS: "$(P)$(M)"
-  type: "related"
+  type: "embedded"
 
 pmac.PowerPMAC:
   file: "MOTOR.bob"
   MACROS: "$(P)$(M)"
-  type: "related"
+  type: "embedded"
 
 pmac.autohome:
   file: "Homing-axis.bob"
   MACROS: "$(P)$(M)"
-  type: "related"
+  type: "embedded"

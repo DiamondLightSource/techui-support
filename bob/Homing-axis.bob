@@ -72,7 +72,7 @@
     <name>Action Button_3</name>
     <actions>
       <action type="open_display">
-        <file>../pvi/MOTOR.bob</file>
+        <file>./MOTOR.bob</file>
         <target>tab</target>
         <description>Open Display</description>
       </action>
