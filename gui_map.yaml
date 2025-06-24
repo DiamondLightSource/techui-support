@@ -23,16 +23,21 @@ pmac:
 ####
 
 pmac.dls_pmac_asyn_motor:
-  file: "MOTOR.bob"
+  file: "motor_embed.bob"
   MACROS: "$(P)$(M)"
   type: "embedded"
 
 pmac.PowerPMAC:
-  file: "MOTOR.bob"
+  file: "motor_embed"
   MACROS: "$(P)$(M)"
   type: "embedded"
 
 pmac.autohome:
-  file: "Homing-axis.bob"
+  file: "motor_embed.bob"
+  MACROS: "$(P)$(M)"
+  type: "embedded"
+
+pmacUtil.dls_pmac_asyn_motor_no_coord:
+  file: "motor_embed.bob"
   MACROS: "$(P)$(M)"
   type: "embedded"
