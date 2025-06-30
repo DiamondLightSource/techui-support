@@ -1,27 +1,3 @@
-####
-# Yaml format 1.
-####
-pmac:
-  dls_pmac_asyn_motor:
-    file: "MOTOR.bob"
-    #displaytype: "related display"
-    MACROS: "$(P)$(M)"
-    type: "related"
-
-  autohome:
-    file: "Homing-axis.bob"
-    MACROS: "$(P)$(M)"
-    type: "related"
-
-  PowerPMAC:
-    file: "MOTOR.bob"
-    MACROS: "$(P)$(M)"
-    type: "related"
-
-####
-#  Yaml file format 2
-####
-
 pmac.dls_pmac_asyn_motor:
   file: "motor_embed.bob"
   MACROS: "$(P)$(M)"
@@ -39,5 +15,30 @@ pmac.autohome:
 
 pmacUtil.dls_pmac_asyn_motor_no_coord:
   file: "motor_embed.bob"
+  MACROS: "$(P)$(M)"
+  type: "embedded"
+
+pmac.GeoBrick:
+  file: "pmacController.bob"
+  MACROS: "$(P)$(M)"
+  type: "embedded"
+
+mks937a.mks937a:
+  file: "mks937a.bob"
+  MACROS: "$(P)$(M)"
+  type: "embedded"
+
+mks937a.mks937aImg:
+  file: "img_detail.bob"
+  MACROS: "$(P)$(M)"
+  type: "embedded"
+
+mks937a.mks937aGauge:
+  file: "GAUGE.bob"
+  MACROS: "$(P)$(M)"
+  type: "embedded"
+
+mks937a.mks937aPirg:
+  file: "pirg.bob"
   MACROS: "$(P)$(M)"
   type: "embedded"
