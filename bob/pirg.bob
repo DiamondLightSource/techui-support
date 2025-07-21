@@ -8,7 +8,7 @@
     </color>
   </grid_color>
   <widget type="group" version="2.0.0">
-    <name>Details</name>
+    <name>$(P)</name>
     <width>301</width>
     <height>295</height>
     <background_color>
@@ -201,7 +201,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Gauge_3</name>
-      <pv_name>$(P):RLY1:SP</pv_name>
+      <pv_name>$(P):RLY:SP</pv_name>
       <x>140</x>
       <y>212</y>
       <width>120</width>
@@ -302,7 +302,7 @@
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button</name>
-      <pv_name>$(P):ENABLE</pv_name>
+      <pv_name>$(P):CTL:ENABLE</pv_name>
       <x>135</x>
       <y>2</y>
       <width>120</width>

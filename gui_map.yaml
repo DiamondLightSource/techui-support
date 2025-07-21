@@ -21,7 +21,7 @@ pmacUtil.dls_pmac_asyn_motor_no_coord:
 pmac.GeoBrick:
   file: "pmacController.bob"
   MACROS: "$(P)$(M)"
-  type: "embedded"
+  type: "related"
 
 mks937a.mks937a:
   file: "mks937a.bob"

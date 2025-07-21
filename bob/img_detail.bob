@@ -8,7 +8,7 @@
     </color>
   </grid_color>
   <widget type="group" version="2.0.0">
-    <name>Details</name>
+    <name>$(P)</name>
     <width>301</width>
     <height>321</height>
     <background_color>
@@ -140,7 +140,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_11</name>
-      <text>Valve I/L On</text>
+      <text>IMG Overpressure</text>
       <x>5</x>
       <y>182</y>
       <width>130</width>
@@ -150,7 +150,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Gauge_6</name>
-      <pv_name>$(P):RLY1:SP</pv_name>
+      <pv_name>$(P):PRO:SP</pv_name>
       <x>140</x>
       <y>186</y>
       <width>120</width>
@@ -191,7 +191,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_12</name>
-      <text>Valve I/L Off</text>
+      <text>Valve I/L</text>
       <x>5</x>
       <y>208</y>
       <width>130</width>
@@ -201,7 +201,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Gauge_7</name>
-      <pv_name>$(P):RLY1:SPOFF</pv_name>
+      <pv_name>$(P):RLY:SP</pv_name>
       <x>140</x>
       <y>212</y>
       <width>120</width>
@@ -242,7 +242,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_13</name>
-      <text>MPS I/L 1</text>
+      <text>MPS I/L </text>
       <x>5</x>
       <y>233</y>
       <width>130</width>
@@ -252,7 +252,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Gauge_8</name>
-      <pv_name>$(P):RLY2:SP</pv_name>
+      <pv_name>$(P):RLA:SP</pv_name>
       <x>140</x>
       <y>237</y>
       <width>120</width>
@@ -291,41 +291,6 @@
         </color>
       </background_color>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_17</name>
-      <text>MPS I/L 2</text>
-      <x>5</x>
-      <y>259</y>
-      <width>130</width>
-      <height>25</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Gauge_11</name>
-      <pv_name>$(P):RLY3:SP</pv_name>
-      <x>140</x>
-      <y>263</y>
-      <width>120</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="76" green="100" blue="171">
-        </color>
-      </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_color>
-        <color red="196" green="196" blue="196">
-        </color>
-      </border_color>
-    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Control</name>
@@ -353,7 +318,7 @@
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_1</name>
-      <pv_name>$(P):ENABLE</pv_name>
+      <pv_name>$(P):SWITCHING</pv_name>
       <x>135</x>
       <y>2</y>
       <width>120</width>
