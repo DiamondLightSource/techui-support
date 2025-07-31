@@ -42,3 +42,8 @@ mks937a.mks937aPirg:
   file: "pirg.bob"
   MACROS: "$(P)$(M)"
   type: "embedded"
+
+digitelMpc.digitelMpcIonp:
+  file: "ionp.bob"
+  MACROS: "$(P)$(M)"
+  type: "embedded"
