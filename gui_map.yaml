@@ -1,3 +1,8 @@
+ADAravis.aravisCamera:
+  file: "ADAravis/ADAravis_summary.bob"
+  MACROS: "$(P)$(R)"
+  type: "embedded"
+
 pmac.dls_pmac_asyn_motor:
   file: "motor_embed.bob"
   MACROS: "$(P)$(M)"
