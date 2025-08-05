@@ -4,51 +4,51 @@ ADAravis.aravisCamera:
   type: "embedded"
 
 pmac.dls_pmac_asyn_motor:
-  file: "motor_embed.bob"
+  file: "pmacUtil/motor_embed.bob"
   MACROS: "$(P)$(M)"
   type: "embedded"
 
 pmac.PowerPMAC:
-  file: "motor_embed"
+  file: "pmacUtil/motor_embed"
   MACROS: "$(P)$(M)"
   type: "embedded"
 
 pmac.autohome:
-  file: "motor_embed.bob"
+  file: "pmacUtil/motor_embed.bob"
   MACROS: "$(P)$(M)"
   type: "embedded"
 
 pmacUtil.dls_pmac_asyn_motor_no_coord:
-  file: "motor_embed.bob"
+  file: "pmacUtil/motor_embed.bob"
   MACROS: "$(P)$(M)"
   type: "embedded"
 
 pmac.GeoBrick:
-  file: "pmacController.bob"
+  file: "pmac/pmacController.bob"
   MACROS: "$(P)$(M)"
   type: "related"
 
 mks937a.mks937a:
-  file: "mks937a.bob"
+  file: "mks937a/mks937a.bob"
   MACROS: "$(P)$(M)"
   type: "embedded"
 
 mks937a.mks937aImg:
-  file: "img_detail.bob"
+  file: "mks937a/mks937aImg.bob"
   MACROS: "$(P)$(M)"
   type: "embedded"
 
 mks937a.mks937aGauge:
-  file: "GAUGE.bob"
+  file: "mks937a/mks937aGauge.bob"
   MACROS: "$(P)$(M)"
   type: "embedded"
 
 mks937a.mks937aPirg:
-  file: "pirg.bob"
+  file: "mks937a/mks937aPirg.bob"
   MACROS: "$(P)$(M)"
   type: "embedded"
 
 digitelMpc.digitelMpcIonp:
-  file: "ionp.bob"
+  file: "digitelMpc/digitelMpcIonp.bob"
   MACROS: "$(P)$(M)"
   type: "embedded"

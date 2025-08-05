@@ -1406,7 +1406,7 @@
     <name>Image</name>
     <pv_name>$(P):ARR:ArrayData</pv_name>
     <x>410</x>
-    <width>570</width>
+    <width>745</width>
     <height>745</height>
     <show_toolbar>true</show_toolbar>
   </widget>
