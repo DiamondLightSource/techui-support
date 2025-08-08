@@ -1,5 +1,5 @@
 <display version="2.0.0">
-  <name>pmacController</name>
+  <name>ppmacController</name>
   <x>0</x>
   <y use_class="true">0</y>
   <width>1172</width>
@@ -9,7 +9,7 @@
   <widget type="label" version="2.0.0">
     <name>Title</name>
     <class>TITLE</class>
-    <text>pmacController</text>
+    <text>ppmacController</text>
     <x use_class="true">0</x>
     <y use_class="true">0</y>
     <width>1172</width>
@@ -1131,15 +1131,15 @@
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Pmac Status</name>
+    <name>Power Pmac Status</name>
     <x>771</x>
     <y>30</y>
     <width>396</width>
-    <height>256</height>
+    <height>81</height>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>I10</text>
+      <text>SERVOPERIOD</text>
       <x>0</x>
       <y>0</y>
       <width>150</width>
@@ -1148,7 +1148,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TextUpdate</name>
-      <pv_name>$(P):I10</pv_name>
+      <pv_name>$(P):SERVO_PERIOD</pv_name>
       <x>155</x>
       <y>0</y>
       <width>205</width>
@@ -1161,7 +1161,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>IOHANDSHAKE</text>
+      <text>READECHO</text>
       <x>0</x>
       <y>25</y>
       <width>150</width>
@@ -1170,153 +1170,9 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TextUpdate</name>
-      <pv_name>$(P):IO_HANDSHAKE</pv_name>
+      <pv_name>$(P):READ_ECHO</pv_name>
       <x>155</x>
       <y>25</y>
-      <width>205</width>
-      <height>20</height>
-      <font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label</name>
-      <text>PLCCONTROL</text>
-      <x>0</x>
-      <y>50</y>
-      <width>150</width>
-      <height>20</height>
-      <tooltip>$(text)</tooltip>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>TextUpdate</name>
-      <pv_name>$(P):PLC_CONTROL</pv_name>
-      <x>155</x>
-      <y>50</y>
-      <width>205</width>
-      <height>20</height>
-      <font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label</name>
-      <text>ERRREPMODE</text>
-      <x>0</x>
-      <y>75</y>
-      <width>150</width>
-      <height>20</height>
-      <tooltip>$(text)</tooltip>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>TextUpdate</name>
-      <pv_name>$(P):ERRREPMODE</pv_name>
-      <x>155</x>
-      <y>75</y>
-      <width>205</width>
-      <height>20</height>
-      <font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label</name>
-      <text>DPRAMCOMMSINT</text>
-      <x>0</x>
-      <y>100</y>
-      <width>150</width>
-      <height>20</height>
-      <tooltip>$(text)</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(P):DPRAM_COMMS_INT</pv_name>
-      <x>247</x>
-      <y>100</y>
-      <width>20</width>
-      <height>20</height>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label</name>
-      <text>DPRAMCOMMS</text>
-      <x>0</x>
-      <y>125</y>
-      <width>150</width>
-      <height>20</height>
-      <tooltip>$(text)</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(P):DPRAM_COMMS</pv_name>
-      <x>247</x>
-      <y>125</y>
-      <width>20</width>
-      <height>20</height>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label</name>
-      <text>VMEADDRMODE</text>
-      <x>0</x>
-      <y>150</y>
-      <width>150</width>
-      <height>20</height>
-      <tooltip>$(text)</tooltip>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>TextUpdate</name>
-      <pv_name>$(P):VME_ADDR_MODE</pv_name>
-      <x>155</x>
-      <y>150</y>
-      <width>205</width>
-      <height>20</height>
-      <font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label</name>
-      <text>VMEDPRAMBASE</text>
-      <x>0</x>
-      <y>175</y>
-      <width>150</width>
-      <height>20</height>
-      <tooltip>$(text)</tooltip>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>TextUpdate</name>
-      <pv_name>$(P):VME_DPRAMBASE</pv_name>
-      <x>155</x>
-      <y>175</y>
-      <width>205</width>
-      <height>20</height>
-      <font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label</name>
-      <text>VMEINTLVL</text>
-      <x>0</x>
-      <y>200</y>
-      <width>150</width>
-      <height>20</height>
-      <tooltip>$(text)</tooltip>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>TextUpdate</name>
-      <pv_name>$(P):VME_INTLVL</pv_name>
-      <x>155</x>
-      <y>200</y>
       <width>205</width>
       <height>20</height>
       <font>
