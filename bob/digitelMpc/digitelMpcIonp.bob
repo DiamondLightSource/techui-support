@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>Main</name>
-  <y use_class="true">0</y>
   <width>301</width>
-  <height>382</height>
-  <background_color use_class="true">
+  <height>243</height>
+  <background_color>
     <color name="Read_Background" red="240" green="240" blue="240">
     </color>
   </background_color>
@@ -14,20 +13,17 @@
   </grid_color>
   <widget type="group" version="2.0.0">
     <name>$(P)</name>
-    <x>1</x>
-    <y>7</y>
     <width>301</width>
     <height>243</height>
-    <style use_class="true">0</style>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -35,16 +31,16 @@
       <name>LED</name>
       <pv_name>$(device):I</pv_name>
       <x>234</x>
-      <y>171</y>
-      <off_color use_class="true">
+      <y>180</y>
+      <off_color>
         <color red="237" green="237" blue="237">
         </color>
       </off_color>
-      <on_color use_class="true">
+      <on_color>
         <color name="Write_Background" red="128" green="255" blue="255">
         </color>
       </on_color>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
@@ -52,23 +48,23 @@
     <widget type="choice" version="2.0.0">
       <name>ToggleButton</name>
       <pv_name>$(P):START</pv_name>
-      <x>150</x>
-      <y>171</y>
-      <width>60</width>
+      <x>145</x>
+      <y>180</y>
+      <width>84</width>
       <height>20</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color name="Background" red="255" green="255" blue="255">
         </color>
       </background_color>
-      <selected_color use_class="true">
+      <selected_color>
         <color name="Background" red="255" green="255" blue="255">
         </color>
       </selected_color>
@@ -81,41 +77,17 @@
       <name>Label_20</name>
       <text>Control</text>
       <x>2</x>
-      <y>174</y>
+      <y>183</y>
       <width>130</width>
       <height>25</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Background" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <horizontal_alignment use_class="true">0</horizontal_alignment>
-      <vertical_alignment use_class="true">0</vertical_alignment>
-      <rotation_step use_class="true">0</rotation_step>
-      <wrap_words use_class="true">true</wrap_words>
-    </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_58</name>
-      <x>-1</x>
-      <y>194</y>
-      <width>260</width>
-      <height>1</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color red="184" green="195" blue="223">
-        </color>
-      </line_color>
-      <background_color>
-        <color red="184" green="195" blue="223">
-        </color>
-      </background_color>
     </widget>
   </widget>
   <widget type="label" version="2.0.0">
@@ -125,22 +97,14 @@
     <y>66</y>
     <width>130</width>
     <height>25</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
-      <color name="Background" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">0</vertical_alignment>
-    <rotation_step use_class="true">0</rotation_step>
-    <wrap_words use_class="true">true</wrap_words>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Gauge_9</name>
@@ -148,21 +112,17 @@
     <x>158</x>
     <y>70</y>
     <width>120</width>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="184" green="195" blue="223">
       </color>
     </background_color>
-    <horizontal_alignment use_class="true">1</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <border_color use_class="true">
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
       <color red="196" green="196" blue="196">
       </color>
     </border_color>
@@ -174,22 +134,14 @@
     <y>40</y>
     <width>135</width>
     <height>25</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
-      <color name="Background" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">0</vertical_alignment>
-    <rotation_step use_class="true">0</rotation_step>
-    <wrap_words use_class="true">true</wrap_words>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_50</name>
@@ -213,21 +165,17 @@
     <x>158</x>
     <y>43</y>
     <width>120</width>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="184" green="195" blue="223">
       </color>
     </background_color>
-    <horizontal_alignment use_class="true">1</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <border_color use_class="true">
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
       <color red="196" green="196" blue="196">
       </color>
     </border_color>
@@ -271,22 +219,14 @@
     <y>92</y>
     <width>130</width>
     <height>25</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
-      <color name="Background" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">0</vertical_alignment>
-    <rotation_step use_class="true">0</rotation_step>
-    <wrap_words use_class="true">true</wrap_words>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Gauge_10</name>
@@ -294,21 +234,17 @@
     <x>158</x>
     <y>96</y>
     <width>120</width>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="184" green="195" blue="223">
       </color>
     </background_color>
-    <horizontal_alignment use_class="true">1</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <border_color use_class="true">
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
       <color red="196" green="196" blue="196">
       </color>
     </border_color>
@@ -336,22 +272,14 @@
     <y>118</y>
     <width>130</width>
     <height>25</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
-      <color name="Background" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">0</vertical_alignment>
-    <rotation_step use_class="true">0</rotation_step>
-    <wrap_words use_class="true">true</wrap_words>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Gauge_11</name>
@@ -359,21 +287,17 @@
     <x>158</x>
     <y>122</y>
     <width>120</width>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="184" green="195" blue="223">
       </color>
     </background_color>
-    <horizontal_alignment use_class="true">1</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <border_color use_class="true">
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
       <color red="196" green="196" blue="196">
       </color>
     </border_color>
@@ -401,22 +325,14 @@
     <y>143</y>
     <width>130</width>
     <height>25</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
-      <color name="Background" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">0</vertical_alignment>
-    <rotation_step use_class="true">0</rotation_step>
-    <wrap_words use_class="true">true</wrap_words>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Gauge_12</name>
@@ -424,21 +340,17 @@
     <x>158</x>
     <y>147</y>
     <width>120</width>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="184" green="195" blue="223">
       </color>
     </background_color>
-    <horizontal_alignment use_class="true">1</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <border_color use_class="true">
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
       <color red="196" green="196" blue="196">
       </color>
     </border_color>
@@ -465,21 +377,17 @@
     <x>158</x>
     <y>172</y>
     <width>120</width>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="184" green="195" blue="223">
       </color>
     </background_color>
-    <horizontal_alignment use_class="true">1</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <border_color use_class="true">
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
       <color red="196" green="196" blue="196">
       </color>
     </border_color>
@@ -491,21 +399,29 @@
     <y>172</y>
     <width>130</width>
     <height>25</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
-      <color name="Background" red="255" green="255" blue="255">
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_58</name>
+    <x>20</x>
+    <y>223</y>
+    <width>260</width>
+    <height>1</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="184" green="195" blue="223">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="184" green="195" blue="223">
       </color>
     </background_color>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">0</vertical_alignment>
-    <rotation_step use_class="true">0</rotation_step>
-    <wrap_words use_class="true">true</wrap_words>
   </widget>
 </display>
