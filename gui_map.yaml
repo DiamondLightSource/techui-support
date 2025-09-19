@@ -5,6 +5,11 @@ ADAravis.aravisCamera:
   prefix: "$(P)$(R)"
   type: "embedded"
 
+ADSimDetector.simDetector:
+  file: "ADAravis/ADAravis_summary.bob"
+  prefix: "$(P)$(R)"
+  type: "embedded"
+
 # Motion Controllers
 
 pmac.dls_pmac_asyn_motor:
