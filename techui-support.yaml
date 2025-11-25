@@ -33,6 +33,40 @@ ADCore.NDFileHDF5:
   prefix: "$(P)$(R)"
   type: "related"
 
+ADCore.NDROIStat:
+  file: "ADAravis/NDPluginROIStat.pvi.bob"
+  prefix: "$(P)$(R)"
+  type: "related"
+
+GDA.plugins:
+  - file: "ADAravis/NDPluginStats.pvi.bob"
+    prefix: "$(P)$(R)"
+    type: "related"
+  - file: "ADAravis/NDPluginPva.pvi.bob"
+    prefix: "$(P)$(R)"
+    type: "related"
+  - file: "ADAravis/NDPluginROIStat.pvi.bob"
+    prefix: "$(P)$(R)"
+    type: "related"
+  - file: "ADAravis/NDFileHDF5.pvi.bob"
+    prefix: "$(P)$(R)"
+    type: "related"
+  #TODO: Legacy support
+
+Detector.plugins:
+  - file: "ADAravis/NDPluginStats.pvi.bob"
+    prefix: "$(P)$(R)"
+    type: "related"
+  - file: "ADAravis/NDPluginPva.pvi.bob"
+    prefix: "$(P)$(R)"
+    type: "related"
+  - file: "ADAravis/NDPluginROIStat.pvi.bob"
+    prefix: "$(P)$(R)"
+    type: "related"
+  - file: "ADAravis/NDFileHDF5.pvi.bob"
+    prefix: "$(P)$(R)"
+    type: "related"
+
 # Motion Controllers
 
 pmac.dls_pmac_asyn_motor:

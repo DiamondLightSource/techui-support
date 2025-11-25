@@ -1229,6 +1229,8 @@
       <width>580</width>
       <height>555</height>
       <show_toolbar>true</show_toolbar>
+      <x_pv>$(P):STAT:CentroidX</x_pv>
+      <y_pv>$(P):STAT:CentroidY</y_pv>
     </widget>
     <widget type="group" version="3.0.0">
       <name>PVA</name>
@@ -1391,6 +1393,7 @@
           <color red="184" green="195" blue="223">
           </color>
         </background_color>
+        <format>6</format>
         <horizontal_alignment>1</horizontal_alignment>
         <vertical_alignment>1</vertical_alignment>
         <border_color>
