@@ -1224,7 +1224,7 @@
     </widget>
     <widget type="image" version="2.0.0">
       <name>Image</name>
-      <pv_name>$(P):ARR:ArrayData</pv_name>
+      <pv_name>$(P):PVA:ARRAY</pv_name>
       <x>410</x>
       <width>580</width>
       <height>555</height>
