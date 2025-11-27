@@ -38,7 +38,7 @@ ADCore.NDROIStat:
   prefix: "$(P)$(R)"
   type: "related"
 
-GDA.plugins:
+detectorPlugins.detectorPlugins:
   - file: "ADAravis/NDPluginStats.pvi.bob"
     prefix: "$(P)$(R)"
     suffix: ":STAT:"
