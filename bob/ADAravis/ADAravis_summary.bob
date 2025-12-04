@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-11-24 08:39:43 by uns32131-->
+<!--Saved on 2025-12-04 10:15:25 by ryi58813-->
 <display version="2.0.0">
   <name>Camera Screen</name>
   <width>990</width>
@@ -1224,7 +1224,7 @@
     </widget>
     <widget type="image" version="2.0.0">
       <name>Image</name>
-      <pv_name>$(P):PVA:ARRAY</pv_name>
+      <pv_name>pva://$(P):PVA:ARRAY</pv_name>
       <x>410</x>
       <width>580</width>
       <height>555</height>
