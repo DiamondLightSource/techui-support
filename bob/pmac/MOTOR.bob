@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2025-12-12 12:04:27 by sfx44126-->
 <display version="2.0.0">
   <name>MOTOR Subscreen</name>
+  <y use_class="true">0</y>
   <height>832</height>
-  <width>800</width>
-  <background_color>
+  <background_color use_class="true">
     <color name="Read_Background" red="240" green="240" blue="240">
     </color>
   </background_color>
@@ -13,28 +14,41 @@
     <name>Title</name>
     <class>TITLE</class>
     <text>MOTOR</text>
-    <x use_class="true">0</x>
-    <y use_class="true">0</y>
     <width>779</width>
     <height>25</height>
     <font use_class="true">
-      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      <font family="Arial" style="BOLD" size="32.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <transparent use_class="true">true</transparent>
-    <horizontal_alignment>1</horizontal_alignment>
+    <background_color use_class="true">
+      <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Eloss</name>
     <x>5</x>
     <y>30</y>
     <width>352</width>
     <height>56</height>
-    <background_color>
+    <style use_class="true">0</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -42,16 +56,30 @@
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Eloss Clear</text>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
       <actions>
         <action type="write_pv">
+          <description>$(name)</description>
           <pv_name>$(pv_name)</pv_name>
           <value>1</value>
-          <description>$(name)</description>
         </action>
       </actions>
       <pv_name>$(P)$(M):ELOSS:ELOSS-CLEAR</pv_name>
@@ -59,24 +87,37 @@
       <x>105</x>
       <width>205</width>
       <height>20</height>
-      <foreground_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color>
+      <background_color use_class="true">
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
       <tooltip>$(actions)</tooltip>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Limit Violation</name>
     <x>5</x>
     <y>91</y>
     <width>352</width>
     <height>131</height>
-    <background_color>
+    <style use_class="true">0</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -84,46 +125,110 @@
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>User High Limit</text>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>User Low Limit</text>
       <y>25</y>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Dial High Limit</text>
       <y>50</y>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Dial Low Limit</text>
       <y>75</y>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>TextEntry_33</name>
       <pv_name>$(P)$(M):LIMIT_VIOLATION:USER-HIGH-LIMIT</pv_name>
       <x>105</x>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -134,17 +239,25 @@
       <x>105</x>
       <y>25</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -155,17 +268,25 @@
       <x>105</x>
       <y>50</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -176,17 +297,25 @@
       <x>105</x>
       <y>75</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -237,13 +366,22 @@
       </background_color>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Kill</name>
     <x>5</x>
     <y>227</y>
     <width>352</width>
     <height>56</height>
-    <background_color>
+    <style use_class="true">0</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -251,16 +389,30 @@
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Kill</text>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
       <actions>
         <action type="write_pv">
+          <description>$(name)</description>
           <pv_name>$(pv_name)</pv_name>
           <value>1</value>
-          <description>$(name)</description>
         </action>
       </actions>
       <pv_name>$(P)$(M):KILL:KILL</pv_name>
@@ -268,24 +420,37 @@
       <x>105</x>
       <width>205</width>
       <height>20</height>
-      <foreground_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color>
+      <background_color use_class="true">
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
       <tooltip>$(actions)</tooltip>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Sync Val Rbv</name>
     <x>5</x>
     <y>288</y>
     <width>352</width>
     <height>56</height>
-    <background_color>
+    <style use_class="true">0</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -293,16 +458,30 @@
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Sync Val RBV</text>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
       <actions>
         <action type="write_pv">
+          <description>$(name)</description>
           <pv_name>$(pv_name)</pv_name>
           <value>1</value>
-          <description>$(name)</description>
         </action>
       </actions>
       <pv_name>$(P)$(M):SYNC_VAL_RBV:SYNC-VAL-RBV</pv_name>
@@ -310,24 +489,37 @@
       <x>105</x>
       <width>205</width>
       <height>20</height>
-      <foreground_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color>
+      <background_color use_class="true">
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
       <tooltip>$(actions)</tooltip>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Commands</name>
     <x>5</x>
     <y>349</y>
     <width>352</width>
     <height>206</height>
-    <background_color>
+    <style use_class="true">0</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -335,16 +527,30 @@
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Home Forward</text>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
       <actions>
         <action type="write_pv">
+          <description>$(name)</description>
           <pv_name>$(pv_name)</pv_name>
           <value>1</value>
-          <description>$(name)</description>
         </action>
       </actions>
       <pv_name>$(P)$(M):COMMANDS:HOME-FORWARD</pv_name>
@@ -352,11 +558,15 @@
       <x>105</x>
       <width>205</width>
       <height>20</height>
-      <foreground_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color>
+      <background_color use_class="true">
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -366,16 +576,30 @@
       <name>Label</name>
       <text>Home Reverse</text>
       <y>25</y>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
       <actions>
         <action type="write_pv">
+          <description>$(name)</description>
           <pv_name>$(pv_name)</pv_name>
           <value>1</value>
-          <description>$(name)</description>
         </action>
       </actions>
       <pv_name>$(P)$(M):COMMANDS:HOME-REVERSE</pv_name>
@@ -384,11 +608,15 @@
       <y>25</y>
       <width>205</width>
       <height>20</height>
-      <foreground_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color>
+      <background_color use_class="true">
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -398,16 +626,30 @@
       <name>Label</name>
       <text>Jog Forward</text>
       <y>50</y>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
       <actions>
         <action type="write_pv">
+          <description>$(name)</description>
           <pv_name>$(pv_name)</pv_name>
           <value>1</value>
-          <description>$(name)</description>
         </action>
       </actions>
       <pv_name>$(P)$(M):COMMANDS:JOG-FORWARD</pv_name>
@@ -416,11 +658,15 @@
       <y>50</y>
       <width>205</width>
       <height>20</height>
-      <foreground_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color>
+      <background_color use_class="true">
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -430,16 +676,30 @@
       <name>Label</name>
       <text>Jog Reverse</text>
       <y>75</y>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
       <actions>
         <action type="write_pv">
+          <description>$(name)</description>
           <pv_name>$(pv_name)</pv_name>
           <value>1</value>
-          <description>$(name)</description>
         </action>
       </actions>
       <pv_name>$(P)$(M):COMMANDS:JOG-REVERSE</pv_name>
@@ -448,11 +708,15 @@
       <y>75</y>
       <width>205</width>
       <height>20</height>
-      <foreground_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color>
+      <background_color use_class="true">
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -462,16 +726,30 @@
       <name>Label</name>
       <text>Tweak Forward</text>
       <y>100</y>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
       <actions>
         <action type="write_pv">
+          <description>$(name)</description>
           <pv_name>$(pv_name)</pv_name>
           <value>1</value>
-          <description>$(name)</description>
         </action>
       </actions>
       <pv_name>$(P)$(M):COMMANDS:TWEAK-FORWARD</pv_name>
@@ -480,11 +758,15 @@
       <y>100</y>
       <width>205</width>
       <height>20</height>
-      <foreground_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color>
+      <background_color use_class="true">
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -494,16 +776,30 @@
       <name>Label</name>
       <text>Tweak Reverse</text>
       <y>125</y>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
       <actions>
         <action type="write_pv">
+          <description>$(name)</description>
           <pv_name>$(pv_name)</pv_name>
           <value>1</value>
-          <description>$(name)</description>
         </action>
       </actions>
       <pv_name>$(P)$(M):COMMANDS:TWEAK-REVERSE</pv_name>
@@ -512,11 +808,15 @@
       <y>125</y>
       <width>205</width>
       <height>20</height>
-      <foreground_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color>
+      <background_color use_class="true">
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -526,8 +826,22 @@
       <name>Label</name>
       <text>Tweak Step</text>
       <y>150</y>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>TextEntry_40</name>
@@ -535,17 +849,25 @@
       <x>105</x>
       <y>150</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -641,13 +963,22 @@
       </background_color>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Calibration</name>
     <x>5</x>
     <y>560</y>
     <width>352</width>
     <height>156</height>
-    <background_color>
+    <style use_class="true">0</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -655,8 +986,22 @@
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Direction</text>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="combo" version="2.0.0">
       <name>ComboBox</name>
@@ -664,12 +1009,16 @@
       <x>105</x>
       <width>205</width>
       <height>20</height>
-      <foreground_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color>
-        <color red="255" green="255" blue="255">
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
         </color>
       </background_color>
       <items>
@@ -682,15 +1031,43 @@
       <name>Label</name>
       <text>User Offset</text>
       <y>25</y>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Set Use</text>
       <y>50</y>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="combo" version="2.0.0">
       <name>ComboBox</name>
@@ -699,12 +1076,16 @@
       <y>50</y>
       <width>205</width>
       <height>20</height>
-      <foreground_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color>
-        <color red="255" green="255" blue="255">
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
         </color>
       </background_color>
       <items>
@@ -717,8 +1098,22 @@
       <name>Label</name>
       <text>Offset</text>
       <y>75</y>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="combo" version="2.0.0">
       <name>ComboBox</name>
@@ -727,12 +1122,16 @@
       <y>75</y>
       <width>205</width>
       <height>20</height>
-      <foreground_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color>
-        <color red="255" green="255" blue="255">
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
         </color>
       </background_color>
       <items>
@@ -745,8 +1144,22 @@
       <name>Label</name>
       <text>Use Encoder</text>
       <y>100</y>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="combo" version="2.0.0">
       <name>ComboBox</name>
@@ -755,12 +1168,16 @@
       <y>100</y>
       <width>205</width>
       <height>20</height>
-      <foreground_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color>
-        <color red="255" green="255" blue="255">
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
         </color>
       </background_color>
       <items>
@@ -775,17 +1192,25 @@
       <x>105</x>
       <y>25</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -851,13 +1276,22 @@
       </background_color>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Resolution</name>
     <x>5</x>
     <y>721</y>
     <width>352</width>
     <height>106</height>
-    <background_color>
+    <style use_class="true">0</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -865,8 +1299,22 @@
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Resolution</text>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="combo" version="2.0.0">
       <name>ComboBox</name>
@@ -874,12 +1322,16 @@
       <x>105</x>
       <width>205</width>
       <height>20</height>
-      <foreground_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color>
-        <color red="255" green="255" blue="255">
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
         </color>
       </background_color>
       <items>
@@ -893,15 +1345,43 @@
       <name>Label</name>
       <text>Motor Step Size</text>
       <y>25</y>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Encode Step Size</text>
       <y>50</y>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>TextEntry_42</name>
@@ -909,17 +1389,25 @@
       <x>105</x>
       <y>25</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -930,17 +1418,25 @@
       <x>105</x>
       <y>50</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -976,13 +1472,22 @@
       </background_color>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Motion</name>
     <x>357</x>
     <y>30</y>
     <width>422</width>
     <height>331</height>
-    <background_color>
+    <style use_class="true">0</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -991,96 +1496,264 @@
       <name>Label</name>
       <text>Max Velocity</text>
       <width>170</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Base Velocity</text>
       <y>25</y>
       <width>170</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Velocity</text>
       <y>50</y>
       <width>170</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Secs To Velocity</text>
       <y>75</y>
       <width>170</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>JVEL</text>
       <y>100</y>
       <width>170</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Jog Acceleration</text>
       <y>125</y>
       <width>170</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Backlash Distance</text>
       <y>150</y>
       <width>170</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Backlash Velocity</text>
       <y>175</y>
       <width>170</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Backlash Secs To Velocity</text>
       <y>200</y>
       <width>170</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Move Fraction</text>
       <y>225</y>
       <width>170</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Retry Deadband</text>
       <y>250</y>
       <width>170</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Max Retries</text>
       <y>275</y>
       <width>170</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>TextEntry_20</name>
@@ -1088,17 +1761,25 @@
       <x>175</x>
       <y>25</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -1108,17 +1789,25 @@
       <pv_name>$(P)$(M):MOTION:MAX-VELOCITY</pv_name>
       <x>175</x>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -1129,17 +1818,25 @@
       <x>175</x>
       <y>50</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -1150,17 +1847,25 @@
       <x>175</x>
       <y>75</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -1171,17 +1876,25 @@
       <x>175</x>
       <y>100</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -1192,17 +1905,25 @@
       <x>175</x>
       <y>125</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -1213,17 +1934,25 @@
       <x>175</x>
       <y>150</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -1234,17 +1963,25 @@
       <x>175</x>
       <y>175</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -1255,17 +1992,25 @@
       <x>175</x>
       <y>200</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -1276,17 +2021,25 @@
       <x>175</x>
       <y>225</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -1297,17 +2050,25 @@
       <x>175</x>
       <y>250</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -1318,17 +2079,25 @@
       <x>175</x>
       <y>275</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -1499,13 +2268,22 @@
       </background_color>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Other</name>
     <x>357</x>
     <y>361</y>
     <width>422</width>
     <height>81</height>
-    <background_color>
+    <style use_class="true">0</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -1514,33 +2292,69 @@
       <name>Label</name>
       <text>PREC</text>
       <width>170</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>EGU</text>
       <y>25</y>
       <width>170</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>TextEntry_31</name>
       <pv_name>$(P)$(M):OTHER:PREC</pv_name>
       <x>175</x>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -1551,17 +2365,25 @@
       <x>175</x>
       <y>25</y>
       <width>205</width>
-      <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <border_width>1</border_width>
-      <border_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
