@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-01-15 16:09:12 by ryi58813-->
+<!--Saved on 2026-01-16 10:30:19 by ryi58813-->
 <display version="2.0.0">
   <name>slit-4axis-size-center-embed</name>
   <width>750</width>
@@ -14,7 +14,7 @@
       <name>X Center</name>
       <macros>
         <P>$(P)</P>
-        <M>$(M1)</M>
+        <M>X:CENTER</M>
         <IOC>$(IOC)</IOC>
       </macros>
       <file>../pmac/motor_embed.bob</file>
@@ -27,7 +27,7 @@
       <name>Y Center</name>
       <macros>
         <P>$(P)</P>
-        <M>$(M2)</M>
+        <M>Y:CENTER</M>
         <IOC>$(IOC)</IOC>
       </macros>
       <file>../pmac/motor_embed.bob</file>
@@ -40,7 +40,7 @@
       <name>Y Size</name>
       <macros>
         <P>$(P)</P>
-        <M>$(M4)</M>
+        <M>Y:SIZE</M>
         <IOC>$(IOC)</IOC>
       </macros>
       <file>../pmac/motor_embed.bob</file>
@@ -53,7 +53,7 @@
       <name>X Size</name>
       <macros>
         <P>$(P)</P>
-        <M>$(M3)</M>
+        <M>X:SIZE</M>
         <IOC>$(IOC)</IOC>
       </macros>
       <file>../pmac/motor_embed.bob</file>

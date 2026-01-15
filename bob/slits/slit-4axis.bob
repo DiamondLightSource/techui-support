@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-01-15 16:20:45 by ryi58813-->
+<!--Saved on 2026-01-16 10:31:01 by ryi58813-->
 <display version="2.0.0">
   <name>slits-4axis</name>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display</name>
+    <macros>
+      <P>$(P)</P>
+      <IOC>$(IOC)</IOC>
+    </macros>
     <file>placeholder</file>
     <x>20</x>
     <y>20</y>
