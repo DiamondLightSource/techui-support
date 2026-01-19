@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-01-16 14:54:25 by ryi58813-->
+<display version="2.0.0">
+  <name>fastShutter</name>
+  <width>610</width>
+  <height>420</height>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>Fast Shutter Control - $(P)</text>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>610</width>
+    <height>31</height>
+    <font use_class="true">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Output Mode (SOFT IN1)</name>
+    <x>10</x>
+    <y>30</y>
+    <width>290</width>
+    <height>186</height>
+    <transparent>true</transparent>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button</name>
+      <pv_name>$(P):CTRL1</pv_name>
+      <width>255</width>
+      <height>150</height>
+      <horizontal>false</horizontal>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Output Mode (SOFT IN2)</name>
+    <x>10</x>
+    <y>220</y>
+    <width>290</width>
+    <height>186</height>
+    <transparent>true</transparent>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_1</name>
+      <pv_name>$(P):CTRL2</pv_name>
+      <width>255</width>
+      <height>150</height>
+      <horizontal>false</horizontal>
+      <rules>
+        <rule name="visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == 1">
+            <value>true</value>
+          </exp>
+          <pv_name>$(P):CTRL1</pv_name>
+        </rule>
+      </rules>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Zebra Control</name>
+    <x>305</x>
+    <y>30</y>
+    <width>290</width>
+    <height>186</height>
+    <transparent>true</transparent>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry</name>
+      <pv_name>$(ZEBRA):PC_GATE_START</pv_name>
+      <x>92</x>
+      <y>7</y>
+      <width>120</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>deg</text>
+      <x>217</x>
+      <y>7</y>
+      <width>55</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>Gate Start</text>
+      <x>7</x>
+      <y>7</y>
+      <width>86</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_1</name>
+      <pv_name>$(ZEBRA):PC_GATE_WID</pv_name>
+      <x>92</x>
+      <y>42</y>
+      <width>120</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>deg</text>
+      <x>217</x>
+      <y>42</y>
+      <width>55</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>Gate Width</text>
+      <x>7</x>
+      <y>42</y>
+      <width>86</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <pv_name>$(ZEBRA):M2:SETPOS.PROC</pv_name>
+      <text>Copy motor pos</text>
+      <x>62</x>
+      <y>82</y>
+      <width>125</width>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <pv_name>$(ZEBRA):PC_ARM</pv_name>
+      <text>Arm</text>
+      <x>17</x>
+      <y>117</y>
+      <width>105</width>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_2</name>
+      <pv_name>$(ZEBRA):PC_DISARM</pv_name>
+      <text>Disarm</text>
+      <x>132</x>
+      <y>117</y>
+      <width>105</width>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Readback</name>
+    <x>305</x>
+    <y>220</y>
+    <width>290</width>
+    <height>156</height>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>$(P):STA</pv_name>
+      <x>137</x>
+      <y>32</y>
+      <width>110</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>Output</text>
+      <x>2</x>
+      <y>32</y>
+      <width>130</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>Current Position</text>
+      <x>2</x>
+      <y>62</y>
+      <width>130</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>Shutter Output</text>
+      <x>2</x>
+      <y>2</y>
+      <width>130</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(ZEBRA):M2:RBV</pv_name>
+      <x>137</x>
+      <y>62</y>
+      <width>120</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(P):STOP:RBV</pv_name>
+      <x>137</x>
+      <y>92</y>
+      <width>120</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_8</name>
+      <text>Stop Position Actual</text>
+      <x>2</x>
+      <y>92</y>
+      <width>130</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>$(ZEBRA):OUT1_TTL:STA</pv_name>
+      <x>137</x>
+      <y>5</y>
+      <width>24</width>
+      <height>24</height>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_3</name>
+    <text>ZEBRA</text>
+    <x>315</x>
+    <y>375</y>
+    <width>270</width>
+    <height>25</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+</display>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-01-19 09:22:53 by ryi58813-->
+<display version="2.0.0">
+  <name>Temp Config</name>
+  <width>315</width>
+  <height>370</height>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>$(temp)</text>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>310</width>
+    <height>31</height>
+    <font use_class="true">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>$(temp).DESC</text>
+    <x>110</x>
+    <y>31</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Current Temp:</text>
+    <x>5</x>
+    <y>225</y>
+    <height>25</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <y>50</y>
+    <width>312</width>
+    <height>161</height>
+    <style>2</style>
+    <transparent>true</transparent>
+    <widget type="meter" version="3.0.0">
+      <name>Meter</name>
+      <pv_name>$(temp)</pv_name>
+      <width>310</width>
+      <height>149</height>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(temp)</pv_name>
+    <x>105</x>
+    <y>225</y>
+    <height>25</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <text>Interlocks</text>
+    <x>205</x>
+    <y>225</y>
+    <height>25</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>$(temp):HIHI</pv_name>
+    <x>105</x>
+    <y>260</y>
+    <width>90</width>
+    <height>25</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Error Level:</text>
+    <x>5</x>
+    <y>260</y>
+    <height>25</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(temp):GETCALC</pv_name>
+    <x>205</x>
+    <y>260</y>
+    <height>25</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_1</name>
+    <pv_name>$(temp):HIGH</pv_name>
+    <x>105</x>
+    <y>295</y>
+    <width>90</width>
+    <height>25</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>Warning Level:</text>
+    <x>5</x>
+    <y>295</y>
+    <height>25</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>HASOFFSET</name>
+    <x>5</x>
+    <y>330</y>
+    <width>190</width>
+    <height>25</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0!=1">
+          <value>false</value>
+        </exp>
+        <pv_name>$(temp).HASOFFSET</pv_name>
+      </rule>
+    </rules>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>Callibration Offset:</text>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_2</name>
+      <pv_name>$(temp):OFFSET</pv_name>
+      <x>100</x>
+      <width>90</width>
+      <height>25</height>
+    </widget>
+  </widget>
+</display>

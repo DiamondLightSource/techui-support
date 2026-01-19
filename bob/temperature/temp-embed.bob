@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-01-19 09:09:16 by ryi58813-->
+<display version="2.0.0">
+  <name>Temp Embed</name>
+  <width>100</width>
+  <height>20</height>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <description>Temp Config</description>
+        <file>temp-config.bob</file>
+        <macros>
+          <temp>$(P):B:TEMP$(id)</temp>
+          <label>T$(id)</label>
+        </macros>
+        <target>tab</target>
+      </action>
+    </actions>
+    <text>$(label)</text>
+    <width>20</width>
+    <height>20</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(temp)</pv_name>
+    <x>20</x>
+    <width>55</width>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(temp).SEVR</pv_name>
+    <x>75</x>
+  </widget>
+</display>

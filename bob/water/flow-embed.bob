@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-01-19 09:26:50 by ryi58813-->
+<display version="2.0.0">
+  <name>Flow Embed</name>
+  <width>80</width>
+  <height>20</height>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <description>Flow Config</description>
+        <file>flow-config.bob</file>
+        <macros>
+          <flow>$(P):WF:$(id)</flow>
+          <label>Flow $(id)</label>
+        </macros>
+        <target>tab</target>
+      </action>
+    </actions>
+    <text>Flow $(id)</text>
+    <width>60</width>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(P):WF:$(id):LO</pv_name>
+    <x>60</x>
+  </widget>
+</display>
