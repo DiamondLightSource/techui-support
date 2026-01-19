@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-01-16 10:29:50 by ryi58813-->
+<!--Saved on 2026-01-19 14:05:59 by ryi58813-->
 <display version="2.0.0">
   <name>slit-4axis-individual-embed</name>
   <macros>
@@ -237,6 +237,126 @@
       <y>167</y>
       <width>205</width>
       <height>120</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Flow Embed $(id)</name>
+      <macros>
+        <id>1</id>
+        <P>$(P)</P>
+      </macros>
+      <file>../water/flow-embed.bob</file>
+      <x>442</x>
+      <y>22</y>
+      <width>83</width>
+      <height>20</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Flow Embed $(id)</name>
+      <macros>
+        <id>2</id>
+        <P>$(P)</P>
+      </macros>
+      <file>../water/flow-embed.bob</file>
+      <x>157</x>
+      <y>397</y>
+      <width>86</width>
+      <height>20</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Temp Embed $(label)</name>
+      <macros>
+        <label>T4</label>
+        <temp>$(P):A:TEMP4</temp>
+      </macros>
+      <file>../temperature/temp-embed.bob</file>
+      <x>557</x>
+      <y>117</y>
+      <width>95</width>
+      <height>20</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Temp Embed $(label)_1</name>
+      <macros>
+        <label>T8</label>
+        <temp>$(P):B:TEMP4</temp>
+      </macros>
+      <file>../temperature/temp-embed.bob</file>
+      <x>557</x>
+      <y>147</y>
+      <width>95</width>
+      <height>20</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Temp Embed $(label)_2</name>
+      <macros>
+        <label>T5</label>
+        <temp>$(P):B:TEMP1</temp>
+      </macros>
+      <file>../temperature/temp-embed.bob</file>
+      <x>137</x>
+      <y>52</y>
+      <width>95</width>
+      <height>20</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Temp Embed $(label)_1</name>
+      <macros>
+        <label>T1</label>
+        <temp>$(P):A:TEMP1</temp>
+      </macros>
+      <file>../temperature/temp-embed.bob</file>
+      <x>137</x>
+      <y>22</y>
+      <width>95</width>
+      <height>20</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Temp Embed $(label)_3</name>
+      <macros>
+        <label>T7</label>
+        <temp>$(P):B:TEMP3</temp>
+      </macros>
+      <file>../temperature/temp-embed.bob</file>
+      <x>22</x>
+      <y>307</y>
+      <width>95</width>
+      <height>20</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Temp Embed $(label)_2</name>
+      <macros>
+        <label>T3</label>
+        <temp>$(P):A:TEMP3</temp>
+      </macros>
+      <file>../temperature/temp-embed.bob</file>
+      <x>22</x>
+      <y>277</y>
+      <width>95</width>
+      <height>20</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Temp Embed $(label)_4</name>
+      <macros>
+        <label>T2</label>
+        <temp>$(P):A:TEMP2</temp>
+      </macros>
+      <file>../temperature/temp-embed.bob</file>
+      <x>447</x>
+      <y>367</y>
+      <width>95</width>
+      <height>20</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Temp Embed $(label)_3</name>
+      <macros>
+        <label>T6</label>
+        <temp>$(P):B:TEMP2</temp>
+      </macros>
+      <file>../temperature/temp-embed.bob</file>
+      <x>447</x>
+      <y>397</y>
+      <width>95</width>
+      <height>20</height>
     </widget>
   </widget>
 </display>
