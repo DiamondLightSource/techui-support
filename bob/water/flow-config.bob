@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-01-19 09:27:17 by ryi58813-->
+<display version="2.0.0">
+  <name>Flow Config</name>
+  <width>255</width>
+  <height>115</height>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>$(P):WF:$(id)</text>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>255</width>
+    <height>31</height>
+    <font use_class="true">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <text>Interlocks</text>
+    <x>10</x>
+    <y>80</y>
+    <height>25</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Flow $(id)</text>
+    <x>95</x>
+    <y>30</y>
+    <width>70</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Low Flow:</text>
+    <x>10</x>
+    <y>51</y>
+    <width>70</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Low Low Flow:</text>
+    <x>120</x>
+    <y>51</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <pv_name>$(P):WF:$(id):LOLO</pv_name>
+    <x>220</x>
+    <y>51</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(P):WF:$(id):LO</pv_name>
+    <x>80</x>
+    <y>51</y>
+  </widget>
+</display>
