@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-01-21 14:51:51 by ryi58813-->
+<!--Saved on 2026-01-21 14:56:15 by ryi58813-->
 <display version="2.0.0">
   <name>slit-4axis-size-center-embed</name>
   <width>750</width>
@@ -13,7 +13,7 @@
   <widget type="group" version="3.0.0">
     <name>4-Axis Slits - Size and Center</name>
     <width>710</width>
-    <height>465</height>
+    <height>470</height>
     <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
