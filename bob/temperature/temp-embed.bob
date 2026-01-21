@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-01-21 13:50:33 by ryi58813-->
+<!--Saved on 2026-01-21 14:22:11 by ryi58813-->
 <display version="2.0.0">
   <name>Temp Embed</name>
+  <y use_class="true">0</y>
   <width>100</width>
   <height>20</height>
+  <background_color use_class="true">
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
   <grid_step_x>5</grid_step_x>
   <grid_step_y>5</grid_step_y>
   <widget type="action_button" version="3.0.0">
@@ -21,10 +26,18 @@
     <text>$(label)</text>
     <width>20</width>
     <height>20</height>
-    <font>
-      <font family="Liberation Sans" style="REGULAR" size="12.0">
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
+    <foreground_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
     <tooltip>$(actions)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -32,11 +45,40 @@
     <pv_name>$(temp)</pv_name>
     <x>20</x>
     <width>55</width>
-    <vertical_alignment>1</vertical_alignment>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED</name>
     <pv_name>$(temp).SEVR</pv_name>
     <x>75</x>
+    <off_color use_class="true">
+      <color red="237" green="237" blue="237">
+      </color>
+    </off_color>
+    <on_color use_class="true">
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </on_color>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
   </widget>
 </display>
