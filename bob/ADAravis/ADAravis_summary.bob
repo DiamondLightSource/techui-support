@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-01-21 14:42:30 by uns32131-->
+<!--Saved on 2026-01-21 16:14:47 by uns32131-->
 <display version="2.0.0">
   <name>Camera Screen</name>
-  <width>860</width>
-  <height>450</height>
+  <width>880</width>
+  <height>470</height>
   <background_color>
     <color name="Read_Background" red="240" green="240" blue="240">
     </color>
