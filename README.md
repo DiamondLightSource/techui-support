@@ -25,10 +25,10 @@ Here are the most commonly used icons:
 
 | Widget | Symbol | Description
 | --- | --- | ---
-| Slits | ![alt text](<symbols/slits.svg>) |
+| Slits | ![alt text](<symbols/slits.svg>)|
 Motion Controller
 | Filter | ![alt text](<symbols/filterstick.svg>)
-| Shutter | ![alt text](<symbols/shutter.svg>) | 
+| Shutter | ![alt text](<symbols/shutter-opening.svg>) ![alt text](<symbols/shutter-open.svg>) ![alt text](<symbols/shutter-closing.svg>) ![alt text](<symbols/shutter-closed.svg>) | Opening, Open, Closing, Closed |
 | Custom Aperture | ![alt text](<symbols/aperture.svg>)
 Optical Table
 | Monochromator | ![alt text](<symbols/dcm.svg>) |
@@ -64,4 +64,4 @@ Diode| ![alt text](<symbols/diode.svg>) |
 Cryocooler
 Zebra
 Panda
-| Ring | ![alt text](<symbols/ring-off.svg>)![alt text](<symbols/ring-on.svg>) | Stored beam on/off
+| Ring | ![alt text](<symbols/ring-off.svg>)![alt text](<symbols/ring-on.svg>) | Stored beam off/on
