@@ -8,6 +8,7 @@
       <P>$(P)</P>
       <IOC>$(IOC)</IOC>
     </macros>
+    <file>slit-4axis-individual-embed.bob</file>
     <x>20</x>
     <y>20</y>
     <width>710</width>
