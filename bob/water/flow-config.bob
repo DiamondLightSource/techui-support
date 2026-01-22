@@ -1,29 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-01-19 09:27:17 by ryi58813-->
+<!--Saved on 2026-01-21 14:15:30 by ryi58813-->
 <display version="2.0.0">
   <name>Flow Config</name>
+  <y use_class="true">0</y>
   <width>255</width>
   <height>115</height>
+  <background_color use_class="true">
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
   <grid_step_x>5</grid_step_x>
   <grid_step_y>5</grid_step_y>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>TITLE</class>
     <text>$(P):WF:$(id)</text>
-    <x use_class="true">0</x>
-    <y use_class="true">0</y>
     <width>255</width>
     <height>31</height>
     <font use_class="true">
-      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      <font family="Arial" style="BOLD" size="32.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <transparent use_class="true">true</transparent>
-    <horizontal_alignment>1</horizontal_alignment>
+    <background_color use_class="true">
+      <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button</name>
@@ -31,38 +40,122 @@
     <x>10</x>
     <y>80</y>
     <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
     <tooltip>$(actions)</tooltip>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_1</name>
     <text>Flow $(id)</text>
     <x>95</x>
-    <y>30</y>
+    <y>35</y>
     <width>70</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_2</name>
     <text>Low Flow:</text>
     <x>10</x>
-    <y>51</y>
+    <y>55</y>
     <width>70</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_3</name>
     <text>Low Low Flow:</text>
     <x>120</x>
-    <y>51</y>
+    <y>55</y>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_1</name>
     <pv_name>$(P):WF:$(id):LOLO</pv_name>
     <x>220</x>
-    <y>51</y>
+    <y>55</y>
+    <off_color use_class="true">
+      <color red="237" green="237" blue="237">
+      </color>
+    </off_color>
+    <on_color use_class="true">
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </on_color>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED</name>
     <pv_name>$(P):WF:$(id):LO</pv_name>
     <x>80</x>
-    <y>51</y>
+    <y>55</y>
+    <off_color use_class="true">
+      <color red="237" green="237" blue="237">
+      </color>
+    </off_color>
+    <on_color use_class="true">
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </on_color>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
   </widget>
 </display>

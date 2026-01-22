@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-01-19 14:04:56 by ryi58813-->
+<!--Saved on 2026-01-21 14:56:15 by ryi58813-->
 <display version="2.0.0">
   <name>slit-4axis-size-center-embed</name>
   <width>750</width>
   <height>500</height>
+  <background_color>
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
   <grid_step_x>5</grid_step_x>
   <grid_step_y>5</grid_step_y>
   <widget type="group" version="3.0.0">
     <name>4-Axis Slits - Size and Center</name>
     <width>710</width>
-    <height>465</height>
+    <height>470</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
     <widget type="embedded" version="2.0.0">
       <name>X Center</name>
       <macros>
@@ -64,11 +80,24 @@
     </widget>
     <widget type="group" version="3.0.0">
       <name>Group</name>
+      <class>Not Default</class>
       <x>197</x>
-      <y>117</y>
-      <width>307</width>
+      <y>118</y>
+      <width>280</width>
       <height>195</height>
       <style>3</style>
+      <font>
+        <font family="Arial" style="REGULAR" size="15.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
       <transparent>true</transparent>
       <widget type="ellipse" version="2.0.0">
         <name>Ellipse_8</name>
@@ -164,17 +193,18 @@
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_8</name>
+        <class>Not Default</class>
         <text>Y Center</text>
         <x>237</x>
         <y>74</y>
         <width>70</width>
         <height>22</height>
         <font>
-          <font family="Liberation Sans" style="BOLD" size="16.0">
+          <font family="Arial" style="REGULAR" size="14.0">
           </font>
         </font>
         <foreground_color>
-          <color name="Background" red="255" green="255" blue="255">
+          <color red="255" green="255" blue="255">
           </color>
         </foreground_color>
         <background_color>
@@ -183,6 +213,7 @@
         </background_color>
         <transparent>false</transparent>
         <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_4</name>
@@ -205,51 +236,54 @@
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_4</name>
+        <class>Not Default</class>
         <text>Beam (Z)</text>
         <x>65</x>
         <y>67</y>
         <width>151</width>
         <height>22</height>
         <font>
-          <font family="Liberation Sans" style="BOLD" size="16.0">
+          <font family="Arial" style="REGULAR" size="14.0">
           </font>
         </font>
         <foreground_color>
-          <color name="Background" red="255" green="255" blue="255">
+          <color red="255" green="255" blue="255">
           </color>
         </foreground_color>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_5</name>
+        <class>Not Default</class>
         <text>Pointing Towards You</text>
         <x>42</x>
         <y>105</y>
         <width>195</width>
         <height>22</height>
         <font>
-          <font family="Liberation Sans" style="BOLD" size="16.0">
+          <font family="Arial" style="REGULAR" size="14.0">
           </font>
         </font>
         <foreground_color>
-          <color name="Background" red="255" green="255" blue="255">
+          <color red="255" green="255" blue="255">
           </color>
         </foreground_color>
         <horizontal_alignment>1</horizontal_alignment>
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_6</name>
+        <class>Not Default</class>
         <text>Y Size</text>
         <x>205</x>
         <y>150</y>
         <width>60</width>
         <height>22</height>
         <font>
-          <font family="Liberation Sans" style="BOLD" size="16.0">
+          <font family="Arial" style="REGULAR" size="14.0">
           </font>
         </font>
         <foreground_color>
-          <color name="Background" red="255" green="255" blue="255">
+          <color red="255" green="255" blue="255">
           </color>
         </foreground_color>
         <background_color>
@@ -258,6 +292,7 @@
         </background_color>
         <transparent>false</transparent>
         <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_5</name>
@@ -280,16 +315,17 @@
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_7</name>
+        <class>Not Default</class>
         <text>X Center</text>
         <x>105</x>
         <width>70</width>
         <height>22</height>
         <font>
-          <font family="Liberation Sans" style="BOLD" size="16.0">
+          <font family="Arial" style="REGULAR" size="14.0">
           </font>
         </font>
         <foreground_color>
-          <color name="Background" red="255" green="255" blue="255">
+          <color red="255" green="255" blue="255">
           </color>
         </foreground_color>
         <background_color>
@@ -298,20 +334,22 @@
         </background_color>
         <transparent>false</transparent>
         <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_9</name>
+        <class>Not Default</class>
         <text>X Size</text>
         <x>30</x>
         <y>57</y>
         <width>60</width>
         <height>22</height>
         <font>
-          <font family="Liberation Sans" style="BOLD" size="16.0">
+          <font family="Arial" style="REGULAR" size="14.0">
           </font>
         </font>
         <foreground_color>
-          <color name="Background" red="255" green="255" blue="255">
+          <color red="255" green="255" blue="255">
           </color>
         </foreground_color>
         <background_color>
@@ -320,6 +358,7 @@
         </background_color>
         <transparent>false</transparent>
         <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
       </widget>
     </widget>
     <widget type="polyline" version="2.0.0">
