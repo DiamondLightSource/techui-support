@@ -36,7 +36,7 @@
     </background_color>
     <widget type="led" version="2.0.0">
       <name>LED</name>
-      <pv_name>$(device):I</pv_name>
+      <pv_name>$(P):I</pv_name>
       <x>234</x>
       <y>180</y>
       <off_color use_class="true">
