@@ -1,45 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-01-21 14:54:55 by ryi58813-->
+<!--Saved on 2026-01-27 08:37:26 by uns32131-->
 <display version="2.0.0">
   <name>slits-4axis</name>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display</name>
-    <macros>
-      <P>$(P)</P>
-      <IOC>$(IOC)</IOC>
-    </macros>
-    <file>slit-4axis-individual-embed.bob</file>
-    <x>20</x>
-    <y>20</y>
-    <width>710</width>
-    <height>470</height>
-    <rules>
-      <rule name="file-change" prop_id="file" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>slit-4axis-individual-embed.bob</value>
-        </exp>
-        <exp bool_exp="pv0==1">
-          <value>slit-4axis-size-center-embed.bob</value>
-        </exp>
-        <pv_name>loc://embed</pv_name>
-      </rule>
-    </rules>
-  </widget>
-  <widget type="choice" version="2.0.0">
-    <name>Choice Button</name>
-    <pv_name>loc://embed</pv_name>
-    <x>30</x>
-    <y>490</y>
-    <width>690</width>
-    <font>
-      <font family="Liberation Sans" style="BOLD" size="16.0">
-      </font>
-    </font>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <items>
-      <item>Individual Blades</item>
-      <item>Size and Center</item>
-    </items>
-    <items_from_pv>false</items_from_pv>
+  <widget type="tabs" version="2.0.0">
+    <name>Tabs_1</name>
+    <tabs>
+      <tab>
+        <name>Individual</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_4</name>
+            <file>slit-4axis-individual-embed.bob</file>
+            <width>710</width>
+            <height>470</height>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Compound</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_5</name>
+            <file>slit-4axis-size-center-embed.bob</file>
+            <width>710</width>
+            <height>470</height>
+          </widget>
+        </children>
+      </tab>
+    </tabs>
+    <width>715</width>
+    <height>512</height>
   </widget>
 </display>
