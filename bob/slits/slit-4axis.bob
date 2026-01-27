@@ -1,34 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-01-27 08:37:26 by uns32131-->
+<!--Saved on 2026-01-27 08:47:07 by uns32131-->
 <display version="2.0.0">
   <name>slits-4axis</name>
-  <widget type="tabs" version="2.0.0">
-    <name>Tabs_1</name>
+  <width>840</width>
+  <height>485</height>
+  <widget type="navtabs" version="2.0.0">
+    <name>Navigation Tabs</name>
     <tabs>
       <tab>
         <name>Individual</name>
-        <children>
-          <widget type="embedded" version="2.0.0">
-            <name>Embedded Display_4</name>
-            <file>slit-4axis-individual-embed.bob</file>
-            <width>710</width>
-            <height>470</height>
-          </widget>
-        </children>
+        <file>slit-4axis-individual-embed.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
       </tab>
       <tab>
         <name>Compound</name>
-        <children>
-          <widget type="embedded" version="2.0.0">
-            <name>Embedded Display_5</name>
-            <file>slit-4axis-size-center-embed.bob</file>
-            <width>710</width>
-            <height>470</height>
-          </widget>
-        </children>
+        <file>slit-4axis-size-center-embed.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
       </tab>
     </tabs>
-    <width>715</width>
-    <height>512</height>
+    <width>840</width>
+    <height>485</height>
   </widget>
 </display>
