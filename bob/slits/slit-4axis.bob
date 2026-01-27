@@ -1,45 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-01-21 14:54:55 by ryi58813-->
+<!--Saved on 2026-01-27 10:32:46 by ryi58813-->
 <display version="2.0.0">
   <name>slits-4axis</name>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display</name>
-    <macros>
-      <P>$(P)</P>
-      <IOC>$(IOC)</IOC>
-    </macros>
-    <file>slit-4axis-individual-embed.bob</file>
-    <x>20</x>
-    <y>20</y>
-    <width>710</width>
-    <height>470</height>
-    <rules>
-      <rule name="file-change" prop_id="file" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>slit-4axis-individual-embed.bob</value>
-        </exp>
-        <exp bool_exp="pv0==1">
-          <value>slit-4axis-size-center-embed.bob</value>
-        </exp>
-        <pv_name>loc://embed</pv_name>
-      </rule>
-    </rules>
-  </widget>
-  <widget type="choice" version="2.0.0">
-    <name>Choice Button</name>
-    <pv_name>loc://embed</pv_name>
-    <x>30</x>
-    <y>490</y>
-    <width>690</width>
-    <font>
-      <font family="Liberation Sans" style="BOLD" size="16.0">
-      </font>
-    </font>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <items>
-      <item>Individual Blades</item>
-      <item>Size and Center</item>
-    </items>
-    <items_from_pv>false</items_from_pv>
+  <width>760</width>
+  <height>530</height>
+  <widget type="navtabs" version="2.0.0">
+    <name>Navigation Tabs</name>
+    <tabs>
+      <tab>
+        <name>Individual</name>
+        <file>slit-4axis-individual-embed.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Compound</name>
+        <file>slit-4axis-size-center-embed.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+    </tabs>
+    <width>730</width>
+    <height>515</height>
+    <direction>0</direction>
+    <tab_width>365</tab_width>
   </widget>
 </display>
