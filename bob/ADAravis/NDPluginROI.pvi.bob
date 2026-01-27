@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Saved on 2026-01-22 10:39:30 by kgv66629-->
 <display version="2.0.0">
-  <name>NDPluginROI</name>
+  <name>ROI Plugin</name>
   <y use_class="true">0</y>
   <width>1208</width>
   <height>899</height>

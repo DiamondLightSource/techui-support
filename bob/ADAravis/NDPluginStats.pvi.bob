@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Saved on 2026-01-22 10:42:06 by kgv66629-->
 <display version="2.0.0">
-  <name>NDPluginStats</name>
+  <name>STAT Plugin</name>
   <y use_class="true">0</y>
   <width>1974</width>
   <height>966</height>

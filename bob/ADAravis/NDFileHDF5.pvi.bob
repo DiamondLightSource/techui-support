@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Saved on 2026-01-22 10:40:11 by kgv66629-->
 <display version="2.0.0">
-  <name>NDFileHDF5</name>
+  <name>HDF5 Plugin</name>
   <y use_class="true">0</y>
   <width>2812</width>
   <height>921</height>
