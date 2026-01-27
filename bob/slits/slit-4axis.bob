@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-01-27 08:47:07 by uns32131-->
+<!--Saved on 2026-01-27 10:32:46 by ryi58813-->
 <display version="2.0.0">
   <name>slits-4axis</name>
-  <width>840</width>
-  <height>485</height>
+  <width>760</width>
+  <height>530</height>
   <widget type="navtabs" version="2.0.0">
     <name>Navigation Tabs</name>
     <tabs>
@@ -22,7 +22,9 @@
         <group_name></group_name>
       </tab>
     </tabs>
-    <width>840</width>
-    <height>485</height>
+    <width>730</width>
+    <height>515</height>
+    <direction>0</direction>
+    <tab_width>365</tab_width>
   </widget>
 </display>
