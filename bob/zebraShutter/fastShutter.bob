@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-01-16 14:54:25 by ryi58813-->
+<!--Saved on 2026-01-27 09:50:11 by ryi58813-->
 <display version="2.0.0">
   <name>fastShutter</name>
   <width>610</width>
@@ -51,6 +51,16 @@
     <width>290</width>
     <height>186</height>
     <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_9</name>
+      <class>Not Default</class>
+      <text>Manual Control
+Disabled</text>
+      <width>255</width>
+      <height>150</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
     <widget type="choice" version="2.0.0">
       <name>Choice Button_1</name>
       <pv_name>$(P):CTRL2</pv_name>
