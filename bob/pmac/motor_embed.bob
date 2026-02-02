@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-01-22 11:13:15 by sfx44126-->
+<!--Saved on 2026-02-02 11:04:09 by uns32131-->
 <display version="2.0.0">
   <name>motor_embed</name>
-  <width>205</width>
+  <width>220</width>
   <height>120</height>
   <background_color>
     <color name="Read_Background" red="240" green="240" blue="240">
