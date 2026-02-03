@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -14,8 +12,8 @@
    height="40"
    id="svg2"
    version="1.1"
-   inkscape:version="0.47 r22583"
-   sodipodi:docname="ring 1.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="ring-on-cw.svg"
    inkscape:export-filename="/home/tmc43/R3.14.12.3/support/BLGui/BLGuiApp/opi/opi/images/ring.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -539,11 +537,12 @@
      inkscape:window-width="1427"
      inkscape:window-height="1090"
      inkscape:window-x="99"
-     inkscape:window-y="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:snap-global="true"
      guidetolerance="10000"
-     objecttolerance="20">
+     objecttolerance="20"
+     inkscape:document-rotation="0">
     <inkscape:grid
        type="xygrid"
        id="grid3010"
@@ -560,7 +559,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -571,11 +570,11 @@
      transform="translate(0,-1012.3622)">
     <path
        id="path6185"
-       style="color:#000000;fill:none;stroke:#00ffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 40,1042.3622 -20,0 m 10,-10 c 0,5.5228 -4.477152,10 -10,10 -5.522848,0 -10,-4.4772 -10,-10 0,-5.5228 4.477152,-10 10,-10 5.522848,0 10,4.4772 10,10 z" />
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:none;stroke:#00ffff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+       d="M 40,1022.3622 H 20 m 10,10 c 0,-5.5228 -4.477152,-10 -10,-10 -5.522848,0 -10,4.4772 -10,10 0,5.5228 4.477152,10 10,10 5.522848,0 10,-4.4772 10,-10 z" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 18.1875,1012.1747 -4.25,4.25 2.96875,2.9375 -12.90625,0 0,6 4.625,0 -8.8125,8.8125 4.25,4.25 2.9375,-2.9687 0,12.9062 6,0 0,-4.625 8.8125,8.8125 4.25,-4.25 -2.96875,-2.9375 17.90625,0 0,-6 -9.625,0 8.8125,-8.8125 -4.25,-4.25 -2.9375,2.9688 0,-12.9063 -6,0 0,4.625 -8.8125,-8.8125 z"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 18.1875,1052.5497 -4.25,-4.25 2.96875,-2.9375 H 4 v -6 h 4.625 l -8.8125,-8.8125 4.25,-4.25 2.9375,2.9687 v -12.9062 h 6 v 4.625 l 8.8125,-8.8125 4.25,4.25 -2.96875,2.9375 H 41 v 6 h -9.625 l 8.8125,8.8125 -4.25,4.25 L 33,1035.4559 v 12.9063 h -6 v -4.625 z"
        id="rect4192"
        sodipodi:nodetypes="ccccccccccccccccccccccccc" />
     <path
