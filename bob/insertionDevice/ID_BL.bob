@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-02-05 13:22:09 by ryi58813-->
+<display version="2.0.0">
+  <name>ID_BL</name>
+  <y use_class="true">0</y>
+  <width>370</width>
+  <height>930</height>
+  <background_color use_class="true">
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>ID BL Control $(prefix), $(idname) </text>
+    <width>550</width>
+    <height>31</height>
+    <font use_class="true">
+      <font family="Arial" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Motion</name>
+    <x>25</x>
+    <y>35</y>
+    <width>313</width>
+    <height>136</height>
+    <style use_class="true">0</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>BURT_Label</name>
+      <class>Not Default</class>
+      <text>BURT NOT VALID</text>
+      <x>10</x>
+      <y>5</y>
+      <width>120</width>
+      <height>25</height>
+      <background_color>
+        <color name="MAJOR" red="255" green="0" blue="0">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="burt-valid-text" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>BURT NOT VALID</value>
+          </exp>
+          <exp bool_exp="pv0==1">
+            <value>BURT VALID</value>
+          </exp>
+          <pv_name>$(prefixb)STAT-$(suff1)1:BURT:OK</pv_name>
+        </rule>
+        <rule name="burt-valid-colour" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==1">
+            <value>
+              <color name="OK" red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(prefixb)STAT-$(suff1)1:BURT:OK</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>PLC_FAULT_Label</name>
+      <class>Not Default</class>
+      <text>PLC Fault</text>
+      <x>145</x>
+      <y>5</y>
+      <width>120</width>
+      <height>25</height>
+      <background_color>
+        <color name="OK" red="0" green="255" blue="0">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="plc-fault-colour" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>
+              <color name="OK" red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==1">
+            <value>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(prefix)STAT-$(suff1)1:ANYFAULT</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Motion Stop Status</name>
+      <x>10</x>
+      <y>40</y>
+      <width>255</width>
+      <height>65</height>
+      <style use_class="true">0</style>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="15.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>MOTION_STOP_Text</name>
+        <pv_name>$(prefix)STAT-$(suff1)1:NMSTOP:BI</pv_name>
+        <width>215</width>
+        <height>25</height>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Position</name>
+    <x>25</x>
+    <y>165</y>
+    <width>310</width>
+    <height>360</height>
+    <style use_class="true">0</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="group" version="3.0.0">
+      <name>Magnet Array Beam Positions</name>
+      <width>265</width>
+      <height>185</height>
+      <style use_class="true">0</style>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="15.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <widget type="group" version="3.0.0">
+        <name>AXIS_1_Group</name>
+        <class>Not Default</class>
+        <width>225</width>
+        <height>25</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="label" version="2.0.0">
+          <name>AXIS_1_Label</name>
+          <class>Not Default</class>
+          <text>Axis 1</text>
+          <width>40</width>
+          <height>25</height>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>AXIS_1_Encoder</name>
+          <pv_name>$(prefix)AXIS-$(suff1)1:ENCD</pv_name>
+          <x>50</x>
+          <width>140</width>
+          <height>25</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </background_color>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <border_color use_class="true">
+            <color red="196" green="196" blue="196">
+            </color>
+          </border_color>
+        </widget>
+        <widget type="label" version="2.0.0">
+          <name>AXIS_1_Loading</name>
+          <class>Not Default</class>
+          <text>Loading</text>
+          <x>60</x>
+          <width>120</width>
+          <height>25</height>
+          <foreground_color>
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <transparent>false</transparent>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+          <rules>
+            <rule name="visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0!=1">
+                <value>false</value>
+              </exp>
+              <pv_name>$(prefix)ENC-$(suff1)1:LOADING</pv_name>
+            </rule>
+          </rules>
+          <border_width>1</border_width>
+        </widget>
+        <widget type="led" version="2.0.0">
+          <name>AXIS_1_LED</name>
+          <pv_name>$(prefix)SERVO-$(suff1)1:MOT.MOVN</pv_name>
+          <x>200</x>
+          <width>25</width>
+          <height>25</height>
+          <off_color use_class="true">
+            <color red="237" green="237" blue="237">
+            </color>
+          </off_color>
+          <on_color use_class="true">
+            <color name="Write_Background" red="128" green="255" blue="255">
+            </color>
+          </on_color>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>AXIS_2_Group</name>
+        <class>Not Default</class>
+        <y>40</y>
+        <width>225</width>
+        <height>25</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="label" version="2.0.0">
+          <name>AXIS_2_Label</name>
+          <class>Not Default</class>
+          <text>Axis 2</text>
+          <width>40</width>
+          <height>25</height>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>AXIS_2_Encoder</name>
+          <pv_name>$(prefix)AXIS-$(suff1)2:ENCD</pv_name>
+          <x>50</x>
+          <width>140</width>
+          <height>25</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </background_color>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <border_color use_class="true">
+            <color red="196" green="196" blue="196">
+            </color>
+          </border_color>
+        </widget>
+        <widget type="label" version="2.0.0">
+          <name>AXIS_2_Loading</name>
+          <class>Not Default</class>
+          <text>Loading</text>
+          <x>60</x>
+          <width>120</width>
+          <height>25</height>
+          <foreground_color>
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <transparent>false</transparent>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+          <rules>
+            <rule name="visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0!=1">
+                <value>false</value>
+              </exp>
+              <pv_name>$(prefix)ENC-$(suff1)2:LOADING</pv_name>
+            </rule>
+          </rules>
+          <border_width>1</border_width>
+        </widget>
+        <widget type="led" version="2.0.0">
+          <name>AXIS_2_LED</name>
+          <pv_name>$(prefix)SERVO-$(suff1)2:MOT.MOVN</pv_name>
+          <x>200</x>
+          <width>25</width>
+          <height>25</height>
+          <off_color use_class="true">
+            <color red="237" green="237" blue="237">
+            </color>
+          </off_color>
+          <on_color use_class="true">
+            <color name="Write_Background" red="128" green="255" blue="255">
+            </color>
+          </on_color>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>AXIS_3_Group</name>
+        <class>Not Default</class>
+        <y>80</y>
+        <width>225</width>
+        <height>25</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="label" version="2.0.0">
+          <name>AXIS_3_Label</name>
+          <class>Not Default</class>
+          <text>Axis 3</text>
+          <width>40</width>
+          <height>25</height>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>AXIS_3_Encoder</name>
+          <pv_name>$(prefix)AXIS-$(suff1)3:ENCD</pv_name>
+          <x>50</x>
+          <width>140</width>
+          <height>25</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </background_color>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <border_color use_class="true">
+            <color red="196" green="196" blue="196">
+            </color>
+          </border_color>
+        </widget>
+        <widget type="label" version="2.0.0">
+          <name>AXIS_3_Loading</name>
+          <class>Not Default</class>
+          <text>Loading</text>
+          <x>60</x>
+          <width>120</width>
+          <height>25</height>
+          <foreground_color>
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <transparent>false</transparent>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+          <rules>
+            <rule name="visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0!=1">
+                <value>false</value>
+              </exp>
+              <pv_name>$(prefix)ENC-$(suff1)3:LOADING</pv_name>
+            </rule>
+          </rules>
+          <border_width>1</border_width>
+        </widget>
+        <widget type="led" version="2.0.0">
+          <name>AXIS_3_LED</name>
+          <pv_name>$(prefix)SERVO-$(suff1)3:MOT.MOVN</pv_name>
+          <x>200</x>
+          <width>25</width>
+          <height>25</height>
+          <off_color use_class="true">
+            <color red="237" green="237" blue="237">
+            </color>
+          </off_color>
+          <on_color use_class="true">
+            <color name="Write_Background" red="128" green="255" blue="255">
+            </color>
+          </on_color>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>AXIS_4_Group</name>
+        <class>Not Default</class>
+        <y>120</y>
+        <width>225</width>
+        <height>25</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="label" version="2.0.0">
+          <name>AXIS_4_Label</name>
+          <class>Not Default</class>
+          <text>Axis 4</text>
+          <width>40</width>
+          <height>25</height>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>AXIS_4_Encoder</name>
+          <pv_name>$(prefix)AXIS-$(suff1)4:ENCD</pv_name>
+          <x>50</x>
+          <width>140</width>
+          <height>25</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </background_color>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <border_color use_class="true">
+            <color red="196" green="196" blue="196">
+            </color>
+          </border_color>
+        </widget>
+        <widget type="label" version="2.0.0">
+          <name>AXIS_4_Loading</name>
+          <class>Not Default</class>
+          <text>Loading</text>
+          <x>60</x>
+          <width>120</width>
+          <height>25</height>
+          <foreground_color>
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <transparent>false</transparent>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+          <rules>
+            <rule name="visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0!=1">
+                <value>false</value>
+              </exp>
+              <pv_name>$(prefix)ENC-$(suff1)4:LOADING</pv_name>
+            </rule>
+          </rules>
+          <border_width>1</border_width>
+        </widget>
+        <widget type="led" version="2.0.0">
+          <name>AXIS_4_LED</name>
+          <pv_name>$(prefix)SERVO-$(suff1)4:MOT.MOVN</pv_name>
+          <x>200</x>
+          <width>25</width>
+          <height>25</height>
+          <off_color use_class="true">
+            <color red="237" green="237" blue="237">
+            </color>
+          </off_color>
+          <on_color use_class="true">
+            <color name="Write_Background" red="128" green="255" blue="255">
+            </color>
+          </on_color>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+        </widget>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Phase Axes</name>
+      <y>185</y>
+      <width>265</width>
+      <height>105</height>
+      <style use_class="true">0</style>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="15.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="has-phase" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0!=1">
+            <value>false</value>
+          </exp>
+          <pv_name>$(prefix)STAT-$(suff1)1:HASPHAXES</pv_name>
+        </rule>
+      </rules>
+      <widget type="group" version="3.0.0">
+        <name>AXIS_5_Group</name>
+        <class>Not Default</class>
+        <width>225</width>
+        <height>25</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="label" version="2.0.0">
+          <name>AXIS_5_Label</name>
+          <class>Not Default</class>
+          <text>Axis 5</text>
+          <width>40</width>
+          <height>25</height>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>AXIS_5_Motor</name>
+          <pv_name>$(prefix)SERVO-$(suff1)5:MOT.RBV</pv_name>
+          <x>50</x>
+          <width>140</width>
+          <height>25</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </background_color>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <border_color use_class="true">
+            <color red="196" green="196" blue="196">
+            </color>
+          </border_color>
+        </widget>
+        <widget type="led" version="2.0.0">
+          <name>AXIS_5_LED</name>
+          <pv_name>$(prefix)SERVO-$(suff1)5:MOT.MOVN</pv_name>
+          <x>200</x>
+          <width>25</width>
+          <height>25</height>
+          <off_color use_class="true">
+            <color red="237" green="237" blue="237">
+            </color>
+          </off_color>
+          <on_color use_class="true">
+            <color name="Write_Background" red="128" green="255" blue="255">
+            </color>
+          </on_color>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>AXIS_6_Group</name>
+        <class>Not Default</class>
+        <y>40</y>
+        <width>225</width>
+        <height>25</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="label" version="2.0.0">
+          <name>AXIS_6_Label</name>
+          <class>Not Default</class>
+          <text>Axis 6</text>
+          <width>40</width>
+          <height>25</height>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>AXIS_6_Motor</name>
+          <pv_name>$(prefix)SERVO-$(suff1)6:MOT.RBV</pv_name>
+          <x>50</x>
+          <width>140</width>
+          <height>25</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </background_color>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <border_color use_class="true">
+            <color red="196" green="196" blue="196">
+            </color>
+          </border_color>
+        </widget>
+        <widget type="led" version="2.0.0">
+          <name>AXIS_6_LED</name>
+          <pv_name>$(prefix)SERVO-$(suff1)6:MOT.MOVN</pv_name>
+          <x>200</x>
+          <width>25</width>
+          <height>25</height>
+          <off_color use_class="true">
+            <color red="237" green="237" blue="237">
+            </color>
+          </off_color>
+          <on_color use_class="true">
+            <color name="Write_Background" red="128" green="255" blue="255">
+            </color>
+          </on_color>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+        </widget>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Position Statuses</name>
+      <class>Not Default</class>
+      <x>20</x>
+      <y>295</y>
+      <width>225</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0!=1">
+            <value>false</value>
+          </exp>
+          <pv_name>$(prefix)STAT-$(suff1)1:HASPHAXES</pv_name>
+        </rule>
+      </rules>
+      <widget type="label" version="2.0.0">
+        <name>HOMED_Label</name>
+        <class>NOT COMMENT</class>
+        <text>Not Homed</text>
+        <width>105</width>
+        <font>
+          <font family="Arial" style="BOLD" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <rules>
+          <rule name="text" prop_id="text" out_exp="false">
+            <exp bool_exp="pv0==0">
+              <value>Not Homed</value>
+            </exp>
+            <exp bool_exp="pv0==1">
+              <value>Homed</value>
+            </exp>
+            <pv_name>$(prefix)STAT-$(suff1)1:HMVALID</pv_name>
+          </rule>
+        </rules>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>MODE_Label</name>
+        <class>NOT COMMENT</class>
+        <text>Circular Mode</text>
+        <x>120</x>
+        <width>105</width>
+        <font>
+          <font family="Arial" style="BOLD" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <rules>
+          <rule name="text" prop_id="text" out_exp="false">
+            <exp bool_exp="pv0==1">
+              <value>Circular Mode</value>
+            </exp>
+            <exp bool_exp="pv0==2">
+              <value>Linear Mode</value>
+            </exp>
+            <pv_name>$(prefix)STAT-$(suff1)1:PHMODE</pv_name>
+          </rule>
+        </rules>
+        <border_width>1</border_width>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Motion Control</name>
+    <x>27</x>
+    <y>527</y>
+    <width>301</width>
+    <height>388</height>
+    <style use_class="true">0</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="group" version="3.0.0">
+      <name>Control</name>
+      <width>265</width>
+      <height>145</height>
+      <style use_class="true">0</style>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="15.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <widget type="group" version="3.0.0">
+        <name>GAP_Group</name>
+        <class>Not Default</class>
+        <width>225</width>
+        <height>25</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="label" version="2.0.0">
+          <name>GAP_Label</name>
+          <class>Not Default</class>
+          <text>Gap</text>
+          <width>40</width>
+          <height>25</height>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>GAP_Current</name>
+          <pv_name>$(prefix)SERVC-$(suff1)1:CURRGAPD</pv_name>
+          <x>50</x>
+          <width>175</width>
+          <height>25</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </background_color>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <border_color use_class="true">
+            <color red="196" green="196" blue="196">
+            </color>
+          </border_color>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>OFFSET_Group</name>
+        <class>Not Default</class>
+        <y>40</y>
+        <width>225</width>
+        <height>25</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="label" version="2.0.0">
+          <name>OFFSET_Label</name>
+          <class>Not Default</class>
+          <text>Offset</text>
+          <width>40</width>
+          <height>25</height>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>OFFSET_Current</name>
+          <pv_name>$(prefix)SERVC-$(suff1)1:CURROFFD</pv_name>
+          <x>50</x>
+          <width>175</width>
+          <height>25</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </background_color>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <border_color use_class="true">
+            <color red="196" green="196" blue="196">
+            </color>
+          </border_color>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>TAPER_Group</name>
+        <class>Not Default</class>
+        <y>80</y>
+        <width>225</width>
+        <height>25</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="label" version="2.0.0">
+          <name>TAPER_Label</name>
+          <class>Not Default</class>
+          <text>Taper</text>
+          <width>40</width>
+          <height>25</height>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>TAPER_Current</name>
+          <pv_name>$(prefix)SERVC-$(suff1)1:CURRTAPERD</pv_name>
+          <x>50</x>
+          <width>175</width>
+          <height>25</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </background_color>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <border_color use_class="true">
+            <color red="196" green="196" blue="196">
+            </color>
+          </border_color>
+        </widget>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Movement Select</name>
+      <x>5</x>
+      <y>145</y>
+      <width>255</width>
+      <height>210</height>
+      <style use_class="true">0</style>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="15.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <widget type="action_button" version="3.0.0">
+        <name>Gap Selected RD</name>
+        <actions execute_as_one="true">
+          <action type="open_display">
+            <description>Gap Control</description>
+            <file>IDBL_GapSet.bob</file>
+            <target>tab</target>
+          </action>
+          <action type="write_pv">
+            <description>Gap Selected</description>
+            <pv_name>$(prefix)SERVC-$(suff1)1:BLMSEL</pv_name>
+            <value>0</value>
+          </action>
+        </actions>
+        <text>Gap Control</text>
+        <x>20</x>
+        <y>5</y>
+        <width>175</width>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="255" green="255" blue="255">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0!=0">
+              <value>false</value>
+            </exp>
+            <pv_name>$(prefix)SERVC-$(suff1)1:IDBLENA</pv_name>
+          </rule>
+        </rules>
+        <tooltip>$(actions)</tooltip>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Phase Selected RD</name>
+        <actions execute_as_one="true">
+          <action type="open_display">
+            <description>Phase Control</description>
+            <file>IDBL_PhaseSet.bob</file>
+            <target>tab</target>
+          </action>
+          <action type="write_pv">
+            <description>Phase Selected</description>
+            <pv_name>$(prefix)SERVC-$(suff1)1:BLMSEL</pv_name>
+            <value>0</value>
+          </action>
+        </actions>
+        <text>Phase Control</text>
+        <x>20</x>
+        <y>45</y>
+        <width>175</width>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="255" green="255" blue="255">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0!=1">
+              <value>false</value>
+            </exp>
+            <pv_name>$(prefix)SERVC-$(suff1)1:BLPDISP</pv_name>
+          </rule>
+        </rules>
+        <tooltip>$(actions)</tooltip>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Control Disabled Label</name>
+        <class>Not Label</class>
+        <text>DISABLED
+
+Contact Control
+Room</text>
+        <x>10</x>
+        <y>5</y>
+        <width>195</width>
+        <height>75</height>
+        <font>
+          <font family="Arial" style="BOLD" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="MAJOR" red="255" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <rules>
+          <rule name="visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0!=1">
+              <value>false</value>
+            </exp>
+            <pv_name>$(prefix)SERVC-$(suff1)1:IDBLENA</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="symbol" version="2.0.0">
+        <name>E-Stop Button</name>
+        <pv_name>$(prefix)SERVC-$(suff1)1:ESTOP</pv_name>
+        <symbols>
+          <symbol>../../symbols/estop.svg</symbol>
+          <symbol>../../symbols/estop-pressed.svg</symbol>
+        </symbols>
+        <x>70</x>
+        <y>90</y>
+        <width>75</width>
+        <height>75</height>
+        <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
+        <fallback_symbol use_class="true">https://cs-web-symbol.diamond.ac.uk/catalogue/default_symbol.png</fallback_symbol>
+      </widget>
+    </widget>
+  </widget>
+</display>
