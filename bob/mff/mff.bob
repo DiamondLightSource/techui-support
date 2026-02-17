@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-02-09 13:19:57 by kgv66629-->
+<display version="2.0.0">
+  <name>Motorised Filter Flipper</name>
+  <widget type="label" version="2.0.0">
+    <name>Title</name>
+    <text>$(P)</text>
+    <x>40</x>
+    <y>20</y>
+    <width>200</width>
+    <height>70</height>
+    <font>
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <pv_name>$(P):TOGGLE</pv_name>
+    <text>Toggle</text>
+    <x>30</x>
+    <y>60</y>
+    <width>210</width>
+    <height>50</height>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(P):STA</pv_name>
+    <x>206</x>
+    <y>123</y>
+    <width>30</width>
+    <height>30</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Position</text>
+    <x>40</x>
+    <y>129</y>
+    <width>196</width>
+    <height>30</height>
+  </widget>
+</display>
