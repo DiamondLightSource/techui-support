@@ -119,3 +119,15 @@ digitelMpc.digitelMpcIonp:
   file: "digitelMpc/digitelMpcIonp.bob"
   prefix: "$(P)"
   type: "embedded"
+
+# Mirrors
+
+mff.mff:
+  file: "mff/mff.bob"
+  prefix: "$(P)"
+  type: "related"
+
+alignmentMirror.mirror:
+  file: "alignmentMirror/mirror.bob"
+  prefix: "$(P)"
+  type: "related"
