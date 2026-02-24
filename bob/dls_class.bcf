@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-02-24 08:22:16 by uns32131-->
 <display version="2.0.0">
   <name>Widget Classes</name>
   <y use_class="true">0</y>
@@ -119,7 +120,7 @@
   <widget type="label" version="2.0.0">
     <name>DEFAULT</name>
     <text>Label</text>
-    <x>450</x>
+    <x>420</x>
     <y>150</y>
     <width>116</width>
     <font use_class="true">
@@ -134,8 +135,8 @@
       <color name="Background" red="255" green="255" blue="255">
       </color>
     </background_color>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">0</vertical_alignment>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
     <rotation_step use_class="true">0</rotation_step>
     <wrap_words use_class="true">true</wrap_words>
   </widget>
@@ -240,7 +241,7 @@
       </color>
     </foreground_color>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>DEFAULT</name>
     <x>20</x>
     <y>260</y>
@@ -255,6 +256,10 @@
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
+    <line_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </line_color>
     <background_color use_class="true">
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
@@ -284,31 +289,6 @@
       <item>Item 1</item>
       <item>Item 2</item>
     </items>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>DEFAULT</name>
-    <x>600</x>
-    <y>110</y>
-    <width>170</width>
-    <height>30</height>
-    <font use_class="true">
-      <font family="Arial" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color use_class="true">
-      <color red="184" green="195" blue="223">
-      </color>
-    </background_color>
-    <horizontal_alignment use_class="true">1</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <border_color use_class="true">
-      <color red="196" green="196" blue="196">
-      </color>
-    </border_color>
   </widget>
   <widget type="tabs" version="2.0.0">
     <name>DEFAULT</name>
@@ -542,8 +522,8 @@
   </widget>
   <widget type="radio" version="2.0.0">
     <name>DEFAULT</name>
-    <x>910</x>
-    <y>480</y>
+    <x>820</x>
+    <y>490</y>
     <width>130</width>
     <height>100</height>
     <items>
@@ -580,7 +560,7 @@
     <width>40</width>
     <height>40</height>
     <off_color use_class="true">
-      <color name="Off" red="237" green="237" blue="237">
+      <color name="Off" red="60" green="100" blue="60">
       </color>
     </off_color>
     <on_color use_class="true">
@@ -610,7 +590,7 @@
     <width>40</width>
     <height>40</height>
     <off_color use_class="true">
-      <color name="Off" red="237" green="237" blue="237">
+      <color name="Off" red="60" green="100" blue="60">
       </color>
     </off_color>
     <on_color use_class="true">
@@ -625,7 +605,7 @@
     <width>40</width>
     <height>40</height>
     <off_color use_class="true">
-      <color name="Off" red="237" green="237" blue="237">
+      <color name="Off" red="60" green="100" blue="60">
       </color>
     </off_color>
     <on_color use_class="true">
@@ -644,7 +624,7 @@
         <value use_class="true">0</value>
         <label use_class="true">State 1</label>
         <color use_class="true">
-          <color name="Off" red="237" green="237" blue="237">
+          <color name="Off" red="60" green="100" blue="60">
           </color>
         </color>
       </state>
@@ -658,7 +638,7 @@
       </state>
     </states>
     <fallback_color use_class="true">
-      <color name="Off" red="237" green="237" blue="237">
+      <color name="Off" red="60" green="100" blue="60">
       </color>
     </fallback_color>
   </widget>
@@ -717,5 +697,51 @@
     <y>133</y>
     <width>90</width>
     <height>60</height>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>DEFAULT</name>
+    <x>600</x>
+    <y>110</y>
+    <width>170</width>
+    <height>30</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>DEFAULT</name>
+    <x>810</x>
+    <y>710</y>
+    <width>320</width>
+    <height>160</height>
+    <style use_class="true">3</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
   </widget>
 </display>
