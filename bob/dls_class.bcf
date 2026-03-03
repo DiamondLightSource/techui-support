@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-03-03 13:40:38 by uns32131-->
 <display version="2.0.0">
   <name>Widget Classes</name>
   <y use_class="true">0</y>
   <background_color use_class="true">
-    <color name="Read_Background" red="240" green="240" blue="240">
+    <color red="20" green="22" blue="29">
     </color>
   </background_color>
   <widget type="action_button" version="3.0.0">
@@ -17,11 +18,11 @@
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="255" green="255" blue="255">
+      <color red="153" green="153" blue="169">
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color red="29" green="41" blue="69">
+      <color red="23" green="68" blue="169">
       </color>
     </background_color>
     <tooltip>$(actions)</tooltip>
@@ -37,11 +38,11 @@
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+      <color red="153" green="153" blue="169">
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color red="255" green="255" blue="255">
+      <color red="26" green="29" blue="38">
       </color>
     </background_color>
     <tooltip>$(actions)</tooltip>
@@ -56,7 +57,7 @@
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+      <color red="170" green="173" blue="193">
       </color>
     </foreground_color>
     <background_color use_class="true">
@@ -80,7 +81,7 @@
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+      <color red="170" green="173" blue="193">
       </color>
     </foreground_color>
     <background_color use_class="true">
@@ -104,7 +105,7 @@
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+      <color red="170" green="173" blue="193">
       </color>
     </foreground_color>
     <background_color use_class="true">
@@ -127,7 +128,7 @@
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+      <color red="170" green="173" blue="193">
       </color>
     </foreground_color>
     <background_color use_class="true">
@@ -150,11 +151,11 @@
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color red="220" green="220" blue="233">
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color red="255" green="255" blue="255">
+      <color red="26" green="29" blue="38">
       </color>
     </background_color>
     <precision use_class="true">-1</precision>
@@ -179,11 +180,11 @@
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color red="255" green="255" blue="255">
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color red="184" green="195" blue="223">
+      <color red="26" green="28" blue="38" alpha="191">
       </color>
     </background_color>
     <precision use_class="true">-1</precision>
@@ -204,11 +205,11 @@
     <width>40</width>
     <height>40</height>
     <off_color use_class="true">
-      <color red="237" green="237" blue="237">
+      <color red="223" green="232" blue="237">
       </color>
     </off_color>
     <on_color use_class="true">
-      <color name="Write_Background" red="128" green="255" blue="255">
+      <color red="50" green="193" blue="218">
       </color>
     </on_color>
     <font use_class="true">
@@ -224,11 +225,11 @@
     <width>78</width>
     <height>20</height>
     <off_color use_class="true">
-      <color red="237" green="237" blue="237">
+      <color red="28" green="30" blue="38">
       </color>
     </off_color>
     <on_color use_class="true">
-      <color red="0" green="222" blue="0">
+      <color red="85" green="124" blue="210">
       </color>
     </on_color>
     <font use_class="true">
@@ -236,11 +237,11 @@
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+      <color red="170" green="173" blue="193">
       </color>
     </foreground_color>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>DEFAULT</name>
     <x>20</x>
     <y>260</y>
@@ -252,11 +253,15 @@
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+      <color red="145" green="153" blue="166">
       </color>
     </foreground_color>
+    <line_color use_class="true">
+      <color red="145" green="153" blue="166">
+      </color>
+    </line_color>
     <background_color use_class="true">
-      <color name="Read_Background" red="240" green="240" blue="240">
+      <color red="26" green="29" blue="38">
       </color>
     </background_color>
   </widget>
@@ -269,15 +274,15 @@
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+      <color red="153" green="153" blue="169">
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color name="Background" red="255" green="255" blue="255">
+      <color red="26" green="29" blue="38">
       </color>
     </background_color>
     <selected_color use_class="true">
-      <color name="Background" red="255" green="255" blue="255">
+      <color red="50" green="193" blue="218">
       </color>
     </selected_color>
     <items>
@@ -300,7 +305,7 @@
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color red="184" green="195" blue="223">
+      <color red="144" green="155" blue="183">
       </color>
     </background_color>
     <horizontal_alignment use_class="true">1</horizontal_alignment>
@@ -332,6 +337,11 @@
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
+    <background_color use_class="true">
+      <color red="26" green="29" blue="38">
+      </color>
+    </background_color>
+    <active_tab>1</active_tab>
   </widget>
   <widget type="table" version="2.0.0">
     <name>DEFAULT</name>
@@ -345,11 +355,11 @@
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+      <color red="170" green="173" blue="193">
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color name="Background" red="255" green="255" blue="255">
+      <color red="26" green="29" blue="38">
       </color>
     </background_color>
     <columns>
@@ -412,11 +422,11 @@
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="255" green="255" blue="255">
+      <color red="153" green="153" blue="169">
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color red="29" green="41" blue="69">
+      <color red="23" green="68" blue="169">
       </color>
     </background_color>
   </widget>
@@ -428,11 +438,11 @@
     <height>40</height>
     <off_label>Secondary button</off_label>
     <off_color use_class="true">
-      <color red="237" green="237" blue="237">
+      <color red="185" green="212" blue="211">
       </color>
     </off_color>
     <on_color use_class="true">
-      <color red="56" green="206" blue="56">
+      <color red="11" green="112" blue="193">
       </color>
     </on_color>
     <font use_class="true">
@@ -440,11 +450,11 @@
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+      <color red="153" green="154" blue="169">
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color red="255" green="255" blue="255">
+      <color red="26" green="29" blue="38">
       </color>
     </background_color>
   </widget>
@@ -455,11 +465,11 @@
     <width>225</width>
     <height>40</height>
     <fill_color use_class="true">
-      <color red="76" green="100" blue="171">
+      <color red="28" green="68" blue="169">
       </color>
     </fill_color>
     <background_color use_class="true">
-      <color red="250" green="250" blue="250">
+      <color red="26" green="29" blue="38">
       </color>
     </background_color>
   </widget>
@@ -468,11 +478,11 @@
     <x>375</x>
     <y>590</y>
     <background_color use_class="true">
-      <color name="Background" red="255" green="255" blue="255">
+      <color red="19" green="21" blue="28">
       </color>
     </background_color>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color red="170" green="173" blue="193">
       </color>
     </foreground_color>
     <color_map use_class="true">
@@ -511,6 +521,13 @@
     <name>DEFAULT</name>
     <x>30</x>
     <y>620</y>
+    <background_color use_class="true">
+      <color red="26" green="29" blue="38">
+      </color>
+    </background_color>
+    <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
     <fallback_symbol use_class="true">https://cs-web-symbol.diamond.ac.uk/catalogue/default_symbol.png</fallback_symbol>
   </widget>
   <widget type="combo" version="2.0.0">
@@ -525,11 +542,11 @@
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+      <color red="153" green="153" blue="169">
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color name="Background" red="255" green="255" blue="255">
+      <color red="26" green="29" blue="38">
       </color>
     </background_color>
     <items>
@@ -546,6 +563,14 @@
     <y>480</y>
     <width>130</width>
     <height>100</height>
+    <font use_class="true">
+      <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="170" green="173" blue="193">
+      </color>
+    </foreground_color>
     <items>
       <item>Item 1</item>
       <item>Item 2</item>
@@ -558,7 +583,7 @@
     <width>120</width>
     <height>30</height>
     <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+      <color red="170" green="173" blue="193">
       </color>
     </foreground_color>
   </widget>
@@ -569,9 +594,37 @@
     <width>230</width>
     <height>240</height>
     <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+      <color red="170" green="173" blue="193">
       </color>
     </foreground_color>
+    <background_color use_class="true">
+      <color red="19" green="21" blue="28">
+      </color>
+    </background_color>
+    <y_axes>
+      <y_axis>
+        <title>Y</title>
+        <autoscale>false</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>false</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+          </font>
+        </scale_font>
+        <on_right>false</on_right>
+        <visible>true</visible>
+        <color>
+          <color red="170" green="173" blue="193">
+          </color>
+        </color>
+      </y_axis>
+    </y_axes>
   </widget>
   <widget type="led" version="2.0.0">
     <name>ERROR</name>
@@ -693,8 +746,8 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>COMMENT</name>
-    <x>860</x>
-    <y>150</y>
+    <x>840</x>
+    <y>110</y>
     <width>140</width>
     <height>60</height>
     <font use_class="true">
@@ -702,7 +755,7 @@
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+      <color red="170" green="173" blue="193">
       </color>
     </foreground_color>
     <background_color use_class="true">
@@ -713,9 +766,47 @@
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <text>Label</text>
-    <x>860</x>
-    <y>133</y>
+    <x>850</x>
+    <y>83</y>
     <width>90</width>
     <height>60</height>
+    <foreground_color use_class="true">
+      <color red="170" green="173" blue="193">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="navtabs" version="2.0.0">
+    <name>DEFAULT</name>
+    <x>830</x>
+    <y>572</y>
+    <selected_color use_class="true">
+      <color red="36" green="39" blue="48">
+      </color>
+    </selected_color>
+    <deselected_color use_class="true">
+      <color red="26" green="29" blue="38">
+      </color>
+    </deselected_color>
+  </widget>
+  <widget type="meter" version="3.0.0">
+    <name>DEFAULT</name>
+    <x>1080</x>
+    <y>370</y>
+    <foreground_color use_class="true">
+      <color red="200" green="200" blue="223">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="26" green="28" blue="38">
+      </color>
+    </background_color>
+    <needle_color use_class="true">
+      <color red="255" green="0" blue="0">
+      </color>
+    </needle_color>
+    <knob_color use_class="true">
+      <color red="0" green="0" blue="0">
+      </color>
+    </knob_color>
   </widget>
 </display>
