@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-03-11 08:39:56 by uns32131-->
+<!--Saved on 2026-03-26 08:47:59 by uns32131-->
 <display version="2.0.0">
   <name>Widget Classes</name>
   <y use_class="true">0</y>
@@ -11,13 +11,28 @@
     <rule name="darkmode" prop_id="background_color" out_exp="false">
       <exp bool_exp="pv0==1">
         <value>
-          <color red="10" green="10" blue="10">
+          <color red="44" green="44" blue="48">
           </color>
         </value>
       </exp>
       <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
     </rule>
   </rules>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>790</x>
+    <y>810</y>
+    <width>1670</width>
+    <height>1110</height>
+    <line_color use_class="true">
+      <color red="0" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color use_class="true">
+      <color red="44" green="44" blue="48">
+      </color>
+    </background_color>
+  </widget>
   <widget type="action_button" version="3.0.0">
     <name>DEFAULT</name>
     <x>230</x>
@@ -67,7 +82,7 @@
     <rules use_class="true">
       <rule name="darkmode" prop_id="class" out_exp="true">
         <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
+          <expression>"DARKMODE_PV"</expression>
         </exp>
         <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
       </rule>
@@ -98,7 +113,7 @@
     <rules use_class="true">
       <rule name="darkmode" prop_id="class" out_exp="true">
         <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
+          <expression>"DARKMODE_1"</expression>
         </exp>
         <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
       </rule>
@@ -130,7 +145,7 @@
     <rules use_class="true">
       <rule name="darkmode" prop_id="class" out_exp="true">
         <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
+          <expression>"DARKMODE_2"</expression>
         </exp>
         <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
       </rule>
@@ -162,7 +177,7 @@
     <rules use_class="true">
       <rule name="darkmode" prop_id="class" out_exp="true">
         <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
+          <expression>"DARKMODE_3"</expression>
         </exp>
         <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
       </rule>
@@ -683,20 +698,6 @@
       </rule>
     </rules>
   </widget>
-  <widget type="symbol" version="2.0.0">
-    <name>DEFAULT</name>
-    <x>30</x>
-    <y>620</y>
-    <rules use_class="true">
-      <rule name="darkmode" prop_id="class" out_exp="true">
-        <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
-        </exp>
-        <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
-      </rule>
-    </rules>
-    <fallback_symbol use_class="true">https://cs-web-symbol.diamond.ac.uk/catalogue/default_symbol.png</fallback_symbol>
-  </widget>
   <widget type="combo" version="2.0.0">
     <name>DEFAULT</name>
     <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-1</pv_name>
@@ -734,8 +735,8 @@
   </widget>
   <widget type="radio" version="2.0.0">
     <name>DEFAULT</name>
-    <x>800</x>
-    <y>207</y>
+    <x>820</x>
+    <y>260</y>
     <width>130</width>
     <height>100</height>
     <rules use_class="true">
@@ -976,7 +977,7 @@
     <rules use_class="true">
       <rule name="darkmode" prop_id="class" out_exp="true">
         <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
+          <expression>"DARKMODE_4"</expression>
         </exp>
         <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
       </rule>
@@ -985,14 +986,14 @@
   <widget type="label" version="2.0.0">
     <name>DEFAULT_5</name>
     <text>Label</text>
-    <x>800</x>
-    <y>20</y>
+    <x>920</x>
+    <y>48</y>
     <width>90</width>
     <height>60</height>
     <rules use_class="true">
       <rule name="darkmode" prop_id="class" out_exp="true">
         <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
+          <expression>"DARKMODE_5"</expression>
         </exp>
         <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
       </rule>
@@ -1047,7 +1048,7 @@
     <rules use_class="true">
       <rule name="darkmode" prop_id="class" out_exp="true">
         <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
+          <expression>"DARKMODE_PV"</expression>
         </exp>
         <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
       </rule>
@@ -1080,7 +1081,7 @@
     <rules use_class="true">
       <rule name="darkmode" prop_id="class" out_exp="true">
         <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
+          <expression>"DARKMODE_1"</expression>
         </exp>
         <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
       </rule>
@@ -1112,7 +1113,7 @@
     <rules use_class="true">
       <rule name="darkmode" prop_id="class" out_exp="true">
         <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
+          <expression>"DARKMODE_2"</expression>
         </exp>
         <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
       </rule>
@@ -1144,7 +1145,7 @@
     <rules use_class="true">
       <rule name="darkmode" prop_id="class" out_exp="true">
         <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
+          <expression>"DARKMODE_3"</expression>
         </exp>
         <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
       </rule>
@@ -1248,7 +1249,7 @@
         <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
       </rule>
     </rules>
-    <enabled use_class="true">false</enabled>
+    <enabled use_class="true">true</enabled>
     <border_width use_class="true">2</border_width>
     <border_color use_class="true">
       <color red="184" green="195" blue="223">
@@ -1497,7 +1498,6 @@
     <name>DARKMODE</name>
     <x>911</x>
     <y>931</y>
-    <height>40</height>
     <off_color use_class="true">
       <color red="237" green="237" blue="237">
       </color>
@@ -1675,7 +1675,7 @@
     <x>911</x>
     <y>1468</y>
     <background_color use_class="true">
-      <color red="26" green="29" blue="38">
+      <color red="23" green="68" blue="169">
       </color>
     </background_color>
     <rules use_class="true">
@@ -1813,7 +1813,7 @@ $(actions)</tooltip>
         <on_right>false</on_right>
         <visible>true</visible>
         <color>
-          <color red="170" green="173" blue="193">
+          <color red="233" green="233" blue="233">
           </color>
         </color>
       </y_axis>
@@ -1860,7 +1860,7 @@ $(actions)</tooltip>
     <rules use_class="true">
       <rule name="darkmode" prop_id="class" out_exp="true">
         <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
+          <expression>"DARKMODE_5"</expression>
         </exp>
         <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
       </rule>
@@ -1936,5 +1936,25 @@ $(actions)</tooltip>
       <color red="51" green="60" blue="100">
       </color>
     </line_color>
+  </widget>
+  <widget type="symbol" version="2.0.0">
+    <name>CAMERA</name>
+    <pv_name use_class="true"></pv_name>
+    <symbols use_class="true">
+      <symbol use_class="true">techui-support/symbols/camera-1.svg</symbol>
+    </symbols>
+    <x>1760</x>
+    <y>1170</y>
+    <rules use_class="true">
+      <rule name="darkmode" prop_id="symbols[0]" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>techui-support/symbols/camera-1_darkmode.svg</value>
+        </exp>
+        <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
   </widget>
 </display>
