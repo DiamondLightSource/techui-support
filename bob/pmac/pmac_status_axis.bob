@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-04-14 11:53:33 by muf47163-->
+<!--Saved on 2026-04-15 09:16:07 by muf47163-->
 <display version="2.0.0">
   <name>$(pmac):$(axis) status</name>
-  <width>365</width>
-  <height>1500</height>
-  <background_color>
-    <color name="Canvas" red="200" green="200" blue="200">
+  <y use_class="true">0</y>
+  <width>405</width>
+  <height>1235</height>
+  <background_color use_class="true">
+    <color name="Read_Background" red="240" green="240" blue="240">
     </color>
   </background_color>
   <actions>
@@ -14,1593 +15,1538 @@
   <grid_step_y>5</grid_step_y>
   <widget type="label" version="2.0.0">
     <name>Title</name>
+    <class>TITLE</class>
     <text>$(pmac) axis $(axis) status</text>
     <x>1</x>
     <y>1</y>
-    <width>364</width>
+    <width>404</width>
     <height>29</height>
-    <font>
-      <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
+    <font use_class="true">
+      <font family="Arial" style="BOLD" size="22.0">
       </font>
     </font>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color>
-      <color name="Grey 50%" red="128" green="128" blue="128">
+    <background_color use_class="true">
+      <color name="Transparent" red="255" green="255" blue="255" alpha="0">
       </color>
     </background_color>
     <transparent>false</transparent>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
     <actions>
     </actions>
-    <border_width>1</border_width>
     <border_color>
       <color name="Black" red="0" green="0" blue="0">
       </color>
     </border_color>
   </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>Info:Rectangle</name>
-    <macros>
-      <pv_name></pv_name>
-    </macros>
-    <x>5</x>
-    <y>74</y>
-    <width>361</width>
-    <height>112</height>
-    <line_width>0</line_width>
-    <line_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="Grey 65%" red="166" green="166" blue="166">
-      </color>
-    </background_color>
-    <actions>
-    </actions>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Info:Title</name>
-    <text>Info</text>
-    <x>6</x>
-    <y>56</y>
-    <width>84</width>
-    <height>18</height>
-    <font>
-      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+  <widget type="group" version="3.0.0">
+    <name>Info</name>
+    <x>10</x>
+    <y>45</y>
+    <width>380</width>
+    <height>160</height>
+    <style use_class="true">0</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color>
-      <color name="Grey 50%" red="128" green="128" blue="128">
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
-    <transparent>false</transparent>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_width>1</border_width>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Info:DescriptionLabel</name>
+      <class>Label</class>
+      <text>Description</text>
+      <width>111</width>
+      <height>30</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Info:PositionLabel</name>
+      <class>Label</class>
+      <text>Position</text>
+      <y>30</y>
+      <width>111</width>
+      <height>30</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Info:VelocityLabel</name>
+      <class>Label</class>
+      <text>Velocity</text>
+      <y>60</y>
+      <width>111</width>
+      <height>30</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Info:FollowingErrorLabel</name>
+      <class>Label</class>
+      <text>Following error</text>
+      <y>90</y>
+      <width>111</width>
+      <height>30</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Status</name>
+    <x>10</x>
+    <y>209</y>
+    <width>380</width>
+    <height>1015</height>
+    <style use_class="true">0</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
       </color>
-    </border_color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status2Label:5</name>
+      <class>Label</class>
+      <text>(CS-1)# bit 1</text>
+      <x>25</x>
+      <y>427</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status2Label:6</name>
+      <class>Label</class>
+      <text>(CS-1)# bit 2</text>
+      <x>25</x>
+      <y>447</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status2Label:7</name>
+      <class>Label</class>
+      <text>(CS-1)# bit 3 (MSB)</text>
+      <x>25</x>
+      <y>467</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status2Label:8</name>
+      <class>Label</class>
+      <text>Rapid max velocity select (Ixx90)</text>
+      <x>25</x>
+      <y>487</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status2Label:9</name>
+      <class>Label</class>
+      <text>Sign/magnitude servo enabled (Ixx96)</text>
+      <x>25</x>
+      <y>507</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status2Label:10</name>
+      <class>Label</class>
+      <text>Software capture enabled (Ixx97 bit 0)</text>
+      <x>25</x>
+      <y>527</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status2Label:11</name>
+      <class>Label</class>
+      <text>Capture on error enabled (Ixx97 bit 1)</text>
+      <x>25</x>
+      <y>547</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status2Label:12</name>
+      <class>Label</class>
+      <text>Position follow enabled (Ixx06 bit 0)</text>
+      <x>25</x>
+      <y>567</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status2Label:13</name>
+      <class>Label</class>
+      <text>Position follow offset mode (Ixx06 bit 1)</text>
+      <x>25</x>
+      <y>587</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status2Label:14</name>
+      <class>Label</class>
+      <text>Commutation enable (Ixx01 bit 0)</text>
+      <x>25</x>
+      <y>607</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status2Label:15</name>
+      <class>Label</class>
+      <text>Y-addr commute enc (Ixx01 bit 1)</text>
+      <x>25</x>
+      <y>627</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Status:Status3</name>
+      <pv_name>$(pmac):AXIS$(axis):status3</pv_name>
+      <width>20</width>
+      <height>320</height>
+      <numBits>16</numBits>
+      <bitReverse>true</bitReverse>
+      <horizontal>false</horizontal>
+      <square>true</square>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </on_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font use_class="true">
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="onColorAlarm" prop_id="on_color" out_exp="false">
+          <exp bool_exp="pvLegacySev0==-1">
+            <value>
+              <color name="Invalid" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(pv_name)</pv_name>
+        </rule>
+        <rule name="offColorAlarm" prop_id="off_color" out_exp="false">
+          <exp bool_exp="pvLegacySev0==-1">
+            <value>
+              <color name="Grey 25%" red="64" green="64" blue="64">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(pv_name)</pv_name>
+        </rule>
+      </rules>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status3Label:0</name>
+      <class>Label</class>
+      <text>In-position true</text>
+      <x>25</x>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status3Label:1</name>
+      <class>Label</class>
+      <text>Warning following error exceeded</text>
+      <x>25</x>
+      <y>20</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status3Label:2</name>
+      <class>Label</class>
+      <text>Fatal following error exceeded</text>
+      <x>25</x>
+      <y>40</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status3Label:3</name>
+      <class>Label</class>
+      <text>Amplifier fault error</text>
+      <x>25</x>
+      <y>60</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status3Label:4</name>
+      <class>Label</class>
+      <text>Backlash direction flag</text>
+      <x>25</x>
+      <y>80</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status3Label:5</name>
+      <class>Label</class>
+      <text>I2T amplifier fault error</text>
+      <x>25</x>
+      <y>100</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status3Label:6</name>
+      <class>Label</class>
+      <text>Integrated fatal following error</text>
+      <x>25</x>
+      <y>120</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status3Label:7</name>
+      <class>Label</class>
+      <text>Trigger move</text>
+      <x>25</x>
+      <y>140</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status3Label:8</name>
+      <class>Label</class>
+      <text>Phasing search error</text>
+      <x>25</x>
+      <y>160</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status3Label:9</name>
+      <class>Label</class>
+      <text>Motor phase request</text>
+      <x>25</x>
+      <y>180</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status3Label:10</name>
+      <class>Label</class>
+      <text>Home complete</text>
+      <x>25</x>
+      <y>200</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status3Label:11</name>
+      <class>Label</class>
+      <text>Stopped on position limit</text>
+      <x>25</x>
+      <y>220</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status3Label:12</name>
+      <class>Label</class>
+      <text>Desired position limit stop</text>
+      <x>25</x>
+      <y>240</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status3Label:13</name>
+      <class>Label</class>
+      <text>Foreground in-position</text>
+      <x>25</x>
+      <y>260</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status3Label:14</name>
+      <class>Label</class>
+      <text>(Reserved for future use)</text>
+      <x>25</x>
+      <y>280</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status3Label:15</name>
+      <class>Label</class>
+      <text>Assigned to CS</text>
+      <x>25</x>
+      <y>300</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Status:Status2</name>
+      <pv_name>$(pmac):AXIS$(axis):status2</pv_name>
+      <y>327</y>
+      <width>20</width>
+      <height>320</height>
+      <numBits>16</numBits>
+      <bitReverse>true</bitReverse>
+      <horizontal>false</horizontal>
+      <square>true</square>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </on_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font use_class="true">
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="onColorAlarm" prop_id="on_color" out_exp="false">
+          <exp bool_exp="pvLegacySev0==-1">
+            <value>
+              <color name="Invalid" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(pv_name)</pv_name>
+        </rule>
+        <rule name="offColorAlarm" prop_id="off_color" out_exp="false">
+          <exp bool_exp="pvLegacySev0==-1">
+            <value>
+              <color name="Grey 25%" red="64" green="64" blue="64">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(pv_name)</pv_name>
+        </rule>
+      </rules>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status2Label:0</name>
+      <class>Label</class>
+      <text>CS axis definition bit 0</text>
+      <x>25</x>
+      <y>327</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status2Label:1</name>
+      <class>Label</class>
+      <text>CS axis definition bit 1</text>
+      <x>25</x>
+      <y>347</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status2Label:2</name>
+      <class>Label</class>
+      <text>CS axis definition bit 2</text>
+      <x>25</x>
+      <y>367</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status2Label:3</name>
+      <class>Label</class>
+      <text>CS axis definition bit 3</text>
+      <x>25</x>
+      <y>387</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status2Label:4</name>
+      <class>Label</class>
+      <text>(CS-1)# bit 0 (LSB)</text>
+      <x>25</x>
+      <y>407</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status1Label:14</name>
+      <class>Label</class>
+      <text>Negative end limit set (soft or hard)</text>
+      <x>25</x>
+      <y>934</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status1Label:15</name>
+      <class>Label</class>
+      <text>Motor activated (Ixx00)</text>
+      <x>25</x>
+      <y>954</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Status:Status1</name>
+      <pv_name>$(pmac):AXIS$(axis):status1</pv_name>
+      <y>654</y>
+      <width>20</width>
+      <height>320</height>
+      <numBits>16</numBits>
+      <bitReverse>true</bitReverse>
+      <horizontal>false</horizontal>
+      <square>true</square>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </on_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font use_class="true">
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="onColorAlarm" prop_id="on_color" out_exp="false">
+          <exp bool_exp="pvLegacySev0==-1">
+            <value>
+              <color name="Invalid" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(pv_name)</pv_name>
+        </rule>
+        <rule name="offColorAlarm" prop_id="off_color" out_exp="false">
+          <exp bool_exp="pvLegacySev0==-1">
+            <value>
+              <color name="Grey 25%" red="64" green="64" blue="64">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(pv_name)</pv_name>
+        </rule>
+      </rules>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status1Label:0</name>
+      <class>Label</class>
+      <text>User-written servo enabled (Ixx59 bit 0)</text>
+      <x>25</x>
+      <y>654</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status1Label:1</name>
+      <class>Label</class>
+      <text>User-written phase enabled (Ixx59 bit 1)</text>
+      <x>25</x>
+      <y>674</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status1Label:2</name>
+      <class>Label</class>
+      <text>Home search in progress</text>
+      <x>25</x>
+      <y>694</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status1Label:3</name>
+      <class>Label</class>
+      <text>Block request</text>
+      <x>25</x>
+      <y>714</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status1Label:4</name>
+      <class>Label</class>
+      <text>Abort deceleration in progress</text>
+      <x>25</x>
+      <y>734</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status1Label:5</name>
+      <class>Label</class>
+      <text>Desired velocity 0</text>
+      <x>25</x>
+      <y>754</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status1Label:6</name>
+      <class>Label</class>
+      <text>Data block error</text>
+      <x>25</x>
+      <y>774</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status1Label:7</name>
+      <class>Label</class>
+      <text>Dwell in progress</text>
+      <x>25</x>
+      <y>794</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status1Label:8</name>
+      <class>Label</class>
+      <text>Integration mode (Ixx30; 0 always)</text>
+      <x>25</x>
+      <y>814</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status1Label:9</name>
+      <class>Label</class>
+      <text>Move timer active</text>
+      <x>25</x>
+      <y>834</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status1Label:10</name>
+      <class>Label</class>
+      <text>Open loop mode</text>
+      <x>25</x>
+      <y>854</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status1Label:11</name>
+      <class>Label</class>
+      <text>Amiplifier enabled</text>
+      <x>25</x>
+      <y>874</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status1Label:12</name>
+      <class>Label</class>
+      <text>Ext servo algo enabled (Iyy00/Iyy50)</text>
+      <x>25</x>
+      <y>894</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Status:Status1Label:13</name>
+      <class>Label</class>
+      <text>Positive end limit set (soft or hard)</text>
+      <x>25</x>
+      <y>914</y>
+      <width>275</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
   </widget>
   <widget type="textupdate" version="2.0.0">
-    <name>Info:Description</name>
-    <pv_name>$(pmac):AXIS$(axis):DESC</pv_name>
-    <x>120</x>
-    <y>84</y>
+    <name>Info:FollowingError</name>
+    <pv_name>$(pmac):AXIS$(axis):FOLL_ERROR</pv_name>
+    <x>135</x>
+    <y>155</y>
     <width>236</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+    <height>30</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color>
-      <color name="Monitor: FG" red="96" green="255" blue="96">
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <background_color>
-      <color name="Monitor: BG" red="64" green="64" blue="64">
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
       </color>
     </background_color>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
     <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color name="Mid Green" red="0" green="196" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Info:DescriptionLabel</name>
-    <text>Description</text>
-    <x>10</x>
-    <y>84</y>
-    <width>111</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Info:PositionLabel</name>
-    <text>Position</text>
-    <x>10</x>
-    <y>109</y>
-    <width>111</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Info:VelocityLabel</name>
-    <text>Velocity</text>
-    <x>10</x>
-    <y>134</y>
-    <width>111</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Info:FollowingErrorLabel</name>
-    <text>Following error</text>
-    <x>10</x>
-    <y>159</y>
-    <width>111</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Info:Position</name>
-    <pv_name>$(pmac):AXIS$(axis):POSITION</pv_name>
-    <x>120</x>
-    <y>109</y>
-    <width>236</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="Monitor: FG" red="96" green="255" blue="96">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Monitor: BG" red="64" green="64" blue="64">
-      </color>
-    </background_color>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color name="Mid Green" red="0" green="196" blue="0">
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
       </color>
     </border_color>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Info:Velocity</name>
     <pv_name>$(pmac):AXIS$(axis):VELOCITY</pv_name>
-    <x>120</x>
-    <y>134</y>
+    <x>135</x>
+    <y>125</y>
     <width>236</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+    <height>30</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color>
-      <color name="Monitor: FG" red="96" green="255" blue="96">
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <background_color>
-      <color name="Monitor: BG" red="64" green="64" blue="64">
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
       </color>
     </background_color>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
     <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color name="Mid Green" red="0" green="196" blue="0">
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
       </color>
     </border_color>
   </widget>
   <widget type="textupdate" version="2.0.0">
-    <name>Info:FollowingError</name>
-    <pv_name>$(pmac):AXIS$(axis):FOLL_ERROR</pv_name>
-    <x>120</x>
-    <y>159</y>
+    <name>Info:Position</name>
+    <pv_name>$(pmac):AXIS$(axis):POSITION</pv_name>
+    <x>135</x>
+    <y>95</y>
     <width>236</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+    <height>30</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color>
-      <color name="Monitor: FG" red="96" green="255" blue="96">
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <background_color>
-      <color name="Monitor: BG" red="64" green="64" blue="64">
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
       </color>
     </background_color>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
     <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color name="Mid Green" red="0" green="196" blue="0">
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
       </color>
     </border_color>
   </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Title</name>
-    <text>Status</text>
-    <x>6</x>
-    <y>191</y>
-    <width>84</width>
-    <height>18</height>
-    <font>
-      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+  <widget type="textupdate" version="2.0.0">
+    <name>Info:Description</name>
+    <pv_name>$(pmac):AXIS$(axis):DESC</pv_name>
+    <x>135</x>
+    <y>65</y>
+    <width>236</width>
+    <height>30</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <background_color>
-      <color name="Grey 50%" red="128" green="128" blue="128">
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
       </color>
     </background_color>
-    <transparent>false</transparent>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>1</border_width>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>Status:Rectangle</name>
-    <macros>
-      <pv_name></pv_name>
-    </macros>
-    <x>5</x>
-    <y>209</y>
-    <width>361</width>
-    <height>960</height>
-    <line_width>0</line_width>
-    <line_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="Grey 65%" red="166" green="166" blue="166">
-      </color>
-    </background_color>
-    <actions>
-    </actions>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-  </widget>
-  <widget type="byte_monitor" version="2.0.0">
-    <name>Status:Status3</name>
-    <pv_name>$(pmac):AXIS$(axis):status3</pv_name>
-    <x>15</x>
-    <y>225</y>
-    <width>20</width>
-    <height>310</height>
-    <numBits>16</numBits>
-    <bitReverse>true</bitReverse>
-    <horizontal>false</horizontal>
-    <square>true</square>
-    <off_color>
-      <color name="Green LED: Off" red="0" green="96" blue="0">
-      </color>
-    </off_color>
-    <on_color>
-      <color name="Green LED: On" red="0" green="255" blue="0">
-      </color>
-    </on_color>
-    <foreground_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <actions>
-    </actions>
-    <rules>
-      <rule name="onColorAlarm" prop_id="on_color" out_exp="false">
-        <exp bool_exp="pvLegacySev0==-1">
-          <value>
-            <color name="Invalid" red="255" green="255" blue="255">
-            </color>
-          </value>
-        </exp>
-        <pv_name>$(pv_name)</pv_name>
-      </rule>
-      <rule name="offColorAlarm" prop_id="off_color" out_exp="false">
-        <exp bool_exp="pvLegacySev0==-1">
-          <value>
-            <color name="Grey 25%" red="64" green="64" blue="64">
-            </color>
-          </value>
-        </exp>
-        <pv_name>$(pv_name)</pv_name>
-      </rule>
-    </rules>
     <border_alarm_sensitive>false</border_alarm_sensitive>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status3Label:0</name>
-    <text>In-position true</text>
-    <x>40</x>
-    <y>225</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status3Label:1</name>
-    <text>Warning following error exceeded</text>
-    <x>40</x>
-    <y>244</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status3Label:2</name>
-    <text>Fatal following error exceeded</text>
-    <x>40</x>
-    <y>263</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status3Label:3</name>
-    <text>Amplifier fault error</text>
-    <x>40</x>
-    <y>282</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status3Label:4</name>
-    <text>Backlash direction flag</text>
-    <x>40</x>
-    <y>301</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status3Label:5</name>
-    <text>I2T amplifier fault error</text>
-    <x>40</x>
-    <y>320</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status3Label:6</name>
-    <text>Integrated fatal following error</text>
-    <x>40</x>
-    <y>339</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status3Label:7</name>
-    <text>Trigger move</text>
-    <x>40</x>
-    <y>358</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status3Label:8</name>
-    <text>Phasing search error</text>
-    <x>40</x>
-    <y>377</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status3Label:9</name>
-    <text>Motor phase request</text>
-    <x>40</x>
-    <y>396</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status3Label:10</name>
-    <text>Home complete</text>
-    <x>40</x>
-    <y>415</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status3Label:11</name>
-    <text>Stopped on position limit</text>
-    <x>40</x>
-    <y>434</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status3Label:12</name>
-    <text>Desired position limit stop</text>
-    <x>40</x>
-    <y>453</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status3Label:13</name>
-    <text>Foreground in-position</text>
-    <x>40</x>
-    <y>472</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status3Label:14</name>
-    <text>(Reserved for future use)</text>
-    <x>40</x>
-    <y>491</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status3Label:15</name>
-    <text>Assigned to CS</text>
-    <x>40</x>
-    <y>510</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="byte_monitor" version="2.0.0">
-    <name>Status:Status2</name>
-    <pv_name>$(pmac):AXIS$(axis):status2</pv_name>
-    <x>15</x>
-    <y>540</y>
-    <width>20</width>
-    <height>310</height>
-    <numBits>16</numBits>
-    <bitReverse>true</bitReverse>
-    <horizontal>false</horizontal>
-    <square>true</square>
-    <off_color>
-      <color name="Green LED: Off" red="0" green="96" blue="0">
-      </color>
-    </off_color>
-    <on_color>
-      <color name="Green LED: On" red="0" green="255" blue="0">
-      </color>
-    </on_color>
-    <foreground_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <actions>
-    </actions>
-    <rules>
-      <rule name="onColorAlarm" prop_id="on_color" out_exp="false">
-        <exp bool_exp="pvLegacySev0==-1">
-          <value>
-            <color name="Invalid" red="255" green="255" blue="255">
-            </color>
-          </value>
-        </exp>
-        <pv_name>$(pv_name)</pv_name>
-      </rule>
-      <rule name="offColorAlarm" prop_id="off_color" out_exp="false">
-        <exp bool_exp="pvLegacySev0==-1">
-          <value>
-            <color name="Grey 25%" red="64" green="64" blue="64">
-            </color>
-          </value>
-        </exp>
-        <pv_name>$(pv_name)</pv_name>
-      </rule>
-    </rules>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-  </widget>
-  <widget type="byte_monitor" version="2.0.0">
-    <name>Status:Status1</name>
-    <pv_name>$(pmac):AXIS$(axis):status1</pv_name>
-    <x>15</x>
-    <y>855</y>
-    <width>20</width>
-    <height>310</height>
-    <numBits>16</numBits>
-    <bitReverse>true</bitReverse>
-    <horizontal>false</horizontal>
-    <square>true</square>
-    <off_color>
-      <color name="Green LED: Off" red="0" green="96" blue="0">
-      </color>
-    </off_color>
-    <on_color>
-      <color name="Green LED: On" red="0" green="255" blue="0">
-      </color>
-    </on_color>
-    <foreground_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <actions>
-    </actions>
-    <rules>
-      <rule name="onColorAlarm" prop_id="on_color" out_exp="false">
-        <exp bool_exp="pvLegacySev0==-1">
-          <value>
-            <color name="Invalid" red="255" green="255" blue="255">
-            </color>
-          </value>
-        </exp>
-        <pv_name>$(pv_name)</pv_name>
-      </rule>
-      <rule name="offColorAlarm" prop_id="off_color" out_exp="false">
-        <exp bool_exp="pvLegacySev0==-1">
-          <value>
-            <color name="Grey 25%" red="64" green="64" blue="64">
-            </color>
-          </value>
-        </exp>
-        <pv_name>$(pv_name)</pv_name>
-      </rule>
-    </rules>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status2Label:0</name>
-    <text>CS axis definition bit 0</text>
-    <x>40</x>
-    <y>540</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status2Label:1</name>
-    <text>CS axis definition bit 1</text>
-    <x>40</x>
-    <y>559</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status2Label:2</name>
-    <text>CS axis definition bit 2</text>
-    <x>40</x>
-    <y>578</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status2Label:3</name>
-    <text>CS axis definition bit 3</text>
-    <x>40</x>
-    <y>597</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status2Label:4</name>
-    <text>(CS-1)# bit 0 (LSB)</text>
-    <x>40</x>
-    <y>616</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status2Label:5</name>
-    <text>(CS-1)# bit 1</text>
-    <x>40</x>
-    <y>635</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status2Label:6</name>
-    <text>(CS-1)# bit 2</text>
-    <x>40</x>
-    <y>654</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status2Label:7</name>
-    <text>(CS-1)# bit 3 (MSB)</text>
-    <x>40</x>
-    <y>673</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status2Label:8</name>
-    <text>Rapid max velocity select (Ixx90)</text>
-    <x>40</x>
-    <y>692</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status2Label:9</name>
-    <text>Sign/magnitude servo enabled (Ixx96)</text>
-    <x>40</x>
-    <y>711</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status2Label:10</name>
-    <text>Software capture enabled (Ixx97 bit 0)</text>
-    <x>40</x>
-    <y>730</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status2Label:11</name>
-    <text>Capture on error enabled (Ixx97 bit 1)</text>
-    <x>40</x>
-    <y>749</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status2Label:12</name>
-    <text>Position follow enabled (Ixx06 bit 0)</text>
-    <x>40</x>
-    <y>768</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status2Label:13</name>
-    <text>Position follow offset mode (Ixx06 bit 1)</text>
-    <x>40</x>
-    <y>787</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status2Label:14</name>
-    <text>Commutation enable (Ixx01 bit 0)</text>
-    <x>40</x>
-    <y>806</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status2Label:15</name>
-    <text>Y-addr commute enc (Ixx01 bit 1)</text>
-    <x>40</x>
-    <y>825</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status1Label:0</name>
-    <text>User-written servo enabled (Ixx59 bit 0)</text>
-    <x>40</x>
-    <y>855</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status1Label:1</name>
-    <text>User-written phase enabled (Ixx59 bit 1)</text>
-    <x>40</x>
-    <y>874</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status1Label:2</name>
-    <text>Home search in progress</text>
-    <x>40</x>
-    <y>893</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status1Label:3</name>
-    <text>Block request</text>
-    <x>40</x>
-    <y>912</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status1Label:4</name>
-    <text>Abort deceleration in progress</text>
-    <x>40</x>
-    <y>931</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status1Label:5</name>
-    <text>Desired velocity 0</text>
-    <x>40</x>
-    <y>950</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status1Label:6</name>
-    <text>Data block error</text>
-    <x>40</x>
-    <y>969</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status1Label:7</name>
-    <text>Dwell in progress</text>
-    <x>40</x>
-    <y>988</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status1Label:8</name>
-    <text>Integration mode (Ixx30; 0 always)</text>
-    <x>40</x>
-    <y>1007</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status1Label:9</name>
-    <text>Move timer active</text>
-    <x>40</x>
-    <y>1026</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status1Label:10</name>
-    <text>Open loop mode</text>
-    <x>40</x>
-    <y>1045</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status1Label:11</name>
-    <text>Amiplifier enabled</text>
-    <x>40</x>
-    <y>1064</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status1Label:12</name>
-    <text>Ext servo algo enabled (Iyy00/Iyy50)</text>
-    <x>40</x>
-    <y>1083</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status1Label:13</name>
-    <text>Positive end limit set (soft or hard)</text>
-    <x>40</x>
-    <y>1102</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status1Label:14</name>
-    <text>Negative end limit set (soft or hard)</text>
-    <x>40</x>
-    <y>1121</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Status:Status1Label:15</name>
-    <text>Motor activated (Ixx00)</text>
-    <x>40</x>
-    <y>1140</y>
-    <width>275</width>
-    <foreground_color>
-      <color name="Text: FG" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="Canvas" red="200" green="200" blue="200">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="Black" red="0" green="0" blue="0">
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
       </color>
     </border_color>
   </widget>
