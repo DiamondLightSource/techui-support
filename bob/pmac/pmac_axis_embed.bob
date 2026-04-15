@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-04-14 16:04:10 by muf47163-->
+<display version="2.0.0">
+  <name>$(pmac) axis</name>
+  <y use_class="true">0</y>
+  <width>1171</width>
+  <height>25</height>
+  <background_color use_class="true">
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="label" version="2.0.0">
+    <name>AxisLabel</name>
+    <class>Label</class>
+    <text>$(axis)</text>
+    <x>15</x>
+    <width>40</width>
+    <font>
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Grouping Container</name>
+    <class>NO_LABEL</class>
+    <width>1171</width>
+    <height>25</height>
+    <style use_class="true">3</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </line_color>
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=0">
+          <value>true</value>
+        </exp>
+        <pv_name>$(pmac):M$(axis):CsRaw_RBV</pv_name>
+      </rule>
+    </rules>
+    <widget type="led" version="2.0.0">
+      <name>AxisDoneMoving</name>
+      <pv_name>$(pmac):M$(axis).DMOV</pv_name>
+      <bit>11</bit>
+      <x>945</x>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </on_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>Moving?
+$(pv_name)
+$(pv_value)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>AxisStatusButton</name>
+      <actions>
+        <action type="open_display">
+          <description>Open axis status</description>
+          <file>pmac_status_axis.bob</file>
+          <target>tab</target>
+        </action>
+      </actions>
+      <text>Status</text>
+      <x>1080</x>
+      <width>46</width>
+      <height>20</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>AxisStatusLED</name>
+      <pv_name>$(pmac):AXIS$(axis):status1</pv_name>
+      <bit>11</bit>
+      <x>1052</x>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </on_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>Amplifier enabled?
+$(pv_name)
+$(pv_value)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>MotorButton</name>
+    <actions>
+      <action type="open_display">
+        <description>Open motor detail</description>
+        <file>../motorApp_opi/motor_detail.bob</file>
+        <macros>
+          <DESC>$(P):AXIS$(axis)</DESC>
+          <P>$(P)</P>
+          <M>:M$(axis)</M>
+          <name>$(P):$(axis)</name>
+        </macros>
+        <target>tab</target>
+      </action>
+    </actions>
+    <text>Motor</text>
+    <x>1130</x>
+    <width>41</width>
+    <height>20</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>AxisKill</name>
+    <actions>
+      <action type="write_pv">
+        <description>Write PV</description>
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(pmac):M$(axis):KILL.PROC</pv_name>
+    <text>Kill</text>
+    <x>975</x>
+    <width>69</width>
+    <height>20</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>AxisCsAxisRBV</name>
+    <pv_name>$(pmac):M$(axis).RBV</pv_name>
+    <x>835</x>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>AxisDirectDemand</name>
+    <pv_name>$(pmac):M$(axis):DirectDemand</pv_name>
+    <x>730</x>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>AxisCsAxisRBV</name>
+    <pv_name>$(pmac):M$(axis):CsAxis_RBV</pv_name>
+    <x>655</x>
+    <width>60</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>AxisCsAxis</name>
+    <pv_name>$(pmac):M$(axis):CsAxis</pv_name>
+    <x>590</x>
+    <width>60</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>AxisCSPortRBV</name>
+    <pv_name>$(pmac):M$(axis):CsPort_RBV</pv_name>
+    <x>485</x>
+    <width>90</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>AxisCSPort</name>
+    <pv_name>$(pmac):M$(axis):CsPort</pv_name>
+    <x>380</x>
+    <height>20</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>AxisRawCS</name>
+    <pv_name>$(pmac):M$(axis):CsRaw_RBV</pv_name>
+    <x>320</x>
+    <width>46</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>AxisDescription</name>
+    <pv_name>$(pmac):AXIS$(axis):DESC</pv_name>
+    <x>65</x>
+    <width>241</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+</display>
