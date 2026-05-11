@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-05-05 11:32:32 by uns32131-->
+<!--Saved on 2026-05-11 14:30:00 by ryi58813-->
 <display version="2.0.0">
   <name>motor_embed</name>
   <width>220</width>
@@ -38,7 +38,7 @@
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P):$(M).TWR</pv_name>
+      <pv_name>$(P)$(M).TWR</pv_name>
       <text>-</text>
       <x>5</x>
       <y>10</y>
@@ -68,7 +68,7 @@
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P):$(M).TWF</pv_name>
+      <pv_name>$(P)$(M).TWF</pv_name>
       <text>+</text>
       <x>145</x>
       <y>10</y>
@@ -95,7 +95,7 @@
           <description>Open Display</description>
           <file>$(IOC)/pmacAxis.pvi.bob</file>
           <macros>
-            <M>:$(M)</M>
+            <M>$(M)</M>
             <P>$(P)</P>
           </macros>
           <target>tab</target>
@@ -129,7 +129,7 @@
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P):$(M).STOP</pv_name>
+      <pv_name>$(P)$(M).STOP</pv_name>
       <text>STOP</text>
       <x>130</x>
       <y>60</y>
@@ -151,7 +151,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Tweak Val</name>
-      <pv_name>$(P):$(M).TWV</pv_name>
+      <pv_name>$(P)$(M).TWV</pv_name>
       <x>45</x>
       <y>60</y>
       <width>80</width>
@@ -172,7 +172,7 @@
     </widget>
     <widget type="byte_monitor" version="2.0.0">
       <name>Moving</name>
-      <pv_name>$(P):$(M).DMOV</pv_name>
+      <pv_name>$(P)$(M).DMOV</pv_name>
       <x>156</x>
       <y>35</y>
       <width>20</width>
@@ -188,7 +188,7 @@
     </widget>
     <widget type="byte_monitor" version="2.0.0">
       <name>Serverity</name>
-      <pv_name>$(P):$(M).SEVR</pv_name>
+      <pv_name>$(P)$(M).SEVR</pv_name>
       <x>6</x>
       <y>35</y>
       <width>20</width>
@@ -204,7 +204,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>PV</name>
-      <pv_name>$(P):$(M)</pv_name>
+      <pv_name>$(P)$(M)</pv_name>
       <x>40</x>
       <y>10</y>
       <font>
@@ -224,7 +224,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Readback PV</name>
-      <pv_name>$(P):$(M).RBV</pv_name>
+      <pv_name>$(P)$(M).RBV</pv_name>
       <x>31</x>
       <y>35</y>
       <width>120</width>
