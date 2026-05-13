@@ -1,12 +1,25 @@
 # techui-support
 
-A submodule to supplement [techui-builder](git@github.com:DiamondLightSource/techui-builder)
+A submodule to supplement [techui-builder](git@github.com:DiamondLightSource/techui-builder).
 
-This contains summary .bob files used by Phoebus as well as SVG images/symbols for device components.
+This contains summary .bob files used by Phoebus as well as Lucide SVG icons for device components.
 
 Here are the most commonly used icons:
 
-## Vacuum
+| Widget | Symbol | Description
+| --- | --- | ---
+| Radiation Monitor | ![alt text](<lucide-icons/radiation.svg>) | (radiation)
+| Cryocooler | ![alt text](<lucide-icons/cryocooler.svg>) | (snowflake)
+| Camera | ![alt text](<lucide-icons/camera.svg>) | (cctv custom)
+| Lens | ![alt text](<lucide-icons/lens.svg>) | (lens-convex)
+| Oscilloscope | ![alt text](<lucide-icons/oscilloscope.svg>) | (audio-waveform)
+| Light Source | ![alt text](<lucide-icons/light-source.svg>) | (sun)
+| Ring On | <img src="lucide-icons/ring-on.svg" width="24" height="24" alt="ring-on"> | (custom)
+
+
+
+
+<!-- ## Vacuum
 
 | Widget | Symbol | Description
 | --- | --- | ---
@@ -64,4 +77,4 @@ Diode| ![alt text](<symbols/diode.svg>) |
 Cryocooler
 Zebra
 Panda
-| Ring | ![alt text](<symbols/ring-off.svg>)![alt text](<symbols/ring-on.svg>) | Stored beam off/on
+| Ring | ![alt text](<symbols/ring-off.svg>)![alt text](<symbols/ring-on.svg>) | Stored beam off/on -->
