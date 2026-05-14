@@ -8,16 +8,17 @@ Here are the most commonly used icons:
 
 | Widget | Symbol | Description
 | --- | --- | ---
-| Radiation Monitor | ![alt text](<new-icons/radiation.svg>) | (radiation)
-| Cryocooler | ![alt text](<new-icons/cryocooler.svg>) | (snowflake)
-| Camera | ![alt text](<new-icons/camera.svg>) | (cctv custom)
-| Lens | ![alt text](<new-icons/lens.svg>) | (lens-convex)
-| Oscilloscope | ![alt text](<new-icons/oscilloscope.svg>) | (audio-waveform)
-| Light Source | ![alt text](<new-icons/light-source.svg>) | (sun)
-| Ring On | <img src="new-icons/ring-on.svg" width="24" height="24" alt="ring-on"> | (custom)
-| Ring Off | <img src="new-icons/ring-off.svg" width="24" height="24" alt="ring-on"> | (custom)
-| Rotation Stage | ![alt text](<new-icons/rotatation-stage.svg>) | (rotate-cw)
-| Oscilloscope | ![alt text](<new-icons/translation-stage.svg>) | (move)
+| Radiation Monitor | ![alt text](<symbols/radiation.svg>) | (radiation)
+| Cryocooler | ![alt text](<symbols/cryocooler.svg>) | (snowflake)
+| Camera | ![alt text](<symbols/camera.svg>) | (cctv custom)
+| Lens | ![alt text](<symbols/lens.svg>) | (lens-convex)
+| Oscilloscope | ![alt text](<symbols/oscilloscope.svg>) | (audio-waveform)
+| Light Source | ![alt text](<symbols/light-source.svg>) | (sun)
+| Ring On | <img src="symbols/ring-on.svg" width="24" height="24" alt="ring-on"> | (custom)
+| Ring Off | <img src="symbols/ring-off.svg" width="24" height="24" alt="ring-on"> | (custom)
+| Rotation Stage | ![alt text](<symbols/rotatation-stage.svg>) | (rotate-cw)
+| Translation Stage | ![alt text](<symbols/translation-stage.svg>) | (move)
+| Camera with frame | ![alt text](<symbols/_IconButtonSquareLabel_.svg>) | (move)
 
 
 
