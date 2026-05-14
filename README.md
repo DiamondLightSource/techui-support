@@ -8,13 +8,16 @@ Here are the most commonly used icons:
 
 | Widget | Symbol | Description
 | --- | --- | ---
-| Radiation Monitor | ![alt text](<lucide-icons/radiation.svg>) | (radiation)
-| Cryocooler | ![alt text](<lucide-icons/cryocooler.svg>) | (snowflake)
-| Camera | ![alt text](<lucide-icons/camera.svg>) | (cctv custom)
-| Lens | ![alt text](<lucide-icons/lens.svg>) | (lens-convex)
-| Oscilloscope | ![alt text](<lucide-icons/oscilloscope.svg>) | (audio-waveform)
-| Light Source | ![alt text](<lucide-icons/light-source.svg>) | (sun)
-| Ring On | <img src="lucide-icons/ring-on.svg" width="24" height="24" alt="ring-on"> | (custom)
+| Radiation Monitor | ![alt text](<new-icons/radiation.svg>) | (radiation)
+| Cryocooler | ![alt text](<new-icons/cryocooler.svg>) | (snowflake)
+| Camera | ![alt text](<new-icons/camera.svg>) | (cctv custom)
+| Lens | ![alt text](<new-icons/lens.svg>) | (lens-convex)
+| Oscilloscope | ![alt text](<new-icons/oscilloscope.svg>) | (audio-waveform)
+| Light Source | ![alt text](<new-icons/light-source.svg>) | (sun)
+| Ring On | <img src="new-icons/ring-on.svg" width="24" height="24" alt="ring-on"> | (custom)
+| Ring Off | <img src="new-icons/ring-off.svg" width="24" height="24" alt="ring-on"> | (custom)
+| Rotation Stage | ![alt text](<new-icons/rotatation-stage.svg>) | (rotate-cw)
+| Oscilloscope | ![alt text](<new-icons/translation-stage.svg>) | (move)
 
 
 
