@@ -135,6 +135,6 @@ alignmentMirror.mirror:
 # Detectors
 
 fastcs_eiger.EigerController:
-  file: "eigerController/eiger_summary.bob"
+  file: "fastcs-eiger/eigerController.bob"
   prefix: "$(P)"
   type: "embedded"
