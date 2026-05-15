@@ -6,7 +6,7 @@ This contains summary .bob files used by Phoebus as well as Lucide SVG icons for
 
 Here are the most commonly used icons:
 
-| Widget | Symbol | Description
+| Description | Symbol | Lucide Ref
 | --- | --- | ---
 | Radiation Monitor | ![alt text](<symbols/radiation.svg>) | (radiation)
 | Cryocooler | ![alt text](<symbols/cryocooler.svg>) | (snowflake)
@@ -16,9 +16,17 @@ Here are the most commonly used icons:
 | Light Source | ![alt text](<symbols/light-source.svg>) | (sun)
 | Ring On | <img src="symbols/ring-on.svg" width="24" height="24" alt="ring-on"> | (custom)
 | Ring Off | <img src="symbols/ring-off.svg" width="24" height="24" alt="ring-on"> | (custom)
-| Rotation Stage | ![alt text](<symbols/rotatation-stage.svg>) | (rotate-cw)
+| Rotation Stage | ![alt text](<symbols/rotation-stage.svg>) | (rotate-cw)
 | Translation Stage | ![alt text](<symbols/translation-stage.svg>) | (move)
-| Camera with frame | ![alt text](<symbols/_IconButtonSquareLabel_.svg>) | (move)
+| Cog | ![alt text](<symbols/cog.svg>) | (cog)
+| | ![alt text](<symbols/flip-horizontal-2.svg>) |
+| | ![alt text](<symbols/flip-vertical-2.svg>) | 
+| | ![alt text](<symbols/square-centerline-dashed-horizontal.svg>) |
+| | ![alt text](<symbols/square-centerline-dashed-vertical.svg>) |
+| | ![alt text](<symbols/square-split-horizontal.svg>) |
+| | ![alt text](<symbols/square-split-vertical.svg>) |
+| Slits | ![alt text](<symbols/slits.svg>) | (slits)
+
 
 
 
