@@ -4,9 +4,10 @@
   <macros>
     <P>$(P)</P>
   </macros>
+  <y use_class="true">0</y>
   <width>750</width>
   <height>500</height>
-  <background_color>
+  <background_color use_class="true">
     <color name="Read_Background" red="240" green="240" blue="240">
     </color>
   </background_color>
@@ -16,15 +17,16 @@
     <name>4-Axis Slits - Individual</name>
     <width>720</width>
     <height>470</height>
-    <font>
+    <style use_class="true">0</style>
+    <font use_class="true">
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color>
+    <foreground_color use_class="true">
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color>
+    <background_color use_class="true">
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -188,14 +190,22 @@
         <y>87</y>
         <width>22</width>
         <height>22</height>
-        <font>
+        <font use_class="true">
           <font family="Arial" style="REGULAR" size="14.0">
           </font>
         </font>
-        <foreground_color>
+        <foreground_color use_class="true">
           <color red="29" green="41" blue="69">
           </color>
         </foreground_color>
+        <background_color use_class="true">
+          <color name="Background" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">0</horizontal_alignment>
+        <vertical_alignment use_class="true">0</vertical_alignment>
+        <rotation_step use_class="true">0</rotation_step>
+        <wrap_words use_class="true">true</wrap_words>
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_3</name>
@@ -204,14 +214,22 @@
         <y>23</y>
         <width>22</width>
         <height>22</height>
-        <font>
+        <font use_class="true">
           <font family="Arial" style="REGULAR" size="14.0">
           </font>
         </font>
-        <foreground_color>
+        <foreground_color use_class="true">
           <color red="29" green="41" blue="69">
           </color>
         </foreground_color>
+        <background_color use_class="true">
+          <color name="Background" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">0</horizontal_alignment>
+        <vertical_alignment use_class="true">0</vertical_alignment>
+        <rotation_step use_class="true">0</rotation_step>
+        <wrap_words use_class="true">true</wrap_words>
       </widget>
     </widget>
     <widget type="embedded" version="2.0.0">
@@ -220,6 +238,7 @@
         <P>$(P)</P>
         <M>:Y:POS</M>
         <IOC>$(IOC)</IOC>
+        <label>Y Pos</label>
       </macros>
       <file>../pmac/motor_embed.bob</file>
       <x>230</x>
@@ -233,6 +252,7 @@
         <P>$(P)</P>
         <M>:Y:NEG</M>
         <IOC>$(IOC)</IOC>
+        <label>Y Neg</label>
       </macros>
       <file>../pmac/motor_embed.bob</file>
       <x>230</x>
@@ -246,6 +266,7 @@
         <P>$(P)</P>
         <M>:X:NEG</M>
         <IOC>$(IOC)</IOC>
+        <label>X Neg</label>
       </macros>
       <file>../pmac/motor_embed.bob</file>
       <y>160</y>
@@ -258,6 +279,7 @@
         <P>$(P)</P>
         <M>:X:POS</M>
         <IOC>$(IOC)</IOC>
+        <label>X Pos</label>
       </macros>
       <file>../pmac/motor_embed.bob</file>
       <x>460</x>

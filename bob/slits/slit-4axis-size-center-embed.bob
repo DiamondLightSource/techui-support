@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>slit-4axis-size-center-embed</name>
+  <y use_class="true">0</y>
   <width>750</width>
   <height>500</height>
-  <background_color>
+  <background_color use_class="true">
     <color name="Read_Background" red="240" green="240" blue="240">
     </color>
   </background_color>
@@ -13,15 +14,16 @@
     <name>4-Axis Slits - Size and Center</name>
     <width>710</width>
     <height>470</height>
-    <font>
+    <style use_class="true">0</style>
+    <font use_class="true">
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color>
+    <foreground_color use_class="true">
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color>
+    <background_color use_class="true">
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -31,6 +33,7 @@
         <P>$(P)</P>
         <M>:X:CENTER</M>
         <IOC>$(IOC)</IOC>
+        <label>X Center</label>
       </macros>
       <file>../pmac/motor_embed.bob</file>
       <x>15</x>
@@ -44,6 +47,7 @@
         <P>$(P)</P>
         <M>:Y:CENTER</M>
         <IOC>$(IOC)</IOC>
+        <label>Y Center</label>
       </macros>
       <file>../pmac/motor_embed.bob</file>
       <x>435</x>
@@ -57,6 +61,7 @@
         <P>$(P)</P>
         <M>:Y:SIZE</M>
         <IOC>$(IOC)</IOC>
+        <label>Y Size</label>
       </macros>
       <file>../pmac/motor_embed.bob</file>
       <x>435</x>
@@ -70,6 +75,7 @@
         <P>$(P)</P>
         <M>:X:SIZE</M>
         <IOC>$(IOC)</IOC>
+        <label>X Size</label>
       </macros>
       <file>../pmac/motor_embed.bob</file>
       <x>15</x>
