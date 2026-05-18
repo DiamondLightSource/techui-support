@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(label)</name>
+  <width>100</width>
+  <height>40</height>
+  <widget type="action_button" version="2.0.0">
+    <name>Open PVI</name>
+    <text>$(label)</text>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>$(IOC)/NDPvxs.pvi.bob</file>
+        <macros>
+          <P>$(P)</P>
+          <R>$(R)</R>
+        </macros>
+        <target>tab</target>
+      </action>
+    </actions>
+    <x>0</x>
+    <y>0</y>
+    <width>100</width>
+    <height>40</height>
+  </widget>
+</display>

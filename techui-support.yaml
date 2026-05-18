@@ -8,6 +8,11 @@ ADAravis.aravisCamera:
     prefix: "$(P)$(R)"
     type: "related"
 
+ADUVC.UVC:
+  file: "ADUVC/ADUVC_summary.bob"
+  prefix: "$(P)$(R)"
+  type: "embedded"
+
 ADSimDetector.simDetector:
   file: "ADAravis/ADAravis_summary.bob"
   prefix: "$(P)$(R)"
@@ -37,6 +42,26 @@ ADCore.NDROIStat:
   file: "ADAravis/NDPluginROIStat.pvi.bob"
   prefix: "$(P)$(R)"
   type: "related"
+
+ADUVC.ADCore.NDROI:
+  file: "ADUVC/ADUVC_roi_embed.bob"
+  prefix: "$(P)$(R)"
+  type: "embedded"
+
+ADUVC.ADCore.NDStats:
+  file: "ADUVC/ADUVC_stat_embed.bob"
+  prefix: "$(P)$(R)"
+  type: "embedded"
+
+ADUVC.ADCore.NDFileHDF5:
+  file: "ADUVC/ADUVC_hdf5_embed.bob"
+  prefix: "$(P)$(R)"
+  type: "embedded"
+
+ADUVC.ADCore.NDPvxsPlugin:
+  file: "ADUVC/ADUVC_pvxs_embed.bob"
+  prefix: "$(P)$(R)"
+  type: "embedded"
 
 detectorPlugins.detectorPlugins:
   - file: "ADAravis/NDPluginStats.pvi.bob"
