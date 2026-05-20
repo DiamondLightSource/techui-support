@@ -4,9 +4,15 @@ ADAravis.aravisCamera:
   - file: "ADAravis/ADAravis_summary.bob"
     prefix: "$(P)$(R)"
     type: "embedded"
+    macros:
+      P:
+      R:
   - file: "ADAravis/ADAravis_detail.bob"
     prefix: "$(P)$(R)"
     type: "related"
+    macros:
+      P:
+      R:
 
 ADUVC.UVC:
   - file: "ADUVC/ADUVC_summary.bob"
@@ -20,31 +26,49 @@ ADSimDetector.simDetector:
   file: "ADAravis/ADAravis_summary.bob"
   prefix: "$(P)$(R)"
   type: "embedded"
+  macros:
+    P:
+    R:
 
 ADCore.NDROI:
   file: "ADAravis/NDPluginROI.pvi.bob"
   prefix: "$(P)$(R)"
   type: "related"
+  macros:
+    P:
+    R:
 
 ADCore.NDStats:
   file: "ADAravis/NDPluginStats.pvi.bob"
   prefix: "$(P)$(R)"
   type: "related"
+  macros:
+    P:
+    R:
 
 ADCore.NDPva:
   file: "ADAravis/NDPluginPva.pvi.bob"
   prefix: "$(P)$(R)"
   type: "related"
+  macros:
+    P:
+    R:
 
 ADCore.NDFileHDF5:
   file: "ADAravis/NDFileHDF5.pvi.bob"
   prefix: "$(P)$(R)"
   type: "related"
+  macros:
+    P:
+    R:
 
 ADCore.NDROIStat:
   file: "ADAravis/NDPluginROIStat.pvi.bob"
   prefix: "$(P)$(R)"
   type: "related"
+  macros:
+    P:
+    R:
 
 ADUVC.ADCore.NDROI:
   file: "$(IOC)/NDROI.pvi.bob"
@@ -71,33 +95,57 @@ detectorPlugins.detectorPlugins:
     prefix: "$(P)$(R)"
     suffix: ":STAT:"
     type: "related"
+    macros:
+      P:
+      R:
   - file: "ADAravis/NDPluginPva.pvi.bob"
     prefix: "$(P)$(R)"
     suffix: ":PVA:"
     type: "related"
+    macros:
+      P:
+      R:
   - file: "ADAravis/NDPluginROIStat.pvi.bob"
     prefix: "$(P)$(R)"
     suffix: ":ROISTAT:"
     type: "related"
+    macros:
+      P:
+      R:
   - file: "ADAravis/NDFileHDF5.pvi.bob"
     prefix: "$(P)$(R)"
     suffix: ":HDF5:"
     type: "related"
+    macros:
+      P:
+      R:
   #TODO: Legacy support
 
 Detector.plugins:
   - file: "ADAravis/NDPluginStats.pvi.bob"
     prefix: "$(P)$(R)"
     type: "related"
+    macros:
+      P:
+      R:
   - file: "ADAravis/NDPluginPva.pvi.bob"
     prefix: "$(P)$(R)"
     type: "related"
+    macros:
+      P:
+      R:
   - file: "ADAravis/NDPluginROIStat.pvi.bob"
     prefix: "$(P)$(R)"
     type: "related"
+    macros:
+      P:
+      R:
   - file: "ADAravis/NDFileHDF5.pvi.bob"
     prefix: "$(P)$(R)"
     type: "related"
+    macros:
+      P:
+      R:
 
 # Motion Controllers
 
@@ -105,21 +153,31 @@ pmac.dls_pmac_asyn_motor:
   file: "pmac/motor_embed.bob"
   prefix: "$(P)$(M)"
   type: "embedded"
+  macros:
+    P:
+    M:
 
 pmac.GeoBrick:
   file: "pmac/pmacController.bob"
   prefix: "$(P)"
   type: "related"
+  macros:
+    P:
 
 pmac.PowerPMAC:
   file: "pmac/ppmacController.bob"
   prefix: "$(P)"
   type: "related"
+  macros:
+    P:
 
 pmacUtil.dls_pmac_asyn_motor_no_coord:
   file: "pmac/motor_embed.bob"
   prefix: "$(P)$(M)"
   type: "embedded"
+  macros:
+    P:
+    M:
 
 # Vacuum
 
@@ -127,26 +185,36 @@ mks937a.mks937a:
   file: "mks937a/mks937a.bob"
   prefix: "$(P)"
   type: "embedded"
+  macros:
+    P:
 
 mks937a.mks937aImg:
   file: "mks937a/mks937aImg.bob"
   prefix: "$(P)"
   type: "embedded"
+  macros:
+    P:
 
 mks937a.mks937aGauge:
   file: "mks937a/mks937aGauge.bob"
   prefix: "$(P)"
   type: "embedded"
+  macros:
+    P:
 
 mks937a.mks937aPirg:
   file: "mks937a/mks937aPirg.bob"
   prefix: "$(P)"
   type: "embedded"
+  macros:
+    P:
 
 digitelMpc.digitelMpcIonp:
   file: "digitelMpc/digitelMpcIonp.bob"
   prefix: "$(P)"
   type: "embedded"
+  macros:
+    P:
 
 # Mirrors
 
@@ -154,11 +222,15 @@ mff.mff:
   file: "mff/mff.bob"
   prefix: "$(P)"
   type: "related"
+  macros:
+    P:
 
 alignmentMirror.mirror:
   file: "alignmentMirror/mirror.bob"
   prefix: "$(P)"
   type: "related"
+  macros:
+    P:
 
 # Detectors
 
@@ -166,3 +238,5 @@ fastcs_eiger.EigerController:
   file: "fastcs-eiger/eigerController.bob"
   prefix: "$(P)"
   type: "embedded"
+  macros:
+    P:
