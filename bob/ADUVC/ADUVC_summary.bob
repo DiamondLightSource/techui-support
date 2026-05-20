@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-01-21 16:14:47 by uns32131-->
 <display version="2.0.0">
   <name>Camera Screen</name>
   <width>880</width>
@@ -345,7 +346,7 @@
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Acquire Time</name>
+      <name>Acuqire Time</name>
       <pv_name>$(P):CAM:AcquireTime_RBV</pv_name>
       <x>260</x>
       <y>75</y>
@@ -387,7 +388,7 @@
       </border_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Num Images_RBV</name>
+      <name>NUm Images_RBV</name>
       <pv_name>$(P):CAM:NumImages</pv_name>
       <x>260</x>
       <y>150</y>
@@ -644,7 +645,7 @@
       </background_color>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>Acquire Time Entry</name>
+      <name>Acquire Time</name>
       <pv_name>$(P):CAM:AcquireTime</pv_name>
       <x>140</x>
       <y>75</y>
@@ -665,7 +666,7 @@
       </border_color>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>Acquire Period Entry</name>
+      <name>Acquire Period</name>
       <pv_name>$(P):CAM:AcquirePeriod</pv_name>
       <x>140</x>
       <y>100</y>
@@ -686,7 +687,7 @@
       </border_color>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>NumImages Entry</name>
+      <name>NumImages</name>
       <pv_name>$(P):CAM:NumImages_RBV</pv_name>
       <x>140</x>
       <y>150</y>
@@ -707,7 +708,7 @@
       </border_color>
     </widget>
     <widget type="textentry" version="3.0.0">
-      <name>Num Exposures Entry</name>
+      <name>Num Exposures</name>
       <pv_name>$(P):CAM:NumExposures</pv_name>
       <x>140</x>
       <y>175</y>
@@ -770,7 +771,7 @@
       </border_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Status Message</name>
+      <name>TextUpdate_13</name>
       <pv_name>$(P):CAM:StatusMessage_RBV</pv_name>
       <x>141</x>
       <y>275</y>
@@ -950,7 +951,7 @@
       </background_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Sigma_RBV</name>
+      <name>DimensionsRBV</name>
       <pv_name>$(P):STAT:Sigma_RBV</pv_name>
       <x>140</x>
       <y>25</y>
@@ -1008,7 +1009,7 @@
       </background_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>MeanValue_RBV</name>
+      <name>Num DimensionsRBV</name>
       <pv_name>$(P):STAT:MeanValue_RBV</pv_name>
       <x>140</x>
       <width>235</width>
@@ -1026,6 +1027,32 @@
         <color red="196" green="196" blue="196">
         </color>
       </border_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Profile Cursor</name>
+      <actions>
+        <action type="open_display">
+          <description>Profile Cursor</description>
+          <file>ProfileCursorGraphs.bob</file>
+          <target>tab</target>
+        </action>
+      </actions>
+      <x>95</x>
+      <y>59</y>
+      <width>150</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
     </widget>
   </widget>
   <widget type="image" version="2.0.0">

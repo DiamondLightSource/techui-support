@@ -44,24 +44,24 @@ ADCore.NDROIStat:
   type: "related"
 
 ADUVC.ADCore.NDROI:
-  file: "ADUVC/ADUVC_roi_embed.bob"
+  file: "$(IOC)/NDROI.pvi.bob"
   prefix: "$(P)$(R)"
-  type: "embedded"
+  type: "related"
 
 ADUVC.ADCore.NDStats:
-  file: "ADUVC/ADUVC_stat_embed.bob"
+  file: "$(IOC)/NDStats.pvi.bob"
   prefix: "$(P)$(R)"
-  type: "embedded"
-
-ADUVC.ADCore.NDFileHDF5:
-  file: "ADUVC/ADUVC_hdf5_embed.bob"
-  prefix: "$(P)$(R)"
-  type: "embedded"
+  type: "related"
 
 ADUVC.ADCore.NDPvxsPlugin:
-  file: "ADUVC/ADUVC_pvxs_embed.bob"
+  file: "$(IOC)/NDPvxs.pvi.bob"
   prefix: "$(P)$(R)"
-  type: "embedded"
+  type: "related"
+
+ADUVC.ADCore.NDFileHDF5:
+  file: "$(IOC)/NDFileHDF5.pvi.bob"
+  prefix: "$(P)$(R)"
+  type: "related"
 
 detectorPlugins.detectorPlugins:
   - file: "ADAravis/NDPluginStats.pvi.bob"
