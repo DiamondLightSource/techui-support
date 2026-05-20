@@ -44,22 +44,22 @@ ADCore.NDROIStat:
   type: "related"
 
 ADUVC.ADCore.NDROI:
-  file: "$(IOC)/NDROI.pvi.bob"
+  remote_screen: "NDROI.pvi.bob"
   prefix: "$(P)$(R)"
   type: "related"
 
 ADUVC.ADCore.NDStats:
-  file: "$(IOC)/NDStats.pvi.bob"
+  remote_screen: "NDStats.pvi.bob"
   prefix: "$(P)$(R)"
   type: "related"
 
 ADUVC.ADCore.NDPvxsPlugin:
-  file: "$(IOC)/NDPvxs.pvi.bob"
+  remote_screen: "NDPvxs.pvi.bob"
   prefix: "$(P)$(R)"
   type: "related"
 
 ADUVC.ADCore.NDFileHDF5:
-  file: "$(IOC)/NDFileHDF5.pvi.bob"
+  remote_screen: "NDFileHDF5.pvi.bob"
   prefix: "$(P)$(R)"
   type: "related"
 
