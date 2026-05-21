@@ -1028,32 +1028,6 @@
         </color>
       </border_color>
     </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Profile Cursor</name>
-      <actions>
-        <action type="open_display">
-          <description>Profile Cursor</description>
-          <file>ProfileCursorGraphs.bob</file>
-          <target>tab</target>
-        </action>
-      </actions>
-      <x>95</x>
-      <y>59</y>
-      <width>150</width>
-      <font>
-        <font family="Arial" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color red="255" green="255" blue="255">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="29" green="41" blue="69">
-        </color>
-      </background_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
   </widget>
   <widget type="image" version="2.0.0">
     <name>Image</name>

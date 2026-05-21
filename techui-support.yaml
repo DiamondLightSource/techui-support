@@ -9,9 +9,12 @@ ADAravis.aravisCamera:
     type: "related"
 
 ADUVC.UVC:
-  file: "ADUVC/ADUVC_summary.bob"
-  prefix: "$(P)$(R)"
-  type: "embedded"
+  - file: "ADUVC/ADUVC_summary.bob"
+    prefix: "$(P)$(R)"
+    type: "embedded"
+  - file: "$(IOC)/ADUVC.pvi.bob"
+    prefix: "$(P)$(R)"
+    type: "related"
 
 ADSimDetector.simDetector:
   file: "ADAravis/ADAravis_summary.bob"
@@ -44,22 +47,22 @@ ADCore.NDROIStat:
   type: "related"
 
 ADUVC.ADCore.NDROI:
-  remote_screen: "NDROI.pvi.bob"
+  file: "$(IOC)/NDROI.pvi.bob"
   prefix: "$(P)$(R)"
   type: "related"
 
 ADUVC.ADCore.NDStats:
-  remote_screen: "NDStats.pvi.bob"
+  file: "$(IOC)/NDStats.pvi.bob"
   prefix: "$(P)$(R)"
   type: "related"
 
 ADUVC.ADCore.NDPvxsPlugin:
-  remote_screen: "NDPvxs.pvi.bob"
+  file: "$(IOC)/NDPvxs.pvi.bob"
   prefix: "$(P)$(R)"
   type: "related"
 
 ADUVC.ADCore.NDFileHDF5:
-  remote_screen: "NDFileHDF5.pvi.bob"
+  file: "$(IOC)/NDFileHDF5.pvi.bob"
   prefix: "$(P)$(R)"
   type: "related"
 
