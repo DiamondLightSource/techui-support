@@ -1,15 +1,16 @@
-# Cameras
+support_modules:
+  # Cameras
 
-ADAravis.aravisCamera:
-  prefix: "{{P}}{{R}}"
-  macros:
-    P:
-    R:
-  screens:
-    - file: "ADAravis/ADAravis_summary.bob"
-      type: "embedded"
-    - file: "ADAravis/ADAravis_detail.bob"
-      type: "related"
+  ADAravis.aravisCamera:
+    prefix: "{{ P }}{{ R }}"
+    macros:
+      - P
+      - R
+    screens:
+      - file: "ADAravis/ADAravis_summary.bob"
+        type: "embedded"
+      - file: "ADAravis/ADAravis_detail.bob"
+        type: "related"
 
   ADUVC.UVC:
     prefix: "{{ P }}{{ R }}"
@@ -22,59 +23,59 @@ ADAravis.aravisCamera:
       - file: "$(IOC)/ADUVC.pvi.bob"
         type: "related"
 
-ADSimDetector.simDetector:
-  prefix: "{{P}}{{R}}"
-  macros:
-    P:
-    R:
-  screens:
-    - file: "ADAravis/ADAravis_summary.bob"
-      type: "embedded"
+  ADSimDetector.simDetector:
+    prefix: "{{ P }}{{ R }}"
+    macros:
+      - P
+      - R
+    screens:
+      - file: "ADAravis/ADAravis_summary.bob"
+        type: "embedded"
 
-ADCore.NDROI:
-  prefix: "{{P}}{{R}}"
-  macros:
-    P:
-    R:
-  screens:
-    - file: "ADAravis/NDPluginROI.pvi.bob"
-      type: "related"
+  ADCore.NDROI:
+    prefix: "{{ P }}{{ R }}"
+    macros:
+      - P
+      - R
+    screens:
+      - file: "ADAravis/NDPluginROI.pvi.bob"
+        type: "related"
 
-ADCore.NDStats:
-  prefix: "{{P}}{{R}}"
-  macros:
-    P:
-    R:
-  screens:
-    - file: "ADAravis/NDPluginStats.pvi.bob"
-      type: "related"
+  ADCore.NDStats:
+    prefix: "{{ P }}{{ R }}"
+    macros:
+      - P
+      - R
+    screens:
+      - file: "ADAravis/NDPluginStats.pvi.bob"
+        type: "related"
 
-ADCore.NDPva:
-  prefix: "{{P}}{{R}}"
-  macros:
-    P:
-    R:
-  screens:
-    - file: "ADAravis/NDPluginPva.pvi.bob"
-      type: "related"
+  ADCore.NDPva:
+    prefix: "{{ P }}{{ R }}"
+    macros:
+      - P
+      - R
+    screens:
+      - file: "ADAravis/NDPluginPva.pvi.bob"
+        type: "related"
 
-ADCore.NDFileHDF5:
-  prefix: "{{P}}{{R}}"
-  macros:
-    P:
-    R:
-  screens:
-    - file: "ADAravis/NDFileHDF5.pvi.bob"
-      type: "related"
+  ADCore.NDFileHDF5:
+    prefix: "{{ P }}{{ R }}"
+    macros:
+      - P
+      - R
+    screens:
+      - file: "ADAravis/NDFileHDF5.pvi.bob"
+        type: "related"
 
-ADCore.NDROIStat:
-  prefix: "{{P}}{{R}}"
-  macros:
-    P:
-    R:
-  screens:
-    - file: "ADAravis/NDPluginROIStat.pvi.bob"
-      type: "related"
+  ADCore.NDROIStat:
+    prefix: "{{ P }}{{ R }}"
+    macros:
+      - P
+      - R
+    screens:
+      - file: "ADAravis/NDPluginROIStat.pvi.bob"
+        type: "related"
 
   ADUVC.ADCore.NDROI:
     prefix: "{{ P }}{{ R }}"
@@ -112,143 +113,143 @@ ADCore.NDROIStat:
       - file: "$(IOC)/NDFileHDF5.pvi.bob"
         type: "related"
 
-detectorPlugins.detectorPlugins:
-  prefix: "{{P}}{{R}}"
-  macros:
-    P:
-    R:
-  screens:
-    - file: "ADAravis/NDPluginStats.pvi.bob"
-      suffix: ":STAT:"
-      type: "related"
-    - file: "ADAravis/NDPluginPva.pvi.bob"
-      suffix: ":PVA:"
-      type: "related"
-    - file: "ADAravis/NDPluginROIStat.pvi.bob"
-      suffix: ":ROISTAT:"
-      type: "related"
-    - file: "ADAravis/NDFileHDF5.pvi.bob"
-      suffix: ":HDF5:"
-      type: "related"
-  #TODO: Legacy support
+  detectorPlugins.detectorPlugins:
+    prefix: "{{ P }}{{ R }}"
+    macros:
+      - P
+      - R
+    screens:
+      - file: "ADAravis/NDPluginStats.pvi.bob"
+        suffix: ":STAT:"
+        type: "related"
+      - file: "ADAravis/NDPluginPva.pvi.bob"
+        suffix: ":PVA:"
+        type: "related"
+      - file: "ADAravis/NDPluginROIStat.pvi.bob"
+        suffix: ":ROISTAT:"
+        type: "related"
+      - file: "ADAravis/NDFileHDF5.pvi.bob"
+        suffix: ":HDF5:"
+        type: "related"
+    #TODO: Legacy support
 
-Detector.plugins:
-  prefix: "{{P}}{{R}}"
-  macros:
-    P:
-    R:
-  screens:
-    - file: "ADAravis/NDPluginStats.pvi.bob"
-      type: "related"
-    - file: "ADAravis/NDPluginPva.pvi.bob"
-      type: "related"
-    - file: "ADAravis/NDPluginROIStat.pvi.bob"
-      type: "related"
-    - file: "ADAravis/NDFileHDF5.pvi.bob"
-      type: "related"
+  Detector.plugins:
+    prefix: "{{ P }}{{ R }}"
+    macros:
+      - P
+      - R
+    screens:
+      - file: "ADAravis/NDPluginStats.pvi.bob"
+        type: "related"
+      - file: "ADAravis/NDPluginPva.pvi.bob"
+        type: "related"
+      - file: "ADAravis/NDPluginROIStat.pvi.bob"
+        type: "related"
+      - file: "ADAravis/NDFileHDF5.pvi.bob"
+        type: "related"
 
-# Motion Controllers
+  # Motion Controllers
 
-pmac.dls_pmac_asyn_motor:
-  prefix: "{{P}}{{M}}"
-  macros:
-    P:
-    M:
-  screens:
-    - file: "pmac/motor_embed.bob"
-      type: "embedded"
+  pmac.dls_pmac_asyn_motor:
+    prefix: "{{ P }}{{ M }}"
+    macros:
+      - P
+      - M
+    screens:
+      - file: "pmac/motor_embed.bob"
+        type: "embedded"
 
-pmac.GeoBrick:
-  prefix: "{{P}}"
-  macros:
-    P:
-  screens:
-    - file: "pmac/pmacController.bob"
-      type: "related"
+  pmac.GeoBrick:
+    prefix: "{{ P }}"
+    macros:
+      - P
+    screens:
+      - file: "pmac/pmacController.bob"
+        type: "related"
 
-pmac.PowerPMAC:
-  prefix: "{{P}}"
-  macros:
-    P:
-  screens:
-    - file: "pmac/ppmacController.bob"
-      type: "related"
+  pmac.PowerPMAC:
+    prefix: "{{ P }}"
+    macros:
+      - P
+    screens:
+      - file: "pmac/ppmacController.bob"
+        type: "related"
 
-pmacUtil.dls_pmac_asyn_motor_no_coord:
-  prefix: "{{P}}{{M}}"
-  macros:
-    P:
-    M:
-  screens:
-    - file: "pmac/motor_embed.bob"
-      type: "embedded"
+  pmacUtil.dls_pmac_asyn_motor_no_coord:
+    prefix: "{{ P }}{{ M }}"
+    macros:
+      - P
+      - M
+    screens:
+      - file: "pmac/motor_embed.bob"
+        type: "embedded"
 
-# Vacuum
+  # Vacuum
 
-mks937a.mks937a:
-  prefix: "{{P}}"
-  macros:
-    P:
-  screens:
-    - file: "mks937a/mks937a.bob"
-      type: "embedded"
+  mks937a.mks937a:
+    prefix: "{{ P }}"
+    macros:
+      - P
+    screens:
+      - file: "mks937a/mks937a.bob"
+        type: "embedded"
 
-mks937a.mks937aImg:
-  prefix: "{{P}}"
-  macros:
-    P:
-  screens:
-    - file: "mks937a/mks937aImg.bob"
-      type: "embedded"
+  mks937a.mks937aImg:
+    prefix: "{{ P }}"
+    macros:
+      - P
+    screens:
+      - file: "mks937a/mks937aImg.bob"
+        type: "embedded"
 
-mks937a.mks937aGauge:
-  prefix: "{{P}}"
-  macros:
-    P:
-  screens:
-    - file: "mks937a/mks937aGauge.bob"
-      type: "embedded"
+  mks937a.mks937aGauge:
+    prefix: "{{ P }}"
+    macros:
+      - P
+    screens:
+      - file: "mks937a/mks937aGauge.bob"
+        type: "embedded"
 
-mks937a.mks937aPirg:
-  prefix: "{{P}}"
-  macros:
-    P:
-  screens:
-    - file: "mks937a/mks937aPirg.bob"
-      type: "embedded"
+  mks937a.mks937aPirg:
+    prefix: "{{ P }}"
+    macros:
+      - P
+    screens:
+      - file: "mks937a/mks937aPirg.bob"
+        type: "embedded"
 
-digitelMpc.digitelMpcIonp:
-  prefix: "{{P}}"
-  macros:
-    P:
-  screens:
-    - file: "digitelMpc/digitelMpcIonp.bob"
-      type: "embedded"
+  digitelMpc.digitelMpcIonp:
+    prefix: "{{ P }}"
+    macros:
+      - P
+    screens:
+      - file: "digitelMpc/digitelMpcIonp.bob"
+        type: "embedded"
 
-# Mirrors
+  # Mirrors
 
-mff.mff:
-  prefix: "{{P}}"
-  macros:
-    P:
-  screens:
-    - file: "mff/mff.bob"
-      type: "related"
+  mff.mff:
+    prefix: "{{ P }}"
+    macros:
+      - P
+    screens:
+      - file: "mff/mff.bob"
+        type: "related"
 
-alignmentMirror.mirror:
-  prefix: "{{P}}"
-  macros:
-    P:
-  screens:
-    - file: "alignmentMirror/mirror.bob"
-      type: "related"
+  alignmentMirror.mirror:
+    prefix: "{{ P }}"
+    macros:
+      - P
+    screens:
+      - file: "alignmentMirror/mirror.bob"
+        type: "related"
 
-# Detectors
+  # Detectors
 
-fastcs_eiger.EigerController:
-  prefix: "{{P}}"
-  macros:
-    P:
-  screens:
-    - file: "fastcs-eiger/eigerController.bob"
-      type: "embedded"
+  fastcs_eiger.EigerController:
+    prefix: "{{ P }}"
+    macros:
+      - P
+    screens:
+      - file: "fastcs-eiger/eigerController.bob"
+        type: "embedded"
