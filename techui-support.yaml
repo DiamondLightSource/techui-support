@@ -1,7 +1,7 @@
 # Cameras
 
 ADAravis.aravisCamera:
-  prefix: "$(P)$(R)"
+  prefix: "{{P}}{{R}}"
   macros:
     P:
     R:
@@ -12,7 +12,7 @@ ADAravis.aravisCamera:
       type: "related"
 
   ADUVC.UVC:
-    prefix: "$(P)$(R)"
+    prefix: "{{ P }}{{ R }}"
     macros:
       - P
       - R
@@ -23,7 +23,7 @@ ADAravis.aravisCamera:
         type: "related"
 
 ADSimDetector.simDetector:
-  prefix: "$(P)$(R)"
+  prefix: "{{P}}{{R}}"
   macros:
     P:
     R:
@@ -32,7 +32,7 @@ ADSimDetector.simDetector:
       type: "embedded"
 
 ADCore.NDROI:
-  prefix: "$(P)$(R)"
+  prefix: "{{P}}{{R}}"
   macros:
     P:
     R:
@@ -41,7 +41,7 @@ ADCore.NDROI:
       type: "related"
 
 ADCore.NDStats:
-  prefix: "$(P)$(R)"
+  prefix: "{{P}}{{R}}"
   macros:
     P:
     R:
@@ -50,7 +50,7 @@ ADCore.NDStats:
       type: "related"
 
 ADCore.NDPva:
-  prefix: "$(P)$(R)"
+  prefix: "{{P}}{{R}}"
   macros:
     P:
     R:
@@ -59,7 +59,7 @@ ADCore.NDPva:
       type: "related"
 
 ADCore.NDFileHDF5:
-  prefix: "$(P)$(R)"
+  prefix: "{{P}}{{R}}"
   macros:
     P:
     R:
@@ -68,7 +68,7 @@ ADCore.NDFileHDF5:
       type: "related"
 
 ADCore.NDROIStat:
-  prefix: "$(P)$(R)"
+  prefix: "{{P}}{{R}}"
   macros:
     P:
     R:
@@ -77,7 +77,7 @@ ADCore.NDROIStat:
       type: "related"
 
   ADUVC.ADCore.NDROI:
-    prefix: "$(P)$(R)"
+    prefix: "{{ P }}{{ R }}"
     macros:
       - P
       - R
@@ -86,7 +86,7 @@ ADCore.NDROIStat:
         type: "related"
 
   ADUVC.ADCore.NDStats:
-    prefix: "$(P)$(R)"
+    prefix: "{{ P }}{{ R }}"
     macros:
       - P
       - R
@@ -95,7 +95,7 @@ ADCore.NDROIStat:
         type: "related"
 
   ADUVC.ADCore.NDPvxsPlugin:
-    prefix: "$(P)$(R)"
+    prefix: "{{ P }}{{ R }}"
     macros:
       - P
       - R
@@ -104,7 +104,7 @@ ADCore.NDROIStat:
         type: "related"
 
   ADUVC.ADCore.NDFileHDF5:
-    prefix: "$(P)$(R)"
+    prefix: "{{ P }}{{ R }}"
     macros:
       - P
       - R
@@ -113,7 +113,7 @@ ADCore.NDROIStat:
         type: "related"
 
 detectorPlugins.detectorPlugins:
-  prefix: "$(P)$(R)"
+  prefix: "{{P}}{{R}}"
   macros:
     P:
     R:
@@ -133,7 +133,7 @@ detectorPlugins.detectorPlugins:
   #TODO: Legacy support
 
 Detector.plugins:
-  prefix: "$(P)$(R)"
+  prefix: "{{P}}{{R}}"
   macros:
     P:
     R:
@@ -150,7 +150,7 @@ Detector.plugins:
 # Motion Controllers
 
 pmac.dls_pmac_asyn_motor:
-  prefix: "$(P)$(M)"
+  prefix: "{{P}}{{M}}"
   macros:
     P:
     M:
@@ -159,7 +159,7 @@ pmac.dls_pmac_asyn_motor:
       type: "embedded"
 
 pmac.GeoBrick:
-  prefix: "$(P)"
+  prefix: "{{P}}"
   macros:
     P:
   screens:
@@ -167,7 +167,7 @@ pmac.GeoBrick:
       type: "related"
 
 pmac.PowerPMAC:
-  prefix: "$(P)"
+  prefix: "{{P}}"
   macros:
     P:
   screens:
@@ -175,7 +175,7 @@ pmac.PowerPMAC:
       type: "related"
 
 pmacUtil.dls_pmac_asyn_motor_no_coord:
-  prefix: "$(P)$(M)"
+  prefix: "{{P}}{{M}}"
   macros:
     P:
     M:
@@ -186,7 +186,7 @@ pmacUtil.dls_pmac_asyn_motor_no_coord:
 # Vacuum
 
 mks937a.mks937a:
-  prefix: "$(P)"
+  prefix: "{{P}}"
   macros:
     P:
   screens:
@@ -194,7 +194,7 @@ mks937a.mks937a:
       type: "embedded"
 
 mks937a.mks937aImg:
-  prefix: "$(P)"
+  prefix: "{{P}}"
   macros:
     P:
   screens:
@@ -202,7 +202,7 @@ mks937a.mks937aImg:
       type: "embedded"
 
 mks937a.mks937aGauge:
-  prefix: "$(P)"
+  prefix: "{{P}}"
   macros:
     P:
   screens:
@@ -210,7 +210,7 @@ mks937a.mks937aGauge:
       type: "embedded"
 
 mks937a.mks937aPirg:
-  prefix: "$(P)"
+  prefix: "{{P}}"
   macros:
     P:
   screens:
@@ -218,7 +218,7 @@ mks937a.mks937aPirg:
       type: "embedded"
 
 digitelMpc.digitelMpcIonp:
-  prefix: "$(P)"
+  prefix: "{{P}}"
   macros:
     P:
   screens:
@@ -228,7 +228,7 @@ digitelMpc.digitelMpcIonp:
 # Mirrors
 
 mff.mff:
-  prefix: "$(P)"
+  prefix: "{{P}}"
   macros:
     P:
   screens:
@@ -236,7 +236,7 @@ mff.mff:
       type: "related"
 
 alignmentMirror.mirror:
-  prefix: "$(P)"
+  prefix: "{{P}}"
   macros:
     P:
   screens:
@@ -246,7 +246,7 @@ alignmentMirror.mirror:
 # Detectors
 
 fastcs_eiger.EigerController:
-  prefix: "$(P)"
+  prefix: "{{P}}"
   macros:
     P:
   screens:
