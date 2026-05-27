@@ -114,10 +114,9 @@ support_modules:
         type: "related"
 
   detectorPlugins.detectorPlugins:
-    prefix: "{{ P }}{{ R }}"
+    prefix: "{{ P }}"
     macros:
       - P
-      - R
     screens:
       - file: "ADAravis/NDPluginStats.pvi.bob"
         suffix: ":STAT:"
