@@ -119,16 +119,20 @@ support_modules:
       - P
     screens:
       - file: "ADAravis/NDPluginStats.pvi.bob"
-        suffix: ":STAT:"
+        suffixes:
+          R: ":STAT:"
         type: "related"
       - file: "ADAravis/NDPluginPva.pvi.bob"
-        suffix: ":PVA:"
+        suffixes:
+          R: ":PVA:"
         type: "related"
       - file: "ADAravis/NDPluginROIStat.pvi.bob"
-        suffix: ":ROISTAT:"
+        suffixes:
+          R: ":ROISTAT:"
         type: "related"
       - file: "ADAravis/NDFileHDF5.pvi.bob"
-        suffix: ":HDF5:"
+        suffixes:
+          R: ":HDF5:"
         type: "related"
     #TODO: Legacy support
 
