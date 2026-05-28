@@ -1,12 +1,37 @@
 # techui-support
 
-A submodule to supplement [techui-builder](git@github.com:DiamondLightSource/techui-builder)
+A submodule to supplement [techui-builder](git@github.com:DiamondLightSource/techui-builder).
 
-This contains summary .bob files used by Phoebus as well as SVG images/symbols for device components.
+This contains summary .bob files used by Phoebus as well as Lucide SVG icons for device components.
 
 Here are the most commonly used icons:
 
-## Vacuum
+| Description | Symbol | Lucide Ref
+| --- | --- | ---
+| Radiation Monitor | ![alt text](<symbols/radiation.svg>) | (radiation)
+| Cryocooler | ![alt text](<symbols/cryocooler.svg>) | (snowflake)
+| Camera | ![alt text](<symbols/camera.svg>) | (cctv custom)
+| Lens | ![alt text](<symbols/lens.svg>) | (lens-convex)
+| Oscilloscope | ![alt text](<symbols/oscilloscope.svg>) | (audio-waveform)
+| Light Source | ![alt text](<symbols/light-source.svg>) | (sun)
+| Ring On | <img src="symbols/ring-on.svg" width="24" height="24" alt="ring-on"> | (custom)
+| Ring Off | <img src="symbols/ring-off.svg" width="24" height="24" alt="ring-on"> | (custom)
+| Rotation Stage | ![alt text](<symbols/rotation-stage.svg>) | (rotate-cw)
+| Translation Stage | ![alt text](<symbols/translation-stage.svg>) | (move)
+| Cog | ![alt text](<symbols/cog.svg>) | (cog)
+| | ![alt text](<symbols/flip-horizontal-2.svg>) |
+| | ![alt text](<symbols/flip-vertical-2.svg>) | 
+| | ![alt text](<symbols/square-centerline-dashed-horizontal.svg>) |
+| | ![alt text](<symbols/square-centerline-dashed-vertical.svg>) |
+| | ![alt text](<symbols/square-split-horizontal.svg>) |
+| | ![alt text](<symbols/square-split-vertical.svg>) |
+| Slits | ![alt text](<symbols/slits.svg>) | (slits)
+
+
+
+
+
+<!-- ## Vacuum
 
 | Widget | Symbol | Description
 | --- | --- | ---
@@ -64,4 +89,4 @@ Diode| ![alt text](<symbols/diode.svg>) |
 Cryocooler
 Zebra
 Panda
-| Ring | ![alt text](<symbols/ring-off.svg>)![alt text](<symbols/ring-on.svg>) | Stored beam off/on
+| Ring | ![alt text](<symbols/ring-off.svg>)![alt text](<symbols/ring-on.svg>) | Stored beam off/on -->
