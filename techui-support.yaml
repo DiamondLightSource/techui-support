@@ -9,7 +9,7 @@ support_modules:
     screens:
       - file: "ADAravis/ADAravis_summary.bob"
         type: "embedded"
-      - file: "ADAravis/ADAravis_detail.bob"
+      - file: "$(IOC)/ADAravis.pvi.bob"
         type: "related"
 
   ADUVC.UVC:
@@ -38,7 +38,7 @@ support_modules:
       - P
       - R
     screens:
-      - file: "ADAravis/NDPluginROI.pvi.bob"
+      - file: "$(IOC)/NDROI.pvi.bob"
         type: "related"
 
   ADCore.NDStats:
@@ -47,55 +47,10 @@ support_modules:
       - P
       - R
     screens:
-      - file: "ADAravis/NDPluginStats.pvi.bob"
-        type: "related"
-
-  ADCore.NDPva:
-    prefix: "{{ P }}{{ R }}"
-    macros:
-      - P
-      - R
-    screens:
-      - file: "ADAravis/NDPluginPva.pvi.bob"
-        type: "related"
-
-  ADCore.NDFileHDF5:
-    prefix: "{{ P }}{{ R }}"
-    macros:
-      - P
-      - R
-    screens:
-      - file: "ADAravis/NDFileHDF5.pvi.bob"
-        type: "related"
-
-  ADCore.NDROIStat:
-    prefix: "{{ P }}{{ R }}"
-    macros:
-      - P
-      - R
-    screens:
-      - file: "ADAravis/NDPluginROIStat.pvi.bob"
-        type: "related"
-
-  ADUVC.ADCore.NDROI:
-    prefix: "{{ P }}{{ R }}"
-    macros:
-      - P
-      - R
-    screens:
-      - file: "$(IOC)/NDROI.pvi.bob"
-        type: "related"
-
-  ADUVC.ADCore.NDStats:
-    prefix: "{{ P }}{{ R }}"
-    macros:
-      - P
-      - R
-    screens:
       - file: "$(IOC)/NDStats.pvi.bob"
         type: "related"
 
-  ADUVC.ADCore.NDPvxsPlugin:
+  ADCore.NDPvxsPlugin:
     prefix: "{{ P }}{{ R }}"
     macros:
       - P
@@ -104,7 +59,7 @@ support_modules:
       - file: "$(IOC)/NDPvxs.pvi.bob"
         type: "related"
 
-  ADUVC.ADCore.NDFileHDF5:
+  ADCore.NDFileHDF5:
     prefix: "{{ P }}{{ R }}"
     macros:
       - P
@@ -113,24 +68,42 @@ support_modules:
       - file: "$(IOC)/NDFileHDF5.pvi.bob"
         type: "related"
 
+  ADCore.NDPva:
+    prefix: "{{ P }}{{ R }}"
+    macros:
+      - P
+      - R
+    screens:
+      - file: "$(IOC)/NDPluginPva.pvi.bob"
+        type: "related"
+
+  ADCore.NDROIStat:
+    prefix: "{{ P }}{{ R }}"
+    macros:
+      - P
+      - R
+    screens:
+      - file: "$(IOC)/NDPluginROIStat.pvi.bob"
+        type: "related"
+
   detectorPlugins.detectorPlugins:
     prefix: "{{ P }}"
     macros:
       - P
     screens:
-      - file: "ADAravis/NDPluginStats.pvi.bob"
+      - file: "$(IOC)/NDPluginStats.pvi.bob"
         suffixes:
           R: ":STAT:"
         type: "related"
-      - file: "ADAravis/NDPluginPva.pvi.bob"
+      - file: "$(IOC)/NDPluginPva.pvi.bob"
         suffixes:
           R: ":PVA:"
         type: "related"
-      - file: "ADAravis/NDPluginROIStat.pvi.bob"
+      - file: "$(IOC)/NDPluginROIStat.pvi.bob"
         suffixes:
           R: ":ROISTAT:"
         type: "related"
-      - file: "ADAravis/NDFileHDF5.pvi.bob"
+      - file: "$(IOC)/NDFileHDF5.pvi.bob"
         suffixes:
           R: ":HDF5:"
         type: "related"
