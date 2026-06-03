@@ -74,7 +74,7 @@ support_modules:
       - P
       - R
     screens:
-      - file: "$(IOC)/NDPluginPva.pvi.bob"
+      - file: "$(IOC)/NDPva.pvi.bob"
         type: "related"
 
   ADCore.NDROIStat:
@@ -83,7 +83,7 @@ support_modules:
       - P
       - R
     screens:
-      - file: "$(IOC)/NDPluginROIStat.pvi.bob"
+      - file: "$(IOC)/NDROIStat.pvi.bob"
         type: "related"
 
   detectorPlugins.detectorPlugins:
