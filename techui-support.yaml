@@ -9,7 +9,7 @@ support_modules:
     screens:
       - file: "ADAravis/ADAravis_summary.bob"
         type: "embedded"
-      - file: "$(IOC)/ADAravis-{{P}}{{R}}.pvi.bob"
+      - file: "$(IOC)/ADAravis-{{P}}.pvi.bob"
         type: "related"
 
   ADUVC.UVC:
