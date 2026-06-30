@@ -26,6 +26,10 @@ Here are the most commonly used icons:
 | | ![alt text](<symbols/square-split-horizontal.svg>) |
 | | ![alt text](<symbols/square-split-vertical.svg>) |
 | Slits | ![alt text](<symbols/slits.svg>) | (slits)
+| hexapod | ![alt text](<symbols/hexapod.svg>) |
+| laser | ![alt text](<symbols/laser.svg>) |
+| robot | ![alt text](<symbols/robot.svg>) |
+| PandA | ![alt text](<symbols/PandA-logo-for-black-background.svg>) |
 
 
 

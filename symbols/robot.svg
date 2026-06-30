@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+
+  <!-- Base -->
+  <rect x="24" y="52" width="16" height="4" rx="2"></rect>
+
+  <!-- Base joint -->
+  <circle cx="32" cy="48" r="3"></circle>
+
+  <!-- Lower arm -->
+  <line x1="32" y1="48" x2="24" y2="34"></line>
+
+  <!-- Elbow -->
+  <circle cx="24" cy="34" r="3"></circle>
+
+  <!-- Upper arm -->
+  <line x1="24" y1="34" x2="38" y2="22"></line>
+
+  <!-- Wrist -->
+  <circle cx="38" cy="22" r="2.5"></circle>
+
+  <!-- Tool mount -->
+  <line x1="38" y1="22" x2="45" y2="18"></line>
+
+  <!-- Gripper -->
+  <line x1="45" y1="18" x2="49" y2="15"></line>
+  <line x1="45" y1="18" x2="49" y2="21"></line>
+
+</svg>
