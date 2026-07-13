@@ -224,6 +224,14 @@ support_modules:
       - file: "mff/mff.bob"
         type: "related"
 
+  fastcs_thorlabs_mff.ThorlabsMFF:
+    prefix: "{{ id }}"
+    macros:
+      - id
+    screens:
+      - file: "mff/mff.bob"
+        type: "related"
+
   alignmentMirror.mirror:
     prefix: "{{ P }}"
     macros:
