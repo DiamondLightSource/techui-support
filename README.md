@@ -20,7 +20,7 @@ Here are the most commonly used icons:
 | Translation Stage | ![alt text](<symbols/translation-stage.svg>) | (move)
 | Cog | ![alt text](<symbols/cog.svg>) | (cog)
 | Horizontal Focusing Mirrors | ![alt text](<symbols/flip-horizontal-2.svg>) |
-| Vertical Focusing Mirrors | ![alt text](<symbols/flip-vertical-2.svg>) |
+| Vertical Focusing Mirrors | ![alt text](<symbols/flip-vertical-2.svg>) | 
 | | ![alt text](<symbols/square-centerline-dashed-horizontal.svg>) |
 | | ![alt text](<symbols/square-centerline-dashed-vertical.svg>) |
 | | ![alt text](<symbols/square-split-horizontal.svg>) |
@@ -35,6 +35,11 @@ Here are the most commonly used icons:
 | Quad Beam Positioning Monitor | ![alt text](<symbols/qbpm.svg>) |
 | Cross Beam Positioning Monitor | ![alt text](<symbols/xbpm.svg>) |
 | Filter Wheel | ![alt text](<symbols/filter-wheel.svg>) |
+| Beamstop | ![alt text](<symbols/beamstop.svg>) |
+| Target | ![alt text](<symbols/target.svg>) |
+| Table | ![alt text](<symbols/table.svg>) |
+| Goniometer | ![alt text](<symbols/camera-lens.svg>) |
+| Cell | ![alt text](<symbols/cell.svg>) |
 
 
 <!-- ## Vacuum
