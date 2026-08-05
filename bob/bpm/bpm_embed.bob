@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-08-05 11:27:34 by ryi58813-->
+<display version="2.0.0">
+  <name>bpm_embed</name>
+  <width>220</width>
+  <height>120</height>
+  <background_color>
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <grid_color>
+    <color red="127" green="127" blue="127">
+    </color>
+  </grid_color>
+  <widget type="group" version="3.0.0">
+    <name>$(label)</name>
+    <width>220</width>
+    <height>120</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <widget type="action_button" version="3.0.0">
+      <name>Open PVI</name>
+      <actions>
+        <action type="open_display">
+          <description>Open Display</description>
+          <file>bpm_setup.bob</file>
+          <macros>
+            <bpm>$(bpm)</bpm>
+          </macros>
+          <target>tab</target>
+        </action>
+      </actions>
+      <text>More</text>
+      <x>20</x>
+      <y>60</y>
+      <width>70</width>
+      <height>20</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Readback PV</name>
+      <pv_name>$(bpm):INTEN</pv_name>
+      <x>20</x>
+      <width>70</width>
+      <height>15</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="xyplot" version="3.0.0">
+      <name>X/Y Plot</name>
+      <x>100</x>
+      <width>80</width>
+      <height>80</height>
+      <title_font>
+        <font name="Comment" family="Liberation Sans" style="ITALIC" size="14.0">
+        </font>
+      </title_font>
+      <show_legend>false</show_legend>
+      <x_axis>
+        <title></title>
+        <autoscale>false</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>-3.0</minimum>
+        <maximum>3.0</maximum>
+        <show_grid>false</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font family="Liberation Sans" style="REGULAR" size="10.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </x_axis>
+      <y_axes>
+        <y_axis>
+          <title></title>
+          <autoscale>false</autoscale>
+          <log_scale>false</log_scale>
+          <minimum>-3.0</minimum>
+          <maximum>3.0</maximum>
+          <show_grid>false</show_grid>
+          <title_font>
+            <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+            </font>
+          </title_font>
+          <scale_font>
+            <font family="Liberation Sans" style="REGULAR" size="10.0">
+            </font>
+          </scale_font>
+          <on_right>false</on_right>
+          <visible>true</visible>
+          <color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </color>
+        </y_axis>
+      </y_axes>
+      <traces>
+        <trace>
+          <name></name>
+          <x_pv>$(bpm):XPOS</x_pv>
+          <y_pv>$(bpm):YPOS</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>0</trace_type>
+          <color>
+            <color red="0" green="0" blue="255">
+            </color>
+          </color>
+          <line_width>0</line_width>
+          <line_style>0</line_style>
+          <point_type>2</point_type>
+          <point_size>1</point_size>
+          <visible>false</visible>
+        </trace>
+      </traces>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Readback PV_1</name>
+      <pv_name>$(bpm):XPOS</pv_name>
+      <x>20</x>
+      <y>20</y>
+      <width>70</width>
+      <height>15</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Readback PV_2</name>
+      <pv_name>$(bpm):YPOS</pv_name>
+      <x>20</x>
+      <y>40</y>
+      <width>70</width>
+      <height>15</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>I</text>
+      <width>15</width>
+      <height>15</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>X</text>
+      <y>20</y>
+      <width>15</width>
+      <height>15</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>Y#</text>
+      <y>40</y>
+      <width>15</width>
+      <height>15</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+</display>
