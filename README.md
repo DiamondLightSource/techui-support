@@ -19,16 +19,27 @@ Here are the most commonly used icons:
 | Rotation Stage | ![alt text](<symbols/rotation-stage.svg>) | (rotate-cw)
 | Translation Stage | ![alt text](<symbols/translation-stage.svg>) | (move)
 | Cog | ![alt text](<symbols/cog.svg>) | (cog)
-| | ![alt text](<symbols/flip-horizontal-2.svg>) |
-| | ![alt text](<symbols/flip-vertical-2.svg>) | 
+| Horizontal Focusing Mirrors | ![alt text](<symbols/flip-horizontal-2.svg>) |
+| Vertical Focusing Mirrors | ![alt text](<symbols/flip-vertical-2.svg>) | 
 | | ![alt text](<symbols/square-centerline-dashed-horizontal.svg>) |
 | | ![alt text](<symbols/square-centerline-dashed-vertical.svg>) |
 | | ![alt text](<symbols/square-split-horizontal.svg>) |
 | | ![alt text](<symbols/square-split-vertical.svg>) |
 | Slits | ![alt text](<symbols/slits.svg>) | (slits)
-
-
-
+| Shutter (Closed) | ![alt text](<symbols/shutter-closed.svg>) |
+| Shutter (Opening) | ![alt text](<symbols/shutter-opening.svg>) |
+| Shutter (Closing) | ![alt text](<symbols/shutter-closing.svg>) |
+| Shutter (Open) | ![alt text](<symbols/shutter-open.svg>) |
+| Shutter (Fault) | ![alt text](<symbols/shutter-fault.svg>) |
+| Pneumatics | ![alt text](<symbols/pneumatic.svg>) |
+| Quad Beam Positioning Monitor | ![alt text](<symbols/qbpm.svg>) |
+| Cross Beam Positioning Monitor | ![alt text](<symbols/xbpm.svg>) |
+| Filter Wheel | ![alt text](<symbols/filter-wheel.svg>) |
+| Beamstop | ![alt text](<symbols/beamstop.svg>) |
+| Target | ![alt text](<symbols/target.svg>) |
+| Table | ![alt text](<symbols/table.svg>) |
+| Goniometer | ![alt text](<symbols/camera-lens.svg>) |
+| Cell | ![alt text](<symbols/cell.svg>) |
 
 
 <!-- ## Vacuum
