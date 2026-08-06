@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+
+  <!-- Top platform -->
+  <path d="M20 16
+           L44 16
+           L50 21
+           L44 26
+           L20 26
+           L14 21
+           Z"></path>
+
+  <!-- Bottom platform -->
+  <path d="M14 43
+           L20 48
+           L44 48
+           L50 43
+           L44 38
+           L20 38
+           Z"></path>
+
+  <!-- Legs -->
+  <line x1="18" y1="24" x2="16" y2="40"></line>
+  <line x1="24" y1="26" x2="26" y2="40"></line>
+  <line x1="30" y1="26" x2="32" y2="40"></line>
+  <line x1="34" y1="26" x2="32" y2="40"></line>
+  <line x1="40" y1="26" x2="38" y2="40"></line>
+  <line x1="46" y1="24" x2="48" y2="40"></line>
+
+  <!-- Joints -->
+  <circle cx="18" cy="24" r="1.5"></circle>
+  <circle cx="24" cy="26" r="1.5"></circle>
+  <circle cx="30" cy="26" r="1.5"></circle>
+  <circle cx="34" cy="26" r="1.5"></circle>
+  <circle cx="40" cy="26" r="1.5"></circle>
+  <circle cx="46" cy="24" r="1.5"></circle>
+
+  <circle cx="16" cy="40" r="1.5"></circle>
+  <circle cx="26" cy="40" r="1.5"></circle>
+  <circle cx="32" cy="40" r="1.5"></circle>
+  <circle cx="38" cy="40" r="1.5"></circle>
+  <circle cx="48" cy="40" r="1.5"></circle>
+
+  <!-- Actuator bodies -->
+  <line x1="17" y1="31" x2="17" y2="34"></line>
+  <line x1="25" y1="32" x2="25" y2="35"></line>
+  <line x1="31" y1="32" x2="31" y2="35"></line>
+  <line x1="33" y1="32" x2="33" y2="35"></line>
+  <line x1="39" y1="32" x2="39" y2="35"></line>
+  <line x1="47" y1="31" x2="47" y2="34"></line>
+
+  <!-- Sample hole -->
+  <circle cx="32" cy="21" r="2"></circle>
+</svg>
