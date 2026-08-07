@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-08-07 14:34:12 by ryi58813-->
+<display version="2.0.0">
+  <name>TESTING_positioner_embed_state</name>
+  <width>220</width>
+  <height>200</height>
+  <background_color>
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <grid_color>
+    <color red="127" green="127" blue="127">
+    </color>
+  </grid_color>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="group" version="3.0.0">
+    <width>220</width>
+    <height>155</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>State</text>
+      <x>20</x>
+      <y>35</y>
+      <width>25</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>LED (Multi State)</name>
+      <y>35</y>
+      <rules>
+        <rule name="state-colour" prop_id="states[0].color" out_exp="false">
+          <exp bool_exp=" 6 &lt;= (pvInt0 + (pvInt1&lt;&lt;1)) &lt; 8">
+            <value>
+              <color name="INVALID" red="255" green="0" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="(pvInt0 + (pvInt1&lt;&lt;1)) == 0">
+            <value>
+              <color name="Off" red="60" green="100" blue="60">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp=" 2 &lt;= (pvInt0 + (pvInt1&lt;&lt;1)) &lt; 4">
+            <value>
+              <color name="Attention" red="255" green="160" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp=" 4 &lt;= (pvInt0 + (pvInt1&lt;&lt;1)) &lt; 6">
+            <value>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp=" (pvInt0 + (pvInt1&lt;&lt;1)) == 1">
+            <value>
+              <color name="Text" red="0" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp=" (pvInt0 + (pvInt1&lt;&lt;1)) == 0">
+            <value>
+              <color name="OK" red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>loc://test_mp:DMOV</pv_name>
+          <pv_name>loc://test_mp:ERROR.K</pv_name>
+        </rule>
+      </rules>
+      <states>
+        <state>
+          <value>0</value>
+          <label>State</label>
+          <color>
+            <color name="Off" red="60" green="100" blue="60">
+            </color>
+          </color>
+        </state>
+      </states>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button</name>
+      <pv_name>loc://test_mp:DMOV(0)</pv_name>
+      <x>65</x>
+      <y>15</y>
+      <width>75</width>
+      <height>15</height>
+      <items>
+        <item>0</item>
+        <item>1</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_1</name>
+      <pv_name>loc://test_mp:ERROR.K(0)</pv_name>
+      <x>65</x>
+      <y>50</y>
+      <width>75</width>
+      <height>15</height>
+      <items>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+      </items>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>DMOV Value</text>
+      <x>75</x>
+      <width>65</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>ERROR.K Value</text>
+      <x>65</x>
+      <y>35</y>
+      <width>80</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>ERROR.K &lt;&lt; 1</text>
+      <x>70</x>
+      <y>70</y>
+      <width>70</width>
+      <height>15</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text></text>
+      <x>140</x>
+      <y>70</y>
+      <width>25</width>
+      <height>15</height>
+      <rules>
+        <rule name="shifted" prop_id="text" out_exp="true">
+          <exp bool_exp="1">
+            <expression>pvInt0&lt;&lt;1</expression>
+          </exp>
+          <pv_name>loc://test_mp:ERROR.K</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>loc://test_mp:ERROR.K</pv_name>
+      <x>140</x>
+      <y>50</y>
+      <width>25</width>
+      <height>15</height>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>loc://test_mp:DMOV</pv_name>
+      <x>140</x>
+      <y>15</y>
+      <width>25</width>
+      <height>15</height>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>DMOV + (ERROR.K &lt;&lt; 1)</text>
+      <x>25</x>
+      <y>90</y>
+      <width>115</width>
+      <height>15</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text></text>
+      <x>140</x>
+      <y>90</y>
+      <width>25</width>
+      <height>15</height>
+      <rules>
+        <rule name="shifted" prop_id="text" out_exp="true">
+          <exp bool_exp="1">
+            <expression>pv0 + (pvInt1&lt;&lt;1)</expression>
+          </exp>
+          <pv_name>loc://test_mp:DMOV</pv_name>
+          <pv_name>loc://test_mp:ERROR.K</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <x>15</x>
+      <y>60</y>
+      <width>15</width>
+      <height>25</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="15.0" y="25.0">
+        </point>
+      </points>
+      <arrows>2</arrows>
+      <arrow_length>10</arrow_length>
+    </widget>
+  </widget>
+</display>
