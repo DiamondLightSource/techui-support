@@ -54,7 +54,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Readback PV_2</name>
-      <pv_name>$(bpm):YPOS</pv_name>
+      <pv_name>$(P):YPOS</pv_name>
       <x>30</x>
       <y>70</y>
       <width>80</width>
@@ -75,7 +75,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Readback PV_1</name>
-      <pv_name>$(bpm):XPOS</pv_name>
+      <pv_name>$(P):XPOS</pv_name>
       <x>30</x>
       <y>40</y>
       <width>80</width>
@@ -96,7 +96,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Readback PV</name>
-      <pv_name>$(bpm):INTEN</pv_name>
+      <pv_name>$(P):INTEN</pv_name>
       <x>30</x>
       <y>10</y>
       <width>80</width>
@@ -122,7 +122,7 @@
           <description>Open Display</description>
           <file>bpm_setup.bob</file>
           <macros>
-            <bpm>$(bpm)</bpm>
+            <bpm>$(P)</bpm>
           </macros>
           <target>tab</target>
         </action>
@@ -200,8 +200,8 @@
       <traces>
         <trace>
           <name></name>
-          <x_pv>$(bpm):XPOS</x_pv>
-          <y_pv>$(bpm):YPOS</y_pv>
+          <x_pv>$(P):XPOS</x_pv>
+          <y_pv>$(P):YPOS</y_pv>
           <err_pv></err_pv>
           <axis>0</axis>
           <trace_type>0</trace_type>
