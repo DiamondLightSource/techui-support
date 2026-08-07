@@ -109,6 +109,25 @@ support_modules:
         type: "related"
     #TODO: Legacy support
 
+  # Diagnostics
+
+  generic.generic_BPM_diag:
+    prefix: "{{ P }}"
+    macros:
+      - P
+    screens:
+      - file: bpm/bpm_embed.bob
+        type: embedded
+
+  positioner.multipositioner:
+    prefix: "{{ P }}"
+    macros:
+      - P
+      - MP
+    screens:
+      - file: positioner/positioner_embed.bob
+        type: embedded
+
   # Motion Controllers
 
   pmac.dls_pmac_asyn_motor:

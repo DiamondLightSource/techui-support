@@ -32,7 +32,7 @@
     </background_color>
     <widget type="textupdate" version="2.0.0">
       <name>Readback PV</name>
-      <pv_name>$(bpm):BPMI1</pv_name>
+      <pv_name>$(P):BPMI1</pv_name>
       <x>140</x>
       <width>80</width>
       <font>
@@ -52,7 +52,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Readback PV_1</name>
-      <pv_name>$(bpm):BPMI2</pv_name>
+      <pv_name>$(P):BPMI2</pv_name>
       <x>140</x>
       <y>25</y>
       <width>80</width>
@@ -73,7 +73,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Readback PV_2</name>
-      <pv_name>$(bpm):BPMI3</pv_name>
+      <pv_name>$(P):BPMI3</pv_name>
       <x>140</x>
       <y>50</y>
       <width>80</width>
@@ -94,7 +94,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Readback PV_3</name>
-      <pv_name>$(bpm):BPMI4</pv_name>
+      <pv_name>$(P):BPMI4</pv_name>
       <x>140</x>
       <y>75</y>
       <width>80</width>
@@ -338,27 +338,27 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Entry</name>
-      <pv_name>$(bpm):DA</pv_name>
+      <pv_name>$(P):DA</pv_name>
       <x>20</x>
       <width>80</width>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Entry_1</name>
-      <pv_name>$(bpm):DA</pv_name>
+      <pv_name>$(P):DA</pv_name>
       <x>20</x>
       <y>25</y>
       <width>80</width>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Entry_2</name>
-      <pv_name>$(bpm):DA</pv_name>
+      <pv_name>$(P):DA</pv_name>
       <x>20</x>
       <y>50</y>
       <width>80</width>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Entry_3</name>
-      <pv_name>$(bpm):DA</pv_name>
+      <pv_name>$(P):DA</pv_name>
       <x>20</x>
       <y>75</y>
       <width>80</width>
@@ -373,7 +373,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Entry_4</name>
-      <pv_name>$(bpm):KX</pv_name>
+      <pv_name>$(P):KX</pv_name>
       <x>135</x>
       <width>80</width>
     </widget>
@@ -388,7 +388,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Entry_5</name>
-      <pv_name>$(bpm):KY</pv_name>
+      <pv_name>$(P):KY</pv_name>
       <x>135</x>
       <y>25</y>
       <width>80</width>
@@ -404,7 +404,7 @@
     </widget>
     <widget type="combo" version="2.0.0">
       <name>Combo Box</name>
-      <pv_name>$(bpm):POSSCAN.SCAN</pv_name>
+      <pv_name>$(P):POSSCAN.SCAN</pv_name>
       <x>115</x>
       <y>75</y>
       <height>20</height>
@@ -446,7 +446,7 @@
           <exp bool_exp="pv0 == 1">
             <value>X = KX*((A-DA)-(B-DB)-(C-DC)+(D-DD))/I =</value>
           </exp>
-          <pv_name>$(bpm):ORIENT</pv_name>
+          <pv_name>$(P):ORIENT</pv_name>
         </rule>
       </rules>
     </widget>
@@ -462,7 +462,7 @@
           <exp bool_exp="pv0 == 1">
             <value>Y = KY*((A-DA)+(B-DB)-(C-DC)-(D-DD))/I = </value>
           </exp>
-          <pv_name>$(bpm):ORIENT</pv_name>
+          <pv_name>$(P):ORIENT</pv_name>
         </rule>
       </rules>
     </widget>
@@ -476,7 +476,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Readback PV_8</name>
-      <pv_name>$(bpm):INTEN</pv_name>
+      <pv_name>$(P):INTEN</pv_name>
       <x>300</x>
       <width>80</width>
       <font>
@@ -496,7 +496,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Readback PV_9</name>
-      <pv_name>$(bpm):XPOS</pv_name>
+      <pv_name>$(P):XPOS</pv_name>
       <x>300</x>
       <y>25</y>
       <width>80</width>
@@ -517,7 +517,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Readback PV_10</name>
-      <pv_name>$(bpm):YPOS</pv_name>
+      <pv_name>$(P):YPOS</pv_name>
       <x>300</x>
       <y>50</y>
       <width>80</width>
@@ -538,7 +538,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Readback PV_11</name>
-      <pv_name>$(bpm):Q</pv_name>
+      <pv_name>$(P):Q</pv_name>
       <x>300</x>
       <y>75</y>
       <width>80</width>

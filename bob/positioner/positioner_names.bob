@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-08-07 13:52:05 by ryi58813-->
+<display version="2.0.0">
+  <name>Positioner Names</name>
+  <width>230</width>
+  <height>585</height>
+  <background_color>
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <grid_color>
+    <color red="127" green="127" blue="127">
+    </color>
+  </grid_color>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="group" version="3.0.0">
+    <name>$(label)</name>
+    <width>230</width>
+    <height>580</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Pos</text>
+      <x>5</x>
+      <y>5</y>
+      <width>60</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>Name</text>
+      <x>65</x>
+      <y>5</y>
+      <width>119</width>
+      <height>19</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>1</text>
+      <x>5</x>
+      <y>25</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>2</text>
+      <x>5</x>
+      <y>55</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>3</text>
+      <x>5</x>
+      <y>85</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>4</text>
+      <x>5</x>
+      <y>115</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>5</text>
+      <x>5</x>
+      <y>145</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>6</text>
+      <x>5</x>
+      <y>175</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_8</name>
+      <text>7</text>
+      <x>5</x>
+      <y>205</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_9</name>
+      <text>8</text>
+      <x>5</x>
+      <y>235</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_10</name>
+      <text>9</text>
+      <x>5</x>
+      <y>265</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_11</name>
+      <text>10</text>
+      <x>5</x>
+      <y>295</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_12</name>
+      <text>11</text>
+      <x>5</x>
+      <y>325</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>12</text>
+      <x>5</x>
+      <y>355</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_14</name>
+      <text>13</text>
+      <x>5</x>
+      <y>385</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_15</name>
+      <text>14</text>
+      <x>5</x>
+      <y>415</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_16</name>
+      <text>15</text>
+      <x>5</x>
+      <y>445</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_17</name>
+      <text>16</text>
+      <x>5</x>
+      <y>475</y>
+      <width>60</width>
+      <height>29</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group</name>
+      <x>65</x>
+      <y>25</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Background" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry</name>
+        <pv_name>$(P)$(MP):SELECT.ZRST</pv_name>
+        <x>5</x>
+        <y>3</y>
+        <width>110</width>
+        <height>24</height>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_1</name>
+      <x>65</x>
+      <y>55</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_17</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Background" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_1</name>
+        <pv_name>$(P)$(MP):SELECT.ONST</pv_name>
+        <x>5</x>
+        <y>3</y>
+        <width>110</width>
+        <height>24</height>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_2</name>
+      <x>65</x>
+      <y>85</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_18</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Background" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_2</name>
+        <pv_name>$(P)$(MP):SELECT.TWST</pv_name>
+        <x>5</x>
+        <y>3</y>
+        <width>110</width>
+        <height>24</height>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_4</name>
+      <x>65</x>
+      <y>115</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_20</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Background" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_4</name>
+        <pv_name>$(P)$(MP):SELECT.THST</pv_name>
+        <x>5</x>
+        <y>3</y>
+        <width>110</width>
+        <height>24</height>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_5</name>
+      <x>65</x>
+      <y>145</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_21</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Background" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_5</name>
+        <pv_name>$(P)$(MP):SELECT.FRST</pv_name>
+        <x>5</x>
+        <y>3</y>
+        <width>110</width>
+        <height>24</height>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_6</name>
+      <x>65</x>
+      <y>175</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_22</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Background" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_6</name>
+        <pv_name>$(P)$(MP):SELECT.FVST</pv_name>
+        <x>5</x>
+        <y>3</y>
+        <width>110</width>
+        <height>24</height>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_7</name>
+      <x>65</x>
+      <y>205</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_23</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Background" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_7</name>
+        <pv_name>$(P)$(MP):SELECT.SXST</pv_name>
+        <x>5</x>
+        <y>3</y>
+        <width>110</width>
+        <height>24</height>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_8</name>
+      <x>65</x>
+      <y>235</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_24</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Background" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_8</name>
+        <pv_name>$(P)$(MP):SELECT.SVST</pv_name>
+        <x>5</x>
+        <y>3</y>
+        <width>110</width>
+        <height>24</height>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_9</name>
+      <x>65</x>
+      <y>265</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_25</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Background" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_9</name>
+        <pv_name>$(P)$(MP):SELECT.EIST</pv_name>
+        <x>5</x>
+        <y>3</y>
+        <width>110</width>
+        <height>24</height>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_10</name>
+      <x>65</x>
+      <y>295</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_26</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Background" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_10</name>
+        <pv_name>$(P)$(MP):SELECT.NIST</pv_name>
+        <x>5</x>
+        <y>3</y>
+        <width>110</width>
+        <height>24</height>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_11</name>
+      <x>65</x>
+      <y>325</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_27</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Background" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_11</name>
+        <pv_name>$(P)$(MP):SELECT.TEST</pv_name>
+        <x>5</x>
+        <y>3</y>
+        <width>110</width>
+        <height>24</height>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_12</name>
+      <x>65</x>
+      <y>355</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_28</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Background" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_12</name>
+        <pv_name>$(P)$(MP):SELECT.ELST</pv_name>
+        <x>5</x>
+        <y>3</y>
+        <width>110</width>
+        <height>24</height>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_13</name>
+      <x>65</x>
+      <y>385</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_29</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Background" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_13</name>
+        <pv_name>$(P)$(MP):SELECT.TVST</pv_name>
+        <x>5</x>
+        <y>3</y>
+        <width>110</width>
+        <height>24</height>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_14</name>
+      <x>65</x>
+      <y>415</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_30</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Background" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_14</name>
+        <pv_name>$(P)$(MP):SELECT.TTST</pv_name>
+        <x>5</x>
+        <y>3</y>
+        <width>110</width>
+        <height>24</height>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_15</name>
+      <x>65</x>
+      <y>445</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_31</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Background" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_15</name>
+        <pv_name>$(P)$(MP):SELECT.FTST</pv_name>
+        <x>5</x>
+        <y>3</y>
+        <width>110</width>
+        <height>24</height>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_16</name>
+      <x>65</x>
+      <y>475</y>
+      <width>120</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_32</name>
+        <width>120</width>
+        <height>30</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Background" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_16</name>
+        <pv_name>$(P)$(MP):SELECT.FFST</pv_name>
+        <x>5</x>
+        <y>3</y>
+        <width>110</width>
+        <height>24</height>
+      </widget>
+    </widget>
+    <widget type="text-symbol" version="2.0.0">
+      <name>Text Symbol</name>
+      <pv_name>$(P)$(MP):UPDATE</pv_name>
+      <symbols>
+        <symbol>⟳</symbol>
+      </symbols>
+      <x>155</x>
+      <y>515</y>
+      <width>25</width>
+      <height>25</height>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_19</name>
+      <text>Setup Position Names</text>
+      <x>5</x>
+      <y>515</y>
+      <width>150</width>
+      <height>25</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+</display>
