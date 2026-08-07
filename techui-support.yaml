@@ -109,6 +109,17 @@ support_modules:
         type: "related"
     #TODO: Legacy support
 
+  # Diagnostics
+
+  positioner.multipositioner:
+    prefix: "{{ P }}"
+    macros:
+      - P
+      - MP
+    screens:
+      - file: positioner/positioner_embed.bob
+        type: embedded
+
   # Motion Controllers
 
   pmac.dls_pmac_asyn_motor:
