@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-08-07 13:23:03 by ryi58813-->
+<display version="2.0.0">
+  <name>positioner_embed</name>
+  <width>220</width>
+  <height>120</height>
+  <background_color>
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <grid_color>
+    <color red="127" green="127" blue="127">
+    </color>
+  </grid_color>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="group" version="3.0.0">
+    <name>$(label)</name>
+    <width>220</width>
+    <height>120</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <widget type="action_button" version="3.0.0">
+      <name>Open PVI</name>
+      <actions>
+        <action type="open_display">
+          <description>Open Display</description>
+          <file>positioner_names.bob</file>
+          <macros>
+            <P>$(P)</P>
+            <MP>$(MP)</MP>
+          </macros>
+          <target>tab</target>
+        </action>
+      </actions>
+      <text>Names</text>
+      <y>60</y>
+      <width>50</width>
+      <height>20</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>STOP</name>
+      <class>DEFAULT_PV</class>
+      <actions>
+        <action type="write_pv">
+          <description>$(name)</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(MP):STOP.PROC</pv_name>
+      <text>STOP</text>
+      <x>130</x>
+      <y>60</y>
+      <width>50</width>
+      <height>20</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(tooltip)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Readback PV</name>
+      <pv_name>$(P)$(P1):UPD.D</pv_name>
+      <x>45</x>
+      <y>35</y>
+      <width>90</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box</name>
+      <pv_name>$(P)$(MP):SELECT</pv_name>
+      <x>5</x>
+      <width>170</width>
+      <height>25</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Open PVI_1</name>
+      <actions>
+        <action type="open_display">
+          <description>Open Display</description>
+          <file>positioner.bob</file>
+          <macros>
+            <P>$(P)</P>
+            <PS>$(P1)</PS>
+            <MP>$(MP)</MP>
+            <filename>$(filename)</filename>
+          </macros>
+          <target>tab</target>
+        </action>
+      </actions>
+      <text>Values</text>
+      <x>65</x>
+      <y>60</y>
+      <width>50</width>
+      <height>20</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>State</text>
+      <x>20</x>
+      <y>35</y>
+      <width>25</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>InPos</text>
+      <x>135</x>
+      <y>35</y>
+      <width>25</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_1</name>
+      <pv_name>$(P)$(MP):INPOS</pv_name>
+      <x>160</x>
+      <y>35</y>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>LED (Multi State)_1</name>
+      <y>35</y>
+      <rules>
+        <rule name="state-colour" prop_id="states[0].color" out_exp="false">
+          <exp bool_exp=" 6 &lt;= (pvInt0 + (pvInt1&lt;&lt;1)) &lt; 8">
+            <value>
+              <color name="INVALID" red="255" green="0" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="(pvInt0 + (pvInt1&lt;&lt;1)) == 0">
+            <value>
+              <color name="Off" red="60" green="100" blue="60">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp=" 2 &lt;= (pvInt0 + (pvInt1&lt;&lt;1)) &lt; 4">
+            <value>
+              <color name="Attention" red="255" green="160" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp=" 4 &lt;= (pvInt0 + (pvInt1&lt;&lt;1)) &lt; 6">
+            <value>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp=" (pvInt0 + (pvInt1&lt;&lt;1)) == 1">
+            <value>
+              <color name="Text" red="0" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp=" (pvInt0 + (pvInt1&lt;&lt;1)) == 0">
+            <value>
+              <color name="OK" red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(P)$(MP):DMOV</pv_name>
+          <pv_name>$(P)$(MP):ERROR.K</pv_name>
+        </rule>
+      </rules>
+      <states>
+        <state>
+          <value>0</value>
+          <label>State</label>
+          <color>
+            <color name="Off" red="60" green="100" blue="60">
+            </color>
+          </color>
+        </state>
+      </states>
+    </widget>
+  </widget>
+</display>
