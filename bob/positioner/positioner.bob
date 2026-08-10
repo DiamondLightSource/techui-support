@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-08-07 15:28:17 by ryi58813-->
+<!--Saved on 2026-08-10 09:41:57 by ryi58813-->
 <display version="2.0.0">
   <name>Positioner Values</name>
   <width>230</width>
@@ -128,13 +128,13 @@
       </widget>
       <widget type="textentry" version="3.0.0">
         <name>Text Entry_17</name>
-        <pv_name>$(P)$(MP):SETVALUE2.VAL</pv_name>
+        <pv_name>$(P)$(PS):SETVALUE2.VAL</pv_name>
         <x>70</x>
         <height>25</height>
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update</name>
-        <pv_name>$(P)$(MP):UPD.D</pv_name>
+        <pv_name>$(P)$(PS):UPD.D</pv_name>
         <x>70</x>
         <y>30</y>
         <height>25</height>
@@ -142,10 +142,37 @@
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button</name>
+        <actions>
+          <action type="open_display">
+            <description>Open Display</description>
+            <file>$(IOC)/pmacAxis.pvi.bob</file>
+            <macros>
+              <P>$(P)</P>
+              <M>$(M)</M>
+              <label>$(label)</label>
+            </macros>
+            <target>replace</target>
+          </action>
+        </actions>
         <text>❏</text>
         <x>175</x>
         <width>25</width>
         <height>25</height>
+        <rules>
+          <rule name="visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="2&lt;=pv0&lt;5">
+              <value>true</value>
+            </exp>
+            <exp bool_exp="pv0&lt;=1">
+              <value>false</value>
+            </exp>
+            <exp bool_exp="pv0&gt;5">
+              <value>false</value>
+            </exp>
+            <pv_name>$(P)$(PS):SETINPUT4.VAL</pv_name>
+          </rule>
+        </rules>
+        <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_1</name>
@@ -180,6 +207,7 @@
             <pv_name>$(motor):ELOSS</pv_name>
           </rule>
         </rules>
+        <tooltip>$(actions)</tooltip>
       </widget>
     </widget>
     <widget type="group" version="3.0.0">
