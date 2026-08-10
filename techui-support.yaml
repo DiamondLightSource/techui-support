@@ -116,6 +116,7 @@ support_modules:
     macros:
       - P
       - MP
+      - PS
     screens:
       - file: positioner/positioner_embed.bob
         type: embedded
