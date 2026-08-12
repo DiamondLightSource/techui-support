@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-08-12 14:40:51 by ryi58813-->
 <display version="2.0.0">
   <name>slit-4axis-size-center-embed</name>
   <y use_class="true">0</y>
@@ -85,21 +86,21 @@
     </widget>
     <widget type="group" version="3.0.0">
       <name>Group</name>
-      <class>Not Default</class>
+      <class>NO_BOX</class>
       <x>197</x>
       <y>118</y>
       <width>280</width>
       <height>195</height>
-      <style>3</style>
-      <font>
+      <style use_class="true">3</style>
+      <font use_class="true">
         <font family="Arial" style="REGULAR" size="15.0">
         </font>
       </font>
-      <foreground_color>
+      <foreground_color use_class="true">
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color>
+      <background_color use_class="true">
         <color name="Read_Background" red="240" green="240" blue="240">
         </color>
       </background_color>
@@ -198,7 +199,7 @@
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_8</name>
-        <class>Not Default</class>
+        <class>CUSTOM</class>
         <text>Y Center</text>
         <x>237</x>
         <y>74</y>
@@ -241,7 +242,7 @@
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_4</name>
-        <class>Not Default</class>
+        <class>CUSTOM</class>
         <text>Beam (Z)</text>
         <x>65</x>
         <y>67</y>
@@ -259,7 +260,7 @@
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_5</name>
-        <class>Not Default</class>
+        <class>CUSTOM</class>
         <text>Pointing Towards You</text>
         <x>42</x>
         <y>105</y>
@@ -277,7 +278,7 @@
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_6</name>
-        <class>Not Default</class>
+        <class>CUSTOM</class>
         <text>Y Size</text>
         <x>205</x>
         <y>150</y>
@@ -320,7 +321,7 @@
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_7</name>
-        <class>Not Default</class>
+        <class>CUSTOM</class>
         <text>X Center</text>
         <x>105</x>
         <width>70</width>
@@ -343,7 +344,7 @@
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_9</name>
-        <class>Not Default</class>
+        <class>CUSTOM</class>
         <text>X Size</text>
         <x>30</x>
         <y>57</y>

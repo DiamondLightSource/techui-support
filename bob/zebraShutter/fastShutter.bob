@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-01-27 09:54:06 by ryi58813-->
+<!--Saved on 2026-08-12 14:37:35 by ryi58813-->
 <display version="2.0.0">
   <name>fastShutter</name>
   <y use_class="true">0</y>
@@ -139,6 +139,9 @@ Disabled</text>
           <exp bool_exp="pv0 == 1">
             <value>true</value>
           </exp>
+          <exp bool_exp="pv0 == 0">
+            <value>false</value>
+          </exp>
           <pv_name>$(P):CTRL1</pv_name>
         </rule>
       </rules>
@@ -200,7 +203,7 @@ Disabled</text>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_1</name>
-      <class>Not Default</class>
+      <class>CUSTOM</class>
       <text>deg</text>
       <x>217</x>
       <y>7</y>
@@ -218,7 +221,7 @@ Disabled</text>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_2</name>
-      <class>Not Default</class>
+      <class>CUSTOM</class>
       <text>Gate Start</text>
       <x>7</x>
       <y>7</y>
@@ -266,7 +269,7 @@ Disabled</text>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_3</name>
-      <class>Not Default</class>
+      <class>CUSTOM</class>
       <text>deg</text>
       <x>217</x>
       <y>42</y>
@@ -284,7 +287,7 @@ Disabled</text>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_4</name>
-      <class>Not Default</class>
+      <class>CUSTOM</class>
       <text>Gate Width</text>
       <x>7</x>
       <y>42</y>
@@ -409,7 +412,7 @@ Disabled</text>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_5</name>
-      <class>Not Default</class>
+      <class>CUSTOM</class>
       <text>Output</text>
       <x>2</x>
       <y>32</y>
@@ -427,7 +430,7 @@ Disabled</text>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_6</name>
-      <class>Not Default</class>
+      <class>CUSTOM</class>
       <text>Current Position</text>
       <x>2</x>
       <y>62</y>
@@ -445,7 +448,7 @@ Disabled</text>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_7</name>
-      <class>Not Default</class>
+      <class>CUSTOM</class>
       <text>Shutter Output</text>
       <x>2</x>
       <y>2</y>
@@ -515,7 +518,7 @@ Disabled</text>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_8</name>
-      <class>Not Default</class>
+      <class>CUSTOM</class>
       <text>Stop Position Actual</text>
       <x>2</x>
       <y>92</y>
