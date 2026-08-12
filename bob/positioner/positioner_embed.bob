@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-08-10 10:03:30 by ryi58813-->
+<!--Saved on 2026-08-12 14:59:08 by ryi58813-->
 <display version="2.0.0">
   <name>positioner_embed</name>
+  <y use_class="true">0</y>
   <width>220</width>
   <height>120</height>
-  <background_color>
+  <background_color use_class="true">
     <color name="Read_Background" red="240" green="240" blue="240">
     </color>
   </background_color>
@@ -18,15 +19,16 @@
     <name>$(label)</name>
     <width>220</width>
     <height>120</height>
-    <font>
+    <style use_class="true">0</style>
+    <font use_class="true">
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color>
+    <foreground_color use_class="true">
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color>
+    <background_color use_class="true">
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -47,15 +49,15 @@
       <y>60</y>
       <width>50</width>
       <height>20</height>
-      <font>
+      <font use_class="true">
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color>
+      <foreground_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color>
+      <background_color use_class="true">
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -77,15 +79,15 @@
       <y>60</y>
       <width>50</width>
       <height>20</height>
-      <font>
+      <font use_class="true">
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color>
+      <foreground_color use_class="true">
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color>
+      <background_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
@@ -97,17 +99,21 @@
       <x>45</x>
       <y>35</y>
       <width>90</width>
-      <font>
+      <font use_class="true">
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <background_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
         <color red="184" green="195" blue="223">
         </color>
       </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
         <color red="196" green="196" blue="196">
         </color>
       </border_color>
@@ -118,6 +124,18 @@
       <x>5</x>
       <width>170</width>
       <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Open PVI_1</name>
@@ -139,15 +157,15 @@
       <y>60</y>
       <width>50</width>
       <height>20</height>
-      <font>
+      <font use_class="true">
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color>
+      <foreground_color use_class="true">
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color>
+      <background_color use_class="true">
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -155,35 +173,57 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
+      <class>CENTRAL</class>
       <text>State</text>
       <x>20</x>
       <y>35</y>
       <width>25</width>
       <font>
-        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        <font family="Arial" style="REGULAR" size="9.0">
         </font>
       </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_1</name>
+      <class>CENTRAL</class>
       <text>InPos</text>
       <x>135</x>
       <y>35</y>
       <width>25</width>
       <font>
-        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        <font family="Arial" style="REGULAR" size="9.0">
         </font>
       </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_1</name>
       <pv_name>$(P)$(MP):INPOS</pv_name>
       <x>160</x>
       <y>35</y>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </on_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
     </widget>
     <widget type="multi_state_led" version="2.0.0">
       <name>LED (Multi State)_1</name>
@@ -198,7 +238,7 @@
           </exp>
           <exp bool_exp="(pvInt0 + (pvInt1&lt;&lt;1)) == 0">
             <value>
-              <color name="Off" red="60" green="100" blue="60">
+              <color name="Off" red="237" green="237" blue="237">
               </color>
             </value>
           </exp>
@@ -230,16 +270,28 @@
           <pv_name>$(P)$(MP):ERROR.K</pv_name>
         </rule>
       </rules>
-      <states>
-        <state>
-          <value>0</value>
-          <label>State</label>
-          <color>
-            <color name="Off" red="60" green="100" blue="60">
+      <states use_class="true">
+        <state use_class="true">
+          <value use_class="true">0</value>
+          <label use_class="true">State 1</label>
+          <color use_class="true">
+            <color name="Off" red="237" green="237" blue="237">
+            </color>
+          </color>
+        </state>
+        <state use_class="true">
+          <value use_class="true">1</value>
+          <label use_class="true">State 2</label>
+          <color use_class="true">
+            <color red="76" green="100" blue="171">
             </color>
           </color>
         </state>
       </states>
+      <fallback_color use_class="true">
+        <color name="Off" red="237" green="237" blue="237">
+        </color>
+      </fallback_color>
     </widget>
   </widget>
 </display>

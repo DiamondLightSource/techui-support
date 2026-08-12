@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-08-10 13:44:51 by ryi58813-->
+<!--Saved on 2026-08-12 15:38:38 by ryi58813-->
 <display version="2.0.0">
   <name>Positioner Values</name>
-  <width>230</width>
-  <height>585</height>
-  <background_color>
+  <y use_class="true">0</y>
+  <width>375</width>
+  <height>690</height>
+  <background_color use_class="true">
     <color name="Read_Background" red="240" green="240" blue="240">
     </color>
   </background_color>
@@ -18,38 +19,73 @@
     <name>$(label)</name>
     <width>370</width>
     <height>685</height>
-    <font>
+    <style use_class="true">0</style>
+    <font use_class="true">
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color>
+    <foreground_color use_class="true">
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color>
+    <background_color use_class="true">
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
     <widget type="label" version="2.0.0">
       <name>Label_19</name>
+      <class>CENTRAL</class>
       <text>Setup Position Values</text>
       <x>50</x>
       <y>615</y>
       <width>150</width>
       <height>25</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
     </widget>
     <widget type="group" version="3.0.0">
       <name>Positioner Current Values</name>
       <width>241</width>
       <height>91</height>
+      <style use_class="true">0</style>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="15.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
       <transparent>true</transparent>
       <widget type="led" version="2.0.0">
         <name>DMOV_LED</name>
         <pv_name>$(P):POSN.DMOV</pv_name>
         <x>175</x>
         <y>35</y>
+        <off_color use_class="true">
+          <color red="237" green="237" blue="237">
+          </color>
+        </off_color>
+        <on_color use_class="true">
+          <color name="Write_Background" red="128" green="255" blue="255">
+          </color>
+        </on_color>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
       </widget>
       <widget type="label" version="2.0.0">
         <name>SFail_Text</name>
@@ -57,17 +93,23 @@
         <x>175</x>
         <y>35</y>
         <width>30</width>
-        <font>
-          <font family="Liberation Sans" style="REGULAR" size="10.0">
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
           </font>
         </font>
-        <background_color>
-          <color name="MAJOR" red="255" green="0" blue="0">
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Background" red="255" green="255" blue="255">
           </color>
         </background_color>
         <transparent>false</transparent>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <horizontal_alignment use_class="true">0</horizontal_alignment>
+        <vertical_alignment use_class="true">0</vertical_alignment>
+        <rotation_step use_class="true">0</rotation_step>
+        <wrap_words use_class="true">true</wrap_words>
         <rules>
           <rule name="visibility" prop_id="visible" out_exp="false">
             <exp bool_exp="pv0 == 4">
@@ -86,17 +128,23 @@
         <x>175</x>
         <y>35</y>
         <width>30</width>
-        <font>
-          <font family="Liberation Sans" style="REGULAR" size="10.0">
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
           </font>
         </font>
-        <background_color>
-          <color name="MAJOR" red="255" green="0" blue="0">
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Background" red="255" green="255" blue="255">
           </color>
         </background_color>
         <transparent>false</transparent>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <horizontal_alignment use_class="true">0</horizontal_alignment>
+        <vertical_alignment use_class="true">0</vertical_alignment>
+        <rotation_step use_class="true">0</rotation_step>
+        <wrap_words use_class="true">true</wrap_words>
         <rules>
           <rule name="visibility" prop_id="visible" out_exp="false">
             <exp bool_exp="pv0 == 2">
@@ -110,38 +158,95 @@
         </rules>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_20</name>
+        <name>DEMAND_Label</name>
+        <class>CENTRAL</class>
         <text>Demand:</text>
         <width>70</width>
         <height>25</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_21</name>
+        <name>READBACK_Label</name>
+        <class>CENTRAL</class>
         <text>Readback:</text>
         <y>30</y>
         <width>70</width>
         <height>25</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
       </widget>
       <widget type="textentry" version="3.0.0">
-        <name>Text Entry_17</name>
+        <name>DEMAND_Input</name>
         <pv_name>$(P)$(PS):SETVALUE2.VAL</pv_name>
         <x>70</x>
         <height>25</height>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <precision use_class="true">-1</precision>
+        <show_units use_class="true">true</show_units>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+        <enabled use_class="true">true</enabled>
+        <border_width use_class="true">1</border_width>
+        <border_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </border_color>
       </widget>
       <widget type="textupdate" version="2.0.0">
-        <name>Text Update</name>
+        <name>READBACK</name>
         <pv_name>$(P)$(PS):UPD.D</pv_name>
         <x>70</x>
         <y>30</y>
         <height>25</height>
-        <vertical_alignment>1</vertical_alignment>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
       </widget>
       <widget type="action_button" version="3.0.0">
-        <name>Action Button</name>
+        <name>MOTOR_Display</name>
         <actions>
           <action type="open_display">
             <description>Open Display</description>
@@ -158,6 +263,18 @@
         <x>175</x>
         <width>25</width>
         <height>25</height>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="255" green="255" blue="255">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </background_color>
         <rules>
           <rule name="visibility" prop_id="visible" out_exp="false">
             <exp bool_exp="2&lt;=pv0&lt;5">
@@ -175,7 +292,8 @@
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="action_button" version="3.0.0">
-        <name>Action Button_1</name>
+        <name>ELOSS_Button</name>
+        <class>DEFAULT_PV</class>
         <actions>
           <action type="write_pv">
             <description>Write PV</description>
@@ -188,12 +306,16 @@
         <y>35</y>
         <width>30</width>
         <height>20</height>
-        <font>
-          <font family="Liberation Sans" style="REGULAR" size="10.0">
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
           </font>
         </font>
-        <background_color>
-          <color name="MAJOR" red="255" green="0" blue="0">
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="255" green="255" blue="255">
           </color>
         </background_color>
         <rules>
@@ -215,6 +337,19 @@
       <x>242</x>
       <width>86</width>
       <height>91</height>
+      <style use_class="true">0</style>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="15.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
       <transparent>true</transparent>
       <widget type="multi_state_led" version="2.0.0">
         <name>LED (Multi State)_1</name>
@@ -230,7 +365,7 @@
             </exp>
             <exp bool_exp="(pvInt0 + (pvInt1&lt;&lt;1)) == 0">
               <value>
-                <color name="Off" red="60" green="100" blue="60">
+                <color name="Off" red="237" green="237" blue="237">
                 </color>
               </value>
             </exp>
@@ -262,39 +397,59 @@
             <pv_name>$(P)$(MP):ERROR.K</pv_name>
           </rule>
         </rules>
-        <states>
-          <state>
-            <value>0</value>
-            <label>State</label>
-            <color>
-              <color name="Off" red="60" green="100" blue="60">
+        <states use_class="true">
+          <state use_class="true">
+            <value use_class="true">0</value>
+            <label use_class="true">State 1</label>
+            <color use_class="true">
+              <color name="Off" red="237" green="237" blue="237">
+              </color>
+            </color>
+          </state>
+          <state use_class="true">
+            <value use_class="true">1</value>
+            <label use_class="true">State 2</label>
+            <color use_class="true">
+              <color red="76" green="100" blue="171">
               </color>
             </color>
           </state>
         </states>
+        <fallback_color use_class="true">
+          <color name="Off" red="237" green="237" blue="237">
+          </color>
+        </fallback_color>
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_22</name>
+        <class>CUSTOM</class>
         <text>State:</text>
         <y>31</y>
         <width>30</width>
         <font>
-          <font family="Liberation Sans" style="REGULAR" size="10.0">
+          <font family="Arial" style="REGULAR" size="10.0">
           </font>
         </font>
-        <horizontal_alignment>1</horizontal_alignment>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
         <vertical_alignment>1</vertical_alignment>
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_23</name>
+        <class>CUSTOM</class>
         <text>InPos:</text>
         <y>5</y>
         <width>30</width>
         <font>
-          <font family="Liberation Sans" style="REGULAR" size="10.0">
+          <font family="Arial" style="REGULAR" size="10.0">
           </font>
         </font>
-        <horizontal_alignment>1</horizontal_alignment>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
         <vertical_alignment>1</vertical_alignment>
       </widget>
       <widget type="led" version="2.0.0">
@@ -302,1192 +457,797 @@
         <pv_name>$(P)$(MP):INPOS</pv_name>
         <x>30</x>
         <y>5</y>
+        <off_color use_class="true">
+          <color red="237" green="237" blue="237">
+          </color>
+        </off_color>
+        <on_color use_class="true">
+          <color name="Write_Background" red="128" green="255" blue="255">
+          </color>
+        </on_color>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
       </widget>
     </widget>
     <widget type="group" version="3.0.0">
-      <name>Group</name>
+      <name>Table_Group</name>
+      <class>NO_BOX</class>
       <x>10</x>
       <y>100</y>
-      <width>308</width>
+      <width>310</width>
       <height>500</height>
-      <style>3</style>
+      <style use_class="true">3</style>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="15.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
       <transparent>true</transparent>
-      <widget type="group" version="3.0.0">
-        <name>Group_12</name>
-        <x>150</x>
-        <y>350</y>
-        <width>120</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_28</name>
-          <width>120</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="textentry" version="3.0.0">
-          <name>Text Entry_12</name>
-          <pv_name>$(P)$(PS):VALL</pv_name>
-          <x>5</x>
-          <y>3</y>
-          <width>110</width>
-          <height>24</height>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_13</name>
-        <x>150</x>
-        <y>380</y>
-        <width>120</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_29</name>
-          <width>120</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="textentry" version="3.0.0">
-          <name>Text Entry_13</name>
-          <pv_name>$(P)$(PS):VALM</pv_name>
-          <x>5</x>
-          <y>3</y>
-          <width>110</width>
-          <height>24</height>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_14</name>
-        <x>150</x>
-        <y>410</y>
-        <width>120</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_30</name>
-          <width>120</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="textentry" version="3.0.0">
-          <name>Text Entry_14</name>
-          <pv_name>$(P)$(PS):VALN</pv_name>
-          <x>5</x>
-          <y>3</y>
-          <width>110</width>
-          <height>24</height>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_15</name>
-        <x>150</x>
-        <y>440</y>
-        <width>120</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_31</name>
-          <width>120</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="textentry" version="3.0.0">
-          <name>Text Entry_15</name>
-          <pv_name>$(P)$(PS):VALO</pv_name>
-          <x>5</x>
-          <y>3</y>
-          <width>110</width>
-          <height>24</height>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_16</name>
-        <x>150</x>
-        <y>470</y>
-        <width>120</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_32</name>
-          <width>120</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="textentry" version="3.0.0">
-          <name>Text Entry_16</name>
-          <pv_name>$(P)$(PS):VALP</pv_name>
-          <x>5</x>
-          <y>3</y>
-          <width>110</width>
-          <height>24</height>
-        </widget>
-      </widget>
       <widget type="textupdate" version="2.0.0">
-        <name>Text Update_1</name>
+        <name>POS_1_Name</name>
         <pv_name>$(P)$(MP):SELECT.ZRST</pv_name>
         <x>30</x>
         <y>20</y>
         <width>120</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
       </widget>
       <widget type="textupdate" version="2.0.0">
-        <name>Text Update_2</name>
+        <name>POS_2_Name</name>
         <pv_name>$(P)$(MP):SELECT.ONST</pv_name>
         <x>30</x>
         <y>50</y>
         <width>120</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
       </widget>
       <widget type="textupdate" version="2.0.0">
-        <name>Text Update_3</name>
+        <name>POS_3_Name</name>
         <pv_name>$(P)$(MP):SELECT.TWST</pv_name>
         <x>30</x>
         <y>80</y>
         <width>120</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
       </widget>
       <widget type="textupdate" version="2.0.0">
-        <name>Text Update_4</name>
+        <name>POS_4_Name</name>
         <pv_name>$(P)$(MP):SELECT.THST</pv_name>
         <x>30</x>
         <y>110</y>
         <width>120</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
       </widget>
       <widget type="textupdate" version="2.0.0">
-        <name>Text Update_5</name>
+        <name>POS_5_Name</name>
         <pv_name>$(P)$(MP):SELECT.FRST</pv_name>
         <x>30</x>
         <y>140</y>
         <width>120</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
       </widget>
       <widget type="textupdate" version="2.0.0">
-        <name>Text Update_6</name>
+        <name>POS_6_Name</name>
         <pv_name>$(P)$(MP):SELECT.FVST</pv_name>
         <x>30</x>
         <y>170</y>
         <width>120</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
       </widget>
       <widget type="textupdate" version="2.0.0">
-        <name>Text Update_7</name>
+        <name>POS_7_Name</name>
         <pv_name>$(P)$(MP):SELECT.SXST</pv_name>
         <x>30</x>
         <y>200</y>
         <width>120</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
       </widget>
       <widget type="textupdate" version="2.0.0">
-        <name>Text Update_8</name>
+        <name>POS_8_Name</name>
         <pv_name>$(P)$(MP):SELECT.SVST</pv_name>
         <x>30</x>
         <y>230</y>
         <width>120</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
       </widget>
       <widget type="textupdate" version="2.0.0">
-        <name>Text Update_9</name>
+        <name>POS_9_Name</name>
         <pv_name>$(P)$(MP):SELECT.EIST</pv_name>
         <x>30</x>
         <y>260</y>
         <width>120</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
       </widget>
       <widget type="textupdate" version="2.0.0">
-        <name>Text Update_10</name>
+        <name>POS_10_Name</name>
         <pv_name>$(P)$(MP):SELECT.NIST</pv_name>
         <x>30</x>
         <y>290</y>
         <width>120</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
       </widget>
       <widget type="textupdate" version="2.0.0">
-        <name>Text Update_11</name>
+        <name>POS_11_Name</name>
         <pv_name>$(P)$(MP):SELECT.TEST</pv_name>
         <x>30</x>
         <y>320</y>
         <width>120</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
       </widget>
       <widget type="textupdate" version="2.0.0">
-        <name>Text Update_12</name>
+        <name>POS_12_Name</name>
         <pv_name>$(P)$(MP):SELECT.ELST</pv_name>
         <x>30</x>
         <y>350</y>
         <width>120</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
       </widget>
       <widget type="textupdate" version="2.0.0">
-        <name>Text Update_13</name>
+        <name>POS_13_Name</name>
         <pv_name>$(P)$(MP):SELECT.TVST</pv_name>
         <x>30</x>
         <y>380</y>
         <width>120</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
       </widget>
       <widget type="textupdate" version="2.0.0">
-        <name>Text Update_14</name>
+        <name>POS_14_Name</name>
         <pv_name>$(P)$(MP):SELECT.TTST</pv_name>
         <x>30</x>
         <y>410</y>
         <width>120</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
       </widget>
       <widget type="textupdate" version="2.0.0">
-        <name>Text Update_15</name>
+        <name>POS_15_Name</name>
         <pv_name>$(P)$(MP):SELECT.FTST</pv_name>
         <x>30</x>
         <y>440</y>
         <width>120</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
       </widget>
       <widget type="textupdate" version="2.0.0">
-        <name>Text Update_16</name>
+        <name>POS_16_Name</name>
         <pv_name>$(P)$(MP):SELECT.FFST</pv_name>
         <x>30</x>
         <y>470</y>
         <width>120</width>
         <height>29</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_26</name>
-        <text>Name</text>
-        <x>30</x>
-        <width>120</width>
-        <height>19</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <border_width>1</border_width>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group</name>
-        <x>270</x>
-        <y>20</y>
-        <width>38</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_33</name>
-          <width>38</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_2</name>
-          <actions>
-            <action type="write_pv">
-              <description>Write PV</description>
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-            </action>
-          </actions>
-          <pv_name>$(P)$(PS):SETA.PROC</pv_name>
-          <text>Set</text>
-          <x>4</x>
-          <y>3</y>
-          <width>30</width>
-          <height>24</height>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_17</name>
-        <x>270</x>
-        <y>50</y>
-        <width>38</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_34</name>
-          <width>38</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_3</name>
-          <actions>
-            <action type="write_pv">
-              <description>Write PV</description>
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-            </action>
-          </actions>
-          <pv_name>$(P)$(PS):SETB.PROC</pv_name>
-          <text>Set</text>
-          <x>4</x>
-          <y>3</y>
-          <width>30</width>
-          <height>24</height>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_18</name>
-        <x>270</x>
-        <y>80</y>
-        <width>38</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_35</name>
-          <width>38</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_4</name>
-          <actions>
-            <action type="write_pv">
-              <description>Write PV</description>
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-            </action>
-          </actions>
-          <pv_name>$(P)$(PS):SETC.PROC</pv_name>
-          <text>Set</text>
-          <x>4</x>
-          <y>3</y>
-          <width>30</width>
-          <height>24</height>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_19</name>
-        <x>270</x>
-        <y>110</y>
-        <width>38</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_36</name>
-          <width>38</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_5</name>
-          <actions>
-            <action type="write_pv">
-              <description>Write PV</description>
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-            </action>
-          </actions>
-          <pv_name>$(P)$(PS):SETD.PROC</pv_name>
-          <text>Set</text>
-          <x>4</x>
-          <y>3</y>
-          <width>30</width>
-          <height>24</height>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_20</name>
-        <x>270</x>
-        <y>140</y>
-        <width>38</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_37</name>
-          <width>38</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_6</name>
-          <actions>
-            <action type="write_pv">
-              <description>Write PV</description>
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-            </action>
-          </actions>
-          <pv_name>$(P)$(PS):SETE.PROC</pv_name>
-          <text>Set</text>
-          <x>4</x>
-          <y>3</y>
-          <width>30</width>
-          <height>24</height>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_21</name>
-        <x>270</x>
-        <y>170</y>
-        <width>38</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_38</name>
-          <width>38</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_7</name>
-          <actions>
-            <action type="write_pv">
-              <description>Write PV</description>
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-            </action>
-          </actions>
-          <pv_name>$(P)$(PS):SETF.PROC</pv_name>
-          <text>Set</text>
-          <x>4</x>
-          <y>3</y>
-          <width>30</width>
-          <height>24</height>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_22</name>
-        <x>270</x>
-        <y>200</y>
-        <width>38</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_39</name>
-          <width>38</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_8</name>
-          <actions>
-            <action type="write_pv">
-              <description>Write PV</description>
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-            </action>
-          </actions>
-          <pv_name>$(P)$(PS):SETG.PROC</pv_name>
-          <text>Set</text>
-          <x>4</x>
-          <y>3</y>
-          <width>30</width>
-          <height>24</height>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_23</name>
-        <x>270</x>
-        <y>230</y>
-        <width>38</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_40</name>
-          <width>38</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_9</name>
-          <actions>
-            <action type="write_pv">
-              <description>Write PV</description>
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-            </action>
-          </actions>
-          <pv_name>$(P)$(PS):SETH.PROC</pv_name>
-          <text>Set</text>
-          <x>4</x>
-          <y>3</y>
-          <width>30</width>
-          <height>24</height>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_24</name>
-        <x>270</x>
-        <y>260</y>
-        <width>38</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_41</name>
-          <width>38</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_10</name>
-          <actions>
-            <action type="write_pv">
-              <description>Write PV</description>
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-            </action>
-          </actions>
-          <pv_name>$(P)$(PS):SETI.PROC</pv_name>
-          <text>Set</text>
-          <x>4</x>
-          <y>3</y>
-          <width>30</width>
-          <height>24</height>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_25</name>
-        <x>270</x>
-        <y>290</y>
-        <width>38</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_42</name>
-          <width>38</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_11</name>
-          <actions>
-            <action type="write_pv">
-              <description>Write PV</description>
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-            </action>
-          </actions>
-          <pv_name>$(P)$(PS):SETJ.PROC</pv_name>
-          <text>Set</text>
-          <x>4</x>
-          <y>3</y>
-          <width>30</width>
-          <height>24</height>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_26</name>
-        <x>270</x>
-        <y>320</y>
-        <width>38</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_43</name>
-          <width>38</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_12</name>
-          <actions>
-            <action type="write_pv">
-              <description>Write PV</description>
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-            </action>
-          </actions>
-          <pv_name>$(P)$(PS):SETK.PROC</pv_name>
-          <text>Set</text>
-          <x>4</x>
-          <y>3</y>
-          <width>30</width>
-          <height>24</height>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_27</name>
-        <x>270</x>
-        <y>350</y>
-        <width>38</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_44</name>
-          <width>38</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_13</name>
-          <actions>
-            <action type="write_pv">
-              <description>Write PV</description>
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-            </action>
-          </actions>
-          <pv_name>$(P)$(PS):SETL.PROC</pv_name>
-          <text>Set</text>
-          <x>4</x>
-          <y>3</y>
-          <width>30</width>
-          <height>24</height>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_28</name>
-        <x>270</x>
-        <y>380</y>
-        <width>38</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_45</name>
-          <width>38</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_14</name>
-          <actions>
-            <action type="write_pv">
-              <description>Write PV</description>
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-            </action>
-          </actions>
-          <pv_name>$(P)$(PS):SETM.PROC</pv_name>
-          <text>Set</text>
-          <x>4</x>
-          <y>3</y>
-          <width>30</width>
-          <height>24</height>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_29</name>
-        <x>270</x>
-        <y>410</y>
-        <width>38</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_46</name>
-          <width>38</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_15</name>
-          <actions>
-            <action type="write_pv">
-              <description>Write PV</description>
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-            </action>
-          </actions>
-          <pv_name>$(P)$(PS):SETN.PROC</pv_name>
-          <text>Set</text>
-          <x>4</x>
-          <y>3</y>
-          <width>30</width>
-          <height>24</height>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_30</name>
-        <x>270</x>
-        <y>440</y>
-        <width>38</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_47</name>
-          <width>38</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_16</name>
-          <actions>
-            <action type="write_pv">
-              <description>Write PV</description>
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-            </action>
-          </actions>
-          <pv_name>$(P)$(PS):SETO.PROC</pv_name>
-          <text>Set</text>
-          <x>4</x>
-          <y>3</y>
-          <width>30</width>
-          <height>24</height>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-        </widget>
-      </widget>
-      <widget type="group" version="3.0.0">
-        <name>Group_31</name>
-        <x>270</x>
-        <y>470</y>
-        <width>38</width>
-        <height>30</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="rectangle" version="2.0.0">
-          <name>Rectangle_48</name>
-          <width>38</width>
-          <height>30</height>
-          <line_width>1</line_width>
-          <line_color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </line_color>
-          <background_color>
-            <color name="Background" red="255" green="255" blue="255">
-            </color>
-          </background_color>
-        </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_17</name>
-          <actions>
-            <action type="write_pv">
-              <description>Write PV</description>
-              <pv_name>$(pv_name)</pv_name>
-              <value>1</value>
-            </action>
-          </actions>
-          <pv_name>$(P)$(PS):SETP.PROC</pv_name>
-          <text>Set</text>
-          <x>4</x>
-          <y>3</y>
-          <width>30</width>
-          <height>24</height>
-          <border_alarm_sensitive>false</border_alarm_sensitive>
-        </widget>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_27</name>
-        <text>Set From RBV</text>
-        <x>270</x>
-        <width>38</width>
-        <height>19</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <border_width>1</border_width>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label</name>
-        <text>Pos</text>
-        <width>30</width>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <border_width>1</border_width>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_1</name>
-        <text>Value</text>
-        <x>151</x>
-        <width>119</width>
-        <height>19</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <border_width>1</border_width>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_2</name>
+        <name>POS_1_Label</name>
+        <class>CENTRAL</class>
         <text>1</text>
         <y>20</y>
         <width>30</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_3</name>
+        <name>POS_2_Label</name>
+        <class>CENTRAL</class>
         <text>2</text>
         <y>50</y>
         <width>30</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_4</name>
+        <name>POS_3_Label</name>
+        <class>CENTRAL</class>
         <text>3</text>
         <y>80</y>
         <width>30</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_5</name>
+        <name>POS_4_Label</name>
+        <class>CENTRAL</class>
         <text>4</text>
         <y>110</y>
         <width>30</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_6</name>
+        <name>POS_5_Label</name>
+        <class>CENTRAL</class>
         <text>5</text>
         <y>140</y>
         <width>30</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_7</name>
+        <name>POS_6_Label</name>
+        <class>CENTRAL</class>
         <text>6</text>
         <y>170</y>
         <width>30</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_8</name>
+        <name>POS_7_Label</name>
+        <class>CENTRAL</class>
         <text>7</text>
         <y>200</y>
         <width>30</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_9</name>
+        <name>POS_8_Label</name>
+        <class>CENTRAL</class>
         <text>8</text>
         <y>230</y>
         <width>30</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_10</name>
+        <name>POS_9_Label</name>
+        <class>CENTRAL</class>
         <text>9</text>
         <y>260</y>
         <width>30</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_11</name>
+        <name>POS_10_Label</name>
+        <class>CENTRAL</class>
         <text>10</text>
         <y>290</y>
         <width>30</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_12</name>
+        <name>POS_11_Label</name>
+        <class>CENTRAL</class>
         <text>11</text>
         <y>320</y>
         <width>30</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_13</name>
+        <name>POS_12_Label</name>
+        <class>CENTRAL</class>
         <text>12</text>
         <y>350</y>
         <width>30</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_14</name>
+        <name>POS_13_Label</name>
+        <class>CENTRAL</class>
         <text>13</text>
         <y>380</y>
         <width>30</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_15</name>
+        <name>POS_14_Label</name>
+        <class>CENTRAL</class>
         <text>14</text>
         <y>410</y>
         <width>30</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_16</name>
+        <name>POS_15_Label</name>
+        <class>CENTRAL</class>
         <text>15</text>
         <y>440</y>
         <width>30</width>
         <height>30</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label_17</name>
+        <name>POS_16_Label</name>
+        <class>CENTRAL</class>
         <text>16</text>
         <y>470</y>
         <width>30</width>
         <height>29</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
         <border_width>1</border_width>
       </widget>
       <widget type="group" version="3.0.0">
-        <name>Group</name>
+        <name>POS_1_VALUE_Group</name>
+        <class>NO_BOX</class>
         <x>150</x>
         <y>20</y>
-        <width>120</width>
+        <width>119</width>
         <height>30</height>
-        <style>3</style>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
         <transparent>true</transparent>
         <widget type="rectangle" version="2.0.0">
           <name>Rectangle</name>
@@ -1510,15 +1270,50 @@
           <y>3</y>
           <width>110</width>
           <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <precision use_class="true">-1</precision>
+          <show_units use_class="true">true</show_units>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <enabled use_class="true">true</enabled>
+          <border_width use_class="true">1</border_width>
+          <border_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </border_color>
         </widget>
       </widget>
       <widget type="group" version="3.0.0">
-        <name>Group_1</name>
+        <name>POS_2_VALUE_Group</name>
+        <class>NO_BOX</class>
         <x>150</x>
         <y>50</y>
-        <width>120</width>
+        <width>119</width>
         <height>30</height>
-        <style>3</style>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
         <transparent>true</transparent>
         <widget type="rectangle" version="2.0.0">
           <name>Rectangle_17</name>
@@ -1541,15 +1336,50 @@
           <y>3</y>
           <width>110</width>
           <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <precision use_class="true">-1</precision>
+          <show_units use_class="true">true</show_units>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <enabled use_class="true">true</enabled>
+          <border_width use_class="true">1</border_width>
+          <border_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </border_color>
         </widget>
       </widget>
       <widget type="group" version="3.0.0">
-        <name>Group_2</name>
+        <name>POS_3_VALUE_Group</name>
+        <class>NO_BOX</class>
         <x>150</x>
         <y>80</y>
-        <width>120</width>
+        <width>119</width>
         <height>30</height>
-        <style>3</style>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
         <transparent>true</transparent>
         <widget type="rectangle" version="2.0.0">
           <name>Rectangle_18</name>
@@ -1572,15 +1402,50 @@
           <y>3</y>
           <width>110</width>
           <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <precision use_class="true">-1</precision>
+          <show_units use_class="true">true</show_units>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <enabled use_class="true">true</enabled>
+          <border_width use_class="true">1</border_width>
+          <border_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </border_color>
         </widget>
       </widget>
       <widget type="group" version="3.0.0">
-        <name>Group_4</name>
+        <name>POS_4_VALUE_Group</name>
+        <class>NO_BOX</class>
         <x>150</x>
         <y>110</y>
-        <width>120</width>
+        <width>119</width>
         <height>30</height>
-        <style>3</style>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
         <transparent>true</transparent>
         <widget type="rectangle" version="2.0.0">
           <name>Rectangle_20</name>
@@ -1603,15 +1468,50 @@
           <y>3</y>
           <width>110</width>
           <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <precision use_class="true">-1</precision>
+          <show_units use_class="true">true</show_units>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <enabled use_class="true">true</enabled>
+          <border_width use_class="true">1</border_width>
+          <border_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </border_color>
         </widget>
       </widget>
       <widget type="group" version="3.0.0">
-        <name>Group_5</name>
+        <name>POS_5_VALUE_Group</name>
+        <class>NO_BOX</class>
         <x>150</x>
         <y>140</y>
-        <width>120</width>
+        <width>119</width>
         <height>30</height>
-        <style>3</style>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
         <transparent>true</transparent>
         <widget type="rectangle" version="2.0.0">
           <name>Rectangle_21</name>
@@ -1634,15 +1534,50 @@
           <y>3</y>
           <width>110</width>
           <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <precision use_class="true">-1</precision>
+          <show_units use_class="true">true</show_units>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <enabled use_class="true">true</enabled>
+          <border_width use_class="true">1</border_width>
+          <border_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </border_color>
         </widget>
       </widget>
       <widget type="group" version="3.0.0">
-        <name>Group_6</name>
+        <name>POS_6_VALUE_Group</name>
+        <class>NO_BOX</class>
         <x>150</x>
         <y>170</y>
-        <width>120</width>
+        <width>119</width>
         <height>30</height>
-        <style>3</style>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
         <transparent>true</transparent>
         <widget type="rectangle" version="2.0.0">
           <name>Rectangle_22</name>
@@ -1665,15 +1600,50 @@
           <y>3</y>
           <width>110</width>
           <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <precision use_class="true">-1</precision>
+          <show_units use_class="true">true</show_units>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <enabled use_class="true">true</enabled>
+          <border_width use_class="true">1</border_width>
+          <border_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </border_color>
         </widget>
       </widget>
       <widget type="group" version="3.0.0">
-        <name>Group_7</name>
+        <name>POS_7_VALUE_Group</name>
+        <class>NO_BOX</class>
         <x>150</x>
         <y>200</y>
-        <width>120</width>
+        <width>119</width>
         <height>30</height>
-        <style>3</style>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
         <transparent>true</transparent>
         <widget type="rectangle" version="2.0.0">
           <name>Rectangle_23</name>
@@ -1696,15 +1666,50 @@
           <y>3</y>
           <width>110</width>
           <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <precision use_class="true">-1</precision>
+          <show_units use_class="true">true</show_units>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <enabled use_class="true">true</enabled>
+          <border_width use_class="true">1</border_width>
+          <border_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </border_color>
         </widget>
       </widget>
       <widget type="group" version="3.0.0">
-        <name>Group_8</name>
+        <name>POS_8_VALUE_Group</name>
+        <class>NO_BOX</class>
         <x>150</x>
         <y>230</y>
-        <width>120</width>
+        <width>119</width>
         <height>30</height>
-        <style>3</style>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
         <transparent>true</transparent>
         <widget type="rectangle" version="2.0.0">
           <name>Rectangle_24</name>
@@ -1727,15 +1732,50 @@
           <y>3</y>
           <width>110</width>
           <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <precision use_class="true">-1</precision>
+          <show_units use_class="true">true</show_units>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <enabled use_class="true">true</enabled>
+          <border_width use_class="true">1</border_width>
+          <border_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </border_color>
         </widget>
       </widget>
       <widget type="group" version="3.0.0">
-        <name>Group_9</name>
+        <name>POS_9_VALUE_Group</name>
+        <class>NO_BOX</class>
         <x>150</x>
         <y>260</y>
-        <width>120</width>
+        <width>119</width>
         <height>30</height>
-        <style>3</style>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
         <transparent>true</transparent>
         <widget type="rectangle" version="2.0.0">
           <name>Rectangle_25</name>
@@ -1758,15 +1798,50 @@
           <y>3</y>
           <width>110</width>
           <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <precision use_class="true">-1</precision>
+          <show_units use_class="true">true</show_units>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <enabled use_class="true">true</enabled>
+          <border_width use_class="true">1</border_width>
+          <border_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </border_color>
         </widget>
       </widget>
       <widget type="group" version="3.0.0">
-        <name>Group_10</name>
+        <name>POS_10_VALUE_Group</name>
+        <class>NO_BOX</class>
         <x>150</x>
         <y>290</y>
-        <width>120</width>
+        <width>119</width>
         <height>30</height>
-        <style>3</style>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
         <transparent>true</transparent>
         <widget type="rectangle" version="2.0.0">
           <name>Rectangle_26</name>
@@ -1789,15 +1864,50 @@
           <y>3</y>
           <width>110</width>
           <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <precision use_class="true">-1</precision>
+          <show_units use_class="true">true</show_units>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <enabled use_class="true">true</enabled>
+          <border_width use_class="true">1</border_width>
+          <border_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </border_color>
         </widget>
       </widget>
       <widget type="group" version="3.0.0">
-        <name>Group_11</name>
+        <name>POS_11_VALUE_Group</name>
+        <class>NO_BOX</class>
         <x>150</x>
         <y>320</y>
-        <width>120</width>
+        <width>119</width>
         <height>30</height>
-        <style>3</style>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
         <transparent>true</transparent>
         <widget type="rectangle" version="2.0.0">
           <name>Rectangle_27</name>
@@ -1820,11 +1930,1491 @@
           <y>3</y>
           <width>110</width>
           <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <precision use_class="true">-1</precision>
+          <show_units use_class="true">true</show_units>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <enabled use_class="true">true</enabled>
+          <border_width use_class="true">1</border_width>
+          <border_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </border_color>
         </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_12_VALUE_Group</name>
+        <class>NO_BOX</class>
+        <x>150</x>
+        <y>350</y>
+        <width>120</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_28</name>
+          <width>120</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Entry_12</name>
+          <pv_name>$(P)$(PS):VALL</pv_name>
+          <x>5</x>
+          <y>3</y>
+          <width>110</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <precision use_class="true">-1</precision>
+          <show_units use_class="true">true</show_units>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <enabled use_class="true">true</enabled>
+          <border_width use_class="true">1</border_width>
+          <border_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </border_color>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_13_VALUE_Group</name>
+        <class>NO_BOX</class>
+        <x>150</x>
+        <y>380</y>
+        <width>120</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_29</name>
+          <width>120</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Entry_13</name>
+          <pv_name>$(P)$(PS):VALM</pv_name>
+          <x>5</x>
+          <y>3</y>
+          <width>110</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <precision use_class="true">-1</precision>
+          <show_units use_class="true">true</show_units>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <enabled use_class="true">true</enabled>
+          <border_width use_class="true">1</border_width>
+          <border_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </border_color>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_14_VALUE_Group</name>
+        <class>NO_BOX</class>
+        <x>150</x>
+        <y>410</y>
+        <width>120</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_30</name>
+          <width>120</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Entry_14</name>
+          <pv_name>$(P)$(PS):VALN</pv_name>
+          <x>5</x>
+          <y>3</y>
+          <width>110</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <precision use_class="true">-1</precision>
+          <show_units use_class="true">true</show_units>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <enabled use_class="true">true</enabled>
+          <border_width use_class="true">1</border_width>
+          <border_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </border_color>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_15_VALUE_Group</name>
+        <class>NO_BOX</class>
+        <x>150</x>
+        <y>440</y>
+        <width>120</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_31</name>
+          <width>120</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Entry_15</name>
+          <pv_name>$(P)$(PS):VALO</pv_name>
+          <x>5</x>
+          <y>3</y>
+          <width>110</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <precision use_class="true">-1</precision>
+          <show_units use_class="true">true</show_units>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <enabled use_class="true">true</enabled>
+          <border_width use_class="true">1</border_width>
+          <border_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </border_color>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_16_VALUE_Group</name>
+        <class>NO_BOX</class>
+        <x>150</x>
+        <y>470</y>
+        <width>120</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_32</name>
+          <width>120</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="textentry" version="3.0.0">
+          <name>Text Entry_16</name>
+          <pv_name>$(P)$(PS):VALP</pv_name>
+          <x>5</x>
+          <y>3</y>
+          <width>110</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <precision use_class="true">-1</precision>
+          <show_units use_class="true">true</show_units>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
+          <enabled use_class="true">true</enabled>
+          <border_width use_class="true">1</border_width>
+          <border_color use_class="true">
+            <color red="184" green="195" blue="223">
+            </color>
+          </border_color>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_1_SET_Group</name>
+        <class>NO_BOX</class>
+        <x>270</x>
+        <y>20</y>
+        <width>39</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_33</name>
+          <width>40</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>Action Button_2</name>
+          <class>DEFAULT_PV</class>
+          <actions>
+            <action type="write_pv">
+              <description>Write PV</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(PS):SETA.PROC</pv_name>
+          <text>Set</text>
+          <x>5</x>
+          <y>3</y>
+          <width>30</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_2_SET_Group</name>
+        <class>NO_BOX</class>
+        <x>270</x>
+        <y>50</y>
+        <width>40</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_34</name>
+          <width>40</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>Action Button_3</name>
+          <class>DEFAULT_PV</class>
+          <actions>
+            <action type="write_pv">
+              <description>Write PV</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(PS):SETB.PROC</pv_name>
+          <text>Set</text>
+          <x>5</x>
+          <y>3</y>
+          <width>30</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_3_SET_Group</name>
+        <class>NO_BOX</class>
+        <x>270</x>
+        <y>80</y>
+        <width>40</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_35</name>
+          <width>40</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>Action Button_4</name>
+          <class>DEFAULT_PV</class>
+          <actions>
+            <action type="write_pv">
+              <description>Write PV</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(PS):SETC.PROC</pv_name>
+          <text>Set</text>
+          <x>5</x>
+          <y>3</y>
+          <width>30</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_4_SET_Group</name>
+        <class>NO_BOX</class>
+        <x>270</x>
+        <y>110</y>
+        <width>40</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_36</name>
+          <width>40</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>Action Button_5</name>
+          <class>DEFAULT_PV</class>
+          <actions>
+            <action type="write_pv">
+              <description>Write PV</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(PS):SETD.PROC</pv_name>
+          <text>Set</text>
+          <x>5</x>
+          <y>3</y>
+          <width>30</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_5_SET_Group</name>
+        <class>NO_BOX</class>
+        <x>270</x>
+        <y>140</y>
+        <width>40</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_37</name>
+          <width>40</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>Action Button_6</name>
+          <class>DEFAULT_PV</class>
+          <actions>
+            <action type="write_pv">
+              <description>Write PV</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(PS):SETE.PROC</pv_name>
+          <text>Set</text>
+          <x>5</x>
+          <y>3</y>
+          <width>30</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_6_SET_Group</name>
+        <class>NO_BOX</class>
+        <x>270</x>
+        <y>170</y>
+        <width>40</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_38</name>
+          <width>40</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>Action Button_7</name>
+          <class>DEFAULT_PV</class>
+          <actions>
+            <action type="write_pv">
+              <description>Write PV</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(PS):SETF.PROC</pv_name>
+          <text>Set</text>
+          <x>5</x>
+          <y>3</y>
+          <width>30</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_7_SET_Group</name>
+        <class>NO_BOX</class>
+        <x>270</x>
+        <y>200</y>
+        <width>40</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_39</name>
+          <width>40</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>Action Button_8</name>
+          <class>DEFAULT_PV</class>
+          <actions>
+            <action type="write_pv">
+              <description>Write PV</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(PS):SETG.PROC</pv_name>
+          <text>Set</text>
+          <x>5</x>
+          <y>3</y>
+          <width>30</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_8_SET_Group</name>
+        <class>NO_BOX</class>
+        <x>270</x>
+        <y>230</y>
+        <width>40</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_40</name>
+          <width>40</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>Action Button_9</name>
+          <class>DEFAULT_PV</class>
+          <actions>
+            <action type="write_pv">
+              <description>Write PV</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(PS):SETH.PROC</pv_name>
+          <text>Set</text>
+          <x>5</x>
+          <y>3</y>
+          <width>30</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_9_SET_Group</name>
+        <class>NO_BOX</class>
+        <x>270</x>
+        <y>260</y>
+        <width>40</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_41</name>
+          <width>40</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>Action Button_10</name>
+          <class>DEFAULT_PV</class>
+          <actions>
+            <action type="write_pv">
+              <description>Write PV</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(PS):SETI.PROC</pv_name>
+          <text>Set</text>
+          <x>5</x>
+          <y>3</y>
+          <width>30</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_10_SET_Group</name>
+        <class>NO_BOX</class>
+        <x>270</x>
+        <y>290</y>
+        <width>40</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_42</name>
+          <width>40</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>Action Button_11</name>
+          <class>DEFAULT_PV</class>
+          <actions>
+            <action type="write_pv">
+              <description>Write PV</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(PS):SETJ.PROC</pv_name>
+          <text>Set</text>
+          <x>5</x>
+          <y>3</y>
+          <width>30</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_11_SET_Group</name>
+        <class>NO_BOX</class>
+        <x>270</x>
+        <y>320</y>
+        <width>40</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_43</name>
+          <width>40</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>Action Button_12</name>
+          <class>DEFAULT_PV</class>
+          <actions>
+            <action type="write_pv">
+              <description>Write PV</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(PS):SETK.PROC</pv_name>
+          <text>Set</text>
+          <x>5</x>
+          <y>3</y>
+          <width>30</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_12_SET_Group</name>
+        <class>NO_BOX</class>
+        <x>270</x>
+        <y>350</y>
+        <width>40</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_44</name>
+          <width>40</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>Action Button_13</name>
+          <class>DEFAULT_PV</class>
+          <actions>
+            <action type="write_pv">
+              <description>Write PV</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(PS):SETL.PROC</pv_name>
+          <text>Set</text>
+          <x>5</x>
+          <y>3</y>
+          <width>30</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_13_SET_Group</name>
+        <class>NO_BOX</class>
+        <x>270</x>
+        <y>380</y>
+        <width>40</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_45</name>
+          <width>40</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>Action Button_14</name>
+          <class>DEFAULT_PV</class>
+          <actions>
+            <action type="write_pv">
+              <description>Write PV</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(PS):SETM.PROC</pv_name>
+          <text>Set</text>
+          <x>5</x>
+          <y>3</y>
+          <width>30</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_14_SET_Group</name>
+        <class>NO_BOX</class>
+        <x>270</x>
+        <y>410</y>
+        <width>40</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_46</name>
+          <width>40</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>Action Button_15</name>
+          <class>DEFAULT_PV</class>
+          <actions>
+            <action type="write_pv">
+              <description>Write PV</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(PS):SETN.PROC</pv_name>
+          <text>Set</text>
+          <x>5</x>
+          <y>3</y>
+          <width>30</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_15_SET_Group</name>
+        <class>NO_BOX</class>
+        <x>270</x>
+        <y>440</y>
+        <width>40</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_47</name>
+          <width>40</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>Action Button_16</name>
+          <class>DEFAULT_PV</class>
+          <actions>
+            <action type="write_pv">
+              <description>Write PV</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(PS):SETO.PROC</pv_name>
+          <text>Set</text>
+          <x>5</x>
+          <y>3</y>
+          <width>30</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>POS_16_SET_Group</name>
+        <class>NO_BOX</class>
+        <x>270</x>
+        <y>470</y>
+        <width>40</width>
+        <height>30</height>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_48</name>
+          <width>40</width>
+          <height>30</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Background" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>Action Button_17</name>
+          <class>DEFAULT_PV</class>
+          <actions>
+            <action type="write_pv">
+              <description>Write PV</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(PS):SETP.PROC</pv_name>
+          <text>Set</text>
+          <x>5</x>
+          <y>3</y>
+          <width>30</width>
+          <height>24</height>
+          <font use_class="true">
+            <font family="Arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color use_class="true">
+            <color red="29" green="41" blue="69">
+            </color>
+          </foreground_color>
+          <background_color use_class="true">
+            <color red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Name_Column_Label</name>
+        <class>CENTRAL</class>
+        <text>Name</text>
+        <x>30</x>
+        <width>120</width>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Set_Column_Label</name>
+        <class>CENTRAL</class>
+        <text>Set From RBV</text>
+        <x>270</x>
+        <width>39</width>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Pos_Column_Label</name>
+        <class>CENTRAL</class>
+        <text>Pos</text>
+        <width>30</width>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Value_Column_Label</name>
+        <class>CENTRAL</class>
+        <text>Value</text>
+        <x>150</x>
+        <width>120</width>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+        <border_width>1</border_width>
       </widget>
     </widget>
     <widget type="action_button" version="3.0.0">
-      <name>Action Button_18</name>
+      <name>MOVE_Button</name>
+      <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
           <description>Write PV</description>
@@ -1838,6 +3428,18 @@
       <y>615</y>
       <width>65</width>
       <height>24</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
     </widget>
   </widget>
 </display>
