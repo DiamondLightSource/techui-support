@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-02-05 13:22:09 by ryi58813-->
+<!--Saved on 2026-08-12 13:46:15 by ryi58813-->
 <display version="2.0.0">
   <name>ID_BL</name>
   <y use_class="true">0</y>
@@ -217,19 +217,31 @@
       <transparent>true</transparent>
       <widget type="group" version="3.0.0">
         <name>AXIS_1_Group</name>
-        <class>Not Default</class>
+        <class>NO_BOX</class>
         <width>225</width>
         <height>25</height>
-        <style>3</style>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
         <transparent>true</transparent>
         <widget type="label" version="2.0.0">
           <name>AXIS_1_Label</name>
-          <class>Not Default</class>
+          <class>CENTRAL</class>
           <text>Axis 1</text>
           <width>40</width>
           <height>25</height>
-          <horizontal_alignment>1</horizontal_alignment>
-          <vertical_alignment>1</vertical_alignment>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
         </widget>
         <widget type="textupdate" version="2.0.0">
           <name>AXIS_1_Encoder</name>
@@ -302,20 +314,32 @@
       </widget>
       <widget type="group" version="3.0.0">
         <name>AXIS_2_Group</name>
-        <class>Not Default</class>
+        <class>NO_BOX</class>
         <y>40</y>
         <width>225</width>
         <height>25</height>
-        <style>3</style>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
         <transparent>true</transparent>
         <widget type="label" version="2.0.0">
           <name>AXIS_2_Label</name>
-          <class>Not Default</class>
+          <class>CENTRAL</class>
           <text>Axis 2</text>
           <width>40</width>
           <height>25</height>
-          <horizontal_alignment>1</horizontal_alignment>
-          <vertical_alignment>1</vertical_alignment>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
         </widget>
         <widget type="textupdate" version="2.0.0">
           <name>AXIS_2_Encoder</name>
@@ -388,20 +412,32 @@
       </widget>
       <widget type="group" version="3.0.0">
         <name>AXIS_3_Group</name>
-        <class>Not Default</class>
+        <class>NO_BOX</class>
         <y>80</y>
         <width>225</width>
         <height>25</height>
-        <style>3</style>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
         <transparent>true</transparent>
         <widget type="label" version="2.0.0">
           <name>AXIS_3_Label</name>
-          <class>Not Default</class>
+          <class>CENTRAL</class>
           <text>Axis 3</text>
           <width>40</width>
           <height>25</height>
-          <horizontal_alignment>1</horizontal_alignment>
-          <vertical_alignment>1</vertical_alignment>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
         </widget>
         <widget type="textupdate" version="2.0.0">
           <name>AXIS_3_Encoder</name>
@@ -474,20 +510,32 @@
       </widget>
       <widget type="group" version="3.0.0">
         <name>AXIS_4_Group</name>
-        <class>Not Default</class>
+        <class>NO_BOX</class>
         <y>120</y>
         <width>225</width>
         <height>25</height>
-        <style>3</style>
+        <style use_class="true">3</style>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
         <transparent>true</transparent>
         <widget type="label" version="2.0.0">
           <name>AXIS_4_Label</name>
-          <class>Not Default</class>
+          <class>CENTRAL</class>
           <text>Axis 4</text>
           <width>40</width>
           <height>25</height>
-          <horizontal_alignment>1</horizontal_alignment>
-          <vertical_alignment>1</vertical_alignment>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
         </widget>
         <widget type="textupdate" version="2.0.0">
           <name>AXIS_4_Encoder</name>
@@ -595,12 +643,12 @@
         <transparent>true</transparent>
         <widget type="label" version="2.0.0">
           <name>AXIS_5_Label</name>
-          <class>Not Default</class>
+          <class>CENTRAL</class>
           <text>Axis 5</text>
           <width>40</width>
           <height>25</height>
-          <horizontal_alignment>1</horizontal_alignment>
-          <vertical_alignment>1</vertical_alignment>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
         </widget>
         <widget type="textupdate" version="2.0.0">
           <name>AXIS_5_Motor</name>
@@ -657,12 +705,12 @@
         <transparent>true</transparent>
         <widget type="label" version="2.0.0">
           <name>AXIS_6_Label</name>
-          <class>Not Default</class>
+          <class>CENTRAL</class>
           <text>Axis 6</text>
           <width>40</width>
           <height>25</height>
-          <horizontal_alignment>1</horizontal_alignment>
-          <vertical_alignment>1</vertical_alignment>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
         </widget>
         <widget type="textupdate" version="2.0.0">
           <name>AXIS_6_Motor</name>
@@ -712,12 +760,24 @@
     </widget>
     <widget type="group" version="3.0.0">
       <name>Position Statuses</name>
-      <class>Not Default</class>
+      <class>NO_BOX</class>
       <x>20</x>
       <y>295</y>
       <width>225</width>
       <height>20</height>
-      <style>3</style>
+      <style use_class="true">3</style>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="15.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
       <transparent>true</transparent>
       <rules>
         <rule name="visibility" prop_id="visible" out_exp="false">
@@ -729,18 +789,18 @@
       </rules>
       <widget type="label" version="2.0.0">
         <name>HOMED_Label</name>
-        <class>NOT COMMENT</class>
+        <class>COMMENT</class>
         <text>Not Homed</text>
         <width>105</width>
-        <font>
+        <font use_class="true">
           <font family="Arial" style="BOLD" size="14.0">
           </font>
         </font>
-        <foreground_color>
+        <foreground_color use_class="true">
           <color red="29" green="41" blue="69">
           </color>
         </foreground_color>
-        <background_color>
+        <background_color use_class="true">
           <color name="Transparent" red="255" green="255" blue="255" alpha="0">
           </color>
         </background_color>
@@ -761,19 +821,19 @@
       </widget>
       <widget type="label" version="2.0.0">
         <name>MODE_Label</name>
-        <class>NOT COMMENT</class>
+        <class>COMMENT</class>
         <text>Circular Mode</text>
         <x>120</x>
         <width>105</width>
-        <font>
+        <font use_class="true">
           <font family="Arial" style="BOLD" size="14.0">
           </font>
         </font>
-        <foreground_color>
+        <foreground_color use_class="true">
           <color red="29" green="41" blue="69">
           </color>
         </foreground_color>
-        <background_color>
+        <background_color use_class="true">
           <color name="Transparent" red="255" green="255" blue="255" alpha="0">
           </color>
         </background_color>
@@ -841,12 +901,12 @@
         <transparent>true</transparent>
         <widget type="label" version="2.0.0">
           <name>GAP_Label</name>
-          <class>Not Default</class>
+          <class>CENTRAL</class>
           <text>Gap</text>
           <width>40</width>
           <height>25</height>
-          <horizontal_alignment>1</horizontal_alignment>
-          <vertical_alignment>1</vertical_alignment>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
         </widget>
         <widget type="textupdate" version="2.0.0">
           <name>GAP_Current</name>
@@ -884,12 +944,12 @@
         <transparent>true</transparent>
         <widget type="label" version="2.0.0">
           <name>OFFSET_Label</name>
-          <class>Not Default</class>
+          <class>CENTRAL</class>
           <text>Offset</text>
           <width>40</width>
           <height>25</height>
-          <horizontal_alignment>1</horizontal_alignment>
-          <vertical_alignment>1</vertical_alignment>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
         </widget>
         <widget type="textupdate" version="2.0.0">
           <name>OFFSET_Current</name>
@@ -927,12 +987,12 @@
         <transparent>true</transparent>
         <widget type="label" version="2.0.0">
           <name>TAPER_Label</name>
-          <class>Not Default</class>
+          <class>CENTRAL</class>
           <text>Taper</text>
           <width>40</width>
           <height>25</height>
-          <horizontal_alignment>1</horizontal_alignment>
-          <vertical_alignment>1</vertical_alignment>
+          <horizontal_alignment use_class="true">1</horizontal_alignment>
+          <vertical_alignment use_class="true">1</vertical_alignment>
         </widget>
         <widget type="textupdate" version="2.0.0">
           <name>TAPER_Current</name>
