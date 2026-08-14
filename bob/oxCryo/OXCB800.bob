@@ -1,0 +1,2388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-08-14 14:13:40 by ryi58813-->
+<display version="2.0.0">
+  <name>OXCB800</name>
+  <y use_class="true">0</y>
+  <width>710</width>
+  <height>1040</height>
+  <background_color use_class="true">
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="label" version="2.0.0">
+    <name>TITLE</name>
+    <class>CUSTOM</class>
+    <text>Cobra $(CS):MODEL $(CS):SERIES $(CS):CRYOSHUTTER</text>
+    <width>700</width>
+    <height>40</height>
+    <font>
+      <font family="Arial" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Status</name>
+    <x>10</x>
+    <y>40</y>
+    <width>435</width>
+    <height>995</height>
+    <widget type="label" version="2.0.0">
+      <name>TYPE_Label</name>
+      <class>CENTRAL</class>
+      <text>$(CS):TYPE.DESC</text>
+      <x>2</x>
+      <y>2</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TYPE_Value</name>
+      <pv_name>$(CS):TYPE</pv_name>
+      <x>202</x>
+      <y>2</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>SETPOINT_Label</name>
+      <class>CENTRAL</class>
+      <text>$(gas) Setpoint</text>
+      <x>2</x>
+      <y>32</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>SETPOINT_Value</name>
+      <pv_name>$(CS):SETPOINT</pv_name>
+      <x>202</x>
+      <y>32</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>TEMPERATURE_Label</name>
+      <class>CENTRAL</class>
+      <text>$(gas) Temperature</text>
+      <x>2</x>
+      <y>62</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TEMPERATURE_Value</name>
+      <pv_name>$(CS):TEMP</pv_name>
+      <x>202</x>
+      <y>62</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>ERROR_Label</name>
+      <class>CENTRAL</class>
+      <text>$(gas) Error</text>
+      <x>2</x>
+      <y>92</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>ERROR_Value</name>
+      <pv_name>$(CS):ERROR</pv_name>
+      <x>202</x>
+      <y>92</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>RUNMODE_Label</name>
+      <class>CENTRAL</class>
+      <text>$(CS):RUNMODE.DESC</text>
+      <x>2</x>
+      <y>122</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>RUNMODE_Value</name>
+      <pv_name>$(CS):RUNMODE</pv_name>
+      <x>202</x>
+      <y>122</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>PHASE_Label</name>
+      <class>CENTRAL</class>
+      <text>$(CS):PHASE.DESC</text>
+      <x>2</x>
+      <y>152</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>PHASE_Value</name>
+      <pv_name>$(CS):PHASE</pv_name>
+      <x>202</x>
+      <y>152</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>RAMPRATE_Label</name>
+      <class>CENTRAL</class>
+      <text>$(CS):RAMPRATE.DESC</text>
+      <x>2</x>
+      <y>182</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>RAMPRATE_Value</name>
+      <pv_name>$(CS):RAMPRATE</pv_name>
+      <x>202</x>
+      <y>182</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>TARGETTEMP_Label</name>
+      <class>CENTRAL</class>
+      <text>$(CS):TARGETTEMP.DESC</text>
+      <x>2</x>
+      <y>212</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TARGETTEMP_Value</name>
+      <pv_name>$(CS):TARGETTEMP</pv_name>
+      <x>202</x>
+      <y>212</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>REFR_TEMP_Label</name>
+      <class>CENTRAL</class>
+      <text>Coldhead Temp</text>
+      <x>2</x>
+      <y>242</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>REFR_TEMP_Value</name>
+      <pv_name>$(CS):REFRTEMP</pv_name>
+      <x>202</x>
+      <y>242</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>REMAINING_Label</name>
+      <class>CENTRAL</class>
+      <text>$(CS):REMAINING.DESC</text>
+      <x>2</x>
+      <y>302</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>REMAINING_Value</name>
+      <pv_name>$(CS):REMAINING</pv_name>
+      <x>202</x>
+      <y>302</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>GASFLOW_Label</name>
+      <class>CENTRAL</class>
+      <text>$(gasflow)</text>
+      <x>2</x>
+      <y>332</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>GASFLOW_Value</name>
+      <pv_name>$(CS):GASFLOW</pv_name>
+      <x>202</x>
+      <y>332</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>GAS_HEAT_Label</name>
+      <class>CENTRAL</class>
+      <text>$(gas) Heat</text>
+      <x>2</x>
+      <y>362</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>GAS_HEAT_Value</name>
+      <pv_name>$(CS):GASHEAT</pv_name>
+      <x>202</x>
+      <y>362</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>REFR_HEAT_Label</name>
+      <class>CENTRAL</class>
+      <text>Coldhead Heat</text>
+      <x>2</x>
+      <y>392</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>REFR_HEAT_Value</name>
+      <pv_name>$(CS):REFRHEAT</pv_name>
+      <x>202</x>
+      <y>392</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group</name>
+      <class>NO_BOX</class>
+      <x>2</x>
+      <y>422</y>
+      <width>390</width>
+      <height>85</height>
+      <style use_class="true">3</style>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="15.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="pv0 &gt; 0">
+            <value>false</value>
+          </exp>
+          <pv_name>$(CS):TYPE</pv_name>
+        </rule>
+      </rules>
+      <widget type="label" version="2.0.0">
+        <name>SUPPLYPRES_Label</name>
+        <class>CENTRAL</class>
+        <text>$(CS):SUPPLYPRES.DESC</text>
+        <width>200</width>
+        <height>25</height>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>SUPPLYPRES_Value</name>
+        <pv_name>$(CS):SUPPLYPRES</pv_name>
+        <x>199</x>
+        <width>190</width>
+        <height>25</height>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>BACKPRESS_Label</name>
+        <class>CENTRAL</class>
+        <text>$(CS):BACKPRESS.DESC</text>
+        <y>30</y>
+        <width>200</width>
+        <height>25</height>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>BACKPRESS_Value</name>
+        <pv_name>$(CS):BACKPRESS</pv_name>
+        <x>200</x>
+        <y>30</y>
+        <width>190</width>
+        <height>25</height>
+        <font use_class="true">
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color use_class="true">
+          <color red="184" green="195" blue="223">
+          </color>
+        </background_color>
+        <horizontal_alignment use_class="true">1</horizontal_alignment>
+        <vertical_alignment use_class="true">1</vertical_alignment>
+        <border_color use_class="true">
+          <color red="196" green="196" blue="196">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group</name>
+      <x>2</x>
+      <y>427</y>
+      <width>390</width>
+      <height>75</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == 1">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="1 &lt; pv0 &lt;= 0">
+            <value>false</value>
+          </exp>
+          <pv_name>$(CS):TYPE</pv_name>
+        </rule>
+      </rules>
+      <widget type="label" version="2.0.0">
+        <name>Label_54</name>
+        <class>CUSTOM</class>
+        <text>Cryodrive: Activated</text>
+        <width>165</width>
+        <height>25</height>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="byte_monitor" version="2.0.0">
+        <name>Byte Monitor_1</name>
+        <pv_name>$(CS):BACKPRESS</pv_name>
+        <x>170</x>
+        <width>25</width>
+        <height>25</height>
+        <numBits>1</numBits>
+        <square>true</square>
+      </widget>
+      <widget type="byte_monitor" version="2.0.0">
+        <name>Byte Monitor_2</name>
+        <pv_name>$(CS):BACKPRESS</pv_name>
+        <x>170</x>
+        <y>25</y>
+        <width>25</width>
+        <height>50</height>
+        <startBit>5</startBit>
+        <numBits>2</numBits>
+        <horizontal>false</horizontal>
+        <square>true</square>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_55</name>
+        <class>CUSTOM</class>
+        <text>In Manual Mode</text>
+        <y>25</y>
+        <width>165</width>
+        <height>25</height>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_56</name>
+        <class>CUSTOM</class>
+        <text>Start Cmd Received</text>
+        <y>50</y>
+        <width>165</width>
+        <height>25</height>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="byte_monitor" version="2.0.0">
+        <name>Byte Monitor_3</name>
+        <pv_name>$(CS):BACKPRESS</pv_name>
+        <x>365</x>
+        <width>25</width>
+        <height>75</height>
+        <startBit>1</startBit>
+        <numBits>3</numBits>
+        <horizontal>false</horizontal>
+        <square>true</square>
+        <off_color>
+          <color name="MAJOR" red="255" green="0" blue="0">
+          </color>
+        </off_color>
+        <on_color>
+          <color red="153" green="0" blue="0">
+          </color>
+        </on_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_57</name>
+        <class>CUSTOM</class>
+        <text>High Temp Warning</text>
+        <x>195</x>
+        <width>165</width>
+        <height>25</height>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_58</name>
+        <class>CUSTOM</class>
+        <text>High Temp Trip</text>
+        <x>195</x>
+        <y>25</y>
+        <width>165</width>
+        <height>25</height>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_59</name>
+        <class>CUSTOM</class>
+        <text>Low Pressure Warning</text>
+        <x>195</x>
+        <y>50</y>
+        <width>165</width>
+        <height>25</height>
+        <font>
+          <font family="Arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>ALARM_Label</name>
+      <class>CENTRAL</class>
+      <text>$(CS):ALARM.DESC</text>
+      <x>2</x>
+      <y>512</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>ALARM_Value</name>
+      <pv_name>$(CS):ALARM.VALA</pv_name>
+      <x>202</x>
+      <y>512</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>RUNTIME_Label</name>
+      <class>CENTRAL</class>
+      <text>$(CS):RUNTIME.DESC</text>
+      <x>2</x>
+      <y>542</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>RUNTIME_Value</name>
+      <pv_name>$(CS):RUNTIME</pv_name>
+      <x>202</x>
+      <y>542</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CTRLNUM_Label</name>
+      <class>CENTRAL</class>
+      <text>$(CS):CTRLNUM.DESC</text>
+      <x>2</x>
+      <y>572</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CTRLNUM_Value</name>
+      <pv_name>$(CS):CTRLNUM</pv_name>
+      <x>202</x>
+      <y>572</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>VER_Label</name>
+      <class>CENTRAL</class>
+      <text>$(CS):VER.DESC</text>
+      <x>2</x>
+      <y>602</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>VER_Value</name>
+      <pv_name>$(CS):VER</pv_name>
+      <x>202</x>
+      <y>602</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CRYOSTATUS_Label</name>
+      <class>CENTRAL</class>
+      <text>Cryodrive Status</text>
+      <x>2</x>
+      <y>632</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CRYOSTATUS_Value</name>
+      <pv_name>$(CS):CRYOSTATUS</pv_name>
+      <x>202</x>
+      <y>632</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CRYO_ADJUST_Label</name>
+      <class>CENTRAL</class>
+      <text>Cryodrive Speed Boost</text>
+      <x>2</x>
+      <y>662</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CRYO_ADJUST_Value</name>
+      <pv_name>$(CS):CRYOADJUST</pv_name>
+      <x>202</x>
+      <y>662</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CRYO_SPEED_Label</name>
+      <class>CENTRAL</class>
+      <text>Cryodrive Speed</text>
+      <x>2</x>
+      <y>692</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CRYO_SPEED_Value</name>
+      <pv_name>$(CS):CRYOSPEED</pv_name>
+      <x>202</x>
+      <y>692</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>HARDWARE_TYPE_Value</name>
+      <pv_name>$(CS):HARDWARETYPE</pv_name>
+      <x>202</x>
+      <y>752</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TURBO_MODE_Value</name>
+      <pv_name>$(CS):TURBOMODE</pv_name>
+      <x>202</x>
+      <y>722</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>TURBO_MODE_Label</name>
+      <class>CENTRAL</class>
+      <text>Turbo Mode</text>
+      <x>2</x>
+      <y>722</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>HARDWARE_TYPE_Label</name>
+      <class>CENTRAL</class>
+      <text>Hardware Type</text>
+      <x>2</x>
+      <y>752</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>VAC_GAUGE_PWR_Value</name>
+      <pv_name>$(CS):VACGAUGEPWR</pv_name>
+      <x>202</x>
+      <y>872</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>GAS_HEAT_AVG_Value</name>
+      <pv_name>$(CS):GASHEATAVG</pv_name>
+      <x>202</x>
+      <y>842</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>RETPRESS_Value</name>
+      <pv_name>$(CS):RETPRESS</pv_name>
+      <x>202</x>
+      <y>812</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>RETPRESS_Label</name>
+      <class>CENTRAL</class>
+      <text>Cryodrive He Pressure</text>
+      <x>2</x>
+      <y>812</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>GAS_HEAT_AVG_Label</name>
+      <class>CENTRAL</class>
+      <text>Gas Heater Average</text>
+      <x>2</x>
+      <y>842</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>VAC_GAUGE_PWR_Label</name>
+      <class>CENTRAL</class>
+      <text>Vacuum Gauge Power</text>
+      <x>2</x>
+      <y>872</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>WATER_TEMP_Label</name>
+      <class>CENTRAL</class>
+      <text>Cryodrive Water Temp</text>
+      <x>2</x>
+      <y>782</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>WATER_TEMP_Value</name>
+      <pv_name>$(CS):WATERTEMP</pv_name>
+      <x>202</x>
+      <y>782</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>SUSPENDED_Value</name>
+      <pv_name>$(CS):SUSPENDED</pv_name>
+      <x>202</x>
+      <y>902</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>HOURS_Value</name>
+      <pv_name>$(CS):HOURS</pv_name>
+      <x>202</x>
+      <y>932</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>HOURS_Label</name>
+      <class>CENTRAL</class>
+      <text>Time Running</text>
+      <x>2</x>
+      <y>932</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>SUSPENDED_Label</name>
+      <class>CENTRAL</class>
+      <text>Suspended?</text>
+      <x>2</x>
+      <y>902</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>VACGAUGE_Label</name>
+      <class>CENTRAL</class>
+      <text>Vacuum Gauge</text>
+      <x>2</x>
+      <y>272</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>VACGAUGE_Value</name>
+      <pv_name>$(CS):VACGAUGE</pv_name>
+      <x>202</x>
+      <y>272</y>
+      <width>190</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Control</name>
+    <x>455</x>
+    <y>40</y>
+    <width>245</width>
+    <height>695</height>
+    <widget type="action_button" version="3.0.0">
+      <name>PURGE_Button</name>
+      <class>DEFAULT_PV</class>
+      <actions>
+        <action type="write_pv">
+          <description>Write PV</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(CS):PURGE.PROC</pv_name>
+      <text>$(purge)</text>
+      <x>2</x>
+      <y>2</y>
+      <height>35</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>HOLD_Button</name>
+      <class>DEFAULT_PV</class>
+      <actions>
+        <action type="write_pv">
+          <description>Write PV</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(CS):HOLD.PROC</pv_name>
+      <text>Hold</text>
+      <x>107</x>
+      <y>2</y>
+      <height>35</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>RESTART_Button</name>
+      <class>DEFAULT_PV</class>
+      <actions>
+        <action type="write_pv">
+          <description>Write PV</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(CS):RESTART.PROC</pv_name>
+      <text>Start / Restart</text>
+      <x>2</x>
+      <y>42</y>
+      <width>205</width>
+      <height>35</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>PAUSE_Button</name>
+      <class>DEFAULT_PV</class>
+      <actions>
+        <action type="write_pv">
+          <description>Write PV</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(CS):PAUSE.PROC</pv_name>
+      <text>Pause</text>
+      <x>2</x>
+      <y>82</y>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>RESUME_Button</name>
+      <class>DEFAULT_PV</class>
+      <actions>
+        <action type="write_pv">
+          <description>Write PV</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(CS):RESUME.PROC</pv_name>
+      <text>Resume</text>
+      <x>107</x>
+      <y>82</y>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>END_Button</name>
+      <class>DEFAULT_PV</class>
+      <actions>
+        <action type="write_pv">
+          <description>Write PV</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(CS):END.PROC</pv_name>
+      <text>End (Controlled Shutdown)</text>
+      <x>2</x>
+      <y>117</y>
+      <width>205</width>
+      <height>35</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="pv0 &gt;= 1">
+            <value>false</value>
+          </exp>
+          <pv_name>$(CS):TYPE</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>STOP_Button</name>
+      <class>DEFAULT_PV</class>
+      <actions>
+        <action type="write_pv">
+          <description>Write PV</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(CS):STOP.PROC</pv_name>
+      <text>$(stop)</text>
+      <x>2</x>
+      <y>157</y>
+      <width>205</width>
+      <height>35</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>RAMP_RATE_Label</name>
+      <class>CENTRAL</class>
+      <text>Ramp Rate</text>
+      <x>2</x>
+      <y>212</y>
+      <height>30</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>RAMP_RATE_Value</name>
+      <pv_name>$(CS):RRATE</pv_name>
+      <x>107</x>
+      <y>212</y>
+      <height>30</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>RAMP_TEMP_Label</name>
+      <class>CENTRAL</class>
+      <text>Target Ramp Temperature</text>
+      <x>2</x>
+      <y>242</y>
+      <width>105</width>
+      <height>40</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>RAMP_TEMP_Value</name>
+      <pv_name>$(CS):RTEMP</pv_name>
+      <x>107</x>
+      <y>247</y>
+      <height>30</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>RAMP_Button</name>
+      <class>DEFAULT_PV</class>
+      <actions>
+        <action type="write_pv">
+          <description>Write PV</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(CS):RAMP.PROC</pv_name>
+      <text>Ramp</text>
+      <x>2</x>
+      <y>282</y>
+      <width>205</width>
+      <height>35</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>PLAT_TIME_Label</name>
+      <class>CENTRAL</class>
+      <text>Plat Time</text>
+      <x>2</x>
+      <y>337</y>
+      <width>105</width>
+      <height>30</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>PLAT_TIME_Value</name>
+      <pv_name>$(CS):PTIME</pv_name>
+      <x>107</x>
+      <y>337</y>
+      <height>30</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>PLAT_Button</name>
+      <class>DEFAULT_PV</class>
+      <actions>
+        <action type="write_pv">
+          <description>Write PV</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(CS):PLAT.PROC</pv_name>
+      <text>Plat</text>
+      <x>2</x>
+      <y>372</y>
+      <width>205</width>
+      <height>35</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>COOL_TEMP_Label</name>
+      <class>CENTRAL</class>
+      <text>Target Cool Temperature</text>
+      <x>2</x>
+      <y>422</y>
+      <width>105</width>
+      <height>40</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>COOL_TEMP_Value</name>
+      <pv_name>$(CS):CTEMP</pv_name>
+      <x>107</x>
+      <y>427</y>
+      <height>30</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>COOL_Button</name>
+      <class>DEFAULT_PV</class>
+      <actions>
+        <action type="write_pv">
+          <description>Write PV</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(CS):COOL.PROC</pv_name>
+      <text>Cool</text>
+      <x>2</x>
+      <y>462</y>
+      <width>205</width>
+      <height>35</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>TURBO_Label</name>
+      <class>CENTRAL</class>
+      <text>Turbo</text>
+      <x>2</x>
+      <y>517</y>
+      <width>70</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>TURBO_Combo</name>
+      <pv_name>$(CS):TURBO</pv_name>
+      <x>72</x>
+      <y>517</y>
+      <width>80</width>
+      <height>25</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TURBO_Value</name>
+      <pv_name>$(CS):TURBOMODE</pv_name>
+      <x>157</x>
+      <y>517</y>
+      <width>50</width>
+      <height>25</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>END_RATE_Label</name>
+      <class>CENTRAL</class>
+      <text>End Rate</text>
+      <x>2</x>
+      <y>557</y>
+      <width>105</width>
+      <height>30</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>END_RATE_Value</name>
+      <pv_name>$(CS):ERATE</pv_name>
+      <x>107</x>
+      <y>557</y>
+      <height>30</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>COMMS_Label</name>
+      <class>CENTRAL</class>
+      <text>Serial Comms</text>
+      <x>2</x>
+      <y>602</y>
+      <width>70</width>
+      <height>35</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>COMMS_Combo</name>
+      <pv_name>$(CS):DISABLE</pv_name>
+      <x>72</x>
+      <y>607</y>
+      <width>80</width>
+      <height>25</height>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>COMMS_LED</name>
+      <pv_name>$(CS):DISABLE</pv_name>
+      <x>162</x>
+      <y>607</y>
+      <width>25</width>
+      <height>25</height>
+      <numBits>1</numBits>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>COMMS_Status</name>
+      <class>CENTRAL</class>
+      <text>Communication OK</text>
+      <x>2</x>
+      <y>637</y>
+      <width>205</width>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <rules>
+        <rule name="comms-text" prop_id="text" out_exp="false">
+          <exp bool_exp="1 &lt;= pv0 &lt; 5">
+            <value>Communication Errors</value>
+          </exp>
+          <exp bool_exp="pv0 &lt; 1">
+            <value>Communication OK</value>
+          </exp>
+          <pv_name>$(CS):STATUS.SEVR</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <x>2</x>
+      <y>597</y>
+      <width>205</width>
+      <height>1</height>
+      <points>
+        <point x="204.99999999999997" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_1</name>
+      <x>2</x>
+      <y>552</y>
+      <width>205</width>
+      <height>1</height>
+      <points>
+        <point x="204.99999999999997" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_2</name>
+      <x>2</x>
+      <y>507</y>
+      <width>205</width>
+      <height>1</height>
+      <points>
+        <point x="204.99999999999997" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_3</name>
+      <x>2</x>
+      <y>417</y>
+      <width>205</width>
+      <height>1</height>
+      <points>
+        <point x="204.99999999999997" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_4</name>
+      <x>2</x>
+      <y>327</y>
+      <width>205</width>
+      <height>1</height>
+      <points>
+        <point x="204.99999999999997" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_5</name>
+      <x>-3</x>
+      <y>202</y>
+      <width>205</width>
+      <height>1</height>
+      <points>
+        <point x="204.99999999999997" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+  </widget>
+</display>
