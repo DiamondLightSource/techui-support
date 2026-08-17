@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-08-17 10:50:47 by ryi58813-->
+<!--Saved on 2026-08-17 15:17:11 by ryi58813-->
 <display version="2.0.0">
   <name>OXNH700</name>
   <y use_class="true">0</y>
@@ -2239,5 +2239,124 @@
         </color>
       </line_color>
     </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>loc://gas("Gas")</pv_name>
+    <x>740</x>
+    <y>75</y>
+    <width>135</width>
+    <height>25</height>
+    <rules>
+      <rule name="local-pv" prop_id="pv_name" out_exp="false">
+        <exp bool_exp="pvInt0 == 2">
+          <value>"Sample"</value>
+        </exp>
+        <pv_name trigger="false">$(pv_name)</pv_name>
+        <pv_name>$(CS):CSTYPE</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>loc://purge("Purge")</pv_name>
+    <x>740</x>
+    <y>50</y>
+    <width>135</width>
+    <height>25</height>
+    <rules>
+      <rule name="local-pv" prop_id="pv_name" out_exp="false">
+        <exp bool_exp="pvInt0 == 2">
+          <value>"Warm"</value>
+        </exp>
+        <pv_name trigger="false">$(pv_name)</pv_name>
+        <pv_name>$(CS):CSTYPE</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_4</name>
+    <pv_name>loc://evap("Evap")</pv_name>
+    <x>740</x>
+    <y>100</y>
+    <width>135</width>
+    <height>25</height>
+    <rules>
+      <rule name="local-pv" prop_id="pv_name" out_exp="false">
+        <exp bool_exp="pvInt0 == 2">
+          <value>"Sample"</value>
+        </exp>
+        <pv_name trigger="false">$(pv_name)</pv_name>
+        <pv_name>$(CS):CSTYPE</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_5</name>
+    <pv_name>loc://gasflow("Gas Flow")</pv_name>
+    <x>740</x>
+    <y>125</y>
+    <width>135</width>
+    <height>25</height>
+    <rules>
+      <rule name="local-pv" prop_id="pv_name" out_exp="false">
+        <exp bool_exp="pvInt0 == 2">
+          <value>"Cryo Speed"</value>
+        </exp>
+        <pv_name trigger="false">$(pv_name)</pv_name>
+        <pv_name>$(CS):CSTYPE</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_6</name>
+    <pv_name>loc://evapadjust("Evap Adjust")</pv_name>
+    <x>740</x>
+    <y>150</y>
+    <width>135</width>
+    <height>25</height>
+    <rules>
+      <rule name="local-pv" prop_id="pv_name" out_exp="false">
+        <exp bool_exp="pvInt0 == 2">
+          <value>"Evap Adjust"</value>
+        </exp>
+        <pv_name trigger="false">$(pv_name)</pv_name>
+        <pv_name>$(CS):CSTYPE</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_7</name>
+    <pv_name>loc://cstype("Oxford Cryostream")</pv_name>
+    <x>740</x>
+    <y>175</y>
+    <width>135</width>
+    <height>25</height>
+    <rules>
+      <rule name="local-pv" prop_id="pv_name" out_exp="false">
+        <exp bool_exp="pvInt0 == 2">
+          <value>"Phenix Cryostat"</value>
+        </exp>
+        <pv_name trigger="false">$(pv_name)</pv_name>
+        <pv_name>$(CS):CSTYPE</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_8</name>
+    <pv_name>loc://stop("EMERGENCY STOP")</pv_name>
+    <x>740</x>
+    <y>200</y>
+    <width>135</width>
+    <height>25</height>
+    <rules>
+      <rule name="local-pv" prop_id="pv_name" out_exp="false">
+        <exp bool_exp="pvInt0 == 2">
+          <value>"STOP"</value>
+        </exp>
+        <pv_name trigger="false">$(pv_name)</pv_name>
+        <pv_name>$(CS):CSTYPE</pv_name>
+      </rule>
+    </rules>
   </widget>
 </display>
