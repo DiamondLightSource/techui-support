@@ -96,7 +96,7 @@
     <widget type="label" version="2.0.0">
       <name>SETPOINT_Label</name>
       <class>CENTRAL</class>
-      <text>$(gas) Setpoint</text>
+      <text>loc://gas Setpoint</text>
       <y>30</y>
       <width>200</width>
       <height>25</height>
@@ -140,7 +140,7 @@
     <widget type="label" version="2.0.0">
       <name>TEMPERATURE_Label</name>
       <class>CENTRAL</class>
-      <text>$(gas) Temperature</text>
+      <text>loc://gas Temperature</text>
       <y>60</y>
       <width>200</width>
       <height>25</height>
@@ -184,7 +184,7 @@
     <widget type="label" version="2.0.0">
       <name>ERROR_Label</name>
       <class>CENTRAL</class>
-      <text>$(gas) Error</text>
+      <text>loc://gas Error</text>
       <y>90</y>
       <width>200</width>
       <height>25</height>
@@ -404,7 +404,7 @@
     <widget type="label" version="2.0.0">
       <name>REFR_TEMP_Label</name>
       <class>CENTRAL</class>
-      <text>$(refr) Temperature</text>
+      <text>loc://refr Temperature</text>
       <y>240</y>
       <width>200</width>
       <height>25</height>
@@ -492,7 +492,7 @@
     <widget type="label" version="2.0.0">
       <name>GASFLOW_Label</name>
       <class>CENTRAL</class>
-      <text>$(gasflow)</text>
+      <text>loc://gasflow</text>
       <y>330</y>
       <width>200</width>
       <height>25</height>
@@ -536,7 +536,7 @@
     <widget type="label" version="2.0.0">
       <name>GAS_HEAT_Label</name>
       <class>CENTRAL</class>
-      <text>$(gas) Heat</text>
+      <text>loc://gas Heat</text>
       <y>360</y>
       <width>200</width>
       <height>25</height>
@@ -580,7 +580,7 @@
     <widget type="label" version="2.0.0">
       <name>REFR_HEAT_Label</name>
       <class>CENTRAL</class>
-      <text>$(refr) Heat</text>
+      <text>loc://refr Heat</text>
       <y>390</y>
       <width>200</width>
       <height>25</height>
@@ -1648,12 +1648,12 @@
       <actions>
         <action type="write_pv">
           <description>Write PV</description>
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>loc://pv_name</pv_name>
           <value>1</value>
         </action>
       </actions>
       <pv_name>$(CS):PURGE.PROC</pv_name>
-      <text>$(purge)</text>
+      <text>loc://purge</text>
       <height>35</height>
       <font use_class="true">
         <font family="Arial" style="REGULAR" size="14.0">
@@ -1674,7 +1674,7 @@
       <actions>
         <action type="write_pv">
           <description>Write PV</description>
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>loc://pv_name</pv_name>
           <value>1</value>
         </action>
       </actions>
@@ -1694,7 +1694,7 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>$(actions)</tooltip>
+      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>RESTART_Button</name>
@@ -1702,7 +1702,7 @@
       <actions>
         <action type="write_pv">
           <description>Write PV</description>
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>loc://pv_name</pv_name>
           <value>1</value>
         </action>
       </actions>
@@ -1723,7 +1723,7 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>$(actions)</tooltip>
+      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>PAUSE_Button</name>
@@ -1731,7 +1731,7 @@
       <actions>
         <action type="write_pv">
           <description>Write PV</description>
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>loc://pv_name</pv_name>
           <value>1</value>
         </action>
       </actions>
@@ -1750,7 +1750,7 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>$(actions)</tooltip>
+      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>RESUME_Button</name>
@@ -1758,7 +1758,7 @@
       <actions>
         <action type="write_pv">
           <description>Write PV</description>
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>loc://pv_name</pv_name>
           <value>1</value>
         </action>
       </actions>
@@ -1778,7 +1778,7 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>$(actions)</tooltip>
+      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>END_Button</name>
@@ -1786,7 +1786,7 @@
       <actions>
         <action type="write_pv">
           <description>Write PV</description>
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>loc://pv_name</pv_name>
           <value>1</value>
         </action>
       </actions>
@@ -1818,7 +1818,7 @@
           <pv_name>$(CS):TYPE</pv_name>
         </rule>
       </rules>
-      <tooltip>$(actions)</tooltip>
+      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>STOP_Button</name>
@@ -1826,12 +1826,12 @@
       <actions>
         <action type="write_pv">
           <description>Write PV</description>
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>loc://pv_name</pv_name>
           <value>1</value>
         </action>
       </actions>
       <pv_name>$(CS):STOP.PROC</pv_name>
-      <text>$(stop)</text>
+      <text>loc://stop</text>
       <y>155</y>
       <width>205</width>
       <height>35</height>
@@ -1847,7 +1847,7 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>$(actions)</tooltip>
+      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>RAMP_RATE_Label</name>
@@ -1940,7 +1940,7 @@
       <actions>
         <action type="write_pv">
           <description>Write PV</description>
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>loc://pv_name</pv_name>
           <value>1</value>
         </action>
       </actions>
@@ -1961,7 +1961,7 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>$(actions)</tooltip>
+      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>PLAT_TIME_Label</name>
@@ -2012,7 +2012,7 @@
       <actions>
         <action type="write_pv">
           <description>Write PV</description>
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>loc://pv_name</pv_name>
           <value>1</value>
         </action>
       </actions>
@@ -2033,7 +2033,7 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>$(actions)</tooltip>
+      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>COOL_TEMP_Label</name>
@@ -2084,7 +2084,7 @@
       <actions>
         <action type="write_pv">
           <description>Write PV</description>
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>loc://pv_name</pv_name>
           <value>1</value>
         </action>
       </actions>
@@ -2105,7 +2105,7 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>$(actions)</tooltip>
+      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>TURBO_Label</name>
