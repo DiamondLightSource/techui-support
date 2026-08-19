@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-07-30 09:49:38 by uns32131-->
+<!--Saved on 2026-08-06 09:58:56 by uns32131-->
 <display version="2.0.0">
-  <name>Widget Classes</name>
+  <name>DARKMODE</name>
   <y use_class="true">0</y>
   <background_color use_class="true">
-    <color name="Read_Background" red="240" green="240" blue="240">
+    <color red="44" green="44" blue="48">
     </color>
   </background_color>
   <rules use_class="true">
@@ -32,14 +32,6 @@
       <color red="44" green="44" blue="48">
       </color>
     </background_color>
-    <rules>
-      <rule name="darkmode" prop_id="class" out_exp="true">
-        <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
-        </exp>
-        <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
-      </rule>
-    </rules>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>DEFAULT</name>
@@ -805,7 +797,7 @@
     <width>40</width>
     <height>40</height>
     <off_color use_class="true">
-      <color name="Off" red="237" green="237" blue="237">
+      <color name="Off" red="60" green="100" blue="60">
       </color>
     </off_color>
     <on_color use_class="true">
@@ -851,7 +843,7 @@
     <width>40</width>
     <height>40</height>
     <off_color use_class="true">
-      <color name="Off" red="237" green="237" blue="237">
+      <color name="Off" red="60" green="100" blue="60">
       </color>
     </off_color>
     <on_color use_class="true">
@@ -874,7 +866,7 @@
     <width>40</width>
     <height>40</height>
     <off_color use_class="true">
-      <color name="Off" red="237" green="237" blue="237">
+      <color name="Off" red="60" green="100" blue="60">
       </color>
     </off_color>
     <on_color use_class="true">
@@ -909,7 +901,7 @@
         <value use_class="true">0</value>
         <label use_class="true">State 1</label>
         <color use_class="true">
-          <color name="Off" red="237" green="237" blue="237">
+          <color name="Off" red="60" green="100" blue="60">
           </color>
         </color>
       </state>
@@ -923,7 +915,7 @@
       </state>
     </states>
     <fallback_color use_class="true">
-      <color name="Off" red="237" green="237" blue="237">
+      <color name="Off" red="60" green="100" blue="60">
       </color>
     </fallback_color>
   </widget>
@@ -1035,36 +1027,8 @@
     </rules>
     <tooltip>$(actions)</tooltip>
   </widget>
-  <widget type="action_button" version="3.0.0">
-    <name>DARKMODE_PV</name>
-    <x>1111</x>
-    <y>918</y>
-    <width>170</width>
-    <height>40</height>
-    <font use_class="true">
-      <font family="Arial" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color use_class="true">
-      <color red="153" green="153" blue="169">
-      </color>
-    </foreground_color>
-    <background_color use_class="true">
-      <color red="26" green="29" blue="38">
-      </color>
-    </background_color>
-    <rules use_class="true">
-      <rule name="darkmode" prop_id="class" out_exp="true">
-        <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
-        </exp>
-        <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
-      </rule>
-    </rules>
-    <tooltip>$(actions)</tooltip>
-  </widget>
   <widget type="label" version="2.0.0">
-    <name>DARKMODE_1</name>
+    <name>DARKMODE</name>
     <text>Header 1</text>
     <x>881</x>
     <y>848</y>
@@ -1089,14 +1053,14 @@
     <rules use_class="true">
       <rule name="darkmode" prop_id="class" out_exp="true">
         <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
+          <expression>"DARKMODE_1"</expression>
         </exp>
         <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
       </rule>
     </rules>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>DARKMODE_2</name>
+    <name>DARKMODE</name>
     <text>Header 2</text>
     <x>1331</x>
     <y>908</y>
@@ -1121,14 +1085,14 @@
     <rules use_class="true">
       <rule name="darkmode" prop_id="class" out_exp="true">
         <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
+          <expression>"DARKMODE_2"</expression>
         </exp>
         <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
       </rule>
     </rules>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>DARKMODE_3</name>
+    <name>DARKMODE</name>
     <text>Header 3</text>
     <x>1331</x>
     <y>958</y>
@@ -1153,7 +1117,7 @@
     <rules use_class="true">
       <rule name="darkmode" prop_id="class" out_exp="true">
         <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
+          <expression>"DARKMODE_3"</expression>
         </exp>
         <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
       </rule>
@@ -1567,42 +1531,6 @@
       </rule>
     </rules>
   </widget>
-  <widget type="bool_button" version="2.0.0">
-    <name>DARKMODE</name>
-    <x>911</x>
-    <y>1048</y>
-    <width>184</width>
-    <height>40</height>
-    <off_label>Secondary button</off_label>
-    <off_color use_class="true">
-      <color red="185" green="212" blue="211">
-      </color>
-    </off_color>
-    <on_color use_class="true">
-      <color red="11" green="112" blue="193">
-      </color>
-    </on_color>
-    <font use_class="true">
-      <font family="Arial" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color use_class="true">
-      <color red="153" green="154" blue="169">
-      </color>
-    </foreground_color>
-    <background_color use_class="true">
-      <color red="26" green="29" blue="38">
-      </color>
-    </background_color>
-    <rules use_class="true">
-      <rule name="darkmode" prop_id="class" out_exp="true">
-        <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
-        </exp>
-        <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
-      </rule>
-    </rules>
-  </widget>
   <widget type="progressbar" version="2.0.0">
     <name>DARKMODE</name>
     <x>1421</x>
@@ -1828,7 +1756,7 @@ $(actions)</tooltip>
     </y_axes>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>DARKMODE_4</name>
+    <name>DARKMODE</name>
     <x>1721</x>
     <y>958</y>
     <width>140</width>
@@ -1855,7 +1783,7 @@ $(actions)</tooltip>
     </rules>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>DARKMODE_5</name>
+    <name>DARKMODE</name>
     <text>Label</text>
     <x>1731</x>
     <y>931</y>
@@ -1868,7 +1796,7 @@ $(actions)</tooltip>
     <rules use_class="true">
       <rule name="darkmode" prop_id="class" out_exp="true">
         <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
+          <expression>"DARKMODE_5"</expression>
         </exp>
         <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
       </rule>
@@ -1944,14 +1872,6 @@ $(actions)</tooltip>
       <color red="51" green="60" blue="100">
       </color>
     </line_color>
-    <rules>
-      <rule name="darkmode" prop_id="class" out_exp="true">
-        <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
-        </exp>
-        <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
-      </rule>
-    </rules>
   </widget>
   <widget type="symbol" version="2.0.0">
     <name>CAMERA</name>
@@ -1962,9 +1882,9 @@ $(actions)</tooltip>
     <x>1760</x>
     <y>1170</y>
     <rules use_class="true">
-      <rule name="darkmode" prop_id="class" out_exp="true">
+      <rule name="darkmode" prop_id="symbols[0]" out_exp="false">
         <exp bool_exp="pv0==1">
-          <expression>"DARKMODE"</expression>
+          <value>techui-support/symbols/camera-1_darkmode.svg</value>
         </exp>
         <pv_name>loc://darkmode&lt;VDouble&gt;</pv_name>
       </rule>
