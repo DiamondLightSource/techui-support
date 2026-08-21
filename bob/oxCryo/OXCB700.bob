@@ -14,7 +14,7 @@
   <widget type="label" version="2.0.0">
     <name>TITLE</name>
     <class>CUSTOM</class>
-    <text>Cobra $(CS):MODEL $(CS):SERIES $(CS):CRYOSHUTTER</text>
+    <text>Cobra $(P)$(Q):MODEL $(P)$(Q):SERIES $(P)$(Q):CRYOSHUTTER</text>
     <width>700</width>
     <height>40</height>
     <font>
@@ -54,7 +54,7 @@
     <widget type="label" version="2.0.0">
       <name>TYPE_Label</name>
       <class>CENTRAL</class>
-      <text>$(CS):TYPE.DESC</text>
+      <text>$(P)$(Q):TYPE.DESC</text>
       <width>200</width>
       <height>25</height>
       <font>
@@ -70,7 +70,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TYPE_Value</name>
-      <pv_name>$(CS):TYPE</pv_name>
+      <pv_name>$(P)$(Q):TYPE</pv_name>
       <x>200</x>
       <width>190</width>
       <height>25</height>
@@ -113,7 +113,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>SETPOINT_Value</name>
-      <pv_name>$(CS):SETPOINT</pv_name>
+      <pv_name>$(P)$(Q):SETPOINT</pv_name>
       <x>200</x>
       <y>30</y>
       <width>190</width>
@@ -157,7 +157,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TEMPERATURE_Value</name>
-      <pv_name>$(CS):TEMP</pv_name>
+      <pv_name>$(P)$(Q):TEMP</pv_name>
       <x>200</x>
       <y>60</y>
       <width>190</width>
@@ -201,7 +201,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>ERROR_Value</name>
-      <pv_name>$(CS):ERROR</pv_name>
+      <pv_name>$(P)$(Q):ERROR</pv_name>
       <x>200</x>
       <y>90</y>
       <width>190</width>
@@ -228,7 +228,7 @@
     <widget type="label" version="2.0.0">
       <name>RUNMODE_Label</name>
       <class>CENTRAL</class>
-      <text>$(CS):RUNMODE.DESC</text>
+      <text>$(P)$(Q):RUNMODE.DESC</text>
       <y>120</y>
       <width>200</width>
       <height>25</height>
@@ -245,7 +245,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>RUNMODE_Value</name>
-      <pv_name>$(CS):RUNMODE</pv_name>
+      <pv_name>$(P)$(Q):RUNMODE</pv_name>
       <x>200</x>
       <y>120</y>
       <width>190</width>
@@ -272,7 +272,7 @@
     <widget type="label" version="2.0.0">
       <name>PHASE_Label</name>
       <class>CENTRAL</class>
-      <text>$(CS):PHASE.DESC</text>
+      <text>$(P)$(Q):PHASE.DESC</text>
       <y>150</y>
       <width>200</width>
       <height>25</height>
@@ -289,7 +289,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>PHASE_Value</name>
-      <pv_name>$(CS):PHASE</pv_name>
+      <pv_name>$(P)$(Q):PHASE</pv_name>
       <x>200</x>
       <y>150</y>
       <width>190</width>
@@ -316,7 +316,7 @@
     <widget type="label" version="2.0.0">
       <name>RAMPRATE_Label</name>
       <class>CENTRAL</class>
-      <text>$(CS):RAMPRATE.DESC</text>
+      <text>$(P)$(Q):RAMPRATE.DESC</text>
       <y>180</y>
       <width>200</width>
       <height>25</height>
@@ -333,7 +333,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>RAMPRATE_Value</name>
-      <pv_name>$(CS):RAMPRATE</pv_name>
+      <pv_name>$(P)$(Q):RAMPRATE</pv_name>
       <x>200</x>
       <y>180</y>
       <width>190</width>
@@ -360,7 +360,7 @@
     <widget type="label" version="2.0.0">
       <name>TARGETTEMP_Label</name>
       <class>CENTRAL</class>
-      <text>$(CS):TARGETTEMP.DESC</text>
+      <text>$(P)$(Q):TARGETTEMP.DESC</text>
       <y>210</y>
       <width>200</width>
       <height>25</height>
@@ -377,7 +377,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TARGETTEMP_Value</name>
-      <pv_name>$(CS):TARGETTEMP</pv_name>
+      <pv_name>$(P)$(Q):TARGETTEMP</pv_name>
       <x>200</x>
       <y>210</y>
       <width>190</width>
@@ -421,7 +421,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>REFR_TEMP_Value</name>
-      <pv_name>$(CS):REFRTEMP</pv_name>
+      <pv_name>$(P)$(Q):REFRTEMP</pv_name>
       <x>200</x>
       <y>240</y>
       <width>190</width>
@@ -448,7 +448,7 @@
     <widget type="label" version="2.0.0">
       <name>REMAINING_Label</name>
       <class>CENTRAL</class>
-      <text>$(CS):REMAINING.DESC</text>
+      <text>$(P)$(Q):REMAINING.DESC</text>
       <y>300</y>
       <width>200</width>
       <height>25</height>
@@ -465,7 +465,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>REMAINING_Value</name>
-      <pv_name>$(CS):REMAINING</pv_name>
+      <pv_name>$(P)$(Q):REMAINING</pv_name>
       <x>200</x>
       <y>300</y>
       <width>190</width>
@@ -509,7 +509,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>GASFLOW_Value</name>
-      <pv_name>$(CS):GASFLOW</pv_name>
+      <pv_name>$(P)$(Q):GASFLOW</pv_name>
       <x>200</x>
       <y>330</y>
       <width>190</width>
@@ -553,7 +553,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>GAS_HEAT_Value</name>
-      <pv_name>$(CS):GASHEAT</pv_name>
+      <pv_name>$(P)$(Q):GASHEAT</pv_name>
       <x>200</x>
       <y>360</y>
       <width>190</width>
@@ -597,7 +597,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>REFR_HEAT_Value</name>
-      <pv_name>$(CS):REFRHEAT</pv_name>
+      <pv_name>$(P)$(Q):REFRHEAT</pv_name>
       <x>200</x>
       <y>390</y>
       <width>190</width>
@@ -649,13 +649,13 @@
           <exp bool_exp="pv0 &gt; 0">
             <value>false</value>
           </exp>
-          <pv_name>$(CS):TYPE</pv_name>
+          <pv_name>$(P)$(Q):TYPE</pv_name>
         </rule>
       </rules>
       <widget type="label" version="2.0.0">
         <name>BACKPRESS_Label</name>
         <class>CENTRAL</class>
-        <text>$(CS):BACKPRESS.DESC</text>
+        <text>$(P)$(Q):BACKPRESS.DESC</text>
         <y>30</y>
         <width>200</width>
         <height>25</height>
@@ -672,7 +672,7 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>BACKPRESS_Value</name>
-        <pv_name>$(CS):BACKPRESS</pv_name>
+        <pv_name>$(P)$(Q):BACKPRESS</pv_name>
         <x>200</x>
         <y>30</y>
         <width>190</width>
@@ -725,7 +725,7 @@
           <exp bool_exp="1 &lt; pv0 &lt;= 0">
             <value>false</value>
           </exp>
-          <pv_name>$(CS):TYPE</pv_name>
+          <pv_name>$(P)$(Q):TYPE</pv_name>
         </rule>
       </rules>
       <widget type="label" version="2.0.0">
@@ -747,7 +747,7 @@
       </widget>
       <widget type="byte_monitor" version="2.0.0">
         <name>Byte Monitor_1</name>
-        <pv_name>$(CS):BACKPRESS</pv_name>
+        <pv_name>$(P)$(Q):BACKPRESS</pv_name>
         <x>170</x>
         <width>25</width>
         <height>25</height>
@@ -772,7 +772,7 @@
       </widget>
       <widget type="byte_monitor" version="2.0.0">
         <name>Byte Monitor_2</name>
-        <pv_name>$(CS):BACKPRESS</pv_name>
+        <pv_name>$(P)$(Q):BACKPRESS</pv_name>
         <x>170</x>
         <y>25</y>
         <width>25</width>
@@ -836,7 +836,7 @@
       </widget>
       <widget type="byte_monitor" version="2.0.0">
         <name>Byte Monitor_3</name>
-        <pv_name>$(CS):BACKPRESS</pv_name>
+        <pv_name>$(P)$(Q):BACKPRESS</pv_name>
         <x>365</x>
         <width>25</width>
         <height>75</height>
@@ -921,7 +921,7 @@
     <widget type="label" version="2.0.0">
       <name>ALARM_Label</name>
       <class>CENTRAL</class>
-      <text>$(CS):ALARM.DESC</text>
+      <text>$(P)$(Q):ALARM.DESC</text>
       <y>510</y>
       <width>200</width>
       <height>25</height>
@@ -938,7 +938,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>ALARM_Value</name>
-      <pv_name>$(CS):ALARM.VALA</pv_name>
+      <pv_name>$(P)$(Q):ALARM.VALA</pv_name>
       <x>200</x>
       <y>510</y>
       <width>190</width>
@@ -965,7 +965,7 @@
     <widget type="label" version="2.0.0">
       <name>RUNTIME_Label</name>
       <class>CENTRAL</class>
-      <text>$(CS):RUNTIME.DESC</text>
+      <text>$(P)$(Q):RUNTIME.DESC</text>
       <y>540</y>
       <width>200</width>
       <height>25</height>
@@ -982,7 +982,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>RUNTIME_Value</name>
-      <pv_name>$(CS):RUNTIME</pv_name>
+      <pv_name>$(P)$(Q):RUNTIME</pv_name>
       <x>200</x>
       <y>540</y>
       <width>190</width>
@@ -1009,7 +1009,7 @@
     <widget type="label" version="2.0.0">
       <name>CTRLNUM_Label</name>
       <class>CENTRAL</class>
-      <text>$(CS):CTRLNUM.DESC</text>
+      <text>$(P)$(Q):CTRLNUM.DESC</text>
       <y>570</y>
       <width>200</width>
       <height>25</height>
@@ -1026,7 +1026,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>CTRLNUM_Value</name>
-      <pv_name>$(CS):CTRLNUM</pv_name>
+      <pv_name>$(P)$(Q):CTRLNUM</pv_name>
       <x>200</x>
       <y>570</y>
       <width>190</width>
@@ -1053,7 +1053,7 @@
     <widget type="label" version="2.0.0">
       <name>VER_Label</name>
       <class>CENTRAL</class>
-      <text>$(CS):VER.DESC</text>
+      <text>$(P)$(Q):VER.DESC</text>
       <y>600</y>
       <width>200</width>
       <height>25</height>
@@ -1070,7 +1070,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>VER_Value</name>
-      <pv_name>$(CS):VER</pv_name>
+      <pv_name>$(P)$(Q):VER</pv_name>
       <x>200</x>
       <y>600</y>
       <width>190</width>
@@ -1114,7 +1114,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>CRYOSTATUS_Value</name>
-      <pv_name>$(CS):CRYOSTATUS</pv_name>
+      <pv_name>$(P)$(Q):CRYOSTATUS</pv_name>
       <x>200</x>
       <y>630</y>
       <width>190</width>
@@ -1158,7 +1158,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>CRYO_ADJUST_Value</name>
-      <pv_name>$(CS):CRYOADJUST</pv_name>
+      <pv_name>$(P)$(Q):CRYOADJUST</pv_name>
       <x>200</x>
       <y>660</y>
       <width>190</width>
@@ -1202,7 +1202,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>CRYO_SPEED_Value</name>
-      <pv_name>$(CS):CRYOSPEED</pv_name>
+      <pv_name>$(P)$(Q):CRYOSPEED</pv_name>
       <x>200</x>
       <y>690</y>
       <width>190</width>
@@ -1228,7 +1228,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>HARDWARE_TYPE_Value</name>
-      <pv_name>$(CS):HARDWARETYPE</pv_name>
+      <pv_name>$(P)$(Q):HARDWARETYPE</pv_name>
       <x>200</x>
       <y>750</y>
       <width>190</width>
@@ -1254,7 +1254,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TURBO_MODE_Value</name>
-      <pv_name>$(CS):TURBOMODE</pv_name>
+      <pv_name>$(P)$(Q):TURBOMODE</pv_name>
       <x>200</x>
       <y>720</y>
       <width>190</width>
@@ -1316,7 +1316,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>VAC_GAUGE_PWR_Value</name>
-      <pv_name>$(CS):VACGAUGEPWR</pv_name>
+      <pv_name>$(P)$(Q):VACGAUGEPWR</pv_name>
       <x>200</x>
       <y>870</y>
       <width>190</width>
@@ -1342,7 +1342,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>GAS_HEAT_AVG_Value</name>
-      <pv_name>$(CS):GASHEATAVG</pv_name>
+      <pv_name>$(P)$(Q):GASHEATAVG</pv_name>
       <x>200</x>
       <y>840</y>
       <width>190</width>
@@ -1368,7 +1368,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>SHUTTER_TIME_Value</name>
-      <pv_name>$(CS):SHUTTERTIME</pv_name>
+      <pv_name>$(P)$(Q):SHUTTERTIME</pv_name>
       <x>200</x>
       <y>810</y>
       <width>190</width>
@@ -1466,7 +1466,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>SHUTTER_STATE_Value</name>
-      <pv_name>$(CS):SHUTTERSTATE</pv_name>
+      <pv_name>$(P)$(Q):SHUTTERSTATE</pv_name>
       <x>200</x>
       <y>780</y>
       <width>190</width>
@@ -1492,7 +1492,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>SUSPENDED_Value</name>
-      <pv_name>$(CS):SUSPENDED</pv_name>
+      <pv_name>$(P)$(Q):SUSPENDED</pv_name>
       <x>200</x>
       <y>900</y>
       <width>190</width>
@@ -1518,7 +1518,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>HOURS_Value</name>
-      <pv_name>$(CS):HOURS</pv_name>
+      <pv_name>$(P)$(Q):HOURS</pv_name>
       <x>200</x>
       <y>930</y>
       <width>190</width>
@@ -1598,7 +1598,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>VACGAUGE_Value</name>
-      <pv_name>$(CS):VACGAUGE</pv_name>
+      <pv_name>$(P)$(Q):VACGAUGE</pv_name>
       <x>200</x>
       <y>270</y>
       <width>190</width>
@@ -1652,7 +1652,7 @@
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(CS):PURGE.PROC</pv_name>
+      <pv_name>$(P)$(Q):PURGE.PROC</pv_name>
       <text>loc://purge</text>
       <height>35</height>
       <font use_class="true">
@@ -1678,7 +1678,7 @@
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(CS):HOLD.PROC</pv_name>
+      <pv_name>$(P)$(Q):HOLD.PROC</pv_name>
       <text>Hold</text>
       <x>105</x>
       <height>35</height>
@@ -1706,7 +1706,7 @@
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(CS):RESTART.PROC</pv_name>
+      <pv_name>$(P)$(Q):RESTART.PROC</pv_name>
       <text>Start / Restart</text>
       <y>40</y>
       <width>205</width>
@@ -1735,7 +1735,7 @@
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(CS):PAUSE.PROC</pv_name>
+      <pv_name>$(P)$(Q):PAUSE.PROC</pv_name>
       <text>Pause</text>
       <y>80</y>
       <font use_class="true">
@@ -1762,7 +1762,7 @@
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(CS):RESUME.PROC</pv_name>
+      <pv_name>$(P)$(Q):RESUME.PROC</pv_name>
       <text>Resume</text>
       <x>105</x>
       <y>80</y>
@@ -1790,7 +1790,7 @@
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(CS):END.PROC</pv_name>
+      <pv_name>$(P)$(Q):END.PROC</pv_name>
       <text>End (Controlled Shutdown)</text>
       <y>115</y>
       <width>205</width>
@@ -1815,7 +1815,7 @@
           <exp bool_exp="pv0 &gt;= 1">
             <value>false</value>
           </exp>
-          <pv_name>$(CS):TYPE</pv_name>
+          <pv_name>$(P)$(Q):TYPE</pv_name>
         </rule>
       </rules>
       <tooltip>loc://actions</tooltip>
@@ -1830,7 +1830,7 @@
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(CS):STOP.PROC</pv_name>
+      <pv_name>$(P)$(Q):STOP.PROC</pv_name>
       <text>loc://stop</text>
       <y>155</y>
       <width>205</width>
@@ -1868,7 +1868,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>RAMP_RATE_Value</name>
-      <pv_name>$(CS):RRATE</pv_name>
+      <pv_name>$(P)$(Q):RRATE</pv_name>
       <x>105</x>
       <y>210</y>
       <height>30</height>
@@ -1911,7 +1911,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>RAMP_TEMP_Value</name>
-      <pv_name>$(CS):RTEMP</pv_name>
+      <pv_name>$(P)$(Q):RTEMP</pv_name>
       <x>105</x>
       <y>245</y>
       <height>30</height>
@@ -1944,7 +1944,7 @@
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(CS):RAMP.PROC</pv_name>
+      <pv_name>$(P)$(Q):RAMP.PROC</pv_name>
       <text>Ramp</text>
       <y>280</y>
       <width>205</width>
@@ -1983,7 +1983,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>PLAT_TIME_Value</name>
-      <pv_name>$(CS):PTIME</pv_name>
+      <pv_name>$(P)$(Q):PTIME</pv_name>
       <x>105</x>
       <y>335</y>
       <height>30</height>
@@ -2016,7 +2016,7 @@
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(CS):PLAT.PROC</pv_name>
+      <pv_name>$(P)$(Q):PLAT.PROC</pv_name>
       <text>Plat</text>
       <y>370</y>
       <width>205</width>
@@ -2055,7 +2055,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>COOL_TEMP_Value</name>
-      <pv_name>$(CS):CTEMP</pv_name>
+      <pv_name>$(P)$(Q):CTEMP</pv_name>
       <x>105</x>
       <y>425</y>
       <height>30</height>
@@ -2088,7 +2088,7 @@
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(CS):COOL.PROC</pv_name>
+      <pv_name>$(P)$(Q):COOL.PROC</pv_name>
       <text>Cool</text>
       <y>460</y>
       <width>205</width>
@@ -2127,7 +2127,7 @@
     </widget>
     <widget type="combo" version="2.0.0">
       <name>TURBO_Combo</name>
-      <pv_name>$(CS):TURBO</pv_name>
+      <pv_name>$(P)$(Q):TURBO</pv_name>
       <x>70</x>
       <y>515</y>
       <width>80</width>
@@ -2147,7 +2147,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TURBO_Value</name>
-      <pv_name>$(CS):TURBOMODE</pv_name>
+      <pv_name>$(P)$(Q):TURBOMODE</pv_name>
       <x>155</x>
       <y>515</y>
       <width>50</width>
@@ -2191,7 +2191,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>END_RATE_Value</name>
-      <pv_name>$(CS):ERATE</pv_name>
+      <pv_name>$(P)$(Q):ERATE</pv_name>
       <x>105</x>
       <y>560</y>
       <height>30</height>
@@ -2234,7 +2234,7 @@
     </widget>
     <widget type="combo" version="2.0.0">
       <name>COMMS_Combo</name>
-      <pv_name>$(CS):DISABLE</pv_name>
+      <pv_name>$(P)$(Q):DISABLE</pv_name>
       <x>70</x>
       <y>610</y>
       <width>80</width>
@@ -2254,7 +2254,7 @@
     </widget>
     <widget type="byte_monitor" version="2.0.0">
       <name>COMMS_LED</name>
-      <pv_name>$(CS):DISABLE</pv_name>
+      <pv_name>$(P)$(Q):DISABLE</pv_name>
       <x>160</x>
       <y>610</y>
       <width>25</width>
@@ -2298,7 +2298,7 @@
           <exp bool_exp="pv0 &lt; 1">
             <value>Communication OK</value>
           </exp>
-          <pv_name>$(CS):STATUS.SEVR</pv_name>
+          <pv_name>$(P)$(Q):STATUS.SEVR</pv_name>
         </rule>
       </rules>
     </widget>
@@ -2418,7 +2418,7 @@
           <value>"Sample"</value>
         </exp>
         <pv_name trigger="false">$(pv_name)</pv_name>
-        <pv_name>$(CS):CSTYPE</pv_name>
+        <pv_name>$(P)$(Q):CSTYPE</pv_name>
       </rule>
     </rules>
   </widget>
@@ -2435,7 +2435,7 @@
           <value>"Warm"</value>
         </exp>
         <pv_name trigger="false">$(pv_name)</pv_name>
-        <pv_name>$(CS):CSTYPE</pv_name>
+        <pv_name>$(P)$(Q):CSTYPE</pv_name>
       </rule>
     </rules>
   </widget>
@@ -2452,7 +2452,7 @@
           <value>"Sample"</value>
         </exp>
         <pv_name trigger="false">$(pv_name)</pv_name>
-        <pv_name>$(CS):CSTYPE</pv_name>
+        <pv_name>$(P)$(Q):CSTYPE</pv_name>
       </rule>
     </rules>
   </widget>
@@ -2469,7 +2469,7 @@
           <value>"Cryo Speed"</value>
         </exp>
         <pv_name trigger="false">$(pv_name)</pv_name>
-        <pv_name>$(CS):CSTYPE</pv_name>
+        <pv_name>$(P)$(Q):CSTYPE</pv_name>
       </rule>
     </rules>
   </widget>
@@ -2486,7 +2486,7 @@
           <value>"Evap Adjust"</value>
         </exp>
         <pv_name trigger="false">$(pv_name)</pv_name>
-        <pv_name>$(CS):CSTYPE</pv_name>
+        <pv_name>$(P)$(Q):CSTYPE</pv_name>
       </rule>
     </rules>
   </widget>
@@ -2503,7 +2503,7 @@
           <value>"Phenix Cryostat"</value>
         </exp>
         <pv_name trigger="false">$(pv_name)</pv_name>
-        <pv_name>$(CS):CSTYPE</pv_name>
+        <pv_name>$(P)$(Q):CSTYPE</pv_name>
       </rule>
     </rules>
   </widget>
@@ -2520,7 +2520,7 @@
           <value>"STOP"</value>
         </exp>
         <pv_name trigger="false">$(pv_name)</pv_name>
-        <pv_name>$(CS):CSTYPE</pv_name>
+        <pv_name>$(P)$(Q):CSTYPE</pv_name>
       </rule>
     </rules>
   </widget>
