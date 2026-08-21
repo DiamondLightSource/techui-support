@@ -234,3 +234,41 @@ support_modules:
     screens:
       - file: "fastcs-eiger/eigerController.bob"
         type: "embedded"
+
+  # Cryostreams
+
+  oxCryo.OXCS700:
+    prefix: "{{ P }}{{ Q }}"
+    macros:
+      - P
+      - Q
+    screens:
+      - file: oxCryo/OXCS700.bob
+        type: embedded
+
+  oxCryo.OXCB700:
+    prefix: "{{ P }}{{ Q }}"
+    macros:
+      - P
+      - Q
+    screens:
+      - file: oxCryo/OXCB700.bob
+        type: embedded
+
+  oxCryo.OXCB800:
+    prefix: "{{ P }}{{ Q }}"
+    macros:
+      - P
+      - Q
+    screens:
+      - file: oxCryo/OXCB700.bob
+        type: embedded
+
+  oxCryo.OXNH700:
+    prefix: "{{ P }}{{ Q }}"
+    macros:
+      - P
+      - Q
+    screens:
+      - file: oxCryo/OXNH700.bob
+        type: embedded
