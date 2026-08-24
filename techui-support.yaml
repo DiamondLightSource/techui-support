@@ -228,9 +228,9 @@ support_modules:
   # Detectors
 
   fastcs_eiger.EigerController:
-    prefix: "{{ name }}"
+    prefix: "{{ id }}"
     macros:
-      - name
+      - id
     screens:
       - file: "fastcs-eiger/eigerController.bob"
         type: "embedded"
