@@ -227,10 +227,14 @@ support_modules:
 
   # Detectors
 
+<<<<<<< HEAD
   fastcs_eiger.EigerController:
+=======
+  fastcs*:
+>>>>>>> 0fc062f (made the fastcs enitity generic)
     prefix: "{{ id }}"
     macros:
       - id
     screens:
-      - file: "fastcs-eiger/eigerController.bob"
-        type: "embedded"
+      - file: "$(IOC)/{{ id }}.bob"
+        type: "related"
