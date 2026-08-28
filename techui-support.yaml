@@ -227,11 +227,7 @@ support_modules:
 
   # Detectors
 
-<<<<<<< HEAD
-  fastcs_eiger.EigerController:
-=======
   fastcs*:
->>>>>>> 0fc062f (made the fastcs enitity generic)
     prefix: "{{ id }}"
     macros:
       - id
