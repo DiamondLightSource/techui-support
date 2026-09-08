@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-09-07 10:28:02 by ryi58813-->
+<!--Saved on 2026-09-08 10:29:13 by ryi58813-->
 <display version="2.0.0">
   <name>OXCS700</name>
   <width>710</width>
@@ -1010,20 +1010,31 @@
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="unsupported-text" prop_id="pv_name" out_exp="false">
+          <exp bool_exp="pvInt0 == 2">
+            <value>loc://unsupported</value>
+          </exp>
+          <exp bool_exp="pvInt0 &lt; 2">
+            <value>$(P)$(Q):LEVEL</value>
+          </exp>
+          <pv_name>$(pv_name).SEVR</pv_name>
+          <pv_name>loc://unsupported("Unavailable on 700 series")</pv_name>
+        </rule>
+      </rules>
       <border_color>
         <color red="196" green="196" blue="196">
         </color>
       </border_color>
     </widget>
-    <widget type="group" version="3.0.0">
-      <name>Group</name>
-      <class>NO_BOX</class>
+    <widget type="textupdate" version="2.0.0">
+      <name>SUCTTEMP_Label</name>
+      <pv_name>$(P)$(Q):SUCTTEMP.DESC</pv_name>
       <y>390</y>
-      <width>390</width>
-      <height>85</height>
-      <style>3</style>
+      <width>200</width>
+      <height>25</height>
       <font>
-        <font family="Arial" style="REGULAR" size="15.0">
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
       <foreground_color>
@@ -1031,161 +1042,43 @@
         </color>
       </foreground_color>
       <background_color>
-        <color name="Read_Background" red="240" green="240" blue="240">
+        <color name="Background" red="255" green="255" blue="255">
         </color>
       </background_color>
       <transparent>true</transparent>
-      <rules>
-        <rule name="visibility" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == 0">
-            <value>true</value>
-          </exp>
-          <exp bool_exp="pv0 &gt; 0">
-            <value>false</value>
-          </exp>
-          <pv_name>$(P)$(Q):TYPE</pv_name>
-        </rule>
-      </rules>
-      <widget type="textupdate" version="2.0.0">
-        <name>SUCTTEMP_Label</name>
-        <pv_name>$(P)$(Q):SUCTTEMP.DESC</pv_name>
-        <width>200</width>
-        <height>25</height>
-        <font>
-          <font family="Arial" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color red="29" green="41" blue="69">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="Background" red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <transparent>true</transparent>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>SUCTTEMP_Value</name>
-        <pv_name>$(P)$(Q):SUCTTEMP</pv_name>
-        <x>200</x>
-        <width>190</width>
-        <height>25</height>
-        <font>
-          <font family="Arial" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <background_color>
-          <color red="184" green="195" blue="223">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <border_color>
-          <color red="196" green="196" blue="196">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>SUCTHEAT_Label</name>
-        <pv_name>$(P)$(Q):SUCTHEAT.DESC</pv_name>
-        <y>30</y>
-        <width>200</width>
-        <height>25</height>
-        <font>
-          <font family="Arial" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color red="29" green="41" blue="69">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="Background" red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <transparent>true</transparent>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>SUCTHEAT_Value</name>
-        <pv_name>$(P)$(Q):SUCTHEAT</pv_name>
-        <x>200</x>
-        <y>30</y>
-        <width>190</width>
-        <height>25</height>
-        <font>
-          <font family="Arial" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <background_color>
-          <color red="184" green="195" blue="223">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <border_color>
-          <color red="196" green="196" blue="196">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>BACKPRESS_Label</name>
-        <pv_name>$(P)$(Q):BACKPRESS.DESC</pv_name>
-        <y>60</y>
-        <width>200</width>
-        <height>25</height>
-        <font>
-          <font family="Arial" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color red="29" green="41" blue="69">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="Background" red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <transparent>true</transparent>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>BACKPRESS_Value</name>
-        <pv_name>$(P)$(Q):BACKPRESS</pv_name>
-        <x>200</x>
-        <y>60</y>
-        <width>190</width>
-        <height>25</height>
-        <font>
-          <font family="Arial" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <background_color>
-          <color red="184" green="195" blue="223">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <border_color>
-          <color red="196" green="196" blue="196">
-          </color>
-        </border_color>
-      </widget>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
     </widget>
-    <widget type="group" version="3.0.0">
-      <name>Group</name>
-      <class>NO_BOX</class>
-      <y>395</y>
-      <width>390</width>
-      <height>75</height>
-      <style>3</style>
+    <widget type="textupdate" version="2.0.0">
+      <name>SUCTTEMP_Value</name>
+      <pv_name>$(P)$(Q):SUCTTEMP</pv_name>
+      <x>200</x>
+      <y>390</y>
+      <width>190</width>
+      <height>25</height>
       <font>
-        <font family="Arial" style="REGULAR" size="15.0">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>SUCTHEAT_Label</name>
+      <pv_name>$(P)$(Q):SUCTHEAT.DESC</pv_name>
+      <y>420</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
       <foreground_color>
@@ -1193,186 +1086,78 @@
         </color>
       </foreground_color>
       <background_color>
-        <color name="Read_Background" red="240" green="240" blue="240">
+        <color name="Background" red="255" green="255" blue="255">
         </color>
       </background_color>
       <transparent>true</transparent>
-      <rules>
-        <rule name="visibility" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == 1">
-            <value>true</value>
-          </exp>
-          <exp bool_exp="1 &lt; pv0 &lt;= 0">
-            <value>false</value>
-          </exp>
-          <pv_name>$(P)$(Q):TYPE</pv_name>
-        </rule>
-      </rules>
-      <widget type="label" version="2.0.0">
-        <name>Label_54</name>
-        <class>CUSTOM</class>
-        <text>Cryodrive: Activated</text>
-        <width>165</width>
-        <height>25</height>
-        <font>
-          <font family="Arial" style="REGULAR" size="14.0">
-          </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>SUCTHEAT_Value</name>
+      <pv_name>$(P)$(Q):SUCTHEAT</pv_name>
+      <x>200</x>
+      <y>420</y>
+      <width>190</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
-        <foreground_color>
-          <color red="29" green="41" blue="69">
-          </color>
-        </foreground_color>
-        <horizontal_alignment>2</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-      </widget>
-      <widget type="byte_monitor" version="2.0.0">
-        <name>Byte Monitor_1</name>
-        <pv_name>$(P)$(Q):BACKPRESS</pv_name>
-        <x>170</x>
-        <width>25</width>
-        <height>25</height>
-        <numBits>1</numBits>
-        <square>true</square>
-        <off_color>
-          <color red="237" green="237" blue="237">
-          </color>
-        </off_color>
-        <on_color>
-          <color name="Write_Background" red="128" green="255" blue="255">
-          </color>
-        </on_color>
-      </widget>
-      <widget type="byte_monitor" version="2.0.0">
-        <name>Byte Monitor_2</name>
-        <pv_name>$(P)$(Q):BACKPRESS</pv_name>
-        <x>170</x>
-        <y>25</y>
-        <width>25</width>
-        <height>50</height>
-        <startBit>5</startBit>
-        <numBits>2</numBits>
-        <horizontal>false</horizontal>
-        <square>true</square>
-        <off_color>
-          <color red="237" green="237" blue="237">
-          </color>
-        </off_color>
-        <on_color>
-          <color name="Write_Background" red="128" green="255" blue="255">
-          </color>
-        </on_color>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_55</name>
-        <class>CUSTOM</class>
-        <text>In Manual Mode</text>
-        <y>25</y>
-        <width>165</width>
-        <height>25</height>
-        <font>
-          <font family="Arial" style="REGULAR" size="14.0">
-          </font>
+      </font>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>BACKPRESS_Label</name>
+      <pv_name>$(P)$(Q):BACKPRESS.DESC</pv_name>
+      <y>450</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
-        <foreground_color>
-          <color red="29" green="41" blue="69">
-          </color>
-        </foreground_color>
-        <horizontal_alignment>2</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_56</name>
-        <class>CUSTOM</class>
-        <text>Start Cmd Received</text>
-        <y>50</y>
-        <width>165</width>
-        <height>25</height>
-        <font>
-          <font family="Arial" style="REGULAR" size="14.0">
-          </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>BACKPRESS_Value</name>
+      <pv_name>$(P)$(Q):BACKPRESS</pv_name>
+      <x>200</x>
+      <y>450</y>
+      <width>190</width>
+      <height>25</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
         </font>
-        <foreground_color>
-          <color red="29" green="41" blue="69">
-          </color>
-        </foreground_color>
-        <horizontal_alignment>2</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-      </widget>
-      <widget type="byte_monitor" version="2.0.0">
-        <name>Byte Monitor_3</name>
-        <pv_name>$(P)$(Q):BACKPRESS</pv_name>
-        <x>365</x>
-        <width>25</width>
-        <height>75</height>
-        <startBit>1</startBit>
-        <numBits>3</numBits>
-        <horizontal>false</horizontal>
-        <square>true</square>
-        <off_color>
-          <color red="237" green="237" blue="237">
-          </color>
-        </off_color>
-        <on_color>
-          <color name="Write_Background" red="128" green="255" blue="255">
-          </color>
-        </on_color>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_57</name>
-        <class>CUSTOM</class>
-        <text>Cryodrive: Activated</text>
-        <x>195</x>
-        <width>165</width>
-        <height>25</height>
-        <font>
-          <font family="Arial" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color red="29" green="41" blue="69">
-          </color>
-        </foreground_color>
-        <horizontal_alignment>2</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_58</name>
-        <class>CUSTOM</class>
-        <text>In Manual Mode</text>
-        <x>195</x>
-        <y>25</y>
-        <width>165</width>
-        <height>25</height>
-        <font>
-          <font family="Arial" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color red="29" green="41" blue="69">
-          </color>
-        </foreground_color>
-        <horizontal_alignment>2</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label_59</name>
-        <class>CUSTOM</class>
-        <text>Start Cmd Received</text>
-        <x>195</x>
-        <y>50</y>
-        <width>165</width>
-        <height>25</height>
-        <font>
-          <font family="Arial" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color red="29" green="41" blue="69">
-          </color>
-        </foreground_color>
-        <horizontal_alignment>2</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-      </widget>
+      </font>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
     </widget>
   </widget>
   <widget type="group" version="3.0.0">
@@ -1398,12 +1183,12 @@
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>$(pv_name)</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):PURGE.PROC</pv_name>
+      <pv_name>$(P)$(Q):PURGE</pv_name>
       <text>purge_text</text>
       <height>35</height>
       <font>
@@ -1432,12 +1217,12 @@
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>loc://pv_name</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):HOLD.PROC</pv_name>
+      <pv_name>$(P)$(Q):HOLD</pv_name>
       <text>Hold</text>
       <x>105</x>
       <height>35</height>
@@ -1453,19 +1238,18 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>RESTART_Button</name>
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>loc://pv_name</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):RESTART.PROC</pv_name>
+      <pv_name>$(P)$(Q):RESTART</pv_name>
       <text>Start / Restart</text>
       <y>40</y>
       <width>205</width>
@@ -1482,19 +1266,18 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>PAUSE_Button</name>
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>loc://pv_name</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):PAUSE.PROC</pv_name>
+      <pv_name>$(P)$(Q):PAUSE</pv_name>
       <text>Pause</text>
       <y>80</y>
       <font>
@@ -1509,19 +1292,18 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>RESUME_Button</name>
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>loc://pv_name</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):RESUME.PROC</pv_name>
+      <pv_name>$(P)$(Q):RESUME</pv_name>
       <text>Resume</text>
       <x>105</x>
       <y>80</y>
@@ -1537,19 +1319,18 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>END_Button</name>
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>loc://pv_name</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):END.PROC</pv_name>
+      <pv_name>$(P)$(Q):END</pv_name>
       <text>End (Controlled Shutdown)</text>
       <y>115</y>
       <width>205</width>
@@ -1569,27 +1350,26 @@
       <rules>
         <rule name="visibility" prop_id="visible" out_exp="false">
           <exp bool_exp="pv0 == 0">
-            <value>true</value>
+            <value>false</value>
           </exp>
           <exp bool_exp="pv0 &gt;= 1">
-            <value>false</value>
+            <value>true</value>
           </exp>
           <pv_name>$(P)$(Q):TYPE</pv_name>
         </rule>
       </rules>
-      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>STOP_Button</name>
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>$(pv_name)</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):STOP.PROC</pv_name>
+      <pv_name>$(P)$(Q):STOP</pv_name>
       <text>stop_text</text>
       <y>155</y>
       <width>205</width>
@@ -1614,7 +1394,6 @@
           <pv_name>loc://stop</pv_name>
         </rule>
       </rules>
-      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>RAMP_RATE_Label</name>
@@ -1633,7 +1412,7 @@
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
-    <widget type="textupdate" version="2.0.0">
+    <widget type="textentry" version="3.0.0">
       <name>RAMP_RATE_Value</name>
       <pv_name>$(P)$(Q):RRATE</pv_name>
       <x>105</x>
@@ -1648,7 +1427,7 @@
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>true</wrap_words>
       <border_color>
         <color red="196" green="196" blue="196">
         </color>
@@ -1672,7 +1451,7 @@
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
-    <widget type="textupdate" version="2.0.0">
+    <widget type="textentry" version="3.0.0">
       <name>RAMP_TEMP_Value</name>
       <pv_name>$(P)$(Q):RTEMP</pv_name>
       <x>105</x>
@@ -1687,7 +1466,7 @@
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>true</wrap_words>
       <border_color>
         <color red="196" green="196" blue="196">
         </color>
@@ -1698,12 +1477,12 @@
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>loc://pv_name</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):RAMP.PROC</pv_name>
+      <pv_name>$(P)$(Q):RAMP</pv_name>
       <text>Ramp</text>
       <y>280</y>
       <width>205</width>
@@ -1720,7 +1499,6 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>PLAT_TIME_Label</name>
@@ -1740,7 +1518,7 @@
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
-    <widget type="textupdate" version="2.0.0">
+    <widget type="textentry" version="3.0.0">
       <name>PLAT_TIME_Value</name>
       <pv_name>$(P)$(Q):PTIME</pv_name>
       <x>105</x>
@@ -1755,7 +1533,7 @@
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>true</wrap_words>
       <border_color>
         <color red="196" green="196" blue="196">
         </color>
@@ -1766,12 +1544,12 @@
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>loc://pv_name</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):PLAT.PROC</pv_name>
+      <pv_name>$(P)$(Q):PLAT</pv_name>
       <text>Plat</text>
       <y>370</y>
       <width>205</width>
@@ -1788,7 +1566,6 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>COOL_TEMP_Label</name>
@@ -1808,7 +1585,7 @@
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
-    <widget type="textupdate" version="2.0.0">
+    <widget type="textentry" version="3.0.0">
       <name>COOL_TEMP_Value</name>
       <pv_name>$(P)$(Q):CTEMP</pv_name>
       <x>105</x>
@@ -1823,7 +1600,7 @@
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>true</wrap_words>
       <border_color>
         <color red="196" green="196" blue="196">
         </color>
@@ -1834,12 +1611,12 @@
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>loc://pv_name</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):COOL.PROC</pv_name>
+      <pv_name>$(P)$(Q):COOL</pv_name>
       <text>Cool</text>
       <y>460</y>
       <width>205</width>
@@ -1856,7 +1633,6 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>TURBO_Label</name>
@@ -1936,7 +1712,7 @@
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
-    <widget type="textupdate" version="2.0.0">
+    <widget type="textentry" version="3.0.0">
       <name>END_RATE_Value</name>
       <pv_name>$(P)$(Q):ERATE</pv_name>
       <x>105</x>
@@ -1951,7 +1727,7 @@
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>true</wrap_words>
       <border_color>
         <color red="196" green="196" blue="196">
         </color>
@@ -2004,11 +1780,11 @@
       <height>25</height>
       <numBits>1</numBits>
       <off_color>
-        <color red="237" green="237" blue="237">
+        <color name="Write_Background" red="128" green="255" blue="255">
         </color>
       </off_color>
       <on_color>
-        <color name="Write_Background" red="128" green="255" blue="255">
+        <color red="237" green="237" blue="237">
         </color>
       </on_color>
     </widget>
