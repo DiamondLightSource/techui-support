@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-09-07 10:28:22 by ryi58813-->
+<!--Saved on 2026-09-10 08:59:04 by ryi58813-->
 <display version="2.0.0">
   <name>OXCB800</name>
   <width>710</width>
@@ -1739,12 +1739,12 @@
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>loc://pv_name</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):PURGE.PROC</pv_name>
+      <pv_name>$(P)$(Q):PURGE</pv_name>
       <text>purge_text</text>
       <height>35</height>
       <font>
@@ -1773,12 +1773,12 @@
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>loc://pv_name</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):HOLD.PROC</pv_name>
+      <pv_name>$(P)$(Q):HOLD</pv_name>
       <text>Hold</text>
       <x>105</x>
       <height>35</height>
@@ -1794,19 +1794,18 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>RESTART_Button</name>
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>loc://pv_name</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):RESTART.PROC</pv_name>
+      <pv_name>$(P)$(Q):RESTART</pv_name>
       <text>Start / Restart</text>
       <y>40</y>
       <width>205</width>
@@ -1823,19 +1822,18 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>PAUSE_Button</name>
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>loc://pv_name</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):PAUSE.PROC</pv_name>
+      <pv_name>$(P)$(Q):PAUSE</pv_name>
       <text>Pause</text>
       <y>80</y>
       <font>
@@ -1850,19 +1848,18 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>RESUME_Button</name>
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>loc://pv_name</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):RESUME.PROC</pv_name>
+      <pv_name>$(P)$(Q):RESUME</pv_name>
       <text>Resume</text>
       <x>105</x>
       <y>80</y>
@@ -1878,19 +1875,18 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>END_Button</name>
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>loc://pv_name</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):END.PROC</pv_name>
+      <pv_name>$(P)$(Q):END</pv_name>
       <text>End (Controlled Shutdown)</text>
       <y>115</y>
       <width>205</width>
@@ -1918,19 +1914,18 @@
           <pv_name>$(P)$(Q):TYPE</pv_name>
         </rule>
       </rules>
-      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>STOP_Button</name>
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>loc://pv_name</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):STOP.PROC</pv_name>
+      <pv_name>$(P)$(Q):STOP</pv_name>
       <text>stop_text</text>
       <y>155</y>
       <width>205</width>
@@ -1955,7 +1950,6 @@
           <pv_name>loc://stop</pv_name>
         </rule>
       </rules>
-      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>RAMP_RATE_Label</name>
@@ -1974,7 +1968,7 @@
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
-    <widget type="textupdate" version="2.0.0">
+    <widget type="textentry" version="3.0.0">
       <name>RAMP_RATE_Value</name>
       <pv_name>$(P)$(Q):RRATE</pv_name>
       <x>105</x>
@@ -1989,7 +1983,7 @@
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>true</wrap_words>
       <border_color>
         <color red="196" green="196" blue="196">
         </color>
@@ -2013,7 +2007,7 @@
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
-    <widget type="textupdate" version="2.0.0">
+    <widget type="textentry" version="3.0.0">
       <name>RAMP_TEMP_Value</name>
       <pv_name>$(P)$(Q):RTEMP</pv_name>
       <x>105</x>
@@ -2028,7 +2022,7 @@
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>true</wrap_words>
       <border_color>
         <color red="196" green="196" blue="196">
         </color>
@@ -2039,12 +2033,12 @@
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>loc://pv_name</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):RAMP.PROC</pv_name>
+      <pv_name>$(P)$(Q):RAMP</pv_name>
       <text>Ramp</text>
       <y>280</y>
       <width>205</width>
@@ -2061,7 +2055,6 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>PLAT_TIME_Label</name>
@@ -2081,7 +2074,7 @@
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
-    <widget type="textupdate" version="2.0.0">
+    <widget type="textentry" version="3.0.0">
       <name>PLAT_TIME_Value</name>
       <pv_name>$(P)$(Q):PTIME</pv_name>
       <x>105</x>
@@ -2096,7 +2089,7 @@
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>true</wrap_words>
       <border_color>
         <color red="196" green="196" blue="196">
         </color>
@@ -2107,12 +2100,12 @@
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>loc://pv_name</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):PLAT.PROC</pv_name>
+      <pv_name>$(P)$(Q):PLAT</pv_name>
       <text>Plat</text>
       <y>370</y>
       <width>205</width>
@@ -2129,7 +2122,6 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>COOL_TEMP_Label</name>
@@ -2149,7 +2141,7 @@
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
-    <widget type="textupdate" version="2.0.0">
+    <widget type="textentry" version="3.0.0">
       <name>COOL_TEMP_Value</name>
       <pv_name>$(P)$(Q):CTEMP</pv_name>
       <x>105</x>
@@ -2164,7 +2156,7 @@
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>true</wrap_words>
       <border_color>
         <color red="196" green="196" blue="196">
         </color>
@@ -2175,12 +2167,12 @@
       <class>DEFAULT_PV</class>
       <actions>
         <action type="write_pv">
-          <description>Write PV</description>
-          <pv_name>loc://pv_name</pv_name>
+          <description>Write to .PROC</description>
+          <pv_name>$(pv_name).PROC</pv_name>
           <value>1</value>
         </action>
       </actions>
-      <pv_name>$(P)$(Q):COOL.PROC</pv_name>
+      <pv_name>$(P)$(Q):COOL</pv_name>
       <text>Cool</text>
       <y>460</y>
       <width>205</width>
@@ -2197,7 +2189,6 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <tooltip>loc://actions</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>TURBO_Label</name>
@@ -2277,7 +2268,7 @@
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
-    <widget type="textupdate" version="2.0.0">
+    <widget type="textentry" version="3.0.0">
       <name>END_RATE_Value</name>
       <pv_name>$(P)$(Q):ERATE</pv_name>
       <x>105</x>
@@ -2292,7 +2283,7 @@
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>true</wrap_words>
       <border_color>
         <color red="196" green="196" blue="196">
         </color>
