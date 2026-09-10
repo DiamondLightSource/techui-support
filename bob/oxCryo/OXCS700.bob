@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-09-08 10:29:13 by ryi58813-->
+<!--Saved on 2026-09-10 09:07:03 by ryi58813-->
 <display version="2.0.0">
   <name>OXCS700</name>
   <width>710</width>
@@ -1211,6 +1211,7 @@
           <pv_name>loc://purge</pv_name>
         </rule>
       </rules>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>HOLD_Button</name>
@@ -1238,6 +1239,7 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>RESTART_Button</name>
@@ -1266,6 +1268,7 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>PAUSE_Button</name>
@@ -1292,6 +1295,7 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>RESUME_Button</name>
@@ -1319,6 +1323,7 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>END_Button</name>
@@ -1358,6 +1363,7 @@
           <pv_name>$(P)$(Q):TYPE</pv_name>
         </rule>
       </rules>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>STOP_Button</name>
@@ -1394,6 +1400,7 @@
           <pv_name>loc://stop</pv_name>
         </rule>
       </rules>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="label" version="2.0.0">
       <name>RAMP_RATE_Label</name>
@@ -1499,6 +1506,7 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="label" version="2.0.0">
       <name>PLAT_TIME_Label</name>
@@ -1566,6 +1574,7 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="label" version="2.0.0">
       <name>COOL_TEMP_Label</name>
@@ -1633,6 +1642,7 @@
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="label" version="2.0.0">
       <name>TURBO_Label</name>
@@ -1671,6 +1681,7 @@
         <color name="Background" red="255" green="255" blue="255">
         </color>
       </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TURBO_Value</name>
@@ -1770,6 +1781,7 @@
         <color name="Background" red="255" green="255" blue="255">
         </color>
       </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="byte_monitor" version="2.0.0">
       <name>COMMS_LED</name>
