@@ -112,7 +112,7 @@ support_modules:
   # Diagnostics
 
   positioner.multipositioner:
-    prefix: "{{ P }}"
+    prefix: "{{ P }}{{ MP }}"
     macros:
       - P
       - MP
