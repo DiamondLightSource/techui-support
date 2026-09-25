@@ -92,19 +92,19 @@ support_modules:
       - P
     screens:
       - file: "$(IOC)/NDPluginStats.pvi.bob"
-        suffixes:
+        screen_macros:
           R: ":STAT:"
         type: "related"
       - file: "$(IOC)/NDPluginPva.pvi.bob"
-        suffixes:
+        screen_macros:
           R: ":PVA:"
         type: "related"
       - file: "$(IOC)/NDPluginROIStat.pvi.bob"
-        suffixes:
+        screen_macros:
           R: ":ROISTAT:"
         type: "related"
       - file: "$(IOC)/NDFileHDF5.pvi.bob"
-        suffixes:
+        screen_macros:
           R: ":HDF5:"
         type: "related"
     #TODO: Legacy support
@@ -128,6 +128,8 @@ support_modules:
     screens:
       - file: bpm/bpm_embed.bob
         type: embedded
+        screen_macros:
+          label: "BPMI"
 
   # Motion Controllers
 
