@@ -92,19 +92,19 @@ support_modules:
       - P
     screens:
       - file: "$(IOC)/NDPluginStats.pvi.bob"
-        suffixes:
+        screen_macros:
           R: ":STAT:"
         type: "related"
       - file: "$(IOC)/NDPluginPva.pvi.bob"
-        suffixes:
+        screen_macros:
           R: ":PVA:"
         type: "related"
       - file: "$(IOC)/NDPluginROIStat.pvi.bob"
-        suffixes:
+        screen_macros:
           R: ":ROISTAT:"
         type: "related"
       - file: "$(IOC)/NDFileHDF5.pvi.bob"
-        suffixes:
+        screen_macros:
           R: ":HDF5:"
         type: "related"
     #TODO: Legacy support
@@ -112,7 +112,7 @@ support_modules:
   # Diagnostics
 
   positioner.multipositioner:
-    prefix: "{{ P }}"
+    prefix: "{{ P }}{{ MP }}"
     macros:
       - P
       - MP
@@ -120,6 +120,16 @@ support_modules:
     screens:
       - file: positioner/positioner_embed.bob
         type: embedded
+
+  generic.generic_BPM_diag:
+    prefix: "{{ P }}"
+    macros:
+      - P
+    screens:
+      - file: bpm/bpm_embed.bob
+        type: embedded
+        screen_macros:
+          label: "BPMI"
 
   # Motion Controllers
 
