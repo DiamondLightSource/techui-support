@@ -38,13 +38,16 @@ Here are the most commonly used icons:
 | Beamstop | ![alt text](<symbols/beamstop.svg>) | (custom)
 | Target | ![alt text](<symbols/target.svg>) | target
 | Table | ![alt text](<symbols/table.svg>) | (custom)
-| Goniometer | ![alt text](<symbols/camera-lens.svg>) | (custom)
+| Goniometer | ![alt text](<symbols/camera-lens.svg>) | camera-lens
 | Cell | ![alt text](<symbols/cell.svg>) | (custom)
 | Robot | ![alt text](<symbols/custom-robot-arm.svg>) | robot-arm
 | Hexapod | ![alt text](<symbols/hexapod.svg>) | hexagon
 | Rail | ![alt text](<symbols/rail.svg>) | train-track
 | Detector | ![alt text](<symbols/detector.svg>) | square-square
 | PandABox | ![alt text](<symbols/panda.svg>) | panda
+| Diagnostic | ![alt text](<symbols/square-activity.svg>) | square-activity
+| Aperture | ![alt text](<symbols/aperture.svg>) | aperture
+
 
 
 <!-- ## Vacuum
