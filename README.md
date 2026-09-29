@@ -2,7 +2,7 @@
 
 A submodule to supplement [techui-builder](git@github.com:DiamondLightSource/techui-builder).
 
-This contains summary .bob files used by Phoebus as well as Lucide SVG icons for device components.
+This contains summary .bob files used by Phoebus as well as Lucide SVG icons (if available) for device components.
 
 Here are the most commonly used icons:
 
@@ -25,21 +25,25 @@ Here are the most commonly used icons:
 | | ![alt text](<symbols/square-centerline-dashed-vertical.svg>) |
 | | ![alt text](<symbols/square-split-horizontal.svg>) |
 | | ![alt text](<symbols/square-split-vertical.svg>) |
-| Slits | ![alt text](<symbols/slits.svg>) | (slits)
-| Shutter (Closed) | ![alt text](<symbols/shutter-closed.svg>) |
-| Shutter (Opening) | ![alt text](<symbols/shutter-opening.svg>) |
-| Shutter (Closing) | ![alt text](<symbols/shutter-closing.svg>) |
-| Shutter (Open) | ![alt text](<symbols/shutter-open.svg>) |
-| Shutter (Fault) | ![alt text](<symbols/shutter-fault.svg>) |
-| Pneumatics | ![alt text](<symbols/pneumatic.svg>) |
-| Quad Beam Positioning Monitor | ![alt text](<symbols/qbpm.svg>) |
-| Cross Beam Positioning Monitor | ![alt text](<symbols/xbpm.svg>) |
-| Filter Wheel | ![alt text](<symbols/filter-wheel.svg>) |
-| Beamstop | ![alt text](<symbols/beamstop.svg>) |
-| Target | ![alt text](<symbols/target.svg>) |
-| Table | ![alt text](<symbols/table.svg>) |
-| Goniometer | ![alt text](<symbols/camera-lens.svg>) |
-| Cell | ![alt text](<symbols/cell.svg>) |
+| Slits | ![alt text](<symbols/slits.svg>) | (custom)
+| Shutter (Closed) | ![alt text](<symbols/shutter-closed.svg>) | (custom)
+| Shutter (Opening) | ![alt text](<symbols/shutter-opening.svg>) | (custom)
+| Shutter (Closing) | ![alt text](<symbols/shutter-closing.svg>) | (custom)
+| Shutter (Open) | ![alt text](<symbols/shutter-open.svg>) | (custom)
+| Shutter (Fault) | ![alt text](<symbols/shutter-fault.svg>) | (custom)
+| Pneumatics | ![alt text](<symbols/pneumatic.svg>) | (custom)
+| Quad Beam Positioning Monitor | ![alt text](<symbols/qbpm.svg>) | (custom)
+| Cross Beam Positioning Monitor | ![alt text](<symbols/xbpm.svg>) | (custom)
+| Filter Wheel | ![alt text](<symbols/filter-wheel.svg>) | (custom)
+| Beamstop | ![alt text](<symbols/beamstop.svg>) | (custom)
+| Target | ![alt text](<symbols/target.svg>) | target
+| Table | ![alt text](<symbols/table.svg>) | (custom)
+| Goniometer | ![alt text](<symbols/camera-lens.svg>) | (custom)
+| Cell | ![alt text](<symbols/cell.svg>) | (custom)
+| Robot | ![alt text](<symbols/custom-robot-arm.svg>) | robot-arm
+| Hexapod | ![alt text](<symbols/hexapod.svg>) | hexagon
+| Rail | ![alt text](<symbols/rail.svg>) | train-track
+| Detector | ![alt text](<symbols/detector.svg>) |
 
 
 <!-- ## Vacuum
