@@ -282,3 +282,13 @@ support_modules:
     screens:
       - file: oxCryo/OXNH700.bob
         type: embedded
+
+# FASTCS
+
+  fastcs*:
+    prefix: "{{ id }}"
+    macros:
+      - id
+    screens:
+      - file: "$(IOC)/{{ id }}.bob"
+        type: "related"
