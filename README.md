@@ -44,6 +44,7 @@ Here are the most commonly used icons:
 | Hexapod | ![alt text](<symbols/hexapod.svg>) | hexagon
 | Rail | ![alt text](<symbols/rail.svg>) | train-track
 | Detector | ![alt text](<symbols/detector.svg>) |
+| PandABox | ![alt text](<symbols/panda.svg>) | panda
 
 
 <!-- ## Vacuum
