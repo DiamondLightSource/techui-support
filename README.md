@@ -8,17 +8,17 @@ Here are the most commonly used icons:
 
 | Description | Symbol | Lucide Ref
 | --- | --- | ---
-| Radiation Monitor | ![alt text](<symbols/radiation.svg>) | (radiation)
-| Cryocooler | ![alt text](<symbols/cryocooler.svg>) | (snowflake)
-| Camera | ![alt text](<symbols/camera.svg>) | (cctv custom)
-| Lens | ![alt text](<symbols/lens.svg>) | (lens-convex)
-| Oscilloscope | ![alt text](<symbols/oscilloscope.svg>) | (audio-waveform)
-| Light Source | ![alt text](<symbols/light-source.svg>) | (sun)
+| Radiation Monitor | ![alt text](<symbols/radiation.svg>) | radiation
+| Cryocooler | ![alt text](<symbols/cryocooler.svg>) | snowflake
+| Camera | ![alt text](<symbols/camera.svg>) | (custom)
+| Lens | ![alt text](<symbols/lens.svg>) | lens-convex
+| Oscilloscope | ![alt text](<symbols/oscilloscope.svg>) | audio-waveform
+| Light Source | ![alt text](<symbols/light-source.svg>) | sun
 | Ring On | <img src="symbols/ring-on.svg" width="24" height="24" alt="ring-on"> | (custom)
 | Ring Off | <img src="symbols/ring-off.svg" width="24" height="24" alt="ring-on"> | (custom)
-| Rotation Stage | ![alt text](<symbols/rotation-stage.svg>) | (rotate-cw)
-| Translation Stage | ![alt text](<symbols/translation-stage.svg>) | (move)
-| Cog | ![alt text](<symbols/cog.svg>) | (cog)
+| Rotation Stage | ![alt text](<symbols/rotation-stage.svg>) | rotate-cw
+| Translation Stage | ![alt text](<symbols/translation-stage.svg>) | move
+| Cog | ![alt text](<symbols/cog.svg>) | cog
 | Horizontal Focusing Mirrors | ![alt text](<symbols/flip-horizontal-2.svg>) |
 | Vertical Focusing Mirrors | ![alt text](<symbols/flip-vertical-2.svg>) | 
 | | ![alt text](<symbols/square-centerline-dashed-horizontal.svg>) |
@@ -43,7 +43,7 @@ Here are the most commonly used icons:
 | Robot | ![alt text](<symbols/custom-robot-arm.svg>) | robot-arm
 | Hexapod | ![alt text](<symbols/hexapod.svg>) | hexagon
 | Rail | ![alt text](<symbols/rail.svg>) | train-track
-| Detector | ![alt text](<symbols/detector.svg>) |
+| Detector | ![alt text](<symbols/detector.svg>) | square-square
 | PandABox | ![alt text](<symbols/panda.svg>) | panda
 
 
