@@ -199,32 +199,6 @@ support_modules:
       - file: "digitelMpc/digitelMpcIonp.bob"
         type: "embedded"
 
-  # Mirrors
-
-  mff.mff:
-    prefix: "{{ P }}"
-    macros:
-      - P
-    screens:
-      - file: "mff/mff.bob"
-        type: "related"
-
-  # fastcs_thorlabs_mff.ThorlabsMFF:
-  #   prefix: "{{ id }}"
-  #   macros:
-  #     - id
-  #   screens:
-  #     - file: "mff/mff.bob"
-  #       type: "related"
-
-  alignmentMirror.mirror:
-    prefix: "{{ P }}"
-    macros:
-      - P
-    screens:
-      - file: "alignmentMirror/mirror.bob"
-        type: "related"
-
   # Detectors
 
   fastcs_eiger.EigerController:
