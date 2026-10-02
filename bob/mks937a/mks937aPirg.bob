@@ -2,10 +2,11 @@
 <!--Saved on 2026-01-21 08:35:29 by sfx44126-->
 <display version="2.0.0">
   <name>mks937aPirg</name>
+  <y>0</y>
   <width>301</width>
   <height>356</height>
   <background_color>
-    <color name="Read_Background" red="240" green="240" blue="240">
+    <color red="245" green="247" blue="250">
     </color>
   </background_color>
   <grid_color>
@@ -16,16 +17,17 @@
     <name>$(P)</name>
     <width>301</width>
     <height>295</height>
+    <style>0</style>
     <font>
-      <font family="Arial" style="REGULAR" size="15.0">
+      <font family="Cantarell" style="REGULAR" size="16.0">
       </font>
     </font>
     <foreground_color>
-      <color red="29" green="41" blue="69">
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="Read_Background" red="240" green="240" blue="240">
+      <color red="246" green="247" blue="249">
       </color>
     </background_color>
     <widget type="label" version="2.0.0">
@@ -36,13 +38,21 @@
       <width>130</width>
       <height>25</height>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color red="29" green="41" blue="69">
+        <color name="Text" red="0" green="0" blue="0">
         </color>
       </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Gauge_1</name>
@@ -51,17 +61,21 @@
       <y>160</y>
       <width>120</width>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
+      <foreground_color>
+        <color red="15" green="23" blue="42">
+        </color>
+      </foreground_color>
       <background_color>
-        <color red="184" green="195" blue="223">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -78,13 +92,21 @@
       <width>135</width>
       <height>25</height>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color red="29" green="41" blue="69">
+        <color name="Text" red="0" green="0" blue="0">
         </color>
       </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_39</name>
@@ -109,17 +131,21 @@
       <y>133</y>
       <width>120</width>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
+      <foreground_color>
+        <color red="15" green="23" blue="42">
+        </color>
+      </foreground_color>
       <background_color>
-        <color red="184" green="195" blue="223">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -163,13 +189,21 @@
       <width>130</width>
       <height>25</height>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color red="29" green="41" blue="69">
+        <color name="Text" red="0" green="0" blue="0">
         </color>
       </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Gauge_2</name>
@@ -178,17 +212,21 @@
       <y>186</y>
       <width>120</width>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
+      <foreground_color>
+        <color red="15" green="23" blue="42">
+        </color>
+      </foreground_color>
       <background_color>
-        <color red="184" green="195" blue="223">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -216,13 +254,21 @@
       <width>130</width>
       <height>25</height>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color red="29" green="41" blue="69">
+        <color name="Text" red="0" green="0" blue="0">
         </color>
       </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Gauge_3</name>
@@ -231,17 +277,21 @@
       <y>212</y>
       <width>120</width>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
+      <foreground_color>
+        <color red="15" green="23" blue="42">
+        </color>
+      </foreground_color>
       <background_color>
-        <color red="184" green="195" blue="223">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -269,13 +319,21 @@
       <width>130</width>
       <height>25</height>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color red="29" green="41" blue="69">
+        <color name="Text" red="0" green="0" blue="0">
         </color>
       </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Gauge_4</name>
@@ -284,17 +342,21 @@
       <y>237</y>
       <width>120</width>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
+      <foreground_color>
+        <color red="15" green="23" blue="42">
+        </color>
+      </foreground_color>
       <background_color>
-        <color red="184" green="195" blue="223">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -304,16 +366,17 @@
     <y>295</y>
     <width>301</width>
     <height>61</height>
+    <style>0</style>
     <font>
-      <font family="Arial" style="REGULAR" size="15.0">
+      <font family="Cantarell" style="REGULAR" size="16.0">
       </font>
     </font>
     <foreground_color>
-      <color red="29" green="41" blue="69">
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="Read_Background" red="240" green="240" blue="240">
+      <color red="246" green="247" blue="249">
       </color>
     </background_color>
     <widget type="rectangle" version="2.0.0">
@@ -339,23 +402,23 @@
       <width>120</width>
       <height>20</height>
       <off_color>
-        <color red="237" green="237" blue="237">
+        <color red="167" green="243" blue="208">
         </color>
       </off_color>
       <on_color>
-        <color red="56" green="206" blue="56">
+        <color red="22" green="163" blue="74">
         </color>
       </on_color>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color red="29" green="41" blue="69">
+        <color red="37" green="99" blue="235">
         </color>
       </foreground_color>
       <background_color>
-        <color red="255" green="255" blue="255">
+        <color red="241" green="245" blue="249">
         </color>
       </background_color>
     </widget>
@@ -365,13 +428,21 @@
       <width>130</width>
       <height>25</height>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color red="29" green="41" blue="69">
+        <color name="Text" red="0" green="0" blue="0">
         </color>
       </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
   </widget>
 </display>

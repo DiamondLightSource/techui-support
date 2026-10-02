@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>vaccumValveInterlocks</name>
+  <y>0</y>
+  <background_color>
+    <color red="245" green="247" blue="250">
+    </color>
+  </background_color>
   <width>301</width>
   <height>466</height>
   <grid_color>
@@ -18,17 +23,40 @@
     <name>Detail</name>
     <width>301</width>
     <height>114</height>
+    <style>0</style>
+    <font>
+      <font family="Cantarell" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
     <background_color>
-      <color name="Read_Background" red="240" green="240" blue="240">
+      <color red="246" green="247" blue="249">
       </color>
     </background_color>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Status</text>
       <width>135</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
       <height>25</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_36</name>
@@ -53,21 +81,21 @@
       <y>3</y>
       <width>120</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -77,9 +105,23 @@
       <x>5</x>
       <y>26</y>
       <width>130</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
       <height>25</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_37</name>
@@ -104,21 +146,21 @@
       <y>29</y>
       <width>120</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -128,9 +170,23 @@
       <x>5</x>
       <y>52</y>
       <width>130</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
       <height>25</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_38</name>
@@ -155,21 +211,21 @@
       <y>55</y>
       <width>120</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -179,8 +235,17 @@
     <y>114</y>
     <width>152</width>
     <height>350</height>
+    <style>0</style>
+    <font>
+      <font family="Cantarell" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
     <background_color>
-      <color name="Read_Background" red="240" green="240" blue="240">
+      <color red="246" green="247" blue="249">
       </color>
     </background_color>
     <widget type="byte_monitor" version="2.0.0">
@@ -192,13 +257,21 @@
       <numBits>16</numBits>
       <horizontal>false</horizontal>
       <off_color>
-        <color red="89" green="0" blue="0">
+        <color red="167" green="243" blue="208">
         </color>
       </off_color>
       <on_color>
-        <color name="MAJOR" red="255" green="0" blue="0">
+        <color red="22" green="163" blue="74">
         </color>
       </on_color>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
     </widget>
     <widget type="byte_monitor" version="2.0.0">
       <name>Byte Monitor_1</name>
@@ -210,13 +283,21 @@
       <numBits>16</numBits>
       <horizontal>false</horizontal>
       <off_color>
-        <color red="120" green="125" blue="0">
+        <color red="167" green="243" blue="208">
         </color>
       </off_color>
       <on_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="22" green="163" blue="74">
         </color>
       </on_color>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
     </widget>
     <widget type="byte_monitor" version="2.0.0">
       <name>Byte Monitor_2</name>
@@ -228,13 +309,21 @@
       <numBits>16</numBits>
       <horizontal>false</horizontal>
       <off_color>
-        <color red="0" green="105" blue="0">
+        <color red="167" green="243" blue="208">
         </color>
       </off_color>
       <on_color>
-        <color red="0" green="255" blue="0">
+        <color red="22" green="163" blue="74">
         </color>
       </on_color>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_6</name>
@@ -287,11 +376,21 @@
       <width>40</width>
       <height>14</height>
       <font>
-        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_4</name>
@@ -301,11 +400,21 @@
       <width>30</width>
       <height>14</height>
       <font>
-        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_5</name>
@@ -315,11 +424,21 @@
       <width>40</width>
       <height>14</height>
       <font>
-        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Pressure_1</name>
@@ -329,21 +448,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -355,21 +474,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -381,21 +500,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -407,21 +526,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -433,21 +552,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -459,21 +578,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -485,21 +604,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -511,21 +630,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -537,21 +656,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -563,21 +682,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -589,21 +708,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -615,21 +734,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -641,21 +760,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -667,21 +786,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -693,21 +812,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -719,21 +838,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -743,6 +862,18 @@
       <y>294</y>
       <width>90</width>
       <height>20</height>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="229" green="235" blue="255">
+        </color>
+      </background_color>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -751,8 +882,17 @@
     <y>114</y>
     <width>152</width>
     <height>313</height>
+    <style>0</style>
+    <font>
+      <font family="Cantarell" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
     <background_color>
-      <color name="Read_Background" red="240" green="240" blue="240">
+      <color red="246" green="247" blue="249">
       </color>
     </background_color>
     <widget type="label" version="2.0.0">
@@ -762,11 +902,21 @@
       <width>40</width>
       <height>14</height>
       <font>
-        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_7</name>
@@ -776,11 +926,21 @@
       <width>30</width>
       <height>14</height>
       <font>
-        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_8</name>
@@ -820,13 +980,21 @@
       <numBits>16</numBits>
       <horizontal>false</horizontal>
       <off_color>
-        <color red="89" green="0" blue="0">
+        <color red="167" green="243" blue="208">
         </color>
       </off_color>
       <on_color>
-        <color name="MAJOR" red="255" green="0" blue="0">
+        <color red="22" green="163" blue="74">
         </color>
       </on_color>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
     </widget>
     <widget type="byte_monitor" version="2.0.0">
       <name>Byte Monitor_4</name>
@@ -838,13 +1006,21 @@
       <numBits>16</numBits>
       <horizontal>false</horizontal>
       <off_color>
-        <color red="120" green="125" blue="0">
+        <color red="167" green="243" blue="208">
         </color>
       </off_color>
       <on_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="22" green="163" blue="74">
         </color>
       </on_color>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Pressure_18</name>
@@ -854,21 +1030,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -880,21 +1056,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -906,21 +1082,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -932,21 +1108,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -958,21 +1134,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -984,21 +1160,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -1010,21 +1186,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -1036,21 +1212,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -1062,21 +1238,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -1088,21 +1264,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -1114,21 +1290,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -1140,21 +1316,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -1166,21 +1342,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -1192,21 +1368,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -1218,21 +1394,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -1244,21 +1420,21 @@
       <width>60</width>
       <height>11</height>
       <font>
-        <font family="Monospaced" style="REGULAR" size="8.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>

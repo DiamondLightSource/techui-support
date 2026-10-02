@@ -2,10 +2,11 @@
 <!--Saved on 2026-05-11 14:30:00 by ryi58813-->
 <display version="2.0.0">
   <name>motor_embed</name>
+  <y>0</y>
   <width>220</width>
   <height>120</height>
   <background_color>
-    <color name="Read_Background" red="240" green="240" blue="240">
+    <color red="245" green="247" blue="250">
     </color>
   </background_color>
   <grid_color>
@@ -16,16 +17,17 @@
     <name>$(label)</name>
     <width>220</width>
     <height>120</height>
+    <style>0</style>
     <font>
-      <font family="Arial" style="REGULAR" size="15.0">
+      <font family="Cantarell" style="REGULAR" size="16.0">
       </font>
     </font>
     <foreground_color>
-      <color red="29" green="41" blue="69">
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="Read_Background" red="240" green="240" blue="240">
+      <color red="246" green="247" blue="249">
       </color>
     </background_color>
     <widget type="action_button" version="3.0.0">
@@ -45,15 +47,15 @@
       <width>30</width>
       <height>20</height>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color red="29" green="41" blue="69">
+        <color red="37" green="99" blue="235">
         </color>
       </foreground_color>
       <background_color>
-        <color red="255" green="255" blue="255">
+        <color red="241" green="245" blue="249">
         </color>
       </background_color>
       <tooltip>$(tooltip)</tooltip>
@@ -75,15 +77,15 @@
       <width>30</width>
       <height>20</height>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color red="29" green="41" blue="69">
+        <color red="37" green="99" blue="235">
         </color>
       </foreground_color>
       <background_color>
-        <color red="255" green="255" blue="255">
+        <color red="241" green="245" blue="249">
         </color>
       </background_color>
       <tooltip>$(tooltip)</tooltip>
@@ -106,7 +108,7 @@
       <width>40</width>
       <height>20</height>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
       <foreground_color>
@@ -114,7 +116,7 @@
         </color>
       </foreground_color>
       <background_color>
-        <color red="29" green="41" blue="69">
+        <color red="37" green="99" blue="235">
         </color>
       </background_color>
       <tooltip>$(actions)</tooltip>
@@ -136,15 +138,15 @@
       <width>50</width>
       <height>20</height>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color red="29" green="41" blue="69">
+        <color red="37" green="99" blue="235">
         </color>
       </foreground_color>
       <background_color>
-        <color red="255" green="255" blue="255">
+        <color red="241" green="245" blue="249">
         </color>
       </background_color>
       <tooltip>$(tooltip)</tooltip>
@@ -156,17 +158,25 @@
       <y>60</y>
       <width>80</width>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
       <background_color>
-        <color red="255" green="255" blue="255">
+        <color red="229" green="235" blue="255">
         </color>
       </background_color>
+      <precision>-1</precision>
+      <show_units>true</show_units>
       <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <enabled>true</enabled>
       <border_width>1</border_width>
       <border_color>
-        <color red="184" green="195" blue="223">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -178,13 +188,21 @@
       <width>20</width>
       <numBits>1</numBits>
       <off_color>
-        <color red="237" green="237" blue="237">
+        <color red="167" green="243" blue="208">
         </color>
       </off_color>
       <on_color>
-        <color name="Write_Background" red="128" green="255" blue="255">
+        <color red="22" green="163" blue="74">
         </color>
       </on_color>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
     </widget>
     <widget type="byte_monitor" version="2.0.0">
       <name>Serverity</name>
@@ -194,13 +212,21 @@
       <width>20</width>
       <numBits>1</numBits>
       <off_color>
-        <color red="237" green="237" blue="237">
+        <color red="167" green="243" blue="208">
         </color>
       </off_color>
       <on_color>
-        <color name="Write_Background" red="128" green="255" blue="255">
+        <color red="22" green="163" blue="74">
         </color>
       </on_color>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>PV</name>
@@ -208,17 +234,25 @@
       <x>40</x>
       <y>10</y>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
       <background_color>
-        <color red="255" green="255" blue="255">
+        <color red="229" green="235" blue="255">
         </color>
       </background_color>
+      <precision>-1</precision>
+      <show_units>true</show_units>
       <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <enabled>true</enabled>
       <border_width>1</border_width>
       <border_color>
-        <color red="184" green="195" blue="223">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -229,17 +263,21 @@
       <y>35</y>
       <width>120</width>
       <font>
-        <font family="Arial" style="REGULAR" size="14.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
+      <foreground_color>
+        <color red="15" green="23" blue="42">
+        </color>
+      </foreground_color>
       <background_color>
-        <color red="184" green="195" blue="223">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>

@@ -5,11 +5,11 @@
   <macros>
     <P>$(P)</P>
   </macros>
-  <y use_class="true">0</y>
+  <y>0</y>
   <width>750</width>
   <height>500</height>
-  <background_color use_class="true">
-    <color name="Read_Background" red="240" green="240" blue="240">
+  <background_color>
+    <color red="245" green="247" blue="250">
     </color>
   </background_color>
   <grid_step_x>5</grid_step_x>
@@ -18,17 +18,17 @@
     <name>4-Axis Slits - Individual</name>
     <width>720</width>
     <height>470</height>
-    <style use_class="true">0</style>
-    <font use_class="true">
-      <font family="Arial" style="REGULAR" size="15.0">
+    <style>0</style>
+    <font>
+      <font family="Cantarell" style="REGULAR" size="16.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+    <foreground_color>
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <background_color use_class="true">
-      <color name="Read_Background" red="240" green="240" blue="240">
+    <background_color>
+      <color red="246" green="247" blue="249">
       </color>
     </background_color>
     <widget type="group" version="3.0.0">
@@ -38,17 +38,17 @@
       <y>120</y>
       <width>280</width>
       <height>195</height>
-      <style use_class="true">3</style>
-      <font use_class="true">
-        <font family="Arial" style="REGULAR" size="15.0">
+      <style>3</style>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="16.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color red="29" green="41" blue="69">
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Read_Background" red="240" green="240" blue="240">
+      <background_color>
+        <color red="246" green="247" blue="249">
         </color>
       </background_color>
       <transparent>true</transparent>
@@ -191,22 +191,22 @@
         <y>87</y>
         <width>22</width>
         <height>22</height>
-        <font use_class="true">
-          <font family="Arial" style="REGULAR" size="14.0">
+        <font>
+          <font family="Cantarell" style="REGULAR" size="14.0">
           </font>
         </font>
-        <foreground_color use_class="true">
-          <color red="29" green="41" blue="69">
+        <foreground_color>
+          <color name="Text" red="0" green="0" blue="0">
           </color>
         </foreground_color>
-        <background_color use_class="true">
+        <background_color>
           <color name="Background" red="255" green="255" blue="255">
           </color>
         </background_color>
-        <horizontal_alignment use_class="true">0</horizontal_alignment>
-        <vertical_alignment use_class="true">0</vertical_alignment>
-        <rotation_step use_class="true">0</rotation_step>
-        <wrap_words use_class="true">true</wrap_words>
+        <horizontal_alignment>0</horizontal_alignment>
+        <vertical_alignment>0</vertical_alignment>
+        <rotation_step>0</rotation_step>
+        <wrap_words>true</wrap_words>
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label_3</name>
@@ -215,22 +215,22 @@
         <y>23</y>
         <width>22</width>
         <height>22</height>
-        <font use_class="true">
-          <font family="Arial" style="REGULAR" size="14.0">
+        <font>
+          <font family="Cantarell" style="REGULAR" size="14.0">
           </font>
         </font>
-        <foreground_color use_class="true">
-          <color red="29" green="41" blue="69">
+        <foreground_color>
+          <color name="Text" red="0" green="0" blue="0">
           </color>
         </foreground_color>
-        <background_color use_class="true">
+        <background_color>
           <color name="Background" red="255" green="255" blue="255">
           </color>
         </background_color>
-        <horizontal_alignment use_class="true">0</horizontal_alignment>
-        <vertical_alignment use_class="true">0</vertical_alignment>
-        <rotation_step use_class="true">0</rotation_step>
-        <wrap_words use_class="true">true</wrap_words>
+        <horizontal_alignment>0</horizontal_alignment>
+        <vertical_alignment>0</vertical_alignment>
+        <rotation_step>0</rotation_step>
+        <wrap_words>true</wrap_words>
       </widget>
     </widget>
     <widget type="embedded" version="2.0.0">

@@ -2,11 +2,11 @@
 <!--Saved on 2026-01-21 14:22:11 by ryi58813-->
 <display version="2.0.0">
   <name>Temp Embed</name>
-  <y use_class="true">0</y>
+  <y>0</y>
   <width>100</width>
   <height>20</height>
-  <background_color use_class="true">
-    <color name="Read_Background" red="240" green="240" blue="240">
+  <background_color>
+    <color red="245" green="247" blue="250">
     </color>
   </background_color>
   <grid_step_x>5</grid_step_x>
@@ -26,16 +26,16 @@
     <text>$(label)</text>
     <width>20</width>
     <height>20</height>
-    <font use_class="true">
-      <font family="Arial" style="REGULAR" size="14.0">
+    <font>
+      <font family="Cantarell" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="255" green="255" blue="255">
       </color>
     </foreground_color>
-    <background_color use_class="true">
-      <color red="29" green="41" blue="69">
+    <background_color>
+      <color red="37" green="99" blue="235">
       </color>
     </background_color>
     <tooltip>$(actions)</tooltip>
@@ -45,22 +45,22 @@
     <pv_name>$(temp)</pv_name>
     <x>20</x>
     <width>55</width>
-    <font use_class="true">
-      <font family="Arial" style="REGULAR" size="14.0">
+    <font>
+      <font family="Cantarell" style="BOLD" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+    <foreground_color>
+      <color red="15" green="23" blue="42">
       </color>
     </foreground_color>
-    <background_color use_class="true">
-      <color red="184" green="195" blue="223">
+    <background_color>
+      <color red="245" green="247" blue="250">
       </color>
     </background_color>
-    <horizontal_alignment use_class="true">1</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <border_color use_class="true">
-      <color red="196" green="196" blue="196">
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color red="203" green="213" blue="225">
       </color>
     </border_color>
   </widget>
@@ -68,16 +68,16 @@
     <name>LED</name>
     <pv_name>$(temp).SEVR</pv_name>
     <x>75</x>
-    <off_color use_class="true">
-      <color red="237" green="237" blue="237">
+    <off_color>
+      <color name="Transparent" red="255" green="255" blue="255" alpha="0">
       </color>
     </off_color>
-    <on_color use_class="true">
+    <on_color>
       <color name="Write_Background" red="128" green="255" blue="255">
       </color>
     </on_color>
-    <font use_class="true">
-      <font family="Arial" style="REGULAR" size="14.0">
+    <font>
+      <font family="Cantarell" style="BOLD" size="12.0">
       </font>
     </font>
   </widget>

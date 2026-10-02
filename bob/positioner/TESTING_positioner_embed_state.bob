@@ -2,10 +2,11 @@
 <!--Saved on 2026-08-07 14:34:12 by ryi58813-->
 <display version="2.0.0">
   <name>TESTING_positioner_embed_state</name>
+  <y>0</y>
   <width>220</width>
   <height>200</height>
   <background_color>
-    <color name="Read_Background" red="240" green="240" blue="240">
+    <color red="245" green="247" blue="250">
     </color>
   </background_color>
   <grid_color>
@@ -17,16 +18,17 @@
   <widget type="group" version="3.0.0">
     <width>220</width>
     <height>155</height>
+    <style>0</style>
     <font>
-      <font family="Arial" style="REGULAR" size="15.0">
+      <font family="Cantarell" style="REGULAR" size="16.0">
       </font>
     </font>
     <foreground_color>
-      <color red="29" green="41" blue="69">
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="Read_Background" red="240" green="240" blue="240">
+      <color red="246" green="247" blue="249">
       </color>
     </background_color>
     <widget type="label" version="2.0.0">
@@ -36,11 +38,21 @@
       <y>35</y>
       <width>25</width>
       <font>
-        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
     <widget type="multi_state_led" version="2.0.0">
       <name>LED (Multi State)</name>
@@ -55,7 +67,7 @@
           </exp>
           <exp bool_exp="(pvInt0 + (pvInt1&lt;&lt;1)) == 0">
             <value>
-              <color name="Off" red="60" green="100" blue="60">
+              <color name="Off" red="237" green="237" blue="237">
               </color>
             </value>
           </exp>
@@ -88,21 +100,49 @@
         </rule>
       </rules>
       <states>
-        <state>
-          <value>0</value>
-          <label>State</label>
-          <color>
-            <color name="Off" red="60" green="100" blue="60">
+        <state use_class="true">
+          <value use_class="true">0</value>
+          <label use_class="true">State 1</label>
+          <color use_class="true">
+            <color red="219" green="234" blue="254">
+            </color>
+          </color>
+        </state>
+        <state use_class="true">
+          <value use_class="true">1</value>
+          <label use_class="true">State 2</label>
+          <color use_class="true">
+            <color red="37" green="99" blue="235">
             </color>
           </color>
         </state>
       </states>
+      <fallback_color>
+        <color red="219" green="234" blue="254">
+        </color>
+      </fallback_color>
     </widget>
     <widget type="choice" version="2.0.0">
       <name>Choice Button</name>
       <pv_name>loc://test_mp:DMOV(0)</pv_name>
       <x>65</x>
       <y>15</y>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="229" green="235" blue="255">
+        </color>
+      </background_color>
+      <selected_color>
+        <color red="229" green="235" blue="255">
+        </color>
+      </selected_color>
       <width>75</width>
       <height>15</height>
       <items>
@@ -115,6 +155,22 @@
       <pv_name>loc://test_mp:ERROR.K(0)</pv_name>
       <x>65</x>
       <y>50</y>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="229" green="235" blue="255">
+        </color>
+      </background_color>
+      <selected_color>
+        <color red="229" green="235" blue="255">
+        </color>
+      </selected_color>
       <width>75</width>
       <height>15</height>
       <items>
@@ -130,11 +186,21 @@
       <x>75</x>
       <width>65</width>
       <font>
-        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_2</name>
@@ -143,11 +209,21 @@
       <y>35</y>
       <width>80</width>
       <font>
-        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_3</name>
@@ -157,11 +233,21 @@
       <width>70</width>
       <height>15</height>
       <font>
-        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_4</name>
@@ -169,6 +255,22 @@
       <x>140</x>
       <y>70</y>
       <width>25</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <height>15</height>
       <rules>
         <rule name="shifted" prop_id="text" out_exp="true">
@@ -187,6 +289,24 @@
       <y>50</y>
       <width>25</width>
       <height>15</height>
+      <font>
+        <font family="Cantarell" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="15" green="23" blue="42">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="245" green="247" blue="250">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="203" green="213" blue="225">
+        </color>
+      </border_color>
       <border_width>1</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -196,6 +316,24 @@
       <y>15</y>
       <width>25</width>
       <height>15</height>
+      <font>
+        <font family="Cantarell" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="15" green="23" blue="42">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="245" green="247" blue="250">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="203" green="213" blue="225">
+        </color>
+      </border_color>
       <border_width>1</border_width>
     </widget>
     <widget type="label" version="2.0.0">
@@ -206,11 +344,21 @@
       <width>115</width>
       <height>15</height>
       <font>
-        <font family="Liberation Sans" style="REGULAR" size="9.0">
+        <font family="Cantarell" style="REGULAR" size="14.0">
         </font>
       </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_7</name>
@@ -218,6 +366,22 @@
       <x>140</x>
       <y>90</y>
       <width>25</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <height>15</height>
       <rules>
         <rule name="shifted" prop_id="text" out_exp="true">

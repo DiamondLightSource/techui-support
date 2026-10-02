@@ -2,6 +2,11 @@
 <!--Saved on 2026-01-14 13:35:26 by ryi58813-->
 <display version="2.0.0">
   <name>vacuumValveReadOnly</name>
+  <y>0</y>
+  <background_color>
+    <color red="245" green="247" blue="250">
+    </color>
+  </background_color>
   <width>290</width>
   <height>130</height>
   <grid_step_x>4</grid_step_x>
@@ -12,8 +17,17 @@
     <y>30</y>
     <width>282</width>
     <height>82</height>
+    <style>0</style>
+    <font>
+      <font family="Cantarell" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
     <background_color>
-      <color name="Read_Background" red="240" green="240" blue="240">
+      <color red="246" green="247" blue="249">
       </color>
     </background_color>
     <widget type="label" version="2.0.0">
@@ -21,6 +35,22 @@
       <text>Status</text>
       <y>27</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -28,21 +58,21 @@
       <pv_name>$(P):WHYLOCKED</pv_name>
       <width>244</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="MAJOR" red="255" green="0" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color name="Button_Background" red="210" green="210" blue="210">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -53,21 +83,21 @@
       <y>27</y>
       <width>120</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -95,15 +125,22 @@
     <y use_class="true">0</y>
     <width>290</width>
     <height>26</height>
-    <font use_class="true">
+    <font>
       <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
+    <background_color>
+      <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+      </color>
+    </background_color>
     <transparent use_class="true">true</transparent>
-    <horizontal_alignment>1</horizontal_alignment>
+    <horizontal_alignment>0</horizontal_alignment>
+    <vertical_alignment>0</vertical_alignment>
+    <rotation_step>0</rotation_step>
+    <wrap_words>true</wrap_words>
   </widget>
 </display>

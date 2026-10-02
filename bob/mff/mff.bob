@@ -2,6 +2,11 @@
 <!--Saved on 2026-02-09 13:19:57 by kgv66629-->
 <display version="2.0.0">
   <name>Motorised Filter Flipper</name>
+  <y>0</y>
+  <background_color>
+    <color red="245" green="247" blue="250">
+    </color>
+  </background_color>
   <widget type="label" version="2.0.0">
     <name>Title</name>
     <text>$(P)</text>
@@ -10,9 +15,21 @@
     <width>200</width>
     <height>70</height>
     <font>
-      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      <font family="Cantarell" style="REGULAR" size="14.0">
       </font>
     </font>
+    <foreground_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>0</horizontal_alignment>
+    <vertical_alignment>0</vertical_alignment>
+    <rotation_step>0</rotation_step>
+    <wrap_words>true</wrap_words>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button</name>
@@ -22,6 +39,18 @@
     <y>60</y>
     <width>210</width>
     <height>50</height>
+    <font>
+      <font family="Cantarell" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="37" green="99" blue="235">
+      </color>
+    </background_color>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED</name>
@@ -30,6 +59,18 @@
     <y>123</y>
     <width>30</width>
     <height>30</height>
+    <off_color>
+      <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </on_color>
+    <font>
+      <font family="Cantarell" style="BOLD" size="12.0">
+      </font>
+    </font>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
@@ -37,6 +78,22 @@
     <x>40</x>
     <y>129</y>
     <width>196</width>
+    <font>
+      <font family="Cantarell" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>0</horizontal_alignment>
+    <vertical_alignment>0</vertical_alignment>
+    <rotation_step>0</rotation_step>
+    <wrap_words>true</wrap_words>
     <height>30</height>
   </widget>
 </display>

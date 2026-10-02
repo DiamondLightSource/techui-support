@@ -2,6 +2,11 @@
 <!--Saved on 2026-01-27 10:32:46 by ryi58813-->
 <display version="2.0.0">
   <name>slits-4axis</name>
+  <y>0</y>
+  <background_color>
+    <color red="245" green="247" blue="250">
+    </color>
+  </background_color>
   <width>760</width>
   <height>530</height>
   <widget type="navtabs" version="2.0.0">

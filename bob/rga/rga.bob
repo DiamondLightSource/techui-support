@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>rga</name>
+  <y>0</y>
+  <background_color>
+    <color red="245" green="247" blue="250">
+    </color>
+  </background_color>
   <width>548</width>
   <height>646</height>
   <grid_step_x>4</grid_step_x>
@@ -9,14 +14,39 @@
     <name>$(P)</name>
     <width>548</width>
     <height>646</height>
+    <style>0</style>
+    <font>
+      <font family="Cantarell" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
     <background_color>
-      <color name="Read_Background" red="240" green="240" blue="240">
+      <color red="246" green="247" blue="249">
       </color>
     </background_color>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>Current Data</text>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
@@ -24,6 +54,22 @@
       <text>Detector Setting</text>
       <y>24</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
@@ -31,6 +77,22 @@
       <text>Total Pressure</text>
       <y>48</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -39,21 +101,21 @@
       <x>124</x>
       <width>120</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -64,21 +126,21 @@
       <y>24</y>
       <width>120</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -89,21 +151,21 @@
       <y>48</y>
       <width>120</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -112,8 +174,16 @@
       <y>80</y>
       <width>510</width>
       <height>437</height>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
       <background_color>
-        <color name="Read_Background" red="240" green="240" blue="240">
+        <color name="Background" red="255" green="255" blue="255">
         </color>
       </background_color>
       <columns>
@@ -147,6 +217,22 @@
       <x>7</x>
       <y>124</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -156,21 +242,21 @@
       <y>118</y>
       <width>84</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -181,6 +267,14 @@
       <y>116</y>
       <width>208</width>
       <height>24</height>
+      <fill_color>
+        <color red="37" green="99" blue="235">
+        </color>
+      </fill_color>
+      <background_color>
+        <color red="226" green="232" blue="240">
+        </color>
+      </background_color>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_2</name>
@@ -188,6 +282,22 @@
       <x>7</x>
       <y>154</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -197,21 +307,21 @@
       <y>148</y>
       <width>84</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -222,6 +332,14 @@
       <y>146</y>
       <width>208</width>
       <height>24</height>
+      <fill_color>
+        <color red="37" green="99" blue="235">
+        </color>
+      </fill_color>
+      <background_color>
+        <color red="226" green="232" blue="240">
+        </color>
+      </background_color>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_3</name>
@@ -229,6 +347,22 @@
       <x>7</x>
       <y>188</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -238,21 +372,21 @@
       <y>182</y>
       <width>84</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -263,6 +397,14 @@
       <y>180</y>
       <width>208</width>
       <height>24</height>
+      <fill_color>
+        <color red="37" green="99" blue="235">
+        </color>
+      </fill_color>
+      <background_color>
+        <color red="226" green="232" blue="240">
+        </color>
+      </background_color>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_4</name>
@@ -270,6 +412,22 @@
       <x>7</x>
       <y>223</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -279,21 +437,21 @@
       <y>217</y>
       <width>84</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -304,6 +462,14 @@
       <y>215</y>
       <width>208</width>
       <height>24</height>
+      <fill_color>
+        <color red="37" green="99" blue="235">
+        </color>
+      </fill_color>
+      <background_color>
+        <color red="226" green="232" blue="240">
+        </color>
+      </background_color>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_5</name>
@@ -311,6 +477,22 @@
       <x>7</x>
       <y>257</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -320,21 +502,21 @@
       <y>251</y>
       <width>84</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -345,6 +527,14 @@
       <y>249</y>
       <width>208</width>
       <height>24</height>
+      <fill_color>
+        <color red="37" green="99" blue="235">
+        </color>
+      </fill_color>
+      <background_color>
+        <color red="226" green="232" blue="240">
+        </color>
+      </background_color>
     </widget>
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_36</name>
@@ -433,6 +623,14 @@
       <y>288</y>
       <width>208</width>
       <height>24</height>
+      <fill_color>
+        <color red="37" green="99" blue="235">
+        </color>
+      </fill_color>
+      <background_color>
+        <color red="226" green="232" blue="240">
+        </color>
+      </background_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Frequency_6</name>
@@ -441,21 +639,21 @@
       <y>290</y>
       <width>84</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -465,6 +663,22 @@
       <x>7</x>
       <y>296</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="rectangle" version="2.0.0">
@@ -490,6 +704,14 @@
       <y>328</y>
       <width>208</width>
       <height>24</height>
+      <fill_color>
+        <color red="37" green="99" blue="235">
+        </color>
+      </fill_color>
+      <background_color>
+        <color red="226" green="232" blue="240">
+        </color>
+      </background_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Frequency_7</name>
@@ -498,21 +720,21 @@
       <y>330</y>
       <width>84</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -522,6 +744,22 @@
       <x>7</x>
       <y>336</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="rectangle" version="2.0.0">
@@ -547,6 +785,14 @@
       <y>368</y>
       <width>208</width>
       <height>24</height>
+      <fill_color>
+        <color red="37" green="99" blue="235">
+        </color>
+      </fill_color>
+      <background_color>
+        <color red="226" green="232" blue="240">
+        </color>
+      </background_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Frequency_8</name>
@@ -555,21 +801,21 @@
       <y>370</y>
       <width>84</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -579,6 +825,22 @@
       <x>7</x>
       <y>376</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="rectangle" version="2.0.0">
@@ -604,6 +866,14 @@
       <y>408</y>
       <width>208</width>
       <height>24</height>
+      <fill_color>
+        <color red="37" green="99" blue="235">
+        </color>
+      </fill_color>
+      <background_color>
+        <color red="226" green="232" blue="240">
+        </color>
+      </background_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Frequency_9</name>
@@ -612,21 +882,21 @@
       <y>410</y>
       <width>84</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -636,6 +906,22 @@
       <x>7</x>
       <y>416</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="rectangle" version="2.0.0">
@@ -661,6 +947,14 @@
       <y>448</y>
       <width>208</width>
       <height>24</height>
+      <fill_color>
+        <color red="37" green="99" blue="235">
+        </color>
+      </fill_color>
+      <background_color>
+        <color red="226" green="232" blue="240">
+        </color>
+      </background_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Frequency_10</name>
@@ -669,21 +963,21 @@
       <y>450</y>
       <width>84</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -693,6 +987,22 @@
       <x>7</x>
       <y>456</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="rectangle" version="2.0.0">
@@ -718,6 +1028,14 @@
       <y>488</y>
       <width>208</width>
       <height>24</height>
+      <fill_color>
+        <color red="37" green="99" blue="235">
+        </color>
+      </fill_color>
+      <background_color>
+        <color red="226" green="232" blue="240">
+        </color>
+      </background_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Frequency_11</name>
@@ -726,21 +1044,21 @@
       <y>490</y>
       <width>84</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -750,6 +1068,22 @@
       <x>7</x>
       <y>496</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="rectangle" version="2.0.0">
@@ -774,6 +1108,22 @@
       <x>254</x>
       <y>24</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -783,21 +1133,21 @@
       <y>24</y>
       <width>120</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -807,6 +1157,22 @@
       <x>254</x>
       <y>48</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -816,21 +1182,21 @@
       <y>48</y>
       <width>120</width>
       <font>
-        <font family="Monospaced" style="REGULAR" size="12.0">
+        <font family="Cantarell" style="BOLD" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="ActiveText" red="255" green="255" blue="0">
+        <color red="15" green="23" blue="42">
         </color>
       </foreground_color>
       <background_color>
-        <color red="76" green="100" blue="171">
+        <color red="245" green="247" blue="250">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_color>
-        <color red="196" green="196" blue="196">
+        <color red="203" green="213" blue="225">
         </color>
       </border_color>
     </widget>
@@ -872,6 +1238,22 @@
       <x>7</x>
       <y>536</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="combo" version="2.0.0">
@@ -881,6 +1263,18 @@
       <y>532</y>
       <width>176</width>
       <height>24</height>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="229" green="235" blue="255">
+        </color>
+      </background_color>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_16</name>
@@ -888,6 +1282,22 @@
       <x>7</x>
       <y>572</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="combo" version="2.0.0">
@@ -897,6 +1307,18 @@
       <y>568</y>
       <width>92</width>
       <height>24</height>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="229" green="235" blue="255">
+        </color>
+      </background_color>
     </widget>
     <widget type="combo" version="2.0.0">
       <name>Combo Box_2</name>
@@ -905,6 +1327,18 @@
       <y>568</y>
       <width>84</width>
       <height>24</height>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="229" green="235" blue="255">
+        </color>
+      </background_color>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_17</name>
@@ -912,6 +1346,22 @@
       <x>298</x>
       <y>536</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
@@ -920,6 +1370,22 @@
       <x>298</x>
       <y>572</y>
       <width>120</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>0</horizontal_alignment>
+      <vertical_alignment>0</vertical_alignment>
+      <rotation_step>0</rotation_step>
+      <wrap_words>true</wrap_words>
       <tooltip>$(text)</tooltip>
     </widget>
     <widget type="combo" version="2.0.0">
@@ -929,6 +1395,18 @@
       <y>532</y>
       <width>113</width>
       <height>24</height>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="229" green="235" blue="255">
+        </color>
+      </background_color>
     </widget>
     <widget type="combo" version="2.0.0">
       <name>Combo Box_4</name>
@@ -937,6 +1415,18 @@
       <y>568</y>
       <width>113</width>
       <height>24</height>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="229" green="235" blue="255">
+        </color>
+      </background_color>
     </widget>
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_51</name>

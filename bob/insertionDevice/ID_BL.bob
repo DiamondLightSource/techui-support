@@ -2,11 +2,11 @@
 <!--Saved on 2026-08-12 13:46:15 by ryi58813-->
 <display version="2.0.0">
   <name>ID_BL</name>
-  <y use_class="true">0</y>
+  <y>0</y>
   <width>370</width>
   <height>930</height>
-  <background_color use_class="true">
-    <color name="Read_Background" red="240" green="240" blue="240">
+  <background_color>
+    <color red="245" green="247" blue="250">
     </color>
   </background_color>
   <grid_step_x>5</grid_step_x>
@@ -17,22 +17,22 @@
     <text>ID BL Control $(prefix), $(idname) </text>
     <width>550</width>
     <height>31</height>
-    <font use_class="true">
-      <font family="Arial" style="BOLD" size="22.0">
+    <font>
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+    <foreground_color>
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Transparent" red="255" green="255" blue="255" alpha="0">
       </color>
     </background_color>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">0</vertical_alignment>
-    <rotation_step use_class="true">0</rotation_step>
-    <wrap_words use_class="true">true</wrap_words>
+    <horizontal_alignment>0</horizontal_alignment>
+    <vertical_alignment>0</vertical_alignment>
+    <rotation_step>0</rotation_step>
+    <wrap_words>true</wrap_words>
   </widget>
   <widget type="group" version="3.0.0">
     <name>Motion</name>
@@ -40,17 +40,17 @@
     <y>35</y>
     <width>313</width>
     <height>136</height>
-    <style use_class="true">0</style>
-    <font use_class="true">
-      <font family="Arial" style="REGULAR" size="15.0">
+    <style>0</style>
+    <font>
+      <font family="Cantarell" style="REGULAR" size="16.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+    <foreground_color>
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <background_color use_class="true">
-      <color name="Read_Background" red="240" green="240" blue="240">
+    <background_color>
+      <color red="246" green="247" blue="249">
       </color>
     </background_color>
     <transparent>true</transparent>
@@ -137,17 +137,17 @@
       <y>40</y>
       <width>255</width>
       <height>65</height>
-      <style use_class="true">0</style>
-      <font use_class="true">
-        <font family="Arial" style="REGULAR" size="15.0">
+      <style>0</style>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="16.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color red="29" green="41" blue="69">
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Read_Background" red="240" green="240" blue="240">
+      <background_color>
+        <color red="246" green="247" blue="249">
         </color>
       </background_color>
       <transparent>true</transparent>
@@ -156,22 +156,22 @@
         <pv_name>$(prefix)STAT-$(suff1)1:NMSTOP:BI</pv_name>
         <width>215</width>
         <height>25</height>
-        <font use_class="true">
-          <font family="Arial" style="REGULAR" size="14.0">
+        <font>
+          <font family="Cantarell" style="BOLD" size="14.0">
           </font>
         </font>
-        <foreground_color use_class="true">
-          <color name="Text" red="0" green="0" blue="0">
+        <foreground_color>
+          <color red="15" green="23" blue="42">
           </color>
         </foreground_color>
-        <background_color use_class="true">
-          <color red="184" green="195" blue="223">
+        <background_color>
+          <color red="245" green="247" blue="250">
           </color>
         </background_color>
-        <horizontal_alignment use_class="true">1</horizontal_alignment>
-        <vertical_alignment use_class="true">1</vertical_alignment>
-        <border_color use_class="true">
-          <color red="196" green="196" blue="196">
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_color>
+          <color red="203" green="213" blue="225">
           </color>
         </border_color>
       </widget>
@@ -183,17 +183,17 @@
     <y>165</y>
     <width>310</width>
     <height>360</height>
-    <style use_class="true">0</style>
-    <font use_class="true">
-      <font family="Arial" style="REGULAR" size="15.0">
+    <style>0</style>
+    <font>
+      <font family="Cantarell" style="REGULAR" size="16.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+    <foreground_color>
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <background_color use_class="true">
-      <color name="Read_Background" red="240" green="240" blue="240">
+    <background_color>
+      <color red="246" green="247" blue="249">
       </color>
     </background_color>
     <transparent>true</transparent>
@@ -201,17 +201,17 @@
       <name>Magnet Array Beam Positions</name>
       <width>265</width>
       <height>185</height>
-      <style use_class="true">0</style>
-      <font use_class="true">
-        <font family="Arial" style="REGULAR" size="15.0">
+      <style>0</style>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="16.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color red="29" green="41" blue="69">
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Read_Background" red="240" green="240" blue="240">
+      <background_color>
+        <color red="246" green="247" blue="249">
         </color>
       </background_color>
       <transparent>true</transparent>
@@ -220,17 +220,17 @@
         <class>NO_BOX</class>
         <width>225</width>
         <height>25</height>
-        <style use_class="true">3</style>
-        <font use_class="true">
-          <font family="Arial" style="REGULAR" size="15.0">
+        <style>3</style>
+        <font>
+          <font family="Cantarell" style="REGULAR" size="16.0">
           </font>
         </font>
-        <foreground_color use_class="true">
-          <color red="29" green="41" blue="69">
+        <foreground_color>
+          <color name="Text" red="0" green="0" blue="0">
           </color>
         </foreground_color>
-        <background_color use_class="true">
-          <color name="Read_Background" red="240" green="240" blue="240">
+        <background_color>
+          <color red="246" green="247" blue="249">
           </color>
         </background_color>
         <transparent>true</transparent>
@@ -240,8 +240,8 @@
           <text>Axis 1</text>
           <width>40</width>
           <height>25</height>
-          <horizontal_alignment use_class="true">1</horizontal_alignment>
-          <vertical_alignment use_class="true">1</vertical_alignment>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
         </widget>
         <widget type="textupdate" version="2.0.0">
           <name>AXIS_1_Encoder</name>
@@ -249,22 +249,22 @@
           <x>50</x>
           <width>140</width>
           <height>25</height>
-          <font use_class="true">
-            <font family="Arial" style="REGULAR" size="14.0">
+          <font>
+            <font family="Cantarell" style="BOLD" size="14.0">
             </font>
           </font>
-          <foreground_color use_class="true">
-            <color name="Text" red="0" green="0" blue="0">
+          <foreground_color>
+            <color red="15" green="23" blue="42">
             </color>
           </foreground_color>
-          <background_color use_class="true">
-            <color red="184" green="195" blue="223">
+          <background_color>
+            <color red="245" green="247" blue="250">
             </color>
           </background_color>
-          <horizontal_alignment use_class="true">1</horizontal_alignment>
-          <vertical_alignment use_class="true">1</vertical_alignment>
-          <border_color use_class="true">
-            <color red="196" green="196" blue="196">
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+          <border_color>
+            <color red="203" green="213" blue="225">
             </color>
           </border_color>
         </widget>
@@ -298,16 +298,16 @@
           <x>200</x>
           <width>25</width>
           <height>25</height>
-          <off_color use_class="true">
-            <color red="237" green="237" blue="237">
+          <off_color>
+            <color name="Transparent" red="255" green="255" blue="255" alpha="0">
             </color>
           </off_color>
-          <on_color use_class="true">
+          <on_color>
             <color name="Write_Background" red="128" green="255" blue="255">
             </color>
           </on_color>
-          <font use_class="true">
-            <font family="Arial" style="REGULAR" size="14.0">
+          <font>
+            <font family="Cantarell" style="BOLD" size="12.0">
             </font>
           </font>
         </widget>
@@ -318,17 +318,17 @@
         <y>40</y>
         <width>225</width>
         <height>25</height>
-        <style use_class="true">3</style>
-        <font use_class="true">
-          <font family="Arial" style="REGULAR" size="15.0">
+        <style>3</style>
+        <font>
+          <font family="Cantarell" style="REGULAR" size="16.0">
           </font>
         </font>
-        <foreground_color use_class="true">
-          <color red="29" green="41" blue="69">
+        <foreground_color>
+          <color name="Text" red="0" green="0" blue="0">
           </color>
         </foreground_color>
-        <background_color use_class="true">
-          <color name="Read_Background" red="240" green="240" blue="240">
+        <background_color>
+          <color red="246" green="247" blue="249">
           </color>
         </background_color>
         <transparent>true</transparent>
@@ -338,8 +338,8 @@
           <text>Axis 2</text>
           <width>40</width>
           <height>25</height>
-          <horizontal_alignment use_class="true">1</horizontal_alignment>
-          <vertical_alignment use_class="true">1</vertical_alignment>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
         </widget>
         <widget type="textupdate" version="2.0.0">
           <name>AXIS_2_Encoder</name>
@@ -347,22 +347,22 @@
           <x>50</x>
           <width>140</width>
           <height>25</height>
-          <font use_class="true">
-            <font family="Arial" style="REGULAR" size="14.0">
+          <font>
+            <font family="Cantarell" style="BOLD" size="14.0">
             </font>
           </font>
-          <foreground_color use_class="true">
-            <color name="Text" red="0" green="0" blue="0">
+          <foreground_color>
+            <color red="15" green="23" blue="42">
             </color>
           </foreground_color>
-          <background_color use_class="true">
-            <color red="184" green="195" blue="223">
+          <background_color>
+            <color red="245" green="247" blue="250">
             </color>
           </background_color>
-          <horizontal_alignment use_class="true">1</horizontal_alignment>
-          <vertical_alignment use_class="true">1</vertical_alignment>
-          <border_color use_class="true">
-            <color red="196" green="196" blue="196">
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+          <border_color>
+            <color red="203" green="213" blue="225">
             </color>
           </border_color>
         </widget>
@@ -396,16 +396,16 @@
           <x>200</x>
           <width>25</width>
           <height>25</height>
-          <off_color use_class="true">
-            <color red="237" green="237" blue="237">
+          <off_color>
+            <color name="Transparent" red="255" green="255" blue="255" alpha="0">
             </color>
           </off_color>
-          <on_color use_class="true">
+          <on_color>
             <color name="Write_Background" red="128" green="255" blue="255">
             </color>
           </on_color>
-          <font use_class="true">
-            <font family="Arial" style="REGULAR" size="14.0">
+          <font>
+            <font family="Cantarell" style="BOLD" size="12.0">
             </font>
           </font>
         </widget>
@@ -416,17 +416,17 @@
         <y>80</y>
         <width>225</width>
         <height>25</height>
-        <style use_class="true">3</style>
-        <font use_class="true">
-          <font family="Arial" style="REGULAR" size="15.0">
+        <style>3</style>
+        <font>
+          <font family="Cantarell" style="REGULAR" size="16.0">
           </font>
         </font>
-        <foreground_color use_class="true">
-          <color red="29" green="41" blue="69">
+        <foreground_color>
+          <color name="Text" red="0" green="0" blue="0">
           </color>
         </foreground_color>
-        <background_color use_class="true">
-          <color name="Read_Background" red="240" green="240" blue="240">
+        <background_color>
+          <color red="246" green="247" blue="249">
           </color>
         </background_color>
         <transparent>true</transparent>
@@ -436,8 +436,8 @@
           <text>Axis 3</text>
           <width>40</width>
           <height>25</height>
-          <horizontal_alignment use_class="true">1</horizontal_alignment>
-          <vertical_alignment use_class="true">1</vertical_alignment>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
         </widget>
         <widget type="textupdate" version="2.0.0">
           <name>AXIS_3_Encoder</name>
@@ -445,22 +445,22 @@
           <x>50</x>
           <width>140</width>
           <height>25</height>
-          <font use_class="true">
-            <font family="Arial" style="REGULAR" size="14.0">
+          <font>
+            <font family="Cantarell" style="BOLD" size="14.0">
             </font>
           </font>
-          <foreground_color use_class="true">
-            <color name="Text" red="0" green="0" blue="0">
+          <foreground_color>
+            <color red="15" green="23" blue="42">
             </color>
           </foreground_color>
-          <background_color use_class="true">
-            <color red="184" green="195" blue="223">
+          <background_color>
+            <color red="245" green="247" blue="250">
             </color>
           </background_color>
-          <horizontal_alignment use_class="true">1</horizontal_alignment>
-          <vertical_alignment use_class="true">1</vertical_alignment>
-          <border_color use_class="true">
-            <color red="196" green="196" blue="196">
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+          <border_color>
+            <color red="203" green="213" blue="225">
             </color>
           </border_color>
         </widget>
@@ -494,16 +494,16 @@
           <x>200</x>
           <width>25</width>
           <height>25</height>
-          <off_color use_class="true">
-            <color red="237" green="237" blue="237">
+          <off_color>
+            <color name="Transparent" red="255" green="255" blue="255" alpha="0">
             </color>
           </off_color>
-          <on_color use_class="true">
+          <on_color>
             <color name="Write_Background" red="128" green="255" blue="255">
             </color>
           </on_color>
-          <font use_class="true">
-            <font family="Arial" style="REGULAR" size="14.0">
+          <font>
+            <font family="Cantarell" style="BOLD" size="12.0">
             </font>
           </font>
         </widget>
@@ -514,17 +514,17 @@
         <y>120</y>
         <width>225</width>
         <height>25</height>
-        <style use_class="true">3</style>
-        <font use_class="true">
-          <font family="Arial" style="REGULAR" size="15.0">
+        <style>3</style>
+        <font>
+          <font family="Cantarell" style="REGULAR" size="16.0">
           </font>
         </font>
-        <foreground_color use_class="true">
-          <color red="29" green="41" blue="69">
+        <foreground_color>
+          <color name="Text" red="0" green="0" blue="0">
           </color>
         </foreground_color>
-        <background_color use_class="true">
-          <color name="Read_Background" red="240" green="240" blue="240">
+        <background_color>
+          <color red="246" green="247" blue="249">
           </color>
         </background_color>
         <transparent>true</transparent>
@@ -534,8 +534,8 @@
           <text>Axis 4</text>
           <width>40</width>
           <height>25</height>
-          <horizontal_alignment use_class="true">1</horizontal_alignment>
-          <vertical_alignment use_class="true">1</vertical_alignment>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
         </widget>
         <widget type="textupdate" version="2.0.0">
           <name>AXIS_4_Encoder</name>
@@ -543,22 +543,22 @@
           <x>50</x>
           <width>140</width>
           <height>25</height>
-          <font use_class="true">
-            <font family="Arial" style="REGULAR" size="14.0">
+          <font>
+            <font family="Cantarell" style="BOLD" size="14.0">
             </font>
           </font>
-          <foreground_color use_class="true">
-            <color name="Text" red="0" green="0" blue="0">
+          <foreground_color>
+            <color red="15" green="23" blue="42">
             </color>
           </foreground_color>
-          <background_color use_class="true">
-            <color red="184" green="195" blue="223">
+          <background_color>
+            <color red="245" green="247" blue="250">
             </color>
           </background_color>
-          <horizontal_alignment use_class="true">1</horizontal_alignment>
-          <vertical_alignment use_class="true">1</vertical_alignment>
-          <border_color use_class="true">
-            <color red="196" green="196" blue="196">
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+          <border_color>
+            <color red="203" green="213" blue="225">
             </color>
           </border_color>
         </widget>
@@ -592,16 +592,16 @@
           <x>200</x>
           <width>25</width>
           <height>25</height>
-          <off_color use_class="true">
-            <color red="237" green="237" blue="237">
+          <off_color>
+            <color name="Transparent" red="255" green="255" blue="255" alpha="0">
             </color>
           </off_color>
-          <on_color use_class="true">
+          <on_color>
             <color name="Write_Background" red="128" green="255" blue="255">
             </color>
           </on_color>
-          <font use_class="true">
-            <font family="Arial" style="REGULAR" size="14.0">
+          <font>
+            <font family="Cantarell" style="BOLD" size="12.0">
             </font>
           </font>
         </widget>
@@ -612,17 +612,17 @@
       <y>185</y>
       <width>265</width>
       <height>105</height>
-      <style use_class="true">0</style>
-      <font use_class="true">
-        <font family="Arial" style="REGULAR" size="15.0">
+      <style>0</style>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="16.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color red="29" green="41" blue="69">
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Read_Background" red="240" green="240" blue="240">
+      <background_color>
+        <color red="246" green="247" blue="249">
         </color>
       </background_color>
       <transparent>true</transparent>
@@ -647,8 +647,8 @@
           <text>Axis 5</text>
           <width>40</width>
           <height>25</height>
-          <horizontal_alignment use_class="true">1</horizontal_alignment>
-          <vertical_alignment use_class="true">1</vertical_alignment>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
         </widget>
         <widget type="textupdate" version="2.0.0">
           <name>AXIS_5_Motor</name>
@@ -656,22 +656,22 @@
           <x>50</x>
           <width>140</width>
           <height>25</height>
-          <font use_class="true">
-            <font family="Arial" style="REGULAR" size="14.0">
+          <font>
+            <font family="Cantarell" style="BOLD" size="14.0">
             </font>
           </font>
-          <foreground_color use_class="true">
-            <color name="Text" red="0" green="0" blue="0">
+          <foreground_color>
+            <color red="15" green="23" blue="42">
             </color>
           </foreground_color>
-          <background_color use_class="true">
-            <color red="184" green="195" blue="223">
+          <background_color>
+            <color red="245" green="247" blue="250">
             </color>
           </background_color>
-          <horizontal_alignment use_class="true">1</horizontal_alignment>
-          <vertical_alignment use_class="true">1</vertical_alignment>
-          <border_color use_class="true">
-            <color red="196" green="196" blue="196">
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+          <border_color>
+            <color red="203" green="213" blue="225">
             </color>
           </border_color>
         </widget>
@@ -681,16 +681,16 @@
           <x>200</x>
           <width>25</width>
           <height>25</height>
-          <off_color use_class="true">
-            <color red="237" green="237" blue="237">
+          <off_color>
+            <color name="Transparent" red="255" green="255" blue="255" alpha="0">
             </color>
           </off_color>
-          <on_color use_class="true">
+          <on_color>
             <color name="Write_Background" red="128" green="255" blue="255">
             </color>
           </on_color>
-          <font use_class="true">
-            <font family="Arial" style="REGULAR" size="14.0">
+          <font>
+            <font family="Cantarell" style="BOLD" size="12.0">
             </font>
           </font>
         </widget>
@@ -709,8 +709,8 @@
           <text>Axis 6</text>
           <width>40</width>
           <height>25</height>
-          <horizontal_alignment use_class="true">1</horizontal_alignment>
-          <vertical_alignment use_class="true">1</vertical_alignment>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
         </widget>
         <widget type="textupdate" version="2.0.0">
           <name>AXIS_6_Motor</name>
@@ -718,22 +718,22 @@
           <x>50</x>
           <width>140</width>
           <height>25</height>
-          <font use_class="true">
-            <font family="Arial" style="REGULAR" size="14.0">
+          <font>
+            <font family="Cantarell" style="BOLD" size="14.0">
             </font>
           </font>
-          <foreground_color use_class="true">
-            <color name="Text" red="0" green="0" blue="0">
+          <foreground_color>
+            <color red="15" green="23" blue="42">
             </color>
           </foreground_color>
-          <background_color use_class="true">
-            <color red="184" green="195" blue="223">
+          <background_color>
+            <color red="245" green="247" blue="250">
             </color>
           </background_color>
-          <horizontal_alignment use_class="true">1</horizontal_alignment>
-          <vertical_alignment use_class="true">1</vertical_alignment>
-          <border_color use_class="true">
-            <color red="196" green="196" blue="196">
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+          <border_color>
+            <color red="203" green="213" blue="225">
             </color>
           </border_color>
         </widget>
@@ -743,16 +743,16 @@
           <x>200</x>
           <width>25</width>
           <height>25</height>
-          <off_color use_class="true">
-            <color red="237" green="237" blue="237">
+          <off_color>
+            <color name="Transparent" red="255" green="255" blue="255" alpha="0">
             </color>
           </off_color>
-          <on_color use_class="true">
+          <on_color>
             <color name="Write_Background" red="128" green="255" blue="255">
             </color>
           </on_color>
-          <font use_class="true">
-            <font family="Arial" style="REGULAR" size="14.0">
+          <font>
+            <font family="Cantarell" style="BOLD" size="12.0">
             </font>
           </font>
         </widget>
@@ -765,17 +765,17 @@
       <y>295</y>
       <width>225</width>
       <height>20</height>
-      <style use_class="true">3</style>
-      <font use_class="true">
-        <font family="Arial" style="REGULAR" size="15.0">
+      <style>3</style>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="16.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color red="29" green="41" blue="69">
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Read_Background" red="240" green="240" blue="240">
+      <background_color>
+        <color red="246" green="247" blue="249">
         </color>
       </background_color>
       <transparent>true</transparent>
@@ -792,15 +792,15 @@
         <class>COMMENT</class>
         <text>Not Homed</text>
         <width>105</width>
-        <font use_class="true">
-          <font family="Arial" style="BOLD" size="14.0">
+        <font>
+          <font family="Cantarell" style="BOLD" size="14.0">
           </font>
         </font>
-        <foreground_color use_class="true">
-          <color red="29" green="41" blue="69">
+        <foreground_color>
+          <color red="15" green="23" blue="42">
           </color>
         </foreground_color>
-        <background_color use_class="true">
+        <background_color>
           <color name="Transparent" red="255" green="255" blue="255" alpha="0">
           </color>
         </background_color>
@@ -825,15 +825,15 @@
         <text>Circular Mode</text>
         <x>120</x>
         <width>105</width>
-        <font use_class="true">
-          <font family="Arial" style="BOLD" size="14.0">
+        <font>
+          <font family="Cantarell" style="BOLD" size="14.0">
           </font>
         </font>
-        <foreground_color use_class="true">
-          <color red="29" green="41" blue="69">
+        <foreground_color>
+          <color red="15" green="23" blue="42">
           </color>
         </foreground_color>
-        <background_color use_class="true">
+        <background_color>
           <color name="Transparent" red="255" green="255" blue="255" alpha="0">
           </color>
         </background_color>
@@ -860,17 +860,17 @@
     <y>527</y>
     <width>301</width>
     <height>388</height>
-    <style use_class="true">0</style>
-    <font use_class="true">
-      <font family="Arial" style="REGULAR" size="15.0">
+    <style>0</style>
+    <font>
+      <font family="Cantarell" style="REGULAR" size="16.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color red="29" green="41" blue="69">
+    <foreground_color>
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <background_color use_class="true">
-      <color name="Read_Background" red="240" green="240" blue="240">
+    <background_color>
+      <color red="246" green="247" blue="249">
       </color>
     </background_color>
     <transparent>true</transparent>
@@ -878,17 +878,17 @@
       <name>Control</name>
       <width>265</width>
       <height>145</height>
-      <style use_class="true">0</style>
-      <font use_class="true">
-        <font family="Arial" style="REGULAR" size="15.0">
+      <style>0</style>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="16.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color red="29" green="41" blue="69">
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Read_Background" red="240" green="240" blue="240">
+      <background_color>
+        <color red="246" green="247" blue="249">
         </color>
       </background_color>
       <transparent>true</transparent>
@@ -905,8 +905,8 @@
           <text>Gap</text>
           <width>40</width>
           <height>25</height>
-          <horizontal_alignment use_class="true">1</horizontal_alignment>
-          <vertical_alignment use_class="true">1</vertical_alignment>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
         </widget>
         <widget type="textupdate" version="2.0.0">
           <name>GAP_Current</name>
@@ -914,22 +914,22 @@
           <x>50</x>
           <width>175</width>
           <height>25</height>
-          <font use_class="true">
-            <font family="Arial" style="REGULAR" size="14.0">
+          <font>
+            <font family="Cantarell" style="BOLD" size="14.0">
             </font>
           </font>
-          <foreground_color use_class="true">
-            <color name="Text" red="0" green="0" blue="0">
+          <foreground_color>
+            <color red="15" green="23" blue="42">
             </color>
           </foreground_color>
-          <background_color use_class="true">
-            <color red="184" green="195" blue="223">
+          <background_color>
+            <color red="245" green="247" blue="250">
             </color>
           </background_color>
-          <horizontal_alignment use_class="true">1</horizontal_alignment>
-          <vertical_alignment use_class="true">1</vertical_alignment>
-          <border_color use_class="true">
-            <color red="196" green="196" blue="196">
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+          <border_color>
+            <color red="203" green="213" blue="225">
             </color>
           </border_color>
         </widget>
@@ -948,8 +948,8 @@
           <text>Offset</text>
           <width>40</width>
           <height>25</height>
-          <horizontal_alignment use_class="true">1</horizontal_alignment>
-          <vertical_alignment use_class="true">1</vertical_alignment>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
         </widget>
         <widget type="textupdate" version="2.0.0">
           <name>OFFSET_Current</name>
@@ -957,22 +957,22 @@
           <x>50</x>
           <width>175</width>
           <height>25</height>
-          <font use_class="true">
-            <font family="Arial" style="REGULAR" size="14.0">
+          <font>
+            <font family="Cantarell" style="BOLD" size="14.0">
             </font>
           </font>
-          <foreground_color use_class="true">
-            <color name="Text" red="0" green="0" blue="0">
+          <foreground_color>
+            <color red="15" green="23" blue="42">
             </color>
           </foreground_color>
-          <background_color use_class="true">
-            <color red="184" green="195" blue="223">
+          <background_color>
+            <color red="245" green="247" blue="250">
             </color>
           </background_color>
-          <horizontal_alignment use_class="true">1</horizontal_alignment>
-          <vertical_alignment use_class="true">1</vertical_alignment>
-          <border_color use_class="true">
-            <color red="196" green="196" blue="196">
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+          <border_color>
+            <color red="203" green="213" blue="225">
             </color>
           </border_color>
         </widget>
@@ -991,8 +991,8 @@
           <text>Taper</text>
           <width>40</width>
           <height>25</height>
-          <horizontal_alignment use_class="true">1</horizontal_alignment>
-          <vertical_alignment use_class="true">1</vertical_alignment>
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
         </widget>
         <widget type="textupdate" version="2.0.0">
           <name>TAPER_Current</name>
@@ -1000,22 +1000,22 @@
           <x>50</x>
           <width>175</width>
           <height>25</height>
-          <font use_class="true">
-            <font family="Arial" style="REGULAR" size="14.0">
+          <font>
+            <font family="Cantarell" style="BOLD" size="14.0">
             </font>
           </font>
-          <foreground_color use_class="true">
-            <color name="Text" red="0" green="0" blue="0">
+          <foreground_color>
+            <color red="15" green="23" blue="42">
             </color>
           </foreground_color>
-          <background_color use_class="true">
-            <color red="184" green="195" blue="223">
+          <background_color>
+            <color red="245" green="247" blue="250">
             </color>
           </background_color>
-          <horizontal_alignment use_class="true">1</horizontal_alignment>
-          <vertical_alignment use_class="true">1</vertical_alignment>
-          <border_color use_class="true">
-            <color red="196" green="196" blue="196">
+          <horizontal_alignment>1</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+          <border_color>
+            <color red="203" green="213" blue="225">
             </color>
           </border_color>
         </widget>
@@ -1027,17 +1027,17 @@
       <y>145</y>
       <width>255</width>
       <height>210</height>
-      <style use_class="true">0</style>
-      <font use_class="true">
-        <font family="Arial" style="REGULAR" size="15.0">
+      <style>0</style>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="16.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color red="29" green="41" blue="69">
+      <foreground_color>
+        <color name="Text" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Read_Background" red="240" green="240" blue="240">
+      <background_color>
+        <color red="246" green="247" blue="249">
         </color>
       </background_color>
       <transparent>true</transparent>
@@ -1059,16 +1059,16 @@
         <x>20</x>
         <y>5</y>
         <width>175</width>
-        <font use_class="true">
-          <font family="Arial" style="REGULAR" size="14.0">
+        <font>
+          <font family="Cantarell" style="REGULAR" size="14.0">
           </font>
         </font>
-        <foreground_color use_class="true">
+        <foreground_color>
           <color red="255" green="255" blue="255">
           </color>
         </foreground_color>
-        <background_color use_class="true">
-          <color red="29" green="41" blue="69">
+        <background_color>
+          <color red="37" green="99" blue="235">
           </color>
         </background_color>
         <rules>
@@ -1099,16 +1099,16 @@
         <x>20</x>
         <y>45</y>
         <width>175</width>
-        <font use_class="true">
-          <font family="Arial" style="REGULAR" size="14.0">
+        <font>
+          <font family="Cantarell" style="REGULAR" size="14.0">
           </font>
         </font>
-        <foreground_color use_class="true">
+        <foreground_color>
           <color red="255" green="255" blue="255">
           </color>
         </foreground_color>
-        <background_color use_class="true">
-          <color red="29" green="41" blue="69">
+        <background_color>
+          <color red="37" green="99" blue="235">
           </color>
         </background_color>
         <rules>
@@ -1169,7 +1169,7 @@ Room</text>
         <tooltip>$(pv_name)
 $(pv_value)
 $(actions)</tooltip>
-        <fallback_symbol use_class="true">https://cs-web-symbol.diamond.ac.uk/catalogue/default_symbol.png</fallback_symbol>
+        <fallback_symbol>https://cs-web-symbol.diamond.ac.uk/catalogue/default_symbol.png</fallback_symbol>
       </widget>
     </widget>
   </widget>

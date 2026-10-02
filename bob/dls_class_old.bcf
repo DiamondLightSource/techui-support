@@ -4,7 +4,7 @@
   <name>Widget Classes</name>
   <y use_class="true">0</y>
   <background_color use_class="true">
-    <color red="245" green="247" blue="250">
+    <color name="Read_Background" red="240" green="240" blue="240">
     </color>
   </background_color>
   <widget type="action_button" version="3.0.0">
@@ -14,7 +14,7 @@
     <width>170</width>
     <height>40</height>
     <font use_class="true">
-      <font family="Cantarell" style="REGULAR" size="14.0">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color use_class="true">
@@ -22,7 +22,7 @@
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color red="37" green="99" blue="235">
+      <color red="29" green="41" blue="69">
       </color>
     </background_color>
     <tooltip>$(actions)</tooltip>
@@ -34,15 +34,15 @@
     <width>170</width>
     <height>40</height>
     <font use_class="true">
-      <font family="Cantarell" style="BOLD" size="14.0">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="37" green="99" blue="235">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color red="241" green="245" blue="249">
+      <color red="255" green="255" blue="255">
       </color>
     </background_color>
     <tooltip>$(actions)</tooltip>
@@ -53,11 +53,11 @@
     <width>180</width>
     <height>38</height>
     <font use_class="true">
-      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      <font family="Arial" style="BOLD" size="22.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
     <background_color use_class="true">
@@ -77,11 +77,11 @@
     <width>124</width>
     <height>23</height>
     <font use_class="true">
-      <font family="Cantarell" style="BOLD" size="24.0">
+      <font family="Arial" style="BOLD" size="24.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="15" green="23" blue="42">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
     <background_color use_class="true">
@@ -101,11 +101,11 @@
     <width>124</width>
     <height>23</height>
     <font use_class="true">
-      <font family="Cantarell" style="BOLD" size="18.0">
+      <font family="Arial" style="BOLD" size="18.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="15" green="23" blue="42">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
     <background_color use_class="true">
@@ -124,11 +124,11 @@
     <y>150</y>
     <width>116</width>
     <font use_class="true">
-      <font family="Cantarell" style="REGULAR" size="14.0">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
     <background_color use_class="true">
@@ -147,7 +147,7 @@
     <width>340</width>
     <height>40</height>
     <font use_class="true">
-      <font family="Cantarell" style="REGULAR" size="14.0">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color use_class="true">
@@ -155,7 +155,7 @@
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color red="229" green="235" blue="255">
+      <color red="255" green="255" blue="255">
       </color>
     </background_color>
     <precision use_class="true">-1</precision>
@@ -165,7 +165,7 @@
     <enabled use_class="true">true</enabled>
     <border_width use_class="true">1</border_width>
     <border_color use_class="true">
-      <color red="203" green="213" blue="225">
+      <color red="184" green="195" blue="223">
       </color>
     </border_color>
   </widget>
@@ -176,15 +176,15 @@
     <width>340</width>
     <height>40</height>
     <font use_class="true">
-      <font family="Cantarell" style="BOLD" size="14.0">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="15" green="23" blue="42">
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color red="245" green="247" blue="250">
+      <color red="184" green="195" blue="223">
       </color>
     </background_color>
     <precision use_class="true">-1</precision>
@@ -194,7 +194,7 @@
     <enabled use_class="true">false</enabled>
     <border_width use_class="true">2</border_width>
     <border_color use_class="true">
-      <color red="203" green="213" blue="225">
+      <color red="184" green="195" blue="223">
       </color>
     </border_color>
   </widget>
@@ -205,7 +205,7 @@
     <width>40</width>
     <height>40</height>
     <off_color use_class="true">
-      <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+      <color red="237" green="237" blue="237">
       </color>
     </off_color>
     <on_color use_class="true">
@@ -213,7 +213,7 @@
       </color>
     </on_color>
     <font use_class="true">
-      <font family="Cantarell" style="BOLD" size="12.0">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
   </widget>
@@ -225,19 +225,19 @@
     <width>78</width>
     <height>20</height>
     <off_color use_class="true">
-      <color red="229" green="235" blue="255">
+      <color red="237" green="237" blue="237">
       </color>
     </off_color>
     <on_color use_class="true">
-      <color red="37" green="99" blue="235">
+      <color red="0" green="222" blue="0">
       </color>
     </on_color>
     <font use_class="true">
-      <font family="Cantarell" style="REGULAR" size="14.0">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
   </widget>
@@ -249,19 +249,19 @@
     <height>220</height>
     <style use_class="true">0</style>
     <font use_class="true">
-      <font family="Cantarell" style="REGULAR" size="16.0">
+      <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
     <line_color>
-      <color red="15" green="23" blue="42">
+      <color red="29" green="41" blue="69">
       </color>
     </line_color>
     <background_color use_class="true">
-      <color red="246" green="247" blue="249">
+      <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
   </widget>
@@ -270,19 +270,19 @@
     <x>630</x>
     <y>48</y>
     <font use_class="true">
-      <font family="Cantarell" style="REGULAR" size="14.0">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color red="229" green="235" blue="255">
+      <color name="Background" red="255" green="255" blue="255">
       </color>
     </background_color>
     <selected_color use_class="true">
-      <color red="229" green="235" blue="255">
+      <color name="Background" red="255" green="255" blue="255">
       </color>
     </selected_color>
     <items>
@@ -297,21 +297,21 @@
     <width>170</width>
     <height>30</height>
     <font use_class="true">
-      <font family="Cantarell" style="BOLD" size="14.0">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="15" green="23" blue="42">
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color red="245" green="247" blue="250">
+      <color red="184" green="195" blue="223">
       </color>
     </background_color>
     <horizontal_alignment use_class="true">1</horizontal_alignment>
     <vertical_alignment use_class="true">1</vertical_alignment>
     <border_color use_class="true">
-      <color red="203" green="213" blue="225">
+      <color red="196" green="196" blue="196">
       </color>
     </border_color>
   </widget>
@@ -334,7 +334,7 @@
     <width>405</width>
     <height>150</height>
     <font use_class="true">
-      <font family="Cantarell" style="REGULAR" size="14.0">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
   </widget>
@@ -346,11 +346,11 @@
     <width>345</width>
     <height>212</height>
     <font use_class="true">
-      <font family="Cantarell" style="REGULAR" size="14.0">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
     <background_color use_class="true">
@@ -381,11 +381,11 @@
     <y>83</y>
     <height>40</height>
     <off_color use_class="true">
-      <color red="167" green="243" blue="208">
+      <color red="237" green="237" blue="237">
       </color>
     </off_color>
     <on_color use_class="true">
-      <color red="22" green="163" blue="74">
+      <color name="Write_Background" red="128" green="255" blue="255">
       </color>
     </on_color>
     <foreground_color use_class="true">
@@ -393,7 +393,7 @@
       </color>
     </foreground_color>
     <font use_class="true">
-      <font family="Cantarell" style="REGULAR" size="14.0">
+      <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
       </font>
     </font>
   </widget>
@@ -405,15 +405,15 @@
     <height>40</height>
     <off_label>Primary button</off_label>
     <off_color use_class="true">
-      <color red="167" green="243" blue="208">
+      <color red="237" green="237" blue="237">
       </color>
     </off_color>
     <on_color use_class="true">
-      <color red="22" green="163" blue="74">
+      <color red="56" green="206" blue="56">
       </color>
     </on_color>
     <font use_class="true">
-      <font family="Cantarell" style="REGULAR" size="14.0">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color use_class="true">
@@ -421,7 +421,7 @@
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color red="37" green="99" blue="235">
+      <color red="29" green="41" blue="69">
       </color>
     </background_color>
   </widget>
@@ -433,23 +433,23 @@
     <height>40</height>
     <off_label>Secondary button</off_label>
     <off_color use_class="true">
-      <color red="167" green="243" blue="208">
+      <color red="237" green="237" blue="237">
       </color>
     </off_color>
     <on_color use_class="true">
-      <color red="22" green="163" blue="74">
+      <color red="56" green="206" blue="56">
       </color>
     </on_color>
     <font use_class="true">
-      <font family="Cantarell" style="REGULAR" size="14.0">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="37" green="99" blue="235">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color red="241" green="245" blue="249">
+      <color red="255" green="255" blue="255">
       </color>
     </background_color>
   </widget>
@@ -460,11 +460,11 @@
     <width>225</width>
     <height>40</height>
     <fill_color use_class="true">
-      <color red="37" green="99" blue="235">
+      <color red="76" green="100" blue="171">
       </color>
     </fill_color>
     <background_color use_class="true">
-      <color red="226" green="232" blue="240">
+      <color red="250" green="250" blue="250">
       </color>
     </background_color>
   </widget>
@@ -489,11 +489,11 @@
       <minimum>0.0</minimum>
       <maximum>100.0</maximum>
       <title_font>
-        <font family="Cantarell" style="BOLD" size="14.0">
+        <font family="Arial" style="BOLD" size="14.0">
         </font>
       </title_font>
       <scale_font>
-        <font family="Cantarell" style="REGULAR" size="14.0">
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
         </font>
       </scale_font>
     </x_axis>
@@ -503,11 +503,11 @@
       <minimum>0.0</minimum>
       <maximum>100.0</maximum>
       <title_font>
-        <font family="Cantarell" style="BOLD" size="14.0">
+        <font family="Arial" style="BOLD" size="14.0">
         </font>
       </title_font>
       <scale_font>
-        <font family="Cantarell" style="REGULAR" size="14.0">
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
         </font>
       </scale_font>
     </y_axis>
@@ -529,15 +529,15 @@ $(actions)</tooltip>
     <width>231</width>
     <height>40</height>
     <font use_class="true">
-      <font family="Cantarell" style="REGULAR" size="14.0">
+      <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
     <background_color use_class="true">
-      <color red="229" green="235" blue="255">
+      <color name="Background" red="255" green="255" blue="255">
       </color>
     </background_color>
     <items>
@@ -566,13 +566,9 @@ $(actions)</tooltip>
     <width>120</width>
     <height>30</height>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <font use_class="true">
-      <font family="Cantarell" style="REGULAR" size="14.0">
-      </font>
-    </font>
   </widget>
   <widget type="xyplot" version="3.0.0">
     <name>DEFAULT</name>
@@ -581,7 +577,7 @@ $(actions)</tooltip>
     <width>230</width>
     <height>240</height>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
   </widget>
@@ -592,11 +588,11 @@ $(actions)</tooltip>
     <width>40</width>
     <height>40</height>
     <off_color use_class="true">
-      <color red="252" green="165" blue="165">
+      <color name="Off" red="60" green="100" blue="60">
       </color>
     </off_color>
     <on_color use_class="true">
-      <color red="220" green="38" blue="38">
+      <color name="MAJOR" red="255" green="0" blue="0">
       </color>
     </on_color>
   </widget>
@@ -607,11 +603,11 @@ $(actions)</tooltip>
     <width>40</width>
     <height>40</height>
     <off_color use_class="true">
-      <color red="220" green="38" blue="38">
+      <color name="MAJOR" red="255" green="0" blue="0">
       </color>
     </off_color>
     <on_color use_class="true">
-      <color red="22" green="163" blue="74">
+      <color red="0" green="222" blue="0">
       </color>
     </on_color>
   </widget>
@@ -622,11 +618,11 @@ $(actions)</tooltip>
     <width>40</width>
     <height>40</height>
     <off_color use_class="true">
-      <color red="219" green="234" blue="254">
+      <color name="Off" red="60" green="100" blue="60">
       </color>
     </off_color>
     <on_color use_class="true">
-      <color red="37" green="99" blue="235">
+      <color red="76" green="100" blue="171">
       </color>
     </on_color>
   </widget>
@@ -637,11 +633,11 @@ $(actions)</tooltip>
     <width>40</width>
     <height>40</height>
     <off_color use_class="true">
-      <color red="253" green="230" blue="138">
+      <color name="Off" red="60" green="100" blue="60">
       </color>
     </off_color>
     <on_color use_class="true">
-      <color red="245" green="158" blue="11">
+      <color name="Attention" red="255" green="160" blue="0">
       </color>
     </on_color>
   </widget>
@@ -656,7 +652,7 @@ $(actions)</tooltip>
         <value use_class="true">0</value>
         <label use_class="true">State 1</label>
         <color use_class="true">
-          <color red="219" green="234" blue="254">
+          <color name="Off" red="60" green="100" blue="60">
           </color>
         </color>
       </state>
@@ -664,13 +660,13 @@ $(actions)</tooltip>
         <value use_class="true">1</value>
         <label use_class="true">State 2</label>
         <color use_class="true">
-          <color red="37" green="99" blue="235">
+          <color red="76" green="100" blue="171">
           </color>
         </color>
       </state>
     </states>
     <fallback_color use_class="true">
-      <color red="219" green="234" blue="254">
+      <color name="Off" red="60" green="100" blue="60">
       </color>
     </fallback_color>
   </widget>
@@ -685,7 +681,7 @@ $(actions)</tooltip>
         <value use_class="true">0</value>
         <label use_class="true">State 1</label>
         <color use_class="true">
-          <color red="220" green="38" blue="38">
+          <color name="MAJOR" red="255" green="0" blue="0">
           </color>
         </color>
       </state>
@@ -693,7 +689,7 @@ $(actions)</tooltip>
         <value use_class="true">1</value>
         <label use_class="true">State 2</label>
         <color use_class="true">
-          <color red="22" green="163" blue="74">
+          <color red="0" green="222" blue="0">
           </color>
         </color>
       </state>
@@ -710,11 +706,11 @@ $(actions)</tooltip>
     <width>140</width>
     <height>60</height>
     <font use_class="true">
-      <font family="Cantarell" style="BOLD" size="14.0">
+      <font family="Arial" style="BOLD" size="14.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color red="15" green="23" blue="42">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
     <background_color use_class="true">
@@ -748,19 +744,19 @@ $(actions)</tooltip>
     <height>90</height>
     <style use_class="true">3</style>
     <font use_class="true">
-      <font family="Cantarell" style="REGULAR" size="16.0">
+      <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
     <line_color>
-      <color red="15" green="23" blue="42">
+      <color red="29" green="41" blue="69">
       </color>
     </line_color>
     <background_color use_class="true">
-      <color red="246" green="247" blue="249">
+      <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
   </widget>
@@ -772,86 +768,20 @@ $(actions)</tooltip>
     <height>90</height>
     <style use_class="true">2</style>
     <font use_class="true">
-      <font family="Cantarell" style="REGULAR" size="16.0">
+      <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
     <line_color>
-      <color red="15" green="23" blue="42">
+      <color red="29" green="41" blue="69">
       </color>
     </line_color>
     <background_color use_class="true">
-      <color red="246" green="247" blue="249">
+      <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
-  </widget>
-  <widget type="byte_monitor" version="2.0.0">
-    <name>MINOR</name>
-    <x>860</x>
-    <y>350</y>
-    <height>40</height>
-    <off_color use_class="true">
-      <color red="253" green="230" blue="138">
-      </color>
-    </off_color>
-    <on_color use_class="true">
-      <color red="245" green="158" blue="11">
-      </color>
-    </on_color>
-    <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <font use_class="true">
-      <font family="Cantarell" style="REGULAR" size="14.0">
-      </font>
-    </font>
-  </widget>
-  <widget type="byte_monitor" version="2.0.0">
-    <name>MAJOR</name>
-    <x>860</x>
-    <y>400</y>
-    <height>40</height>
-    <off_color use_class="true">
-      <color red="252" green="165" blue="165">
-      </color>
-    </off_color>
-    <on_color use_class="true">
-      <color red="220" green="38" blue="38">
-      </color>
-    </on_color>
-    <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <font use_class="true">
-      <font family="Cantarell" style="REGULAR" size="14.0">
-      </font>
-    </font>
-  </widget>
-  <widget type="byte_monitor" version="2.0.0">
-    <name>INFO</name>
-    <x>860</x>
-    <y>450</y>
-    <height>40</height>
-    <off_color use_class="true">
-      <color red="219" green="234" blue="254">
-      </color>
-    </off_color>
-    <on_color use_class="true">
-      <color red="37" green="99" blue="235">
-      </color>
-    </on_color>
-    <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <font use_class="true">
-      <font family="Cantarell" style="REGULAR" size="14.0">
-      </font>
-    </font>
   </widget>
 </display>

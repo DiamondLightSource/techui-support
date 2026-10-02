@@ -2,11 +2,11 @@
 <!--Saved on 2026-01-21 14:22:44 by ryi58813-->
 <display version="2.0.0">
   <name>Flow Embed</name>
-  <y use_class="true">0</y>
+  <y>0</y>
   <width>80</width>
   <height>20</height>
-  <background_color use_class="true">
-    <color name="Read_Background" red="240" green="240" blue="240">
+  <background_color>
+    <color red="245" green="247" blue="250">
     </color>
   </background_color>
   <widget type="action_button" version="3.0.0">
@@ -25,16 +25,16 @@
     <text>Flow $(id)</text>
     <width>60</width>
     <height>20</height>
-    <font use_class="true">
-      <font family="Arial" style="REGULAR" size="14.0">
+    <font>
+      <font family="Cantarell" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="255" green="255" blue="255">
       </color>
     </foreground_color>
-    <background_color use_class="true">
-      <color red="29" green="41" blue="69">
+    <background_color>
+      <color red="37" green="99" blue="235">
       </color>
     </background_color>
     <tooltip>$(actions)</tooltip>
@@ -43,16 +43,16 @@
     <name>LED</name>
     <pv_name>$(P):WF:$(id):LO</pv_name>
     <x>60</x>
-    <off_color use_class="true">
-      <color red="237" green="237" blue="237">
+    <off_color>
+      <color name="Transparent" red="255" green="255" blue="255" alpha="0">
       </color>
     </off_color>
-    <on_color use_class="true">
+    <on_color>
       <color name="Write_Background" red="128" green="255" blue="255">
       </color>
     </on_color>
-    <font use_class="true">
-      <font family="Arial" style="REGULAR" size="14.0">
+    <font>
+      <font family="Cantarell" style="BOLD" size="12.0">
       </font>
     </font>
   </widget>
