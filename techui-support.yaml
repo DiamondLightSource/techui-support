@@ -145,7 +145,7 @@ support_modules:
     macros:
       - P
     screens:
-      - file: "pmac/ppmacController.bob"
+      - file: "$(IOC)/ppmacController.pvi.bob"
         type: "related"
 
   pmacUtil.dls_pmac_asyn_motor_no_coord:
