@@ -199,6 +199,16 @@ support_modules:
       - file: "digitelMpc/digitelMpcIonp.bob"
         type: "embedded"
 
+  # Stream devices
+
+  enzLoCuM4.enzLoCuM4:
+    prefix: "{{ device }}"
+    macros:
+      - device
+    screens:
+      - file: "$(IOC)/enzLoCuM4.pvi.bob"
+        type: "related"
+
   # Detectors
 
   fastcs_eiger.EigerController:
