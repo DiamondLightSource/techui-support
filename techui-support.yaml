@@ -209,6 +209,14 @@ support_modules:
       - file: "digitelMpc/digitelMpcIonp.bob"
         type: "embedded"
 
+  dlsPLC.NX102_vacValveDebounce:
+    prefix: "{{ device }}"
+    macros:
+      - device
+    screens:
+      - file: "dlsPLC/vacvalve.bob"
+        type: "embedded"
+
   # Stream devices
 
   enzLoCuM4.enzLoCuM4:
