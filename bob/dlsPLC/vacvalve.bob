@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-10-28 14:40:30 by sfx44126-->
+<display version="2.0.0">
+  <widget type="group" version="3.0.0">
+    <name>$(label)</name>
+    <y>31</y>
+    <width>380</width>
+    <height>179</height>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>CONTROL</text>
+      <x>19</x>
+      <y>71</y>
+      <width>81</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>$(device):ILKSTA</pv_name>
+      <x>128</x>
+      <y>31</y>
+      <width>101</width>
+      <height>30</height>
+      <font>
+        <font family="Cantarell" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="15" green="23" blue="42">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="245" green="247" blue="250">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_color>
+        <color red="203" green="213" blue="225">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_1</name>
+      <pv_name>$(device):STA</pv_name>
+      <x>128</x>
+      <y>101</y>
+      <width>101</width>
+      <height>30</height>
+      <font>
+        <font family="Cantarell" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="15" green="23" blue="42">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="245" green="247" blue="250">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_color>
+        <color red="203" green="213" blue="225">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_2</name>
+      <pv_name>$(device):MODE</pv_name>
+      <x>2</x>
+      <y>31</y>
+      <width>101</width>
+      <height>30</height>
+      <font>
+        <font family="Cantarell" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="15" green="23" blue="42">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="245" green="247" blue="250">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_color>
+        <color red="203" green="213" blue="225">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>OpenDisplay</name>
+      <actions>
+        <action type="open_display">
+          <description>Open Display</description>
+          <file>PVISCREEN</file>
+          <target>tab</target>
+        </action>
+      </actions>
+      <text>Interlocks ⧉</text>
+      <x>254</x>
+      <y>21</y>
+      <width>91</width>
+      <height>40</height>
+      <font>
+        <font family="Cantarell" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="37" green="99" blue="235">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="241" green="245" blue="249">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button</name>
+      <pv_name>$(device):CON</pv_name>
+      <x>1</x>
+      <y>95</y>
+      <width>111</width>
+      <height>40</height>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <selected_color>
+        <color red="229" green="235" blue="255">
+        </color>
+      </selected_color>
+      <items>
+        <item>Open</item>
+        <item>Close</item>
+      </items>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>INTERLOCK STATUS</text>
+      <x>103</x>
+      <y>11</y>
+      <width>151</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>STATUS</text>
+      <x>137</x>
+      <y>81</y>
+      <width>81</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>MODE</text>
+      <x>12</x>
+      <y>11</y>
+      <width>81</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>$(device)</text>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>550</width>
+    <height>31</height>
+    <font use_class="true">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+  </widget>
+</display>
