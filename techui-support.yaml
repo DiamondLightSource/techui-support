@@ -229,6 +229,16 @@ support_modules:
       - file: "fastcs-eiger/eigerController.bob"
         type: "embedded"
 
+  # Experimental Apparatus
+
+  stanfordDG645.stanfordDG645:
+    prefix: "{{ P }}"
+    macros:
+      - P
+    screens:
+      - file: stanfordDG645/stanfordDG645.bob
+        type: embedded
+
   # Cryostreams
 
   oxCryo.OXCS700:

@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-11-06 13:32:06 by ryi58813-->
+<display version="2.0.0">
+  <name>Stanford Research DG645</name>
+  <width>470</width>
+  <height>670</height>
+  <background_color>
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="label" version="2.0.0">
+    <name>TITLE</name>
+    <class>TITLE</class>
+    <text>Stanford Research DG645</text>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>445</width>
+    <height>40</height>
+    <font use_class="true">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+      </color>
+    </background_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Control</name>
+    <x>10</x>
+    <y>40</y>
+    <width>450</width>
+    <height>235</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>Identification string</text>
+      <x>-5</x>
+      <width>200</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <tooltip>Identification string - No description provided</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>$(P):IDN</pv_name>
+      <x>200</x>
+      <width>205</width>
+      <font>
+        <font family="Cantarell" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="15" green="23" blue="42">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="245" green="247" blue="250">
+        </color>
+      </background_color>
+      <format>6</format>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_color>
+        <color red="203" green="213" blue="225">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>Clear status registers</text>
+      <y>25</y>
+      <width>200</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <tooltip>Clear status registers - No description provided</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV_1</name>
+      <actions>
+        <action type="write_pv">
+          <description>$(name)</description>
+          <pv_name>$(P):CLEARSTATUS</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P):CLEARSTATUS</pv_name>
+      <text>Clear</text>
+      <x>205</x>
+      <y>25</y>
+      <width>205</width>
+      <height>20</height>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="37" green="99" blue="235">
+        </color>
+      </background_color>
+      <tooltip>$(P):CLEARSTATUS = 1
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>Front panel display on/off</text>
+      <y>50</y>
+      <width>200</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <tooltip>Front panel display on/off - No description provided</tooltip>
+    </widget>
+    <widget type="slide_button" version="2.0.0">
+      <name>ToggleButton</name>
+      <pv_name>$(P):DISPLAY</pv_name>
+      <label></label>
+      <x>245</x>
+      <y>50</y>
+      <width>20</width>
+      <height>20</height>
+      <off_color>
+        <color red="229" green="235" blue="255">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="37" green="99" blue="235">
+        </color>
+      </on_color>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>$(P):DISPLAY_RBV</pv_name>
+      <x>350</x>
+      <y>50</y>
+      <off_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </on_color>
+      <font>
+        <font family="Cantarell" style="BOLD" size="12.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>Timebase in use</text>
+      <y>75</y>
+      <width>200</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <tooltip>Timebase in use - No description provided</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_1</name>
+      <pv_name>$(P):TIMEBASE</pv_name>
+      <x>205</x>
+      <y>75</y>
+      <width>205</width>
+      <font>
+        <font family="Cantarell" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="15" green="23" blue="42">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="245" green="247" blue="250">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_color>
+        <color red="203" green="213" blue="225">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>T1 (end of T0) delay</text>
+      <y>100</y>
+      <width>200</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <tooltip>T1 (end of T0) delay - No description provided</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_2</name>
+      <pv_name>$(P):T1:DELAY_RBV</pv_name>
+      <x>205</x>
+      <y>100</y>
+      <width>205</width>
+      <font>
+        <font family="Cantarell" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="15" green="23" blue="42">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="245" green="247" blue="250">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_color>
+        <color red="203" green="213" blue="225">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>Trigger source</text>
+      <y>125</y>
+      <width>200</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <tooltip>Trigger source - No description provided</tooltip>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>ComboBox</name>
+      <pv_name>$(P):TRIG:SOURCE</pv_name>
+      <x>205</x>
+      <y>125</y>
+      <height>20</height>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="229" green="235" blue="255">
+        </color>
+      </background_color>
+      <items>
+        <item>item 0</item>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_3</name>
+      <pv_name>$(P):TRIG:SOURCE_RBV</pv_name>
+      <x>310</x>
+      <y>125</y>
+      <font>
+        <font family="Cantarell" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="15" green="23" blue="42">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="245" green="247" blue="250">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_color>
+        <color red="203" green="213" blue="225">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>Single shot / arm ext single shot</text>
+      <y>150</y>
+      <width>200</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <tooltip>Single shot / arm ext single shot - No description provided</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV_2</name>
+      <actions>
+        <action type="write_pv">
+          <description>$(name)</description>
+          <pv_name>$(P):TRIG:SINGLESHOT</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P):TRIG:SINGLESHOT</pv_name>
+      <text>Trigger</text>
+      <x>205</x>
+      <y>150</y>
+      <width>205</width>
+      <height>20</height>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="37" green="99" blue="235">
+        </color>
+      </background_color>
+      <tooltip>$(P):TRIG:SINGLESHOT = 1
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_8</name>
+      <text>Internal trigger rate</text>
+      <y>175</y>
+      <width>200</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <tooltip>Internal trigger rate - No description provided</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_4</name>
+      <pv_name>$(P):TRIG:RATE_RBV</pv_name>
+      <x>310</x>
+      <y>175</y>
+      <font>
+        <font family="Cantarell" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="15" green="23" blue="42">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="245" green="247" blue="250">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_color>
+        <color red="203" green="213" blue="225">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry</name>
+      <pv_name>$(P):TRIG:RATE</pv_name>
+      <x>205</x>
+      <y>175</y>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="229" green="235" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>CHANNEL_AB</name>
+    <macros>
+      <CH>AB</CH>
+    </macros>
+    <file>stanfordDG645Channel.bob</file>
+    <x>10</x>
+    <y>275</y>
+    <width>450</width>
+    <height>90</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>CHANNEL_CD</name>
+    <macros>
+      <CH>CD</CH>
+    </macros>
+    <file>stanfordDG645Channel.bob</file>
+    <x>10</x>
+    <y>365</y>
+    <width>450</width>
+    <height>90</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>CHANNEL_EF</name>
+    <macros>
+      <CH>EF</CH>
+    </macros>
+    <file>stanfordDG645Channel.bob</file>
+    <x>10</x>
+    <y>455</y>
+    <width>450</width>
+    <height>90</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>CHANNEL_GH</name>
+    <macros>
+      <CH>GH</CH>
+    </macros>
+    <file>stanfordDG645Channel.bob</file>
+    <x>10</x>
+    <y>545</y>
+    <width>450</width>
+    <height>90</height>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>OpenDisplay</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>$(IOC)/index.bob</file>
+        <target>tab</target>
+      </action>
+    </actions>
+    <text>Advanced</text>
+    <x>30</x>
+    <y>635</y>
+    <width>405</width>
+    <height>20</height>
+    <font>
+      <font family="Cantarell" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="37" green="99" blue="235">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="241" green="245" blue="249">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+</display>

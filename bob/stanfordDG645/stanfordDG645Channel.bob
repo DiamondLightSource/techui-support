@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-11-06 13:09:16 by ryi58813-->
+<display version="2.0.0">
+  <name>stanfordDG645Channel</name>
+  <width>445</width>
+  <height>85</height>
+  <background_color>
+    <color red="245" green="247" blue="250">
+    </color>
+  </background_color>
+  <grid_step_x>4</grid_step_x>
+  <grid_step_y>4</grid_step_y>
+  <widget type="group" version="3.0.0">
+    <name>Channel $(CH)</name>
+    <width>446</width>
+    <height>86</height>
+    <font>
+      <font family="Cantarell" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="246" green="247" blue="249">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>DELAY</text>
+      <width>200</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <tooltip>DELAY - No description provided</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry</name>
+      <pv_name>$(P):$(CH):DELAY</pv_name>
+      <x>205</x>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="229" green="235" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>$(P):$(CH):DELAY_RBV</pv_name>
+      <x>310</x>
+      <font>
+        <font family="Cantarell" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="15" green="23" blue="42">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="245" green="247" blue="250">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_color>
+        <color red="203" green="213" blue="225">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>WIDTH</text>
+      <y>25</y>
+      <width>200</width>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <tooltip>WIDTH - No description provided</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry</name>
+      <pv_name>$(P):$(CH):WIDTH</pv_name>
+      <x>205</x>
+      <y>25</y>
+      <font>
+        <font family="Cantarell" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="229" green="235" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>$(P):$(CH):WIDTH_RBV</pv_name>
+      <x>310</x>
+      <y>25</y>
+      <font>
+        <font family="Cantarell" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="15" green="23" blue="42">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="245" green="247" blue="250">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_color>
+        <color red="203" green="213" blue="225">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+</display>
