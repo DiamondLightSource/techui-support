@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-11-06 15:17:57 by ryi58813-->
+<display version="2.0.0">
+  <name>stanfordDG645Channel</name>
+  <width>445</width>
+  <height>85</height>
+  <background_color>
+    <color red="245" green="247" blue="250">
+    </color>
+  </background_color>
+  <grid_step_x>4</grid_step_x>
+  <grid_step_y>4</grid_step_y>
+  <widget type="group" version="3.0.0">
+    <name>Channel $(CH)</name>
+    <width>446</width>
+    <height>86</height>
+    <font>
+      <font family="Cantarell" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="246" green="247" blue="249">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>NOT CONFIGURED</text>
+      <width>407</width>
+      <height>47</height>
+      <font>
+        <font name="Comment" family="Liberation Sans" style="ITALIC" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>DELAY - No description provided</tooltip>
+    </widget>
+  </widget>
+</display>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-11-06 13:32:06 by ryi58813-->
+<!--Saved on 2026-11-06 15:23:51 by ryi58813-->
 <display version="2.0.0">
   <name>Stanford Research DG645</name>
   <width>470</width>
@@ -55,7 +55,6 @@
     <widget type="label" version="2.0.0">
       <name>Label_1</name>
       <text>Identification string</text>
-      <x>-5</x>
       <width>200</width>
       <font>
         <font family="Cantarell" style="REGULAR" size="14.0">
@@ -403,6 +402,14 @@ $(pv_value)</tooltip>
     <y>275</y>
     <width>450</width>
     <height>90</height>
+    <rules>
+      <rule name="channel-configured" prop_id="file" out_exp="false">
+        <exp bool_exp="pvSev0 == -1">
+          <value>stanfordDG645Channel_NotConfigured.bob</value>
+        </exp>
+        <pv_name>$(P):$(CH):DELAY_RBV.SEVR</pv_name>
+      </rule>
+    </rules>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>CHANNEL_CD</name>
@@ -414,6 +421,14 @@ $(pv_value)</tooltip>
     <y>365</y>
     <width>450</width>
     <height>90</height>
+    <rules>
+      <rule name="channel-configured" prop_id="file" out_exp="false">
+        <exp bool_exp="pvSev0 == -1">
+          <value>stanfordDG645Channel_NotConfigured.bob</value>
+        </exp>
+        <pv_name>$(P):$(CH):DELAY_RBV.SEVR</pv_name>
+      </rule>
+    </rules>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>CHANNEL_EF</name>
@@ -425,6 +440,14 @@ $(pv_value)</tooltip>
     <y>455</y>
     <width>450</width>
     <height>90</height>
+    <rules>
+      <rule name="channel-configured" prop_id="file" out_exp="false">
+        <exp bool_exp="pvSev0 == -1">
+          <value>stanfordDG645Channel_NotConfigured.bob</value>
+        </exp>
+        <pv_name>$(P):$(CH):DELAY_RBV.SEVR</pv_name>
+      </rule>
+    </rules>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>CHANNEL_GH</name>
@@ -436,6 +459,14 @@ $(pv_value)</tooltip>
     <y>545</y>
     <width>450</width>
     <height>90</height>
+    <rules>
+      <rule name="channel-configured" prop_id="file" out_exp="false">
+        <exp bool_exp="pvSev0 == -1">
+          <value>stanfordDG645Channel_NotConfigured.bob</value>
+        </exp>
+        <pv_name>$(P):$(CH):DELAY_RBV.SEVR</pv_name>
+      </rule>
+    </rules>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>OpenDisplay</name>
