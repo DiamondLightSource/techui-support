@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-11-24 14:46:23 by ryi58813-->
+<display version="2.0.0">
+  <name>CurrAmpOffsetsADC</name>
+  <x>797</x>
+  <y use_class="true">0</y>
+  <width>648</width>
+  <height>438</height>
+  <background_color use_class="true">
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R1:A2ADC</pv_name>
+    <x>140</x>
+    <y>130</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>Analogue Signal Offsets for Current Amplifier 
+YMSC0012/09 - $(name)</text>
+    <width>680</width>
+    <height>60</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(name):RANGE_MENU.ONST</pv_name>
+    <x>20</x>
+    <y>140</y>
+    <width>110</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R1:B2ADC</pv_name>
+    <x>240</x>
+    <y>130</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R1:C2ADC</pv_name>
+    <x>340</x>
+    <y>130</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R1:D2ADC</pv_name>
+    <x>440</x>
+    <y>130</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R2:A2ADC</pv_name>
+    <x>140</x>
+    <y>170</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(name):RANGE_MENU.TWST</pv_name>
+    <x>20</x>
+    <y>180</y>
+    <width>110</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R2:B2ADC</pv_name>
+    <x>240</x>
+    <y>170</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R2:C2ADC</pv_name>
+    <x>340</x>
+    <y>170</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R2:D2ADC</pv_name>
+    <x>440</x>
+    <y>170</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R3:A2ADC</pv_name>
+    <x>140</x>
+    <y>210</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(name):RANGE_MENU.THST</pv_name>
+    <x>20</x>
+    <y>220</y>
+    <width>110</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R3:B2ADC</pv_name>
+    <x>240</x>
+    <y>210</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R3:C2ADC</pv_name>
+    <x>340</x>
+    <y>210</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R3:D2ADC</pv_name>
+    <x>440</x>
+    <y>210</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R4:A2ADC</pv_name>
+    <x>140</x>
+    <y>250</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(name):RANGE_MENU.FRST</pv_name>
+    <x>20</x>
+    <y>260</y>
+    <width>110</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R4:B2ADC</pv_name>
+    <x>240</x>
+    <y>250</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R4:C2ADC</pv_name>
+    <x>340</x>
+    <y>250</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R4:D2ADC</pv_name>
+    <x>440</x>
+    <y>250</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R5:A2ADC</pv_name>
+    <x>140</x>
+    <y>290</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(name):RANGE_MENU.FVST</pv_name>
+    <x>20</x>
+    <y>300</y>
+    <width>110</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R5:B2ADC</pv_name>
+    <x>240</x>
+    <y>290</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R5:C2ADC</pv_name>
+    <x>340</x>
+    <y>290</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R5:D2ADC</pv_name>
+    <x>440</x>
+    <y>290</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R6:A2ADC</pv_name>
+    <x>140</x>
+    <y>330</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(name):RANGE_MENU.SXST</pv_name>
+    <x>20</x>
+    <y>340</y>
+    <width>110</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R6:B2ADC</pv_name>
+    <x>240</x>
+    <y>330</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R6:C2ADC</pv_name>
+    <x>340</x>
+    <y>330</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>EDM TextentryClass</name>
+    <pv_name>$(name):R6:D2ADC</pv_name>
+    <x>440</x>
+    <y>330</y>
+    <width>90</width>
+    <height>40</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision use_class="true">-1</precision>
+    <show_units use_class="true">true</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <enabled use_class="true">true</enabled>
+    <border_width use_class="true">1</border_width>
+    <border_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM activeMessageButtonClass</name>
+    <actions>
+      <action type="write_pv">
+        <description>Apply</description>
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(name):R1:SETOFFSETSADC.PROC</pv_name>
+    <text>Apply</text>
+    <x>540</x>
+    <y>130</y>
+    <width>70</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM activeMessageButtonClass</name>
+    <actions>
+      <action type="write_pv">
+        <description>Apply</description>
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(name):R2:SETOFFSETSADC.PROC</pv_name>
+    <text>Apply</text>
+    <x>540</x>
+    <y>170</y>
+    <width>70</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM activeMessageButtonClass</name>
+    <actions>
+      <action type="write_pv">
+        <description>Apply</description>
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(name):R3:SETOFFSETSADC.PROC</pv_name>
+    <text>Apply</text>
+    <x>540</x>
+    <y>210</y>
+    <width>70</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM activeMessageButtonClass</name>
+    <actions>
+      <action type="write_pv">
+        <description>Apply</description>
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(name):R4:SETOFFSETSADC.PROC</pv_name>
+    <text>Apply</text>
+    <x>540</x>
+    <y>250</y>
+    <width>70</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM activeMessageButtonClass</name>
+    <actions>
+      <action type="write_pv">
+        <description>Apply</description>
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(name):R5:SETOFFSETSADC.PROC</pv_name>
+    <text>Apply</text>
+    <x>540</x>
+    <y>290</y>
+    <width>70</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM activeMessageButtonClass</name>
+    <actions>
+      <action type="write_pv">
+        <description>Apply</description>
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(name):R6:SETOFFSETSADC.PROC</pv_name>
+    <text>Apply</text>
+    <x>540</x>
+    <y>330</y>
+    <width>70</width>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>D2 (Y-)</text>
+    <x>460</x>
+    <y>100</y>
+    <width>46</width>
+    <height>16</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <auto_size>true</auto_size>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>C2 (Y+)</text>
+    <x>360</x>
+    <y>100</y>
+    <width>49</width>
+    <height>16</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <auto_size>true</auto_size>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>B2 (X-)</text>
+    <x>260</x>
+    <y>100</y>
+    <width>45</width>
+    <height>16</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <auto_size>true</auto_size>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>A2 (X+)</text>
+    <x>160</x>
+    <y>100</y>
+    <width>48</width>
+    <height>16</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <auto_size>true</auto_size>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+</display>
