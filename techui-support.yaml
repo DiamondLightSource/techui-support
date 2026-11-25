@@ -284,3 +284,14 @@ support_modules:
     screens:
       - file: oxCryo/OXNH700.bob
         type: embedded
+
+  # CryoCooler
+
+  CryoCoolerXV.Cryocooler:
+    prefix: "{{ P }}{{ R}}"
+    macros:
+      - P
+      - R
+    screens:
+      - file: cryoCoolerXV/TopLevel.bob
+        type: embedded

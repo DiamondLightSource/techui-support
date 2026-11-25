@@ -1,0 +1,4255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-11-25 09:07:07 by ryi58813-->
+<display version="2.0.0">
+  <name>Settings</name>
+  <x>5</x>
+  <y>187</y>
+  <width>1274</width>
+  <height>910</height>
+  <background_color>
+    <color name="Canvas" red="200" green="200" blue="200">
+    </color>
+  </background_color>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM activeRectangleClass</name>
+    <x>24</x>
+    <y>490</y>
+    <width>373</width>
+    <height>285</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Disconn/Invalid" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)P1HighTrip_SP_MON</pv_name>
+    <x>157</x>
+    <y>499</y>
+    <width>120</width>
+    <font>
+      <font family="arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor BG" red="105" green="105" blue="105">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM activeRectangleClass</name>
+    <x>450</x>
+    <y>490</y>
+    <width>373</width>
+    <height>285</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Disconn/Invalid" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 0</name>
+    <x>578</x>
+    <y>550</y>
+    <width>238</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="EDM visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>=`$(P)$(R)Pwd1_OK_STS`|`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS)`?1:0</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Set</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)VesselStartFill_SP_SEND.PROC</pv_name>
+      <text>Set</text>
+      <x>133</x>
+      <y>5</y>
+      <height>45</height>
+      <font>
+        <font family="arial" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>true</value>
+          </exp>
+          <pv_name>=`$(P)$(R)VesselStartFill_SP_MON`==`$(P)$(R)VesselStartFill_SP`?1:0</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM activeXTextDspClass</name>
+      <pv_name>$(P)$(R)VesselStartFill_SP</pv_name>
+      <x>5</x>
+      <y>30</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="grey-7" red="145" green="145" blue="145">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+    </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM activeRectangleClass</name>
+    <x>883</x>
+    <y>40</y>
+    <width>373</width>
+    <height>735</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Disconn/Invalid" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 1</name>
+    <x>445</x>
+    <y>13</y>
+    <width>382</width>
+    <height>431</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Run Settings</text>
+      <x>5</x>
+      <y>5</y>
+      <width>126</width>
+      <height>19</height>
+      <font>
+        <font family="arial" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM activeRectangleClass</name>
+      <x>5</x>
+      <y>27</y>
+      <width>373</width>
+      <height>400</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 2</name>
+    <x>578</x>
+    <y>214</y>
+    <width>238</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="EDM visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>=`$(P)$(R)Pwd1_OK_STS`|`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS)`?1:0</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Set</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)EGHTarget_SP_SEND.PROC</pv_name>
+      <text>Set</text>
+      <x>133</x>
+      <y>5</y>
+      <height>45</height>
+      <font>
+        <font family="arial" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>true</value>
+          </exp>
+          <pv_name>=`$(P)$(R)EGHTarget_SP_MON`==`$(P)$(R)EGHTarget_SP`?1:0</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM activeXTextDspClass</name>
+      <pv_name>$(P)$(R)EGHTarget_SP</pv_name>
+      <x>5</x>
+      <y>30</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="grey-7" red="145" green="145" blue="145">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 3</name>
+    <x>578</x>
+    <y>158</y>
+    <width>238</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="EDM visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>=`$(P)$(R)Pwd1_OK_STS`|`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS)`?1:0</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Set</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)PumpSpeed_SP_SEND.PROC</pv_name>
+      <text>Set</text>
+      <x>133</x>
+      <y>5</y>
+      <height>45</height>
+      <font>
+        <font family="arial" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>true</value>
+          </exp>
+          <pv_name>=`$(P)$(R)PumpSpeed_SP_MON`==`$(P)$(R)PumpSpeed_SP`?1:0</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM activeXTextDspClass</name>
+      <pv_name>$(P)$(R)PumpSpeed_SP</pv_name>
+      <x>5</x>
+      <y>30</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="grey-7" red="145" green="145" blue="145">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 4</name>
+    <x>578</x>
+    <y>102</y>
+    <width>238</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="EDM visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>=`$(P)$(R)Pwd1_OK_STS`|`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS)`?1:0</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Set</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)P2_BND_SP_SEND.PROC</pv_name>
+      <text>Set</text>
+      <x>133</x>
+      <y>5</y>
+      <height>45</height>
+      <font>
+        <font family="arial" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>true</value>
+          </exp>
+          <pv_name>=`$(P)$(R)P2_BND_SP_MON`==`$(P)$(R)P2_BND_SP`?1:0</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM activeXTextDspClass</name>
+      <pv_name>$(P)$(R)P2_BND_SP</pv_name>
+      <x>5</x>
+      <y>30</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="grey-7" red="145" green="145" blue="145">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 5</name>
+    <x>578</x>
+    <y>45</y>
+    <width>238</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="EDM visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>=`$(P)$(R)Pwd1_OK_STS`|`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS)`?1:0</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Set</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)P2_SP_SEND.PROC</pv_name>
+      <text>Set</text>
+      <x>133</x>
+      <y>5</y>
+      <height>45</height>
+      <font>
+        <font family="arial" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>true</value>
+          </exp>
+          <pv_name>=`$(P)$(R)P2_SP_MON`==`$(P)$(R)P2_SP`?1:0</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM activeXTextDspClass</name>
+      <pv_name>$(P)$(R)P2_SP</pv_name>
+      <x>5</x>
+      <y>30</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="grey-7" red="145" green="145" blue="145">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 6</name>
+    <x>152</x>
+    <y>606</y>
+    <width>237</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="EDM visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>CALC\\\{A&amp;1\}($(P)$(R)Pwd3_OK_STS</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Set</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)MaxPumpSpeed_SP_SEND.PROC</pv_name>
+      <text>Set</text>
+      <x>132</x>
+      <y>5</y>
+      <height>45</height>
+      <font>
+        <font family="arial" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>true</value>
+          </exp>
+          <pv_name>=`$(P)$(R)MaxPumpSpeed_MON`==`$(P)$(R)MaxPumpSpeed_SP`?1:0</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM activeXTextDspClass</name>
+      <pv_name>$(P)$(R)MaxPumpSpeed_SP</pv_name>
+      <x>5</x>
+      <y>30</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="grey-7" red="145" green="145" blue="145">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 7</name>
+    <x>578</x>
+    <y>606</y>
+    <width>238</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="EDM visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>=`$(P)$(R)Pwd1_OK_STS`|`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS)`?1:0</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Set</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)VesselStopFill_SP_SEND.PROC</pv_name>
+      <text>Set</text>
+      <x>133</x>
+      <y>5</y>
+      <height>45</height>
+      <font>
+        <font family="arial" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>true</value>
+          </exp>
+          <pv_name>=`$(P)$(R)VesselStopFill_SP_MON`==`$(P)$(R)VesselStopFill_SP`?1:0</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM activeXTextDspClass</name>
+      <pv_name>$(P)$(R)VesselStopFill_SP</pv_name>
+      <x>5</x>
+      <y>30</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="grey-7" red="145" green="145" blue="145">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 8</name>
+    <x>152</x>
+    <y>550</y>
+    <width>237</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="EDM visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>CALC\\\{A&amp;1\}($(P)$(R)Pwd3_OK_STS</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Set</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)P2HighTrip_SP_SEND.PROC</pv_name>
+      <text>Set</text>
+      <x>132</x>
+      <y>5</y>
+      <height>45</height>
+      <font>
+        <font family="arial" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>true</value>
+          </exp>
+          <pv_name>=`$(P)$(R)P2HighTrip_SP_MON`==`$(P)$(R)P2HighTrip_SP`?1:0</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM activeXTextDspClass</name>
+      <pv_name>$(P)$(R)P2HighTrip_SP</pv_name>
+      <x>5</x>
+      <y>30</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="grey-7" red="145" green="145" blue="145">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+    </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>EDM activeLineClass</name>
+    <x>195</x>
+    <y>6</y>
+    <width>1</width>
+    <height>450</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <arrow_length>15</arrow_length>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 9</name>
+    <x>19</x>
+    <y>135</y>
+    <width>382</width>
+    <height>157</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Logging</text>
+      <x>5</x>
+      <y>5</y>
+      <width>78</width>
+      <height>19</height>
+      <font>
+        <font family="arial" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM activeRectangleClass</name>
+      <x>5</x>
+      <y>27</y>
+      <width>373</width>
+      <height>126</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 10</name>
+      <x>9</x>
+      <y>32</y>
+      <width>362</width>
+      <height>55</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="combo" version="2.0.0">
+        <name>EDM activeMenuButtonClass</name>
+        <pv_name>$(P)$(R)LOGENA_CMD</pv_name>
+        <x>257</x>
+        <y>5</y>
+        <height>45</height>
+        <font>
+          <font family="arial" style="BOLD" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Controller" red="0" green="0" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Canvas" red="200" green="200" blue="200">
+          </color>
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM activeXTextClass</name>
+        <text>Enable/Disable CSV-Data Logging</text>
+        <x>5</x>
+        <y>20</y>
+        <width>200</width>
+        <height>13</height>
+        <font>
+          <font family="arial" style="REGULAR" size="11.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Disconn/Invalid" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <auto_size>true</auto_size>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 11</name>
+      <x>9</x>
+      <y>92</y>
+      <width>362</width>
+      <height>24</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textentry" version="3.0.0">
+        <name>EDM activeXTextDspClass</name>
+        <pv_name>$(P)$(R)LOGDLY_SP</pv_name>
+        <x>257</x>
+        <y>5</y>
+        <height>14</height>
+        <font>
+          <font family="arial" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Controller" red="0" green="0" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="grey-7" red="145" green="145" blue="145">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM activeXTextClass</name>
+        <text>Interval [sec]</text>
+        <x>5</x>
+        <y>5</y>
+        <width>77</width>
+        <height>13</height>
+        <font>
+          <font family="arial" style="REGULAR" size="11.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Disconn/Invalid" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <auto_size>true</auto_size>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 12</name>
+      <x>9</x>
+      <y>122</y>
+      <width>362</width>
+      <height>24</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM activeXTextDspClass:noedit</name>
+        <pv_name>$(P)$(R)LOGMSG_STS</pv_name>
+        <x>123</x>
+        <y>5</y>
+        <width>234</width>
+        <height>14</height>
+        <font>
+          <font family="arial" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Green LED: On" red="0" green="255" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Monitor BG" red="105" green="105" blue="105">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM activeXTextClass</name>
+        <text>Status Message</text>
+        <x>5</x>
+        <y>5</y>
+        <width>92</width>
+        <height>13</height>
+        <font>
+          <font family="arial" style="REGULAR" size="11.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Disconn/Invalid" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <auto_size>true</auto_size>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 13</name>
+    <x>19</x>
+    <y>13</y>
+    <width>382</width>
+    <height>122</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Date / Time</text>
+      <x>5</x>
+      <y>5</y>
+      <width>150</width>
+      <height>18</height>
+      <font>
+        <font family="arial" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM activeRectangleClass</name>
+      <x>5</x>
+      <y>27</y>
+      <width>373</width>
+      <height>91</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 14</name>
+      <x>9</x>
+      <y>29</y>
+      <width>246</width>
+      <height>24</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>EDM activeXTextClass</name>
+        <text>Date</text>
+        <x>5</x>
+        <y>5</y>
+        <width>28</width>
+        <height>13</height>
+        <font>
+          <font family="arial" style="REGULAR" size="11.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Disconn/Invalid" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>EDM Group 15</name>
+        <x>118</x>
+        <width>128</width>
+        <height>24</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textupdate" version="2.0.0">
+          <name>EDM activeXTextDspClass:noedit</name>
+          <pv_name>$(P)$(R)DAY_MON</pv_name>
+          <x>5</x>
+          <y>5</y>
+          <width>28</width>
+          <height>14</height>
+          <font>
+            <font family="arial" style="REGULAR" size="12.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Green LED: On" red="0" green="255" blue="0">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Monitor BG" red="105" green="105" blue="105">
+            </color>
+          </background_color>
+          <show_units>false</show_units>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>EDM activeXTextDspClass:noedit</name>
+          <pv_name>$(P)$(R)MONTH_MON</pv_name>
+          <x>39</x>
+          <y>5</y>
+          <width>28</width>
+          <height>14</height>
+          <font>
+            <font family="arial" style="REGULAR" size="12.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Green LED: On" red="0" green="255" blue="0">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Monitor BG" red="105" green="105" blue="105">
+            </color>
+          </background_color>
+          <show_units>false</show_units>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>EDM activeXTextDspClass:noedit</name>
+          <pv_name>$(P)$(R)YEAR_MON</pv_name>
+          <x>73</x>
+          <y>5</y>
+          <width>50</width>
+          <height>14</height>
+          <font>
+            <font family="arial" style="REGULAR" size="12.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Green LED: On" red="0" green="255" blue="0">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Monitor BG" red="105" green="105" blue="105">
+            </color>
+          </background_color>
+          <show_units>false</show_units>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 16</name>
+      <x>9</x>
+      <y>57</y>
+      <width>156</width>
+      <height>25</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM activeXTextDspClass:noedit</name>
+        <pv_name>$(P)$(R)WDAY</pv_name>
+        <x>123</x>
+        <y>6</y>
+        <width>28</width>
+        <height>14</height>
+        <font>
+          <font family="arial" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Green LED: On" red="0" green="255" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Monitor BG" red="105" green="105" blue="105">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM activeXTextClass</name>
+        <text>Weekday</text>
+        <x>5</x>
+        <y>5</y>
+        <width>52</width>
+        <height>13</height>
+        <font>
+          <font family="arial" style="REGULAR" size="11.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Disconn/Invalid" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <auto_size>true</auto_size>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 17</name>
+      <x>9</x>
+      <y>88</y>
+      <width>224</width>
+      <height>24</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="group" version="3.0.0">
+        <name>EDM Group 18</name>
+        <x>118</x>
+        <width>106</width>
+        <height>24</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textupdate" version="2.0.0">
+          <name>EDM activeXTextDspClass:noedit</name>
+          <pv_name>$(P)$(R)HOUR</pv_name>
+          <x>5</x>
+          <y>5</y>
+          <width>28</width>
+          <height>14</height>
+          <font>
+            <font family="arial" style="REGULAR" size="12.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Green LED: On" red="0" green="255" blue="0">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Monitor BG" red="105" green="105" blue="105">
+            </color>
+          </background_color>
+          <show_units>false</show_units>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>EDM activeXTextDspClass:noedit</name>
+          <pv_name>$(P)$(R)MIN</pv_name>
+          <x>39</x>
+          <y>5</y>
+          <width>28</width>
+          <height>14</height>
+          <font>
+            <font family="arial" style="REGULAR" size="12.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Green LED: On" red="0" green="255" blue="0">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Monitor BG" red="105" green="105" blue="105">
+            </color>
+          </background_color>
+          <show_units>false</show_units>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>EDM activeXTextDspClass:noedit</name>
+          <pv_name>$(P)$(R)SEC</pv_name>
+          <x>73</x>
+          <y>5</y>
+          <width>28</width>
+          <height>14</height>
+          <font>
+            <font family="arial" style="REGULAR" size="12.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Green LED: On" red="0" green="255" blue="0">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Monitor BG" red="105" green="105" blue="105">
+            </color>
+          </background_color>
+          <show_units>false</show_units>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM activeXTextClass</name>
+        <text>Time</text>
+        <x>5</x>
+        <y>5</y>
+        <width>29</width>
+        <height>13</height>
+        <font>
+          <font family="arial" style="REGULAR" size="11.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Black" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Disconn/Invalid" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <auto_size>true</auto_size>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>PID Settings</text>
+    <x>884</x>
+    <y>18</y>
+    <width>123</width>
+    <height>19</height>
+    <font>
+      <font family="arial" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Disconn/Invalid" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>Vessel Fill Settings</text>
+    <x>450</x>
+    <y>468</y>
+    <width>186</width>
+    <height>19</height>
+    <font>
+      <font family="arial" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Disconn/Invalid" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>Alarm Settings</text>
+    <x>24</x>
+    <y>468</y>
+    <width>145</width>
+    <height>19</height>
+    <font>
+      <font family="arial" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Disconn/Invalid" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>Password</text>
+    <x>24</x>
+    <y>297</y>
+    <width>94</width>
+    <height>19</height>
+    <font>
+      <font family="arial" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Disconn/Invalid" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>EDM activeRectangleClass</name>
+    <x>24</x>
+    <y>319</y>
+    <width>373</width>
+    <height>121</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Disconn/Invalid" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 19</name>
+    <x>28</x>
+    <y>323</y>
+    <width>362</width>
+    <height>112</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 20</name>
+      <width>362</width>
+      <height>55</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="action_button" version="3.0.0">
+        <name>EDM activeMessageButtonClass</name>
+        <actions>
+          <action type="write_pv">
+            <description>Set</description>
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+          </action>
+        </actions>
+        <pv_name>$(P)$(R)Password_SP_SEND.PROC</pv_name>
+        <text>Set</text>
+        <x>257</x>
+        <y>5</y>
+        <height>45</height>
+        <font>
+          <font family="arial" style="BOLD" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Controller" red="0" green="0" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Canvas" red="200" green="200" blue="200">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="EDM visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+              <value>false</value>
+            </exp>
+            <exp bool_exp="true">
+              <value>true</value>
+            </exp>
+            <pv_name>=`$(P)$(R)Password_SP_MON`==`$(P)$(R)Password_SP`?1:0</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>EDM Group 21</name>
+        <y>24</y>
+        <width>229</width>
+        <height>26</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="label" version="2.0.0">
+          <name>EDM activeXTextClass</name>
+          <text>Enter Password</text>
+          <x>5</x>
+          <y>5</y>
+          <width>93</width>
+          <height>13</height>
+          <font>
+            <font family="arial" style="REGULAR" size="11.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Disconn/Invalid" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <auto_size>true</auto_size>
+        </widget>
+        <widget type="textentry" version="3.0.0">
+          <name>EDM activeXTextDspClass</name>
+          <pv_name>$(P)$(R)Password_SP</pv_name>
+          <x>123</x>
+          <y>5</y>
+          <width>101</width>
+          <height>16</height>
+          <font>
+            <font family="arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="grey-8" red="133" green="133" blue="133">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="grey-7" red="145" green="145" blue="145">
+            </color>
+          </background_color>
+          <show_units>false</show_units>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>EDM Group 22</name>
+        <y>4</y>
+        <width>229</width>
+        <height>26</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="textupdate" version="2.0.0">
+          <name>EDM activeXTextDspClass:noedit</name>
+          <pv_name>$(P)$(R)Password_SP_MON</pv_name>
+          <x>123</x>
+          <y>5</y>
+          <width>101</width>
+          <height>16</height>
+          <font>
+            <font family="arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Monitor BG" red="105" green="105" blue="105">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Monitor BG" red="105" green="105" blue="105">
+            </color>
+          </background_color>
+          <precision>0</precision>
+          <show_units>false</show_units>
+          <horizontal_alignment>2</horizontal_alignment>
+          <vertical_alignment>1</vertical_alignment>
+        </widget>
+        <widget type="label" version="2.0.0">
+          <name>EDM activeXTextClass</name>
+          <text>Current Password</text>
+          <x>5</x>
+          <y>6</y>
+          <width>107</width>
+          <height>13</height>
+          <font>
+            <font family="arial" style="REGULAR" size="11.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Disconn/Invalid" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <auto_size>true</auto_size>
+        </widget>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 23</name>
+      <y>56</y>
+      <width>362</width>
+      <height>56</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="action_button" version="3.0.0">
+        <name>EDM activeMessageButtonClass</name>
+        <actions>
+          <action type="write_pv">
+            <description>Clear</description>
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+          </action>
+        </actions>
+        <pv_name>$(P)$(R)PasswordClear_CMD</pv_name>
+        <text>Clear</text>
+        <x>257</x>
+        <y>6</y>
+        <height>45</height>
+        <font>
+          <font family="arial" style="BOLD" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Controller" red="0" green="0" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Canvas" red="200" green="200" blue="200">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="EDM visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;1.0E11">
+              <value>true</value>
+            </exp>
+            <exp bool_exp="true">
+              <value>false</value>
+            </exp>
+            <pv_name>$(P)$(R)Password_SP_MON</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>EDM Group 24</name>
+        <width>229</width>
+        <height>24</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="byte_monitor" version="2.0.0">
+          <name>EDM ByteClass</name>
+          <pv_name>$(P)$(R)Pwd1_OK_STS</pv_name>
+          <x>123</x>
+          <y>5</y>
+          <width>101</width>
+          <height>12</height>
+          <numBits>1</numBits>
+          <square>true</square>
+          <off_color>
+            <color name="Canvas" red="200" green="200" blue="200">
+            </color>
+          </off_color>
+          <on_color>
+            <color name="Green LED: On" red="0" green="255" blue="0">
+            </color>
+          </on_color>
+          <foreground_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+        </widget>
+        <widget type="label" version="2.0.0">
+          <name>EDM activeXTextClass</name>
+          <text>PWD1 OK</text>
+          <x>5</x>
+          <y>5</y>
+          <width>60</width>
+          <height>13</height>
+          <font>
+            <font family="arial" style="REGULAR" size="11.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Disconn/Invalid" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <auto_size>true</auto_size>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>EDM Group 25</name>
+        <y>16</y>
+        <width>229</width>
+        <height>24</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="byte_monitor" version="2.0.0">
+          <name>EDM ByteClass</name>
+          <pv_name>$(P)$(R)Pwd2_OK_STS</pv_name>
+          <x>123</x>
+          <y>6</y>
+          <width>101</width>
+          <height>12</height>
+          <numBits>1</numBits>
+          <square>true</square>
+          <off_color>
+            <color name="Canvas" red="200" green="200" blue="200">
+            </color>
+          </off_color>
+          <on_color>
+            <color name="Yellow LED: On" red="255" green="255" blue="0">
+            </color>
+          </on_color>
+          <foreground_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+        </widget>
+        <widget type="label" version="2.0.0">
+          <name>EDM activeXTextClass</name>
+          <text>PWD2 OK</text>
+          <x>5</x>
+          <y>5</y>
+          <width>60</width>
+          <height>13</height>
+          <font>
+            <font family="arial" style="REGULAR" size="11.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Disconn/Invalid" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <auto_size>true</auto_size>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>EDM Group 26</name>
+        <y>31</y>
+        <width>229</width>
+        <height>24</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="byte_monitor" version="2.0.0">
+          <name>EDM ByteClass</name>
+          <pv_name>$(P)$(R)Pwd3_OK_STS</pv_name>
+          <x>123</x>
+          <y>7</y>
+          <width>101</width>
+          <height>12</height>
+          <numBits>1</numBits>
+          <square>true</square>
+          <off_color>
+            <color name="Canvas" red="200" green="200" blue="200">
+            </color>
+          </off_color>
+          <on_color>
+            <color name="Red LED: On" red="255" green="0" blue="0">
+            </color>
+          </on_color>
+          <foreground_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+        </widget>
+        <widget type="label" version="2.0.0">
+          <name>EDM activeXTextClass</name>
+          <text>PWD3 OK</text>
+          <x>5</x>
+          <y>5</y>
+          <width>60</width>
+          <height>13</height>
+          <font>
+            <font family="arial" style="REGULAR" size="11.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Disconn/Invalid" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <auto_size>true</auto_size>
+        </widget>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 27</name>
+    <x>1012</x>
+    <y>718</y>
+    <width>238</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="EDM visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>=`$(P)$(R)PumpLifeExceeded_STS`&amp;(`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS`)?1:0</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>RESET PUMP</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)PumpLifeReset_CMD</pv_name>
+      <text>RESET PUMP</text>
+      <x>133</x>
+      <y>5</y>
+      <height>45</height>
+      <font>
+        <font family="arial" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>EDM ByteClass</name>
+      <pv_name>$(P)$(R)PumpLifeExceeded_STS</pv_name>
+      <x>5</x>
+      <y>19</y>
+      <width>120</width>
+      <numBits>1</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="Green LED: On" red="0" green="255" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>EGH PID - P
+(x1000)
+
+
+EGH PID - I
+(ms)
+
+
+EGH PID - D
+(ms)
+
+
+EGH PID Interval
+(ms)
+
+
+Buffer PID - P
+(x1000)
+
+
+Buffer PID - I
+(ms)
+
+
+Buffer PID - D
+(ms)
+
+
+Buffer PID Interval
+(ms)</text>
+    <x>900</x>
+    <y>52</y>
+    <width>114</width>
+    <height>390</height>
+    <font>
+      <font family="arial" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Disconn/Invalid" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)EGHPID_P_SP_MON</pv_name>
+    <x>1017</x>
+    <y>50</y>
+    <width>120</width>
+    <font>
+      <font family="arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor BG" red="105" green="105" blue="105">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)EGHPID_I_SP_MON</pv_name>
+    <x>1017</x>
+    <y>107</y>
+    <width>120</width>
+    <font>
+      <font family="arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor BG" red="105" green="105" blue="105">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)EGHPID_D_SP_MON</pv_name>
+    <x>1017</x>
+    <y>163</y>
+    <width>120</width>
+    <font>
+      <font family="arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor BG" red="105" green="105" blue="105">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)EGHPID_Int_SP_MON</pv_name>
+    <x>1017</x>
+    <y>219</y>
+    <width>120</width>
+    <font>
+      <font family="arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor BG" red="105" green="105" blue="105">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)BufferPID_P_SP_MON</pv_name>
+    <x>1017</x>
+    <y>275</y>
+    <width>120</width>
+    <font>
+      <font family="arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor BG" red="105" green="105" blue="105">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 28</name>
+    <x>1012</x>
+    <y>45</y>
+    <width>238</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="EDM visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>=`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS`?1:0</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Set</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)EGHPID_P_SP_SEND.PROC</pv_name>
+      <text>Set</text>
+      <x>133</x>
+      <y>5</y>
+      <height>45</height>
+      <font>
+        <font family="arial" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>true</value>
+          </exp>
+          <pv_name>=`$(P)$(R)EGHPID_P_SP_MON`==`$(P)$(R)EGHPID_P_SP`?1:0</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM activeXTextDspClass</name>
+      <pv_name>$(P)$(R)EGHPID_P_SP</pv_name>
+      <x>5</x>
+      <y>30</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="grey-7" red="145" green="145" blue="145">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>P High Trip Limit
+
+
+
+P2 Setpoint Limit
+
+
+
+Pump Speed Limit</text>
+    <x>43</x>
+    <y>499</y>
+    <width>106</width>
+    <height>117</height>
+    <font>
+      <font family="arial" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Disconn/Invalid" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)P2HighTrip_SP_MON</pv_name>
+    <x>157</x>
+    <y>555</y>
+    <width>120</width>
+    <font>
+      <font family="arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor BG" red="105" green="105" blue="105">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)MaxPumpSpeed_MON</pv_name>
+    <x>157</x>
+    <y>611</y>
+    <width>120</width>
+    <font>
+      <font family="arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor BG" red="105" green="105" blue="105">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 29</name>
+    <x>152</x>
+    <y>494</y>
+    <width>237</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="EDM visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>CALC\\\{A&amp;1\}($(P)$(R)Pwd3_OK_STS</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Set</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)P1HighTrip_SP_SEND.PROC</pv_name>
+      <text>Set</text>
+      <x>132</x>
+      <y>5</y>
+      <height>45</height>
+      <font>
+        <font family="arial" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>true</value>
+          </exp>
+          <pv_name>=`$(P)$(R)P1HighTrip_SP_MON`==`$(P)$(R)P1HighTrip_SP`?1:0</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM activeXTextDspClass</name>
+      <pv_name>$(P)$(R)P1HighTrip_SP</pv_name>
+      <x>5</x>
+      <y>30</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="grey-7" red="145" green="145" blue="145">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)EGHTarget_SP_MON</pv_name>
+    <x>583</x>
+    <y>219</y>
+    <width>120</width>
+    <font>
+      <font family="arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor BG" red="105" green="105" blue="105">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)PumpSpeed_SP_MON</pv_name>
+    <x>583</x>
+    <y>163</y>
+    <width>120</width>
+    <font>
+      <font family="arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor BG" red="105" green="105" blue="105">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)P2_BND_SP_MON</pv_name>
+    <x>583</x>
+    <y>107</y>
+    <width>120</width>
+    <font>
+      <font family="arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor BG" red="105" green="105" blue="105">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)P2_SP_MON</pv_name>
+    <x>583</x>
+    <y>50</y>
+    <width>120</width>
+    <font>
+      <font family="arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor BG" red="105" green="105" blue="105">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>P2 Setpoint (mbarg)
+
+
+
+P2 Band (mbarg)
+
+
+
+Pump Speed (Hz)
+
+
+
+EGH Target (C)</text>
+    <x>469</x>
+    <y>52</y>
+    <width>116</width>
+    <height>169</height>
+    <font>
+      <font family="arial" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Disconn/Invalid" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>Vessel Is Filled
+From A Dewar
+
+
+Start Fill (%)
+
+
+
+Stop Fill (%)</text>
+    <x>469</x>
+    <y>502</y>
+    <width>87</width>
+    <height>117</height>
+    <font>
+      <font family="arial" style="REGULAR" size="11.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Disconn/Invalid" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)VesselStartFill_SP_MON</pv_name>
+    <x>583</x>
+    <y>555</y>
+    <width>120</width>
+    <font>
+      <font family="arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor BG" red="105" green="105" blue="105">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)VesselStopFill_SP_MON</pv_name>
+    <x>583</x>
+    <y>611</y>
+    <width>120</width>
+    <font>
+      <font family="arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor BG" red="105" green="105" blue="105">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 30</name>
+    <x>578</x>
+    <y>494</y>
+    <width>238</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>ON/OFF</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)FillFromDewar_CMD</pv_name>
+      <text>ON/OFF</text>
+      <x>133</x>
+      <y>5</y>
+      <height>45</height>
+      <font>
+        <font family="arial" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>false</value>
+          </exp>
+          <pv_name>=`$(P)$(R)Pwd1_OK_STS`|`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS)`?1:0</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>EDM ByteClass</name>
+      <pv_name>$(P)$(R)FillFromDewar_STS</pv_name>
+      <x>5</x>
+      <y>19</y>
+      <width>120</width>
+      <numBits>1</numBits>
+      <square>true</square>
+      <off_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="Green LED: On" red="0" green="255" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 31</name>
+    <x>38</x>
+    <y>662</y>
+    <width>351</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="EDM visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>CALC\\\{A&amp;1\}($(P)$(R)Pwd3_OK_STS</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Set</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)T1Calibration_SP_SEND.PROC</pv_name>
+      <text>Set</text>
+      <x>246</x>
+      <y>5</y>
+      <height>45</height>
+      <font>
+        <font family="arial" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>true</value>
+          </exp>
+          <pv_name>=`$(P)$(R)T1Calibration_MON`==`$(P)$(R)T1Calibration_SP`?1:0</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM activeXTextDspClass</name>
+      <pv_name>$(P)$(R)T1Calibration_SP</pv_name>
+      <x>119</x>
+      <y>30</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="grey-7" red="145" green="145" blue="145">
+        </color>
+      </background_color>
+      <precision>1</precision>
+      <show_units>false</show_units>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>EDM activeXTextDspClass:noedit</name>
+      <pv_name>$(P)$(R)T1Calibration_MON</pv_name>
+      <x>119</x>
+      <y>5</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Monitor BG" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>RTD Calibration</text>
+      <x>5</x>
+      <y>10</y>
+      <width>97</width>
+      <height>13</height>
+      <font>
+        <font family="arial" style="REGULAR" size="11.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 32</name>
+    <x>1012</x>
+    <y>438</y>
+    <width>238</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 33</name>
+      <width>238</width>
+      <height>55</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>false</value>
+          </exp>
+          <pv_name>=`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS`?1:0</pv_name>
+        </rule>
+      </rules>
+      <widget type="action_button" version="3.0.0">
+        <name>EDM activeMessageButtonClass</name>
+        <actions>
+          <action type="write_pv">
+            <description>Set</description>
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+          </action>
+        </actions>
+        <pv_name>$(P)$(R)BufferPID_Int_SP_SEND.PROC</pv_name>
+        <text>Set</text>
+        <x>133</x>
+        <y>5</y>
+        <height>45</height>
+        <font>
+          <font family="arial" style="BOLD" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Controller" red="0" green="0" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Canvas" red="200" green="200" blue="200">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="EDM visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+              <value>false</value>
+            </exp>
+            <exp bool_exp="true">
+              <value>true</value>
+            </exp>
+            <pv_name>=`$(P)$(R)BufferPID_Int_SP_MON`==`$(P)$(R)BufferPID_Int_SP`?1:0</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>EDM activeXTextDspClass</name>
+        <pv_name>$(P)$(R)BufferPID_Int_SP</pv_name>
+        <x>5</x>
+        <y>30</y>
+        <width>120</width>
+        <font>
+          <font family="arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Controller" red="0" green="0" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="grey-7" red="145" green="145" blue="145">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+      </widget>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>EDM activeXTextDspClass:noedit</name>
+      <pv_name>$(P)$(R)BufferPID_Int_SP_MON</pv_name>
+      <x>5</x>
+      <y>5</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Monitor BG" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 34</name>
+    <x>1012</x>
+    <y>382</y>
+    <width>238</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 35</name>
+      <width>238</width>
+      <height>55</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>false</value>
+          </exp>
+          <pv_name>=`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS`?1:0</pv_name>
+        </rule>
+      </rules>
+      <widget type="action_button" version="3.0.0">
+        <name>EDM activeMessageButtonClass</name>
+        <actions>
+          <action type="write_pv">
+            <description>Set</description>
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+          </action>
+        </actions>
+        <pv_name>$(P)$(R)BufferPID_D_SP_SEND.PROC</pv_name>
+        <text>Set</text>
+        <x>133</x>
+        <y>5</y>
+        <height>45</height>
+        <font>
+          <font family="arial" style="BOLD" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Controller" red="0" green="0" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Canvas" red="200" green="200" blue="200">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="EDM visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+              <value>false</value>
+            </exp>
+            <exp bool_exp="true">
+              <value>true</value>
+            </exp>
+            <pv_name>=`$(P)$(R)BufferPID_D_SP_MON`==`$(P)$(R)BufferPID_D_SP`?1:0</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>EDM activeXTextDspClass</name>
+        <pv_name>$(P)$(R)BufferPID_D_SP</pv_name>
+        <x>5</x>
+        <y>30</y>
+        <width>120</width>
+        <font>
+          <font family="arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Controller" red="0" green="0" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="grey-7" red="145" green="145" blue="145">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+      </widget>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>EDM activeXTextDspClass:noedit</name>
+      <pv_name>$(P)$(R)BufferPID_D_SP_MON</pv_name>
+      <x>5</x>
+      <y>5</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Monitor BG" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 36</name>
+    <x>1012</x>
+    <y>326</y>
+    <width>238</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 37</name>
+      <width>238</width>
+      <height>55</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>false</value>
+          </exp>
+          <pv_name>=`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS`?1:0</pv_name>
+        </rule>
+      </rules>
+      <widget type="action_button" version="3.0.0">
+        <name>EDM activeMessageButtonClass</name>
+        <actions>
+          <action type="write_pv">
+            <description>Set</description>
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+          </action>
+        </actions>
+        <pv_name>$(P)$(R)BufferPID_I_SP_SEND.PROC</pv_name>
+        <text>Set</text>
+        <x>133</x>
+        <y>5</y>
+        <height>45</height>
+        <font>
+          <font family="arial" style="BOLD" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Controller" red="0" green="0" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Canvas" red="200" green="200" blue="200">
+          </color>
+        </background_color>
+        <rules>
+          <rule name="EDM visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+              <value>false</value>
+            </exp>
+            <exp bool_exp="true">
+              <value>true</value>
+            </exp>
+            <pv_name>=`$(P)$(R)BufferPID_I_SP_MON`==`$(P)$(R)BufferPID_I_SP`?1:0</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>EDM activeXTextDspClass</name>
+        <pv_name>$(P)$(R)BufferPID_I_SP</pv_name>
+        <x>5</x>
+        <y>30</y>
+        <width>120</width>
+        <font>
+          <font family="arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Controller" red="0" green="0" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="grey-7" red="145" green="145" blue="145">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+      </widget>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>EDM activeXTextDspClass:noedit</name>
+      <pv_name>$(P)$(R)BufferPID_I_SP_MON</pv_name>
+      <x>5</x>
+      <y>5</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Monitor BG" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 38</name>
+    <x>1012</x>
+    <y>270</y>
+    <width>238</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="EDM visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>=`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS`?1:0</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Set</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)BufferPID_P_SP_SEND.PROC</pv_name>
+      <text>Set</text>
+      <x>133</x>
+      <y>5</y>
+      <height>45</height>
+      <font>
+        <font family="arial" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>true</value>
+          </exp>
+          <pv_name>=`$(P)$(R)BufferPID_P_SP_MON`==`$(P)$(R)BufferPID_P_SP`?1:0</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM activeXTextDspClass</name>
+      <pv_name>$(P)$(R)BufferPID_P_SP</pv_name>
+      <x>5</x>
+      <y>30</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="grey-7" red="145" green="145" blue="145">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 39</name>
+    <x>1012</x>
+    <y>214</y>
+    <width>238</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="EDM visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>=`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS`?1:0</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Set</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)EGHPID_Int_SP_SEND.PROC</pv_name>
+      <text>Set</text>
+      <x>133</x>
+      <y>5</y>
+      <height>45</height>
+      <font>
+        <font family="arial" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>true</value>
+          </exp>
+          <pv_name>=`$(P)$(R)EGHPID_Int_SP_MON`==`$(P)$(R)EGHPID_Int_SP`?1:0</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM activeXTextDspClass</name>
+      <pv_name>$(P)$(R)EGHPID_Int_SP</pv_name>
+      <x>5</x>
+      <y>30</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="grey-7" red="145" green="145" blue="145">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 40</name>
+    <x>1012</x>
+    <y>158</y>
+    <width>238</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="EDM visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>=`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS`?1:0</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Set</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)EGHPID_D_SP_SEND.PROC</pv_name>
+      <text>Set</text>
+      <x>133</x>
+      <y>5</y>
+      <height>45</height>
+      <font>
+        <font family="arial" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>true</value>
+          </exp>
+          <pv_name>=`$(P)$(R)EGHPID_D_SP_MON`==`$(P)$(R)EGHPID_D_SP`?1:0</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM activeXTextDspClass</name>
+      <pv_name>$(P)$(R)EGHPID_D_SP</pv_name>
+      <x>5</x>
+      <y>30</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="grey-7" red="145" green="145" blue="145">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 41</name>
+    <x>1012</x>
+    <y>102</y>
+    <width>238</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="EDM visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>=`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS`?1:0</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Set</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)EGHPID_I_SP_SEND.PROC</pv_name>
+      <text>Set</text>
+      <x>133</x>
+      <y>5</y>
+      <height>45</height>
+      <font>
+        <font family="arial" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>false</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>true</value>
+          </exp>
+          <pv_name>=`$(P)$(R)EGHPID_I_SP_MON`==`$(P)$(R)EGHPID_I_SP`?1:0</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM activeXTextDspClass</name>
+      <pv_name>$(P)$(R)EGHPID_I_SP</pv_name>
+      <x>5</x>
+      <y>30</y>
+      <width>120</width>
+      <font>
+        <font family="arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Controller" red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="grey-7" red="145" green="145" blue="145">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 42</name>
+    <x>895</x>
+    <y>494</y>
+    <width>355</width>
+    <height>223</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 43</name>
+      <x>117</x>
+      <width>238</width>
+      <height>223</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="group" version="3.0.0">
+        <name>EDM Group 44</name>
+        <y>168</y>
+        <width>238</width>
+        <height>55</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <rules>
+          <rule name="EDM visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+              <value>true</value>
+            </exp>
+            <exp bool_exp="true">
+              <value>false</value>
+            </exp>
+            <pv_name>=`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS`?1:0</pv_name>
+          </rule>
+        </rules>
+        <widget type="action_button" version="3.0.0">
+          <name>EDM activeMessageButtonClass</name>
+          <actions>
+            <action type="write_pv">
+              <description>Set</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(R)V4PID_Int_SP_SEND.PROC</pv_name>
+          <text>Set</text>
+          <x>133</x>
+          <y>5</y>
+          <height>45</height>
+          <font>
+            <font family="arial" style="BOLD" size="12.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Controller" red="0" green="0" blue="255">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Canvas" red="200" green="200" blue="200">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+                <value>false</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>true</value>
+              </exp>
+              <pv_name>=`$(P)$(R)V4PID_Int_SP_MON`==`$(P)$(R)V4PID_Int_SP`?1:0</pv_name>
+            </rule>
+          </rules>
+        </widget>
+        <widget type="textentry" version="3.0.0">
+          <name>EDM activeXTextDspClass</name>
+          <pv_name>$(P)$(R)V4PID_Int_SP</pv_name>
+          <x>5</x>
+          <y>30</y>
+          <width>120</width>
+          <font>
+            <font family="arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Controller" red="0" green="0" blue="255">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="grey-7" red="145" green="145" blue="145">
+            </color>
+          </background_color>
+          <show_units>false</show_units>
+        </widget>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM activeXTextDspClass:noedit</name>
+        <pv_name>$(P)$(R)V4PID_Int_SP_MON</pv_name>
+        <x>5</x>
+        <y>173</y>
+        <width>120</width>
+        <font>
+          <font family="arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Monitor BG" red="105" green="105" blue="105">
+          </color>
+        </background_color>
+        <precision>0</precision>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>EDM Group 45</name>
+        <y>112</y>
+        <width>238</width>
+        <height>55</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <rules>
+          <rule name="EDM visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+              <value>true</value>
+            </exp>
+            <exp bool_exp="true">
+              <value>false</value>
+            </exp>
+            <pv_name>=`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS`?1:0</pv_name>
+          </rule>
+        </rules>
+        <widget type="action_button" version="3.0.0">
+          <name>EDM activeMessageButtonClass</name>
+          <actions>
+            <action type="write_pv">
+              <description>Set</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(R)V4PID_D_SP_SEND.PROC</pv_name>
+          <text>Set</text>
+          <x>133</x>
+          <y>5</y>
+          <height>45</height>
+          <font>
+            <font family="arial" style="BOLD" size="12.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Controller" red="0" green="0" blue="255">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Canvas" red="200" green="200" blue="200">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+                <value>false</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>true</value>
+              </exp>
+              <pv_name>=`$(P)$(R)V4PID_D_SP_MON`==`$(P)$(R)V4PID_D_SP`?1:0</pv_name>
+            </rule>
+          </rules>
+        </widget>
+        <widget type="textentry" version="3.0.0">
+          <name>EDM activeXTextDspClass</name>
+          <pv_name>$(P)$(R)V4PID_D_SP</pv_name>
+          <x>5</x>
+          <y>30</y>
+          <width>120</width>
+          <font>
+            <font family="arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Controller" red="0" green="0" blue="255">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="grey-7" red="145" green="145" blue="145">
+            </color>
+          </background_color>
+          <show_units>false</show_units>
+        </widget>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM activeXTextDspClass:noedit</name>
+        <pv_name>$(P)$(R)V4PID_D_SP_MON</pv_name>
+        <x>5</x>
+        <y>117</y>
+        <width>120</width>
+        <font>
+          <font family="arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Monitor BG" red="105" green="105" blue="105">
+          </color>
+        </background_color>
+        <precision>0</precision>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>EDM Group 46</name>
+        <y>56</y>
+        <width>238</width>
+        <height>55</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <rules>
+          <rule name="EDM visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+              <value>true</value>
+            </exp>
+            <exp bool_exp="true">
+              <value>false</value>
+            </exp>
+            <pv_name>=`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS`?1:0</pv_name>
+          </rule>
+        </rules>
+        <widget type="action_button" version="3.0.0">
+          <name>EDM activeMessageButtonClass</name>
+          <actions>
+            <action type="write_pv">
+              <description>Set</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(R)V4PID_I_SP_SEND.PROC</pv_name>
+          <text>Set</text>
+          <x>133</x>
+          <y>5</y>
+          <height>45</height>
+          <font>
+            <font family="arial" style="BOLD" size="12.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Controller" red="0" green="0" blue="255">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Canvas" red="200" green="200" blue="200">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+                <value>false</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>true</value>
+              </exp>
+              <pv_name>=`$(P)$(R)V4PID_I_SP_MON`==`$(P)$(R)V4PID_I_SP`?1:0</pv_name>
+            </rule>
+          </rules>
+        </widget>
+        <widget type="textentry" version="3.0.0">
+          <name>EDM activeXTextDspClass</name>
+          <pv_name>$(P)$(R)V4PID_I_SP</pv_name>
+          <x>5</x>
+          <y>30</y>
+          <width>120</width>
+          <font>
+            <font family="arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Controller" red="0" green="0" blue="255">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="grey-7" red="145" green="145" blue="145">
+            </color>
+          </background_color>
+          <show_units>false</show_units>
+        </widget>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM activeXTextDspClass:noedit</name>
+        <pv_name>$(P)$(R)V4PID_I_SP_MON</pv_name>
+        <x>5</x>
+        <y>61</y>
+        <width>120</width>
+        <font>
+          <font family="arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Monitor BG" red="105" green="105" blue="105">
+          </color>
+        </background_color>
+        <precision>0</precision>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>EDM Group 47</name>
+        <width>238</width>
+        <height>55</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <rules>
+          <rule name="EDM visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+              <value>true</value>
+            </exp>
+            <exp bool_exp="true">
+              <value>false</value>
+            </exp>
+            <pv_name>=`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS`?1:0</pv_name>
+          </rule>
+        </rules>
+        <widget type="action_button" version="3.0.0">
+          <name>EDM activeMessageButtonClass</name>
+          <actions>
+            <action type="write_pv">
+              <description>Set</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(R)V4PID_P_SP_SEND.PROC</pv_name>
+          <text>Set</text>
+          <x>133</x>
+          <y>5</y>
+          <height>45</height>
+          <font>
+            <font family="arial" style="BOLD" size="12.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Controller" red="0" green="0" blue="255">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Canvas" red="200" green="200" blue="200">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+                <value>false</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>true</value>
+              </exp>
+              <pv_name>=`$(P)$(R)V4PID_P_SP_MON`==`$(P)$(R)V4PID_P_SP`?1:0</pv_name>
+            </rule>
+          </rules>
+        </widget>
+        <widget type="textentry" version="3.0.0">
+          <name>EDM activeXTextDspClass</name>
+          <pv_name>$(P)$(R)V4PID_P_SP</pv_name>
+          <x>5</x>
+          <y>30</y>
+          <width>120</width>
+          <font>
+            <font family="arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Controller" red="0" green="0" blue="255">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="grey-7" red="145" green="145" blue="145">
+            </color>
+          </background_color>
+          <precision>0</precision>
+          <show_units>false</show_units>
+        </widget>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM activeXTextDspClass:noedit</name>
+        <pv_name>$(P)$(R)V4PID_P_SP_MON</pv_name>
+        <x>5</x>
+        <y>5</y>
+        <width>120</width>
+        <font>
+          <font family="arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Monitor BG" red="105" green="105" blue="105">
+          </color>
+        </background_color>
+        <precision>0</precision>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>V4 PID - P
+(x1000)
+
+
+V4 PID - I
+(ms)
+
+
+V4 PID - D
+(ms)
+
+
+V4 PID Interval
+(ms)</text>
+      <x>5</x>
+      <y>7</y>
+      <width>93</width>
+      <height>182</height>
+      <font>
+        <font family="arial" style="REGULAR" size="11.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 48</name>
+    <x>464</x>
+    <y>662</y>
+    <width>352</width>
+    <height>111</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 49</name>
+      <x>114</x>
+      <width>238</width>
+      <height>111</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="group" version="3.0.0">
+        <name>EDM Group 50</name>
+        <y>56</y>
+        <width>238</width>
+        <height>55</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="byte_monitor" version="2.0.0">
+          <name>EDM ByteClass</name>
+          <pv_name>$(P)$(R)PIDVesselFill_STS</pv_name>
+          <x>5</x>
+          <y>19</y>
+          <width>120</width>
+          <numBits>1</numBits>
+          <square>true</square>
+          <off_color>
+            <color name="Canvas" red="200" green="200" blue="200">
+            </color>
+          </off_color>
+          <on_color>
+            <color name="Green LED: On" red="0" green="255" blue="0">
+            </color>
+          </on_color>
+          <foreground_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </foreground_color>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>EDM activeMessageButtonClass</name>
+          <actions>
+            <action type="write_pv">
+              <description>ON/OFF</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(R)PIDVesselFill_CMD</pv_name>
+          <text>ON/OFF</text>
+          <x>133</x>
+          <y>5</y>
+          <height>45</height>
+          <font>
+            <font family="arial" style="BOLD" size="12.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Controller" red="0" green="0" blue="255">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Canvas" red="200" green="200" blue="200">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+                <value>true</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>false</value>
+              </exp>
+              <pv_name>=`$(P)$(R)Pwd1_OK_STS`|`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS)`?1:0</pv_name>
+            </rule>
+          </rules>
+        </widget>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>EDM Group 51</name>
+        <width>238</width>
+        <height>55</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <rules>
+          <rule name="EDM visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+              <value>true</value>
+            </exp>
+            <exp bool_exp="true">
+              <value>false</value>
+            </exp>
+            <pv_name>=`$(P)$(R)Pwd1_OK_STS`|`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS)`?1:0</pv_name>
+          </rule>
+        </rules>
+        <widget type="action_button" version="3.0.0">
+          <name>EDM activeMessageButtonClass</name>
+          <actions>
+            <action type="write_pv">
+              <description>Set</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(R)VesselFill_SP_SEND.PROC</pv_name>
+          <text>Set</text>
+          <x>133</x>
+          <y>5</y>
+          <height>45</height>
+          <font>
+            <font family="arial" style="BOLD" size="12.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Controller" red="0" green="0" blue="255">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Canvas" red="200" green="200" blue="200">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+                <value>false</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>true</value>
+              </exp>
+              <pv_name>=`$(P)$(R)VesselFill_SP_MON`==`$(P)$(R)VesselFill_SP`?1:0</pv_name>
+            </rule>
+          </rules>
+        </widget>
+        <widget type="textentry" version="3.0.0">
+          <name>EDM activeXTextDspClass</name>
+          <pv_name>$(P)$(R)VesselFill_SP</pv_name>
+          <x>5</x>
+          <y>30</y>
+          <width>120</width>
+          <font>
+            <font family="arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Controller" red="0" green="0" blue="255">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="grey-7" red="145" green="145" blue="145">
+            </color>
+          </background_color>
+          <show_units>false</show_units>
+        </widget>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM activeXTextDspClass:noedit</name>
+        <pv_name>$(P)$(R)VesselFill_SP_MON</pv_name>
+        <x>5</x>
+        <y>5</y>
+        <width>120</width>
+        <font>
+          <font family="arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Monitor BG" red="105" green="105" blue="105">
+          </color>
+        </background_color>
+        <precision>0</precision>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>PID Fill Setpoint (%)
+
+
+
+
+PID Fill Mode</text>
+      <x>5</x>
+      <y>7</y>
+      <width>119</width>
+      <height>78</height>
+      <font>
+        <font family="arial" style="REGULAR" size="11.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 52</name>
+    <x>464</x>
+    <y>270</y>
+    <width>352</width>
+    <height>167</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 53</name>
+      <x>114</x>
+      <width>238</width>
+      <height>167</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="group" version="3.0.0">
+        <name>EDM Group 54</name>
+        <y>112</y>
+        <width>238</width>
+        <height>55</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <rules>
+          <rule name="EDM visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+              <value>true</value>
+            </exp>
+            <exp bool_exp="true">
+              <value>false</value>
+            </exp>
+            <pv_name>=`$(P)$(R)Pwd1_OK_STS`|`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS)`?1:0</pv_name>
+          </rule>
+        </rules>
+        <widget type="action_button" version="3.0.0">
+          <name>EDM activeMessageButtonClass</name>
+          <actions>
+            <action type="write_pv">
+              <description>Set</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(R)TopUpHour_SP_SEND.PROC</pv_name>
+          <text>Set</text>
+          <x>133</x>
+          <y>5</y>
+          <height>45</height>
+          <font>
+            <font family="arial" style="BOLD" size="12.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Controller" red="0" green="0" blue="255">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Canvas" red="200" green="200" blue="200">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+                <value>false</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>true</value>
+              </exp>
+              <pv_name>=`$(P)$(R)TopUpHour_SP_MON`==`$(P)$(R)TopUpHour_SP`?1:0</pv_name>
+            </rule>
+          </rules>
+        </widget>
+        <widget type="textentry" version="3.0.0">
+          <name>EDM activeXTextDspClass</name>
+          <pv_name>$(P)$(R)TopUpHour_SP</pv_name>
+          <x>5</x>
+          <y>30</y>
+          <width>120</width>
+          <font>
+            <font family="arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Controller" red="0" green="0" blue="255">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="grey-7" red="145" green="145" blue="145">
+            </color>
+          </background_color>
+          <show_units>false</show_units>
+        </widget>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM activeXTextDspClass:noedit</name>
+        <pv_name>$(P)$(R)TopUpHour_SP_MON</pv_name>
+        <x>5</x>
+        <y>117</y>
+        <width>120</width>
+        <font>
+          <font family="arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Monitor BG" red="105" green="105" blue="105">
+          </color>
+        </background_color>
+        <precision>0</precision>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>EDM Group 55</name>
+        <y>56</y>
+        <width>238</width>
+        <height>55</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <rules>
+          <rule name="EDM visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+              <value>true</value>
+            </exp>
+            <exp bool_exp="true">
+              <value>false</value>
+            </exp>
+            <pv_name>=`$(P)$(R)Pwd1_OK_STS`|`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS)`?1:0</pv_name>
+          </rule>
+        </rules>
+        <widget type="action_button" version="3.0.0">
+          <name>EDM activeMessageButtonClass</name>
+          <actions>
+            <action type="write_pv">
+              <description>Set</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(R)TopUpDay_SP_SEND.PROC</pv_name>
+          <text>Set</text>
+          <x>133</x>
+          <y>5</y>
+          <height>45</height>
+          <font>
+            <font family="arial" style="BOLD" size="12.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Controller" red="0" green="0" blue="255">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Canvas" red="200" green="200" blue="200">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+                <value>false</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>true</value>
+              </exp>
+              <pv_name>=`$(P)$(R)TopUpDay_SP_MON`==`$(P)$(R)TopUpDay_SP`?1:0</pv_name>
+            </rule>
+          </rules>
+        </widget>
+        <widget type="textentry" version="3.0.0">
+          <name>EDM activeXTextDspClass</name>
+          <pv_name>$(P)$(R)TopUpDay_SP</pv_name>
+          <x>5</x>
+          <y>30</y>
+          <width>120</width>
+          <font>
+            <font family="arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Controller" red="0" green="0" blue="255">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="grey-7" red="145" green="145" blue="145">
+            </color>
+          </background_color>
+          <show_units>false</show_units>
+        </widget>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM activeXTextDspClass:noedit</name>
+        <pv_name>$(P)$(R)TopUpDay_SP_MON</pv_name>
+        <x>5</x>
+        <y>61</y>
+        <width>120</width>
+        <font>
+          <font family="arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Monitor BG" red="105" green="105" blue="105">
+          </color>
+        </background_color>
+        <precision>0</precision>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>EDM Group 56</name>
+        <width>238</width>
+        <height>55</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <rules>
+          <rule name="EDM visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+              <value>true</value>
+            </exp>
+            <exp bool_exp="true">
+              <value>false</value>
+            </exp>
+            <pv_name>=`$(P)$(R)Pwd1_OK_STS`|`$(P)$(R)Pwd2_OK_STS`|`$(P)$(R)Pwd3_OK_STS)`?1:0</pv_name>
+          </rule>
+        </rules>
+        <widget type="action_button" version="3.0.0">
+          <name>EDM activeMessageButtonClass</name>
+          <actions>
+            <action type="write_pv">
+              <description>Set</description>
+              <pv_name>$(pv_name)</pv_name>
+              <value>1</value>
+            </action>
+          </actions>
+          <pv_name>$(P)$(R)ByPass_SP_SEND.PROC</pv_name>
+          <text>Set</text>
+          <x>133</x>
+          <y>5</y>
+          <height>45</height>
+          <font>
+            <font family="arial" style="BOLD" size="12.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Controller" red="0" green="0" blue="255">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="Canvas" red="200" green="200" blue="200">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+                <value>false</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>true</value>
+              </exp>
+              <pv_name>=`$(P)$(R)ByPass_SP_MON`==`$(P)$(R)ByPass_SP`?1:0</pv_name>
+            </rule>
+          </rules>
+        </widget>
+        <widget type="textentry" version="3.0.0">
+          <name>EDM activeXTextDspClass</name>
+          <pv_name>$(P)$(R)ByPass_SP</pv_name>
+          <x>5</x>
+          <y>30</y>
+          <width>120</width>
+          <font>
+            <font family="arial" style="REGULAR" size="14.0">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="Controller" red="0" green="0" blue="255">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="grey-7" red="145" green="145" blue="145">
+            </color>
+          </background_color>
+          <show_units>false</show_units>
+        </widget>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM activeXTextDspClass:noedit</name>
+        <pv_name>$(P)$(R)ByPass_SP_MON</pv_name>
+        <x>5</x>
+        <y>5</y>
+        <width>120</width>
+        <font>
+          <font family="arial" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Monitor: NORMAL" red="0" green="224" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Monitor BG" red="105" green="105" blue="105">
+          </color>
+        </background_color>
+        <precision>0</precision>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>V10 Bypass (%) 
+
+
+
+Buffer TopUp Day
+(0-8)[0=Off,1Mon-
+7Sun,8=Daily]
+
+Buffer TopUp Hr
+(0-23)</text>
+      <x>5</x>
+      <y>7</y>
+      <width>105</width>
+      <height>130</height>
+      <font>
+        <font family="arial" style="REGULAR" size="11.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <auto_size>true</auto_size>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>Identity: $(P)</text>
+    <x>103</x>
+    <y>812</y>
+    <width>1128</width>
+    <height>30</height>
+    <font>
+      <font family="arial" style="BOLD" size="24.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Disconn/Invalid" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+</display>
