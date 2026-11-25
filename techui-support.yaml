@@ -131,6 +131,14 @@ support_modules:
         screen_macros:
           label: "BPMI"
 
+  currAmp.YMCS0012:
+    prefix: "{{ P }}"
+    macros:
+      - P
+    screens:
+      - file: currAmp/CurrAmp-embed.bob
+        type: embedded
+
   # Motion Controllers
 
   pmac.dls_pmac_asyn_motor:

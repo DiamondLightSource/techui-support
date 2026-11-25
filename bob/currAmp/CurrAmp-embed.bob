@@ -24,7 +24,7 @@
         <target>tab</target>
       </action>
     </actions>
-    <text>$(label) (C$(N))</text>
+    <text>$(P)</text>
     <width>95</width>
     <height>20</height>
     <font use_class="true">
@@ -43,7 +43,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>EDM TextupdateClass</name>
-    <pv_name>$(P)$(Q)</pv_name>
+    <pv_name>$(P):INTEN_N</pv_name>
     <x>100</x>
     <width>90</width>
     <font use_class="true">

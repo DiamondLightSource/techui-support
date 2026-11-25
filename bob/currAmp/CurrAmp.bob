@@ -1163,12 +1163,12 @@ TIME:</text>
     <x>20</x>
     <y>580</y>
     <width>95</width>
-    <off_label></off_label>
+    <off_label>Disabled</off_label>
     <off_color use_class="true">
       <color red="237" green="237" blue="237">
       </color>
     </off_color>
-    <on_label></on_label>
+    <on_label>Enabled</on_label>
     <on_color use_class="true">
       <color red="56" green="206" blue="56">
       </color>
