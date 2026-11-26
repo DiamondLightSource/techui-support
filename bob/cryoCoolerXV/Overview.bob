@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-11-26 10:46:24 by ryi58813-->
+<!--Saved on 2026-11-26 16:11:42 by ryi58813-->
 <display version="2.0.0">
   <name>Overview</name>
   <x>236</x>
-  <y use_class="true">0</y>
   <width>1299</width>
   <height>958</height>
-  <background_color use_class="true">
+  <background_color>
     <color name="Read_Background" red="240" green="240" blue="240">
     </color>
   </background_color>
   <grid_step_x>5</grid_step_x>
   <grid_step_y>5</grid_step_y>
+  <widget type="polyline" version="2.0.0">
+    <name>EDM activeLineClass</name>
+    <class>LINE_BOX</class>
+    <x>176</x>
+    <y>53</y>
+    <width>52</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="52.0" y="0.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <arrow_length>15</arrow_length>
+  </widget>
   <widget type="rectangle" version="2.0.0">
     <name>EDM activeRectangleClass</name>
     <class>LINE_BOX</class>
@@ -30,23 +49,43 @@
     </background_color>
     <transparent>true</transparent>
   </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>EDM activeLineClass</name>
+    <class>LINE_BOX</class>
+    <x>293</x>
+    <y>253</y>
+    <width>269</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="269.0" y="0.0">
+      </point>
+    </points>
+    <line_width>4</line_width>
+    <line_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <arrow_length>15</arrow_length>
+  </widget>
   <widget type="group" version="3.0.0">
     <name>EDM Group 0</name>
     <class>NO_BOX</class>
-    <x>372</x>
-    <y>254</y>
-    <width>783</width>
-    <height>260</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <x>338</x>
+    <y>220</y>
+    <width>817</width>
+    <height>294</height>
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -65,8 +104,8 @@
     <widget type="embedded" version="2.0.0">
       <name>EDM activeSymbolClass</name>
       <file>Valve.bob</file>
-      <x>725</x>
-      <y>185</y>
+      <x>759</x>
+      <y>219</y>
       <width>50</width>
       <height>50</height>
       <resize>3</resize>
@@ -96,20 +135,20 @@ else:
     <widget type="group" version="3.0.0">
       <name>EDM Group 46</name>
       <class>NO_BOX</class>
-      <x>628</x>
-      <y>201</y>
+      <x>662</x>
+      <y>235</y>
       <width>118</width>
       <height>53</height>
-      <style use_class="true">3</style>
-      <font use_class="true">
+      <style>3</style>
+      <font>
         <font family="Arial" style="REGULAR" size="15.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color name="Read_Background" red="240" green="240" blue="240">
         </color>
       </background_color>
@@ -131,25 +170,17 @@ else:
         <x>57</x>
         <y>29</y>
         <width>58</width>
-        <font use_class="true">
+        <font>
           <font family="Arial" style="REGULAR" size="14.0">
           </font>
         </font>
-        <foreground_color use_class="true">
-          <color name="Text" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color use_class="true">
+        <background_color>
           <color red="255" green="255" blue="255">
           </color>
         </background_color>
-        <precision use_class="true">-1</precision>
-        <show_units use_class="true">true</show_units>
-        <horizontal_alignment use_class="true">1</horizontal_alignment>
-        <vertical_alignment use_class="true">1</vertical_alignment>
-        <enabled use_class="true">true</enabled>
-        <border_width use_class="true">1</border_width>
-        <border_color use_class="true">
+        <horizontal_alignment>1</horizontal_alignment>
+        <border_width>1</border_width>
+        <border_color>
           <color red="184" green="195" blue="223">
           </color>
         </border_color>
@@ -160,22 +191,18 @@ else:
         <x>57</x>
         <y>28</y>
         <width>58</width>
-        <font use_class="true">
+        <font>
           <font family="Arial" style="REGULAR" size="14.0">
           </font>
         </font>
-        <foreground_color use_class="true">
-          <color name="Text" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color use_class="true">
+        <background_color>
           <color red="184" green="195" blue="223">
           </color>
         </background_color>
         <precision>0</precision>
-        <horizontal_alignment use_class="true">1</horizontal_alignment>
-        <vertical_alignment use_class="true">1</vertical_alignment>
-        <border_color use_class="true">
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_color>
           <color red="196" green="196" blue="196">
           </color>
         </border_color>
@@ -195,15 +222,15 @@ else:
         <y>5</y>
         <width>45</width>
         <height>45</height>
-        <font use_class="true">
+        <font>
           <font family="Arial" style="REGULAR" size="14.0">
           </font>
         </font>
-        <foreground_color use_class="true">
+        <foreground_color>
           <color red="255" green="255" blue="255">
           </color>
         </foreground_color>
-        <background_color use_class="true">
+        <background_color>
           <color red="29" green="41" blue="69">
           </color>
         </background_color>
@@ -223,52 +250,53 @@ else:
     <widget type="group" version="3.0.0">
       <name>EDM Group 14</name>
       <class>NO_BOX</class>
-      <x>578</x>
-      <y>131</y>
+      <x>612</x>
+      <y>165</y>
       <width>38</width>
       <height>38</height>
-      <style use_class="true">3</style>
-      <font use_class="true">
+      <style>3</style>
+      <font>
         <font family="Arial" style="REGULAR" size="15.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color name="Read_Background" red="240" green="240" blue="240">
         </color>
       </background_color>
       <transparent>true</transparent>
       <widget type="multi_state_led" version="2.0.0">
         <name>EDM activeCircleClass</name>
+        <class>DEFAULT_NO_LABEL</class>
         <pv_name>=highestSeverity(`$(P)$(R)T10_STS`)</pv_name>
         <x>5</x>
         <y>5</y>
         <width>30</width>
         <height>30</height>
         <border_alarm_sensitive>false</border_alarm_sensitive>
-        <states use_class="true">
-          <state use_class="true">
-            <value use_class="true">0</value>
-            <label use_class="true">State 1</label>
-            <color use_class="true">
-              <color name="Off" red="237" green="237" blue="237">
+        <states>
+          <state>
+            <value>0</value>
+            <label></label>
+            <color>
+              <color name="Off" red="60" green="100" blue="60">
               </color>
             </color>
           </state>
-          <state use_class="true">
-            <value use_class="true">1</value>
-            <label use_class="true">State 2</label>
-            <color use_class="true">
+          <state>
+            <value>1</value>
+            <label></label>
+            <color>
               <color red="76" green="100" blue="171">
               </color>
             </color>
           </state>
         </states>
-        <fallback_color use_class="true">
-          <color name="Off" red="237" green="237" blue="237">
+        <fallback_color>
+          <color name="Off" red="60" green="100" blue="60">
           </color>
         </fallback_color>
       </widget>
@@ -279,23 +307,15 @@ else:
         <y>13</y>
         <width>25</width>
         <height>16</height>
-        <font use_class="true">
+        <font>
           <font family="Arial" style="REGULAR" size="14.0">
           </font>
         </font>
-        <foreground_color use_class="true">
+        <foreground_color>
           <color red="29" green="41" blue="69">
           </color>
         </foreground_color>
-        <background_color use_class="true">
-          <color name="Background" red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <horizontal_alignment use_class="true">0</horizontal_alignment>
-        <vertical_alignment use_class="true">0</vertical_alignment>
-        <rotation_step use_class="true">0</rotation_step>
         <auto_size>true</auto_size>
-        <wrap_words use_class="true">true</wrap_words>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>EDM activeLineClass</name>
@@ -315,6 +335,68 @@ else:
         <arrow_length>15</arrow_length>
       </widget>
     </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>EDM activeSymbolClass</name>
+      <file>Valve.bob</file>
+      <width>50</width>
+      <height>50</height>
+      <resize>3</resize>
+      <group_name>EDM Group 0</group_name>
+      <transparent>true</transparent>
+      <scripts>
+        <script file="EmbeddedPy">
+          <text><![CDATA[# pvs[0] = $(P)$(R)V4_STS
+  from org.csstudio.display.builder.runtime.script import PVUtil
+  val = PVUtil.getDouble(pvs[0])
+  if 0.0 <= val < 0.0:
+      widget.setPropertyValue('group_name', 'EDM Group 0')
+  elif 0.0 <= val < 0.0:
+      widget.setPropertyValue('group_name', 'EDM Group 1')
+  elif 0.0 <= val < 1.0:
+      widget.setPropertyValue('group_name', 'EDM Group 2')
+  elif 1.0 <= val < 2.0:
+      widget.setPropertyValue('group_name', 'EDM Group 3')
+  else:
+      widget.setPropertyValue('group_name', 'EDM Group 0')
+  ]]></text>
+          <pv_name>$(P)$(R)V4_STS</pv_name>
+        </script>
+      </scripts>
+      <tooltip>$(P)$(R)V4_STS</tooltip>
+    </widget>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>EDM activeSymbolClass</name>
+    <file>ValveR.bob</file>
+    <x>338</x>
+    <y>205</y>
+    <width>50</width>
+    <height>65</height>
+    <resize>3</resize>
+    <group_name>EDM Group 0</group_name>
+    <transparent>true</transparent>
+    <scripts>
+      <script file="EmbeddedPy">
+        <text><![CDATA[# pvs[0] = $(P)$(R)V4_STS
+from org.csstudio.display.builder.runtime.script import PVUtil
+val = PVUtil.getDouble(pvs[0])
+if 0.0 <= val < 0.0:
+    widget.setPropertyValue('group_name', 'EDM Group 0')
+elif 0.0 <= val < 0.0:
+    widget.setPropertyValue('group_name', 'EDM Group 1')
+elif 0.0 <= val < 1.0:
+    widget.setPropertyValue('group_name', 'EDM Group 2')
+elif 1.0 <= val < 2.0:
+    widget.setPropertyValue('group_name', 'EDM Group 3')
+elif 9.0 <= val < 10.0:
+    widget.setPropertyValue('group_name', 'EDM Group 4')
+else:
+    widget.setPropertyValue('group_name', 'EDM Group 0')
+]]></text>
+        <pv_name>$(P)$(R)V4_STS</pv_name>
+      </script>
+    </scripts>
+    <tooltip>$(P)$(R)V4_STS</tooltip>
   </widget>
   <widget type="group" version="3.0.0">
     <name>Message Box</name>
@@ -323,16 +405,16 @@ else:
     <y>840</y>
     <width>1045</width>
     <height>70</height>
-    <style use_class="true">2</style>
-    <font use_class="true">
+    <style>2</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -364,8 +446,8 @@ else:
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
       <rules>
         <rule name="Message text" prop_id="text" out_exp="false">
           <exp bool_exp="pv0&gt;=64 &amp;&amp; pv0&lt;65 &amp;&amp; pv1&gt;=7 &amp;&amp; pv1&lt;8">
@@ -444,16 +526,16 @@ else:
     <y>416</y>
     <width>1038</width>
     <height>198</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -465,16 +547,51 @@ else:
       <y>5</y>
       <width>1029</width>
       <height>189</height>
-      <fill_color use_class="true">
+      <fill_color>
         <color red="76" green="100" blue="171">
         </color>
       </fill_color>
-      <background_color use_class="true">
-        <color red="250" green="250" blue="250">
-        </color>
-      </background_color>
       <horizontal>false</horizontal>
       <limits_from_pv>false</limits_from_pv>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>EDM activeLineClass</name>
+      <class>LINE_BOX</class>
+      <x>444</x>
+      <y>66</y>
+      <width>1</width>
+      <height>34</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="34.0">
+        </point>
+      </points>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrow_length>15</arrow_length>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>EDM activeLineClass</name>
+      <x>230</x>
+      <y>99</y>
+      <width>516</width>
+      <height>1</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="516.0" y="0.0">
+        </point>
+      </points>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Shut/Off" red="192" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrow_length>15</arrow_length>
     </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
@@ -615,16 +732,16 @@ else:
     <y>510</y>
     <width>66</width>
     <height>96</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -867,26 +984,6 @@ else:
   <widget type="polyline" version="2.0.0">
     <name>EDM activeLineClass</name>
     <class>LINE_BOX</class>
-    <x>293</x>
-    <y>253</y>
-    <width>269</width>
-    <height>1</height>
-    <points>
-      <point x="0.0" y="0.0">
-      </point>
-      <point x="269.0" y="0.0">
-      </point>
-    </points>
-    <line_width>4</line_width>
-    <line_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <arrow_length>15</arrow_length>
-  </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>EDM activeLineClass</name>
-    <class>LINE_BOX</class>
     <x>560</x>
     <y>253</y>
     <width>1</width>
@@ -910,11 +1007,11 @@ else:
     <x>647</x>
     <y>253</y>
     <width>1</width>
-    <height>63</height>
+    <height>70</height>
     <points>
       <point x="0.0" y="0.0">
       </point>
-      <point x="0.0" y="63.0">
+      <point x="0.0" y="70.0">
       </point>
     </points>
     <line_width>4</line_width>
@@ -1052,11 +1149,11 @@ else:
     <x>241</x>
     <y>107</y>
     <width>1</width>
-    <height>505</height>
+    <height>503</height>
     <points>
       <point x="0.0" y="0.0">
       </point>
-      <point x="0.0" y="505.0">
+      <point x="0.0" y="503.0">
       </point>
     </points>
     <line_width>2</line_width>
@@ -1116,7 +1213,7 @@ else:
     <class>LINE_BOX</class>
     <pv_name>$(P)$(R)BufferPower_MON</pv_name>
     <x>500</x>
-    <y>88</y>
+    <y>90</y>
     <width>58</width>
     <font>
       <font family="Arial" style="REGULAR" size="14.0">
@@ -1328,26 +1425,6 @@ else:
     <arrows>1</arrows>
     <arrow_length>15</arrow_length>
   </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>EDM activeLineClass</name>
-    <class>LINE_BOX</class>
-    <x>600</x>
-    <y>484</y>
-    <width>1</width>
-    <height>34</height>
-    <points>
-      <point x="0.0" y="0.0">
-      </point>
-      <point x="0.0" y="34.0">
-      </point>
-    </points>
-    <line_width>4</line_width>
-    <line_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <arrow_length>15</arrow_length>
-  </widget>
   <widget type="embedded" version="2.0.0">
     <name>EDM activeSymbolClass</name>
     <class>LINE_BOX</class>
@@ -1407,7 +1484,7 @@ else:
     <name>EDM activeXTextDspClass_noedit</name>
     <class>LINE_BOX</class>
     <pv_name>$(P)$(R)EGH_Temp_MON</pv_name>
-    <x>271</x>
+    <x>270</x>
     <y>30</y>
     <width>58</width>
     <font>
@@ -1425,50 +1502,6 @@ else:
       <color red="196" green="196" blue="196">
       </color>
     </border_color>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>EDM activeXTextDspClass_noedit</name>
-    <class>LINE_BOX</class>
-    <pv_name>$(P)$(R)Step_STS</pv_name>
-    <x>137</x>
-    <y>701</y>
-    <width>45</width>
-    <height>21</height>
-    <font>
-      <font family="Arial" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="184" green="195" blue="223">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <show_units>false</show_units>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <border_color>
-      <color red="196" green="196" blue="196">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>EDM activeXTextClass</name>
-    <class>LINE_BOX</class>
-    <text>Mode
-Step</text>
-    <x>129</x>
-    <y>656</y>
-    <width>36</width>
-    <height>35</height>
-    <font>
-      <font family="Arial" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color red="29" green="41" blue="69">
-      </color>
-    </foreground_color>
-    <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
     <name>EDM activeXTextClass</name>
@@ -1516,8 +1549,8 @@ Step</text>
       </color>
     </foreground_color>
     <transparent>false</transparent>
-    <horizontal_alignment use_class="true">1</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
     <rules>
       <rule name="EDM visibility" prop_id="visible" out_exp="false">
         <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
@@ -1601,48 +1634,49 @@ else:
     <y>175</y>
     <width>40</width>
     <height>40</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
     <transparent>true</transparent>
     <widget type="multi_state_led" version="2.0.0">
       <name>EDM activeCircleClass</name>
+      <class>DEFAULT_NO_LABEL</class>
       <pv_name>=highestSeverity(`$(P)$(R)T1_STS`)</pv_name>
       <x>5</x>
       <y>5</y>
       <width>30</width>
       <height>30</height>
       <border_alarm_sensitive>false</border_alarm_sensitive>
-      <states use_class="true">
-        <state use_class="true">
-          <value use_class="true">0</value>
-          <label use_class="true">State 1</label>
-          <color use_class="true">
-            <color name="Off" red="237" green="237" blue="237">
+      <states>
+        <state>
+          <value>0</value>
+          <label></label>
+          <color>
+            <color name="Off" red="60" green="100" blue="60">
             </color>
           </color>
         </state>
-        <state use_class="true">
-          <value use_class="true">1</value>
-          <label use_class="true">State 2</label>
-          <color use_class="true">
+        <state>
+          <value>1</value>
+          <label></label>
+          <color>
             <color red="76" green="100" blue="171">
             </color>
           </color>
         </state>
       </states>
-      <fallback_color use_class="true">
-        <color name="Off" red="237" green="237" blue="237">
+      <fallback_color>
+        <color name="Off" red="60" green="100" blue="60">
         </color>
       </fallback_color>
     </widget>
@@ -1653,23 +1687,15 @@ else:
       <y>13</y>
       <width>17</width>
       <height>16</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Background" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <horizontal_alignment use_class="true">0</horizontal_alignment>
-      <vertical_alignment use_class="true">0</vertical_alignment>
-      <rotation_step use_class="true">0</rotation_step>
       <auto_size>true</auto_size>
-      <wrap_words use_class="true">true</wrap_words>
     </widget>
   </widget>
   <widget type="group" version="3.0.0">
@@ -1679,48 +1705,49 @@ else:
     <y>175</y>
     <width>38</width>
     <height>38</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
     <transparent>true</transparent>
     <widget type="multi_state_led" version="2.0.0">
       <name>EDM activeCircleClass</name>
+      <class>DEFAULT_NO_LABEL</class>
       <pv_name>=highestSeverity(`$(P)$(R)T2_STS`)</pv_name>
       <x>5</x>
       <y>5</y>
       <width>30</width>
       <height>30</height>
       <border_alarm_sensitive>false</border_alarm_sensitive>
-      <states use_class="true">
-        <state use_class="true">
-          <value use_class="true">0</value>
-          <label use_class="true">State 1</label>
-          <color use_class="true">
-            <color name="Off" red="237" green="237" blue="237">
+      <states>
+        <state>
+          <value>0</value>
+          <label></label>
+          <color>
+            <color name="Off" red="60" green="100" blue="60">
             </color>
           </color>
         </state>
-        <state use_class="true">
-          <value use_class="true">1</value>
-          <label use_class="true">State 2</label>
-          <color use_class="true">
+        <state>
+          <value>1</value>
+          <label></label>
+          <color>
             <color red="76" green="100" blue="171">
             </color>
           </color>
         </state>
       </states>
-      <fallback_color use_class="true">
-        <color name="Off" red="237" green="237" blue="237">
+      <fallback_color>
+        <color name="Off" red="60" green="100" blue="60">
         </color>
       </fallback_color>
     </widget>
@@ -1731,23 +1758,15 @@ else:
       <y>13</y>
       <width>17</width>
       <height>16</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Background" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <horizontal_alignment use_class="true">0</horizontal_alignment>
-      <vertical_alignment use_class="true">0</vertical_alignment>
-      <rotation_step use_class="true">0</rotation_step>
       <auto_size>true</auto_size>
-      <wrap_words use_class="true">true</wrap_words>
     </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
@@ -1777,48 +1796,49 @@ else:
     <y>55</y>
     <width>38</width>
     <height>38</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
     <transparent>true</transparent>
     <widget type="multi_state_led" version="2.0.0">
       <name>EDM activeCircleClass</name>
+      <class>DEFAULT_NO_LABEL</class>
       <pv_name>=highestSeverity(`$(P)$(R)P1_STS`)</pv_name>
       <x>5</x>
       <y>5</y>
       <width>30</width>
       <height>30</height>
       <border_alarm_sensitive>false</border_alarm_sensitive>
-      <states use_class="true">
-        <state use_class="true">
-          <value use_class="true">0</value>
-          <label use_class="true">State 1</label>
-          <color use_class="true">
-            <color name="Off" red="237" green="237" blue="237">
+      <states>
+        <state>
+          <value>0</value>
+          <label></label>
+          <color>
+            <color name="Off" red="60" green="100" blue="60">
             </color>
           </color>
         </state>
-        <state use_class="true">
-          <value use_class="true">1</value>
-          <label use_class="true">State 2</label>
-          <color use_class="true">
+        <state>
+          <value>1</value>
+          <label></label>
+          <color>
             <color red="76" green="100" blue="171">
             </color>
           </color>
         </state>
       </states>
-      <fallback_color use_class="true">
-        <color name="Off" red="237" green="237" blue="237">
+      <fallback_color>
+        <color name="Off" red="60" green="100" blue="60">
         </color>
       </fallback_color>
     </widget>
@@ -1829,23 +1849,15 @@ else:
       <y>13</y>
       <width>18</width>
       <height>16</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Background" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <horizontal_alignment use_class="true">0</horizontal_alignment>
-      <vertical_alignment use_class="true">0</vertical_alignment>
-      <rotation_step use_class="true">0</rotation_step>
       <auto_size>true</auto_size>
-      <wrap_words use_class="true">true</wrap_words>
     </widget>
   </widget>
   <widget type="group" version="3.0.0">
@@ -1855,48 +1867,49 @@ else:
     <y>96</y>
     <width>38</width>
     <height>38</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
     <transparent>true</transparent>
     <widget type="multi_state_led" version="2.0.0">
       <name>EDM activeCircleClass</name>
+      <class>DEFAULT_NO_LABEL</class>
       <pv_name>=highestSeverity(`$(P)$(R)L1Level_STS`)</pv_name>
       <x>5</x>
       <y>5</y>
       <width>30</width>
       <height>30</height>
       <border_alarm_sensitive>false</border_alarm_sensitive>
-      <states use_class="true">
-        <state use_class="true">
-          <value use_class="true">0</value>
-          <label use_class="true">State 1</label>
-          <color use_class="true">
-            <color name="Off" red="237" green="237" blue="237">
+      <states>
+        <state>
+          <value>0</value>
+          <label></label>
+          <color>
+            <color name="Off" red="60" green="100" blue="60">
             </color>
           </color>
         </state>
-        <state use_class="true">
-          <value use_class="true">1</value>
-          <label use_class="true">State 2</label>
-          <color use_class="true">
+        <state>
+          <value>1</value>
+          <label></label>
+          <color>
             <color red="76" green="100" blue="171">
             </color>
           </color>
         </state>
       </states>
-      <fallback_color use_class="true">
-        <color name="Off" red="237" green="237" blue="237">
+      <fallback_color>
+        <color name="Off" red="60" green="100" blue="60">
         </color>
       </fallback_color>
     </widget>
@@ -1907,74 +1920,67 @@ else:
       <y>12</y>
       <width>16</width>
       <height>16</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Background" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <horizontal_alignment use_class="true">0</horizontal_alignment>
-      <vertical_alignment use_class="true">0</vertical_alignment>
-      <rotation_step use_class="true">0</rotation_step>
       <auto_size>true</auto_size>
-      <wrap_words use_class="true">true</wrap_words>
     </widget>
   </widget>
   <widget type="group" version="3.0.0">
     <name>EDM Group 19</name>
     <class>NO_BOX</class>
     <x>221</x>
-    <y>36</y>
+    <y>33</y>
     <width>38</width>
     <height>38</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
     <transparent>true</transparent>
     <widget type="multi_state_led" version="2.0.0">
       <name>EDM activeCircleClass</name>
+      <class>DEFAULT_NO_LABEL</class>
       <pv_name>=highestSeverity(`$(P)$(R)T_EGH_STS`)</pv_name>
       <x>5</x>
       <y>5</y>
       <width>30</width>
       <height>30</height>
       <border_alarm_sensitive>false</border_alarm_sensitive>
-      <states use_class="true">
-        <state use_class="true">
-          <value use_class="true">0</value>
-          <label use_class="true">State 1</label>
-          <color use_class="true">
-            <color name="Off" red="237" green="237" blue="237">
+      <states>
+        <state>
+          <value>0</value>
+          <label></label>
+          <color>
+            <color name="Off" red="60" green="100" blue="60">
             </color>
           </color>
         </state>
-        <state use_class="true">
-          <value use_class="true">1</value>
-          <label use_class="true">State 2</label>
-          <color use_class="true">
+        <state>
+          <value>1</value>
+          <label></label>
+          <color>
             <color red="76" green="100" blue="171">
             </color>
           </color>
         </state>
       </states>
-      <fallback_color use_class="true">
-        <color name="Off" red="237" green="237" blue="237">
+      <fallback_color>
+        <color name="Off" red="60" green="100" blue="60">
         </color>
       </fallback_color>
     </widget>
@@ -1985,23 +1991,15 @@ else:
       <y>13</y>
       <width>9</width>
       <height>16</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Background" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <horizontal_alignment use_class="true">0</horizontal_alignment>
-      <vertical_alignment use_class="true">0</vertical_alignment>
-      <rotation_step use_class="true">0</rotation_step>
       <auto_size>true</auto_size>
-      <wrap_words use_class="true">true</wrap_words>
     </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
@@ -2091,48 +2089,49 @@ else:
     <y>70</y>
     <width>38</width>
     <height>38</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
     <transparent>true</transparent>
     <widget type="multi_state_led" version="2.0.0">
       <name>EDM activeCircleClass</name>
+      <class>DEFAULT_NO_LABEL</class>
       <pv_name>=highestSeverity(`$(P)$(R)P2_STS`)</pv_name>
       <x>5</x>
       <y>5</y>
       <width>30</width>
       <height>30</height>
       <border_alarm_sensitive>false</border_alarm_sensitive>
-      <states use_class="true">
-        <state use_class="true">
-          <value use_class="true">0</value>
-          <label use_class="true">State 1</label>
-          <color use_class="true">
-            <color name="Off" red="237" green="237" blue="237">
+      <states>
+        <state>
+          <value>0</value>
+          <label></label>
+          <color>
+            <color name="Off" red="60" green="100" blue="60">
             </color>
           </color>
         </state>
-        <state use_class="true">
-          <value use_class="true">1</value>
-          <label use_class="true">State 2</label>
-          <color use_class="true">
+        <state>
+          <value>1</value>
+          <label></label>
+          <color>
             <color red="76" green="100" blue="171">
             </color>
           </color>
         </state>
       </states>
-      <fallback_color use_class="true">
-        <color name="Off" red="237" green="237" blue="237">
+      <fallback_color>
+        <color name="Off" red="60" green="100" blue="60">
         </color>
       </fallback_color>
     </widget>
@@ -2143,23 +2142,15 @@ else:
       <y>13</y>
       <width>18</width>
       <height>16</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Background" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <horizontal_alignment use_class="true">0</horizontal_alignment>
-      <vertical_alignment use_class="true">0</vertical_alignment>
-      <rotation_step use_class="true">0</rotation_step>
       <auto_size>true</auto_size>
-      <wrap_words use_class="true">true</wrap_words>
     </widget>
   </widget>
   <widget type="group" version="3.0.0">
@@ -2169,48 +2160,49 @@ else:
     <y>70</y>
     <width>38</width>
     <height>38</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
     <transparent>true</transparent>
     <widget type="multi_state_led" version="2.0.0">
       <name>EDM activeCircleClass</name>
+      <class>DEFAULT_NO_LABEL</class>
       <pv_name>=highestSeverity(`$(P)$(R)L2Level_STS`)</pv_name>
       <x>5</x>
       <y>5</y>
       <width>30</width>
       <height>30</height>
       <border_alarm_sensitive>false</border_alarm_sensitive>
-      <states use_class="true">
-        <state use_class="true">
-          <value use_class="true">0</value>
-          <label use_class="true">State 1</label>
-          <color use_class="true">
-            <color name="Off" red="237" green="237" blue="237">
+      <states>
+        <state>
+          <value>0</value>
+          <label></label>
+          <color>
+            <color name="Off" red="60" green="100" blue="60">
             </color>
           </color>
         </state>
-        <state use_class="true">
-          <value use_class="true">1</value>
-          <label use_class="true">State 2</label>
-          <color use_class="true">
+        <state>
+          <value>1</value>
+          <label></label>
+          <color>
             <color red="76" green="100" blue="171">
             </color>
           </color>
         </state>
       </states>
-      <fallback_color use_class="true">
-        <color name="Off" red="237" green="237" blue="237">
+      <fallback_color>
+        <color name="Off" red="60" green="100" blue="60">
         </color>
       </fallback_color>
     </widget>
@@ -2221,23 +2213,15 @@ else:
       <y>13</y>
       <width>16</width>
       <height>16</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Background" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <horizontal_alignment use_class="true">0</horizontal_alignment>
-      <vertical_alignment use_class="true">0</vertical_alignment>
-      <rotation_step use_class="true">0</rotation_step>
       <auto_size>true</auto_size>
-      <wrap_words use_class="true">true</wrap_words>
     </widget>
   </widget>
   <widget type="embedded" version="2.0.0">
@@ -2570,7 +2554,7 @@ else:
     <class>LINE_BOX</class>
     <file>HeaterS.bob</file>
     <x>160</x>
-    <y>57</y>
+    <y>55</y>
     <width>13</width>
     <height>43</height>
     <resize>3</resize>
@@ -2600,26 +2584,6 @@ else:
   <widget type="polyline" version="2.0.0">
     <name>EDM activeLineClass</name>
     <class>LINE_BOX</class>
-    <x>176</x>
-    <y>55</y>
-    <width>52</width>
-    <height>1</height>
-    <points>
-      <point x="0.0" y="0.0">
-      </point>
-      <point x="52.0" y="0.0">
-      </point>
-    </points>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <arrow_length>15</arrow_length>
-  </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>EDM activeLineClass</name>
-    <class>LINE_BOX</class>
     <x>133</x>
     <y>101</y>
     <width>42</width>
@@ -2641,8 +2605,8 @@ else:
     <name>EDM activeSymbolClass</name>
     <class>LINE_BOX</class>
     <file>HeaterS.bob</file>
-    <x>178</x>
-    <y>57</y>
+    <x>180</x>
+    <y>55</y>
     <width>14</width>
     <height>43</height>
     <resize>3</resize>
@@ -2674,7 +2638,7 @@ else:
     <class>LINE_BOX</class>
     <file>HeaterS.bob</file>
     <x>160</x>
-    <y>103</y>
+    <y>105</y>
     <width>13</width>
     <height>43</height>
     <resize>3</resize>
@@ -2705,8 +2669,8 @@ else:
     <name>EDM activeSymbolClass</name>
     <class>LINE_BOX</class>
     <file>HeaterS.bob</file>
-    <x>178</x>
-    <y>103</y>
+    <x>180</x>
+    <y>105</y>
     <width>14</width>
     <height>43</height>
     <resize>3</resize>
@@ -2758,7 +2722,7 @@ else:
     <name>EDM activeXTextDspClass_noedit</name>
     <class>LINE_BOX</class>
     <pv_name>$(P)$(R)EGHTarget_SP</pv_name>
-    <x>272</x>
+    <x>270</x>
     <y>55</y>
     <width>58</width>
     <font>
@@ -2784,16 +2748,16 @@ else:
     <y>445</y>
     <width>71</width>
     <height>130</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -2815,22 +2779,18 @@ else:
       <x>5</x>
       <y>105</y>
       <width>58</width>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color name="Text" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="184" green="195" blue="223">
         </color>
       </background_color>
       <precision>1</precision>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
-      <border_color use_class="true">
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
         <color red="196" green="196" blue="196">
         </color>
       </border_color>
@@ -2841,22 +2801,18 @@ else:
       <x>5</x>
       <y>5</y>
       <width>58</width>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color name="Text" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="184" green="195" blue="223">
         </color>
       </background_color>
       <precision>1</precision>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
-      <border_color use_class="true">
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
         <color red="196" green="196" blue="196">
         </color>
       </border_color>
@@ -2869,16 +2825,16 @@ else:
     <y>590</y>
     <width>40</width>
     <height>20</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -2911,23 +2867,15 @@ else:
       <y>3</y>
       <width>21</width>
       <height>16</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Background" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <horizontal_alignment use_class="true">0</horizontal_alignment>
-      <vertical_alignment use_class="true">0</vertical_alignment>
-      <rotation_step use_class="true">0</rotation_step>
       <auto_size>true</auto_size>
-      <wrap_words use_class="true">true</wrap_words>
     </widget>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -2936,22 +2884,18 @@ else:
     <x>135</x>
     <y>590</y>
     <width>58</width>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="184" green="195" blue="223">
       </color>
     </background_color>
     <precision>1</precision>
-    <horizontal_alignment use_class="true">1</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <border_color use_class="true">
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
       <color red="196" green="196" blue="196">
       </color>
     </border_color>
@@ -2959,8 +2903,8 @@ else:
   <widget type="embedded" version="2.0.0">
     <name>EDM activeSymbolClass</name>
     <file>HeaterPower.bob</file>
-    <x>559</x>
-    <y>78</y>
+    <x>561</x>
+    <y>80</y>
     <width>40</width>
     <height>40</height>
     <resize>3</resize>
@@ -3022,25 +2966,6 @@ else:
     </scripts>
     <tooltip>$(P)$(R)EGH_STS</tooltip>
   </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>EDM activeLineClass</name>
-    <x>386</x>
-    <y>516</y>
-    <width>516</width>
-    <height>1</height>
-    <points>
-      <point x="0.0" y="0.0">
-      </point>
-      <point x="516.0" y="0.0">
-      </point>
-    </points>
-    <line_width>4</line_width>
-    <line_color>
-      <color name="Shut/Off" red="192" green="0" blue="0">
-      </color>
-    </line_color>
-    <arrow_length>15</arrow_length>
-  </widget>
   <widget type="embedded" version="2.0.0">
     <name>EDM activeSymbolClass</name>
     <file>Pump.bob</file>
@@ -3075,7 +3000,7 @@ else:
   <widget type="polyline" version="2.0.0">
     <name>EDM activeLineClass</name>
     <x>900</x>
-    <y>67</y>
+    <y>66</y>
     <width>1</width>
     <height>451</height>
     <points>
@@ -3098,48 +3023,49 @@ else:
     <y>309</y>
     <width>38</width>
     <height>38</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
     <transparent>true</transparent>
     <widget type="multi_state_led" version="2.0.0">
       <name>EDM activeCircleClass</name>
+      <class>DEFAULT_NO_LABEL</class>
       <pv_name>=highestSeverity(`$(P)$(R)F2_STS`)</pv_name>
       <x>5</x>
       <y>5</y>
       <width>30</width>
       <height>30</height>
       <border_alarm_sensitive>false</border_alarm_sensitive>
-      <states use_class="true">
-        <state use_class="true">
-          <value use_class="true">0</value>
-          <label use_class="true">State 1</label>
-          <color use_class="true">
-            <color name="Off" red="237" green="237" blue="237">
+      <states>
+        <state>
+          <value>0</value>
+          <label></label>
+          <color>
+            <color name="Off" red="60" green="100" blue="60">
             </color>
           </color>
         </state>
-        <state use_class="true">
-          <value use_class="true">1</value>
-          <label use_class="true">State 2</label>
-          <color use_class="true">
+        <state>
+          <value>1</value>
+          <label></label>
+          <color>
             <color red="76" green="100" blue="171">
             </color>
           </color>
         </state>
       </states>
-      <fallback_color use_class="true">
-        <color name="Off" red="237" green="237" blue="237">
+      <fallback_color>
+        <color name="Off" red="60" green="100" blue="60">
         </color>
       </fallback_color>
     </widget>
@@ -3150,23 +3076,15 @@ else:
       <y>12</y>
       <width>17</width>
       <height>16</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Background" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <horizontal_alignment use_class="true">0</horizontal_alignment>
-      <vertical_alignment use_class="true">0</vertical_alignment>
-      <rotation_step use_class="true">0</rotation_step>
       <auto_size>true</auto_size>
-      <wrap_words use_class="true">true</wrap_words>
     </widget>
   </widget>
   <widget type="embedded" version="2.0.0">
@@ -3207,16 +3125,16 @@ else:
     <y>20</y>
     <width>50</width>
     <height>50</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -3336,16 +3254,16 @@ else:
     <y>21</y>
     <width>38</width>
     <height>48</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -3427,23 +3345,15 @@ else:
     <y>40</y>
     <width>18</width>
     <height>16</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
-      <color name="Background" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">0</vertical_alignment>
-    <rotation_step use_class="true">0</rotation_step>
     <auto_size>true</auto_size>
-    <wrap_words use_class="true">true</wrap_words>
   </widget>
   <widget type="label" version="2.0.0">
     <name>EDM activeXTextClass</name>
@@ -3452,23 +3362,15 @@ else:
     <y>38</y>
     <width>18</width>
     <height>16</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
-      <color name="Background" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">0</vertical_alignment>
-    <rotation_step use_class="true">0</rotation_step>
     <auto_size>true</auto_size>
-    <wrap_words use_class="true">true</wrap_words>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>EDM activeMessageButtonClass</name>
@@ -3485,15 +3387,15 @@ else:
     <y>420</y>
     <width>40</width>
     <height>40</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="255" green="255" blue="255">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="29" green="41" blue="69">
       </color>
     </background_color>
@@ -3520,19 +3422,19 @@ else:
     </actions>
     <pv_name>$(P)$(R)EngBuffer_CMD</pv_name>
     <text>HP</text>
-    <x>559</x>
+    <x>561</x>
     <y>40</y>
     <width>40</width>
     <height>40</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="255" green="255" blue="255">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="29" green="41" blue="69">
       </color>
     </background_color>
@@ -3563,15 +3465,15 @@ else:
     <y>172</y>
     <width>40</width>
     <height>40</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="255" green="255" blue="255">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="29" green="41" blue="69">
       </color>
     </background_color>
@@ -3602,15 +3504,15 @@ else:
     <y>125</y>
     <width>60</width>
     <height>45</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="255" green="255" blue="255">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="29" green="41" blue="69">
       </color>
     </background_color>
@@ -3641,15 +3543,15 @@ else:
     <y>40</y>
     <width>40</width>
     <height>40</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="255" green="255" blue="255">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="29" green="41" blue="69">
       </color>
     </background_color>
@@ -3672,16 +3574,16 @@ else:
     <y>540</y>
     <width>118</width>
     <height>53</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -3703,25 +3605,17 @@ else:
       <x>5</x>
       <y>29</y>
       <width>58</width>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color name="Text" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <precision use_class="true">-1</precision>
-      <show_units use_class="true">true</show_units>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
-      <enabled use_class="true">true</enabled>
-      <border_width use_class="true">1</border_width>
-      <border_color use_class="true">
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_width>1</border_width>
+      <border_color>
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -3732,22 +3626,18 @@ else:
       <x>6</x>
       <y>5</y>
       <width>58</width>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color name="Text" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="184" green="195" blue="223">
         </color>
       </background_color>
       <precision>0</precision>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
-      <border_color use_class="true">
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
         <color red="196" green="196" blue="196">
         </color>
       </border_color>
@@ -3758,22 +3648,18 @@ else:
       <x>5</x>
       <y>28</y>
       <width>58</width>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color name="Text" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="184" green="195" blue="223">
         </color>
       </background_color>
       <precision>0</precision>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
-      <border_color use_class="true">
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
         <color red="196" green="196" blue="196">
         </color>
       </border_color>
@@ -3793,15 +3679,15 @@ else:
       <y>5</y>
       <width>45</width>
       <height>45</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -3825,16 +3711,16 @@ else:
     <y>84</y>
     <width>157</width>
     <height>53</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -3865,15 +3751,15 @@ else:
       <y>5</y>
       <width>45</width>
       <height>45</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -3894,25 +3780,17 @@ else:
       <pv_name>$(P)$(R)P2_SP</pv_name>
       <x>5</x>
       <y>30</y>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color name="Text" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <precision use_class="true">-1</precision>
-      <show_units use_class="true">true</show_units>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
-      <enabled use_class="true">true</enabled>
-      <border_width use_class="true">1</border_width>
-      <border_color use_class="true">
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_width>1</border_width>
+      <border_color>
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -3923,22 +3801,18 @@ else:
     <pv_name>$(P)$(R)P2_SP</pv_name>
     <x>693</x>
     <y>112</y>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="184" green="195" blue="223">
       </color>
     </background_color>
     <precision>0</precision>
-    <horizontal_alignment use_class="true">1</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <border_color use_class="true">
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
       <color red="196" green="196" blue="196">
       </color>
     </border_color>
@@ -3947,19 +3821,19 @@ else:
     <name>EDM Group 29</name>
     <class>NO_BOX</class>
     <x>125</x>
-    <y>633</y>
+    <y>630</y>
     <width>1080</width>
     <height>102</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -3967,20 +3841,20 @@ else:
     <widget type="group" version="3.0.0">
       <name>EDM Group 33</name>
       <class>NO_BOX</class>
-      <x>998</x>
-      <y>57</y>
+      <x>990</x>
+      <y>55</y>
       <width>38</width>
       <height>38</height>
-      <style use_class="true">3</style>
-      <font use_class="true">
+      <style>3</style>
+      <font>
         <font family="Arial" style="REGULAR" size="15.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color name="Read_Background" red="240" green="240" blue="240">
         </color>
       </background_color>
@@ -4069,6 +3943,7 @@ else:
       <widget type="ellipse" version="2.0.0">
         <name>EDM activeCircleClass</name>
         <x>5</x>
+        <y>5</y>
         <width>30</width>
         <height>30</height>
         <line_width>5</line_width>
@@ -4097,20 +3972,20 @@ else:
     <widget type="group" version="3.0.0">
       <name>EDM Group 34</name>
       <class>NO_BOX</class>
-      <x>778</x>
-      <y>57</y>
+      <x>770</x>
+      <y>60</y>
       <width>33</width>
       <height>33</height>
-      <style use_class="true">3</style>
-      <font use_class="true">
+      <style>3</style>
+      <font>
         <font family="Arial" style="REGULAR" size="15.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color name="Read_Background" red="240" green="240" blue="240">
         </color>
       </background_color>
@@ -4202,20 +4077,20 @@ else:
     <widget type="group" version="3.0.0">
       <name>EDM Group 35</name>
       <class>NO_BOX</class>
-      <x>548</x>
-      <y>52</y>
+      <x>545</x>
+      <y>57</y>
       <width>38</width>
       <height>38</height>
-      <style use_class="true">3</style>
-      <font use_class="true">
+      <style>3</style>
+      <font>
         <font family="Arial" style="REGULAR" size="15.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color name="Read_Background" red="240" green="240" blue="240">
         </color>
       </background_color>
@@ -4333,20 +4208,20 @@ else:
     <widget type="group" version="3.0.0">
       <name>EDM Group 36</name>
       <class>NO_BOX</class>
-      <x>328</x>
-      <y>57</y>
+      <x>325</x>
+      <y>60</y>
       <width>33</width>
       <height>33</height>
-      <style use_class="true">3</style>
-      <font use_class="true">
+      <style>3</style>
+      <font>
         <font family="Arial" style="REGULAR" size="15.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color name="Read_Background" red="240" green="240" blue="240">
         </color>
       </background_color>
@@ -4452,8 +4327,8 @@ System Cold</text>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
       <auto_size>true</auto_size>
     </widget>
     <widget type="label" version="2.0.0">
@@ -4461,7 +4336,7 @@ System Cold</text>
       <class>CENTRAL</class>
       <text>Load
 Filling</text>
-      <x>775</x>
+      <x>770</x>
       <y>12</y>
       <width>37</width>
       <height>35</height>
@@ -4473,8 +4348,8 @@ Filling</text>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
       <auto_size>true</auto_size>
     </widget>
     <widget type="label" version="2.0.0">
@@ -4494,8 +4369,8 @@ Load Warm</text>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
       <auto_size>true</auto_size>
     </widget>
     <widget type="label" version="2.0.0">
@@ -4515,364 +4390,27 @@ Filling</text>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
       <auto_size>true</auto_size>
-    </widget>
-    <widget type="group" version="3.0.0">
-      <name>EDM Group 38</name>
-      <class>NO_BOX</class>
-      <x>95</x>
-      <y>53</y>
-      <width>40</width>
-      <height>40</height>
-      <style use_class="true">3</style>
-      <font use_class="true">
-        <font family="Arial" style="REGULAR" size="15.0">
-        </font>
-      </font>
-      <foreground_color use_class="true">
-        <color red="29" green="41" blue="69">
-        </color>
-      </foreground_color>
-      <background_color use_class="true">
-        <color name="Read_Background" red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <transparent>true</transparent>
-      <widget type="ellipse" version="2.0.0">
-        <name>EDM activeCircleClass</name>
-        <x>7</x>
-        <y>6</y>
-        <width>25</width>
-        <height>25</height>
-        <line_width>1</line_width>
-        <line_color>
-          <color name="Black" red="0" green="0" blue="0">
-          </color>
-        </line_color>
-        <background_color>
-          <color name="Black" red="0" green="0" blue="0">
-          </color>
-        </background_color>
-        <rules>
-          <rule name="EDM visibility" prop_id="visible" out_exp="false">
-            <exp bool_exp="pv0&gt;=4.0 &amp;&amp; pv0&lt;9.0">
-              <value>false</value>
-            </exp>
-            <exp bool_exp="true">
-              <value>true</value>
-            </exp>
-            <pv_name>$(P)$(R)Mode_STS</pv_name>
-          </rule>
-        </rules>
-      </widget>
-      <widget type="ellipse" version="2.0.0">
-        <name>EDM activeCircleClass</name>
-        <x>5</x>
-        <y>5</y>
-        <width>30</width>
-        <height>30</height>
-        <line_width>5</line_width>
-        <line_color>
-          <color name="Green LED: On" red="0" green="255" blue="0">
-          </color>
-        </line_color>
-        <background_color>
-          <color name="Green LED: On" red="0" green="255" blue="0">
-          </color>
-        </background_color>
-        <transparent>true</transparent>
-        <rules>
-          <rule name="EDM visibility" prop_id="visible" out_exp="false">
-            <exp bool_exp="pv0&gt;=4.0 &amp;&amp; pv0&lt;5.0">
-              <value>true</value>
-            </exp>
-            <exp bool_exp="true">
-              <value>false</value>
-            </exp>
-            <pv_name>$(P)$(R)Mode2_STS</pv_name>
-          </rule>
-        </rules>
-      </widget>
-    </widget>
-    <widget type="group" version="3.0.0">
-      <name>EDM Group 32</name>
-      <class>NO_BOX</class>
-      <x>143</x>
-      <y>65</y>
-      <width>888</width>
-      <height>20</height>
-      <style use_class="true">3</style>
-      <font use_class="true">
-        <font family="Arial" style="REGULAR" size="15.0">
-        </font>
-      </font>
-      <foreground_color use_class="true">
-        <color red="29" green="41" blue="69">
-        </color>
-      </foreground_color>
-      <background_color use_class="true">
-        <color name="Read_Background" red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <transparent>true</transparent>
-      <widget type="rectangle" version="2.0.0">
-        <name>EDM activeRectangleClass</name>
-        <x>676</x>
-        <y>5</y>
-        <width>172</width>
-        <height>7</height>
-        <line_width>1</line_width>
-        <line_color>
-          <color name="Black" red="0" green="0" blue="0">
-          </color>
-        </line_color>
-        <background_color>
-          <color name="Black" red="0" green="0" blue="0">
-          </color>
-        </background_color>
-        <rules>
-          <rule name="EDM visibility" prop_id="visible" out_exp="false">
-            <exp bool_exp="pv0&gt;=128.0 &amp;&amp; pv0&lt;255.0">
-              <value>false</value>
-            </exp>
-            <exp bool_exp="true">
-              <value>true</value>
-            </exp>
-            <pv_name>$(P)$(R)Mode_STS</pv_name>
-          </rule>
-        </rules>
-      </widget>
-      <widget type="rectangle" version="2.0.0">
-        <name>EDM activeRectangleClass</name>
-        <x>453</x>
-        <y>5</y>
-        <width>172</width>
-        <height>7</height>
-        <line_width>1</line_width>
-        <line_color>
-          <color name="Black" red="0" green="0" blue="0">
-          </color>
-        </line_color>
-        <background_color>
-          <color name="Black" red="0" green="0" blue="0">
-          </color>
-        </background_color>
-        <rules>
-          <rule name="EDM visibility" prop_id="visible" out_exp="false">
-            <exp bool_exp="pv0&gt;=64.0 &amp;&amp; pv0&lt;255.0">
-              <value>false</value>
-            </exp>
-            <exp bool_exp="true">
-              <value>true</value>
-            </exp>
-            <pv_name>$(P)$(R)Mode_STS</pv_name>
-          </rule>
-        </rules>
-      </widget>
-      <widget type="rectangle" version="2.0.0">
-        <name>EDM activeRectangleClass</name>
-        <x>225</x>
-        <y>5</y>
-        <width>172</width>
-        <height>7</height>
-        <line_width>1</line_width>
-        <line_color>
-          <color name="Black" red="0" green="0" blue="0">
-          </color>
-        </line_color>
-        <background_color>
-          <color name="Black" red="0" green="0" blue="0">
-          </color>
-        </background_color>
-        <rules>
-          <rule name="EDM visibility" prop_id="visible" out_exp="false">
-            <exp bool_exp="pv0&gt;=32.0 &amp;&amp; pv0&lt;255.0">
-              <value>false</value>
-            </exp>
-            <exp bool_exp="true">
-              <value>true</value>
-            </exp>
-            <pv_name>$(P)$(R)Mode_STS</pv_name>
-          </rule>
-        </rules>
-      </widget>
-      <widget type="rectangle" version="2.0.0">
-        <name>EDM activeRectangleClass</name>
-        <x>5</x>
-        <y>5</y>
-        <width>172</width>
-        <height>7</height>
-        <line_width>1</line_width>
-        <line_color>
-          <color name="Black" red="0" green="0" blue="0">
-          </color>
-        </line_color>
-        <background_color>
-          <color name="Black" red="0" green="0" blue="0">
-          </color>
-        </background_color>
-        <rules>
-          <rule name="EDM visibility" prop_id="visible" out_exp="false">
-            <exp bool_exp="pv0&gt;=16.0 &amp;&amp; pv0&lt;255.0">
-              <value>false</value>
-            </exp>
-            <exp bool_exp="true">
-              <value>true</value>
-            </exp>
-            <pv_name>$(P)$(R)Mode_STS</pv_name>
-          </rule>
-        </rules>
-      </widget>
-    </widget>
-    <widget type="group" version="3.0.0">
-      <name>EDM Group 31</name>
-      <class>NO_BOX</class>
-      <x>143</x>
-      <y>65</y>
-      <width>812</width>
-      <height>20</height>
-      <style use_class="true">3</style>
-      <font use_class="true">
-        <font family="Arial" style="REGULAR" size="15.0">
-        </font>
-      </font>
-      <foreground_color use_class="true">
-        <color red="29" green="41" blue="69">
-        </color>
-      </foreground_color>
-      <background_color use_class="true">
-        <color name="Read_Background" red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <transparent>true</transparent>
-      <widget type="rectangle" version="2.0.0">
-        <name>EDM activeRectangleClass</name>
-        <x>676</x>
-        <y>5</y>
-        <width>172</width>
-        <height>7</height>
-        <line_width>1</line_width>
-        <line_color>
-          <color name="Green LED: On" red="0" green="255" blue="0">
-          </color>
-        </line_color>
-        <background_color>
-          <color name="Green LED: On" red="0" green="255" blue="0">
-          </color>
-        </background_color>
-        <rules>
-          <rule name="EDM visibility" prop_id="visible" out_exp="false">
-            <exp bool_exp="pv0&gt;=128.0 &amp;&amp; pv0&lt;255.0">
-              <value>true</value>
-            </exp>
-            <exp bool_exp="true">
-              <value>false</value>
-            </exp>
-            <pv_name>$(P)$(R)Mode_STS</pv_name>
-          </rule>
-        </rules>
-      </widget>
-      <widget type="rectangle" version="2.0.0">
-        <name>EDM activeRectangleClass</name>
-        <x>453</x>
-        <y>5</y>
-        <width>172</width>
-        <height>7</height>
-        <line_width>1</line_width>
-        <line_color>
-          <color name="Green LED: On" red="0" green="255" blue="0">
-          </color>
-        </line_color>
-        <background_color>
-          <color name="Green LED: On" red="0" green="255" blue="0">
-          </color>
-        </background_color>
-        <rules>
-          <rule name="EDM visibility" prop_id="visible" out_exp="false">
-            <exp bool_exp="pv0&gt;=64.0 &amp;&amp; pv0&lt;255.0">
-              <value>true</value>
-            </exp>
-            <exp bool_exp="true">
-              <value>false</value>
-            </exp>
-            <pv_name>$(P)$(R)Mode_STS</pv_name>
-          </rule>
-        </rules>
-      </widget>
-      <widget type="rectangle" version="2.0.0">
-        <name>EDM activeRectangleClass</name>
-        <x>225</x>
-        <y>5</y>
-        <width>172</width>
-        <height>7</height>
-        <line_width>1</line_width>
-        <line_color>
-          <color name="Green LED: On" red="0" green="255" blue="0">
-          </color>
-        </line_color>
-        <background_color>
-          <color name="Green LED: On" red="0" green="255" blue="0">
-          </color>
-        </background_color>
-        <rules>
-          <rule name="EDM visibility" prop_id="visible" out_exp="false">
-            <exp bool_exp="pv0&gt;=32.0 &amp;&amp; pv0&lt;255.0">
-              <value>true</value>
-            </exp>
-            <exp bool_exp="true">
-              <value>false</value>
-            </exp>
-            <pv_name>$(P)$(R)Mode_STS</pv_name>
-          </rule>
-        </rules>
-      </widget>
-      <widget type="rectangle" version="2.0.0">
-        <name>EDM activeRectangleClass</name>
-        <x>5</x>
-        <y>5</y>
-        <width>172</width>
-        <height>7</height>
-        <line_width>1</line_width>
-        <line_color>
-          <color name="Green LED: On" red="0" green="255" blue="0">
-          </color>
-        </line_color>
-        <background_color>
-          <color name="Green LED: On" red="0" green="255" blue="0">
-          </color>
-        </background_color>
-        <rules>
-          <rule name="EDM visibility" prop_id="visible" out_exp="false">
-            <exp bool_exp="pv0&gt;=16.0 &amp;&amp; pv0&lt;255.0">
-              <value>true</value>
-            </exp>
-            <exp bool_exp="true">
-              <value>false</value>
-            </exp>
-            <pv_name>$(P)$(R)Mode_STS</pv_name>
-          </rule>
-        </rules>
-      </widget>
     </widget>
     <widget type="group" version="3.0.0">
       <name>EDM Group 37</name>
       <class>NO_BOX</class>
       <x>95</x>
-      <y>55</y>
+      <y>57</y>
       <width>40</width>
       <height>40</height>
-      <style use_class="true">3</style>
-      <font use_class="true">
+      <style>3</style>
+      <font>
         <font family="Arial" style="REGULAR" size="15.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color name="Read_Background" red="240" green="240" blue="240">
         </color>
       </background_color>
@@ -4959,6 +4497,81 @@ Filling</text>
           </rule>
         </rules>
       </widget>
+      <widget type="group" version="3.0.0">
+        <name>EDM Group 38</name>
+        <class>NO_BOX</class>
+        <width>40</width>
+        <height>40</height>
+        <style>3</style>
+        <font>
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="ellipse" version="2.0.0">
+          <name>EDM activeCircleClass</name>
+          <x>7</x>
+          <y>6</y>
+          <width>25</width>
+          <height>25</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=4.0 &amp;&amp; pv0&lt;9.0">
+                <value>false</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>true</value>
+              </exp>
+              <pv_name>$(P)$(R)Mode_STS</pv_name>
+            </rule>
+          </rules>
+        </widget>
+        <widget type="ellipse" version="2.0.0">
+          <name>EDM activeCircleClass</name>
+          <x>5</x>
+          <y>5</y>
+          <width>30</width>
+          <height>30</height>
+          <line_width>5</line_width>
+          <line_color>
+            <color name="Green LED: On" red="0" green="255" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Green LED: On" red="0" green="255" blue="0">
+            </color>
+          </background_color>
+          <transparent>true</transparent>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=4.0 &amp;&amp; pv0&lt;5.0">
+                <value>true</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>false</value>
+              </exp>
+              <pv_name>$(P)$(R)Mode2_STS</pv_name>
+            </rule>
+          </rules>
+        </widget>
+      </widget>
     </widget>
     <widget type="label" version="2.0.0">
       <name>EDM activeXTextClass</name>
@@ -4977,9 +4590,311 @@ System Warm</text>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
       <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <class>LINE_BOX</class>
+      <text>Mode
+Step</text>
+      <x>10</x>
+      <y>27</y>
+      <width>36</width>
+      <height>35</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>EDM activeXTextDspClass_noedit</name>
+      <class>LINE_BOX</class>
+      <pv_name>$(P)$(R)Step_STS</pv_name>
+      <x>10</x>
+      <y>67</y>
+      <width>45</width>
+      <height>21</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 32</name>
+      <class>NO_BOX</class>
+      <x>135</x>
+      <y>67</y>
+      <width>855</width>
+      <height>20</height>
+      <style>3</style>
+      <font>
+        <font family="Arial" style="REGULAR" size="15.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <widget type="group" version="3.0.0">
+        <name>EDM Group 31</name>
+        <class>NO_BOX</class>
+        <width>855</width>
+        <height>20</height>
+        <style>3</style>
+        <font>
+          <font family="Arial" style="REGULAR" size="15.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Read_Background" red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <widget type="rectangle" version="2.0.0">
+          <name>EDM activeRectangleClass</name>
+          <x>675</x>
+          <y>5</y>
+          <width>172</width>
+          <height>7</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Green LED: On" red="0" green="255" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Green LED: On" red="0" green="255" blue="0">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=128.0 &amp;&amp; pv0&lt;255.0">
+                <value>true</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>false</value>
+              </exp>
+              <pv_name>$(P)$(R)Mode_STS</pv_name>
+            </rule>
+          </rules>
+        </widget>
+        <widget type="rectangle" version="2.0.0">
+          <name>EDM activeRectangleClass</name>
+          <x>455</x>
+          <y>5</y>
+          <width>172</width>
+          <height>7</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Green LED: On" red="0" green="255" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Green LED: On" red="0" green="255" blue="0">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=64.0 &amp;&amp; pv0&lt;255.0">
+                <value>true</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>false</value>
+              </exp>
+              <pv_name>$(P)$(R)Mode_STS</pv_name>
+            </rule>
+          </rules>
+        </widget>
+        <widget type="rectangle" version="2.0.0">
+          <name>EDM activeRectangleClass</name>
+          <x>230</x>
+          <y>5</y>
+          <width>172</width>
+          <height>7</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Green LED: On" red="0" green="255" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Green LED: On" red="0" green="255" blue="0">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=32.0 &amp;&amp; pv0&lt;255.0">
+                <value>true</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>false</value>
+              </exp>
+              <pv_name>$(P)$(R)Mode_STS</pv_name>
+            </rule>
+          </rules>
+        </widget>
+        <widget type="rectangle" version="2.0.0">
+          <name>EDM activeRectangleClass</name>
+          <x>10</x>
+          <y>5</y>
+          <width>172</width>
+          <height>7</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Green LED: On" red="0" green="255" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Green LED: On" red="0" green="255" blue="0">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=16.0 &amp;&amp; pv0&lt;255.0">
+                <value>true</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>false</value>
+              </exp>
+              <pv_name>$(P)$(R)Mode_STS</pv_name>
+            </rule>
+          </rules>
+        </widget>
+        <widget type="rectangle" version="2.0.0">
+          <name>EDM activeRectangleClass</name>
+          <x>10</x>
+          <y>5</y>
+          <width>172</width>
+          <height>7</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=16.0 &amp;&amp; pv0&lt;255.0">
+                <value>false</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>true</value>
+              </exp>
+              <pv_name>$(P)$(R)Mode_STS</pv_name>
+            </rule>
+          </rules>
+        </widget>
+        <widget type="rectangle" version="2.0.0">
+          <name>EDM activeRectangleClass</name>
+          <x>230</x>
+          <y>5</y>
+          <width>172</width>
+          <height>7</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=32.0 &amp;&amp; pv0&lt;255.0">
+                <value>false</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>true</value>
+              </exp>
+              <pv_name>$(P)$(R)Mode_STS</pv_name>
+            </rule>
+          </rules>
+        </widget>
+        <widget type="rectangle" version="2.0.0">
+          <name>EDM activeRectangleClass</name>
+          <x>455</x>
+          <y>5</y>
+          <width>172</width>
+          <height>7</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=64.0 &amp;&amp; pv0&lt;255.0">
+                <value>false</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>true</value>
+              </exp>
+              <pv_name>$(P)$(R)Mode_STS</pv_name>
+            </rule>
+          </rules>
+        </widget>
+        <widget type="rectangle" version="2.0.0">
+          <name>EDM activeRectangleClass</name>
+          <x>675</x>
+          <y>5</y>
+          <width>172</width>
+          <height>7</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Black" red="0" green="0" blue="0">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="EDM visibility" prop_id="visible" out_exp="false">
+              <exp bool_exp="pv0&gt;=128.0 &amp;&amp; pv0&lt;255.0">
+                <value>false</value>
+              </exp>
+              <exp bool_exp="true">
+                <value>true</value>
+              </exp>
+              <pv_name>$(P)$(R)Mode_STS</pv_name>
+            </rule>
+          </rules>
+        </widget>
+      </widget>
     </widget>
   </widget>
   <widget type="action_button" version="3.0.0">
@@ -4997,15 +4912,15 @@ System Warm</text>
     <y>172</y>
     <width>40</width>
     <height>40</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="255" green="255" blue="255">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="29" green="41" blue="69">
       </color>
     </background_color>
@@ -5036,15 +4951,15 @@ System Warm</text>
     <y>172</y>
     <width>40</width>
     <height>40</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="255" green="255" blue="255">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="29" green="41" blue="69">
       </color>
     </background_color>
@@ -5075,15 +4990,15 @@ System Warm</text>
     <y>172</y>
     <width>40</width>
     <height>40</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="255" green="255" blue="255">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="29" green="41" blue="69">
       </color>
     </background_color>
@@ -5114,15 +5029,15 @@ System Warm</text>
     <y>240</y>
     <width>40</width>
     <height>40</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="255" green="255" blue="255">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="29" green="41" blue="69">
       </color>
     </background_color>
@@ -5153,15 +5068,15 @@ System Warm</text>
     <y>240</y>
     <width>40</width>
     <height>40</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="255" green="255" blue="255">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="29" green="41" blue="69">
       </color>
     </background_color>
@@ -5192,15 +5107,15 @@ System Warm</text>
     <y>352</y>
     <width>40</width>
     <height>40</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="255" green="255" blue="255">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="29" green="41" blue="69">
       </color>
     </background_color>
@@ -5249,39 +5164,6 @@ else:
     </scripts>
     <tooltip>$(P)$(R)V10_STS</tooltip>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>EDM activeSymbolClass</name>
-    <file>ValveR.bob</file>
-    <x>338</x>
-    <y>205</y>
-    <width>50</width>
-    <height>65</height>
-    <resize>3</resize>
-    <group_name>EDM Group 0</group_name>
-    <transparent>true</transparent>
-    <scripts>
-      <script file="EmbeddedPy">
-        <text><![CDATA[# pvs[0] = $(P)$(R)V4_STS
-from org.csstudio.display.builder.runtime.script import PVUtil
-val = PVUtil.getDouble(pvs[0])
-if 0.0 <= val < 0.0:
-    widget.setPropertyValue('group_name', 'EDM Group 0')
-elif 0.0 <= val < 0.0:
-    widget.setPropertyValue('group_name', 'EDM Group 1')
-elif 0.0 <= val < 1.0:
-    widget.setPropertyValue('group_name', 'EDM Group 2')
-elif 1.0 <= val < 2.0:
-    widget.setPropertyValue('group_name', 'EDM Group 3')
-elif 9.0 <= val < 10.0:
-    widget.setPropertyValue('group_name', 'EDM Group 4')
-else:
-    widget.setPropertyValue('group_name', 'EDM Group 0')
-]]></text>
-        <pv_name>$(P)$(R)V4_STS</pv_name>
-      </script>
-    </scripts>
-    <tooltip>$(P)$(R)V4_STS</tooltip>
-  </widget>
   <widget type="group" version="3.0.0">
     <name>EDM Group 39</name>
     <class>NO_BOX</class>
@@ -5289,16 +5171,16 @@ else:
     <y>175</y>
     <width>66</width>
     <height>82</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -5325,20 +5207,20 @@ else:
     <widget type="group" version="3.0.0">
       <name>EDM Group 40</name>
       <class>NO_BOX</class>
-      <x>17</x>
+      <x>16</x>
       <y>32</y>
       <width>38</width>
       <height>39</height>
-      <style use_class="true">3</style>
-      <font use_class="true">
+      <style>3</style>
+      <font>
         <font family="Arial" style="REGULAR" size="15.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color name="Read_Background" red="240" green="240" blue="240">
         </color>
       </background_color>
@@ -5366,23 +5248,15 @@ else:
         <y>13</y>
         <width>17</width>
         <height>16</height>
-        <font use_class="true">
+        <font>
           <font family="Arial" style="REGULAR" size="14.0">
           </font>
         </font>
-        <foreground_color use_class="true">
+        <foreground_color>
           <color red="29" green="41" blue="69">
           </color>
         </foreground_color>
-        <background_color use_class="true">
-          <color name="Background" red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <horizontal_alignment use_class="true">0</horizontal_alignment>
-        <vertical_alignment use_class="true">0</vertical_alignment>
-        <rotation_step use_class="true">0</rotation_step>
         <auto_size>true</auto_size>
-        <wrap_words use_class="true">true</wrap_words>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>EDM activeLineClass</name>
@@ -5408,22 +5282,18 @@ else:
       <x>5</x>
       <y>5</y>
       <width>58</width>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color name="Text" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="184" green="195" blue="223">
         </color>
       </background_color>
       <precision>1</precision>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
-      <border_color use_class="true">
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
         <color red="196" green="196" blue="196">
         </color>
       </border_color>
@@ -5436,16 +5306,16 @@ else:
     <y>520</y>
     <width>129</width>
     <height>38</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -5456,22 +5326,18 @@ else:
       <x>5</x>
       <y>11</y>
       <width>84</width>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color name="Text" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="184" green="195" blue="223">
         </color>
       </background_color>
       <precision>1</precision>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
-      <border_color use_class="true">
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
         <color red="196" green="196" blue="196">
         </color>
       </border_color>
@@ -5483,22 +5349,18 @@ else:
     <x>336</x>
     <y>280</y>
     <width>58</width>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="184" green="195" blue="223">
       </color>
     </background_color>
     <precision>0</precision>
-    <horizontal_alignment use_class="true">1</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <border_color use_class="true">
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
       <color red="196" green="196" blue="196">
       </color>
     </border_color>
@@ -5509,22 +5371,18 @@ else:
     <x>1057</x>
     <y>458</y>
     <width>58</width>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="184" green="195" blue="223">
       </color>
     </background_color>
     <precision>0</precision>
-    <horizontal_alignment use_class="true">1</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <border_color use_class="true">
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
       <color red="196" green="196" blue="196">
       </color>
     </border_color>
@@ -5536,16 +5394,16 @@ else:
     <y>453</y>
     <width>118</width>
     <height>53</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -5567,25 +5425,17 @@ else:
       <x>57</x>
       <y>29</y>
       <width>58</width>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color name="Text" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <precision use_class="true">-1</precision>
-      <show_units use_class="true">true</show_units>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
-      <enabled use_class="true">true</enabled>
-      <border_width use_class="true">1</border_width>
-      <border_color use_class="true">
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_width>1</border_width>
+      <border_color>
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -5596,22 +5446,18 @@ else:
       <x>57</x>
       <y>28</y>
       <width>58</width>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color name="Text" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="184" green="195" blue="223">
         </color>
       </background_color>
       <precision>0</precision>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
-      <border_color use_class="true">
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
         <color red="196" green="196" blue="196">
         </color>
       </border_color>
@@ -5631,15 +5477,15 @@ else:
       <y>5</y>
       <width>45</width>
       <height>45</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -5663,16 +5509,16 @@ else:
     <y>300</y>
     <width>120</width>
     <height>65</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -5694,22 +5540,18 @@ else:
       <x>5</x>
       <y>35</y>
       <width>60</width>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color name="Text" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="184" green="195" blue="223">
         </color>
       </background_color>
       <precision>0</precision>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
-      <border_color use_class="true">
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
         <color red="196" green="196" blue="196">
         </color>
       </border_color>
@@ -5720,25 +5562,17 @@ else:
       <x>5</x>
       <y>10</y>
       <width>60</width>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color name="Text" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="255" green="255" blue="255">
         </color>
       </background_color>
-      <precision use_class="true">-1</precision>
-      <show_units use_class="true">true</show_units>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
-      <enabled use_class="true">true</enabled>
-      <border_width use_class="true">1</border_width>
-      <border_color use_class="true">
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_width>1</border_width>
+      <border_color>
         <color red="184" green="195" blue="223">
         </color>
       </border_color>
@@ -5758,15 +5592,15 @@ else:
       <y>10</y>
       <width>45</width>
       <height>45</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -5790,16 +5624,16 @@ else:
     <y>53</y>
     <width>10</width>
     <height>195</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -5862,16 +5696,16 @@ else:
     <y>53</y>
     <width>10</width>
     <height>195</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -5933,16 +5767,16 @@ else:
     <y>775</y>
     <width>125</width>
     <height>53</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -5974,8 +5808,8 @@ EXIST</text>
         </color>
       </foreground_color>
       <transparent>false</transparent>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
       <rules>
         <rule name="EDM visibility" prop_id="visible" out_exp="false">
           <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
@@ -6011,22 +5845,18 @@ EXIST</text>
       <y>25</y>
       <width>115</width>
       <height>25</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
-        <color name="Text" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="184" green="195" blue="223">
         </color>
       </background_color>
       <precision>0</precision>
-      <horizontal_alignment use_class="true">1</horizontal_alignment>
-      <vertical_alignment use_class="true">1</vertical_alignment>
-      <border_color use_class="true">
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
         <color red="196" green="196" blue="196">
         </color>
       </border_color>
@@ -6039,39 +5869,14 @@ EXIST</text>
     <y>920</y>
     <width>1128</width>
     <height>30</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
-      <color name="Background" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">0</vertical_alignment>
-    <rotation_step use_class="true">0</rotation_step>
-    <wrap_words use_class="true">true</wrap_words>
-  </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>EDM activeLineClass</name>
-    <x>255</x>
-    <y>68</y>
-    <width>1</width>
-    <height>1</height>
-    <points>
-      <point x="0.0" y="0.0">
-      </point>
-    </points>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="Black" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <arrow_length>15</arrow_length>
   </widget>
   <widget type="group" version="3.0.0">
     <name>EDM Group 42</name>
@@ -6080,48 +5885,49 @@ EXIST</text>
     <y>520</y>
     <width>40</width>
     <height>38</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
     <transparent>true</transparent>
     <widget type="multi_state_led" version="2.0.0">
       <name>EDM activeCircleClass</name>
+      <class>DEFAULT_NO_LABEL</class>
       <pv_name>=highestSeverity(`$(P)$(R)F1_STS`)</pv_name>
       <x>5</x>
       <y>5</y>
       <width>32</width>
       <height>30</height>
       <border_alarm_sensitive>false</border_alarm_sensitive>
-      <states use_class="true">
-        <state use_class="true">
-          <value use_class="true">0</value>
-          <label use_class="true">State 1</label>
-          <color use_class="true">
-            <color name="Off" red="237" green="237" blue="237">
+      <states>
+        <state>
+          <value>0</value>
+          <label></label>
+          <color>
+            <color name="Off" red="60" green="100" blue="60">
             </color>
           </color>
         </state>
-        <state use_class="true">
-          <value use_class="true">1</value>
-          <label use_class="true">State 2</label>
-          <color use_class="true">
+        <state>
+          <value>1</value>
+          <label></label>
+          <color>
             <color red="76" green="100" blue="171">
             </color>
           </color>
         </state>
       </states>
-      <fallback_color use_class="true">
-        <color name="Off" red="237" green="237" blue="237">
+      <fallback_color>
+        <color name="Off" red="60" green="100" blue="60">
         </color>
       </fallback_color>
     </widget>
@@ -6132,23 +5938,15 @@ EXIST</text>
       <y>13</y>
       <width>17</width>
       <height>16</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Background" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <horizontal_alignment use_class="true">0</horizontal_alignment>
-      <vertical_alignment use_class="true">0</vertical_alignment>
-      <rotation_step use_class="true">0</rotation_step>
       <auto_size>true</auto_size>
-      <wrap_words use_class="true">true</wrap_words>
     </widget>
   </widget>
   <widget type="group" version="3.0.0">
@@ -6158,16 +5956,16 @@ EXIST</text>
     <y>400</y>
     <width>40</width>
     <height>20</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -6199,55 +5997,16 @@ EXIST</text>
       <y>3</y>
       <width>36</width>
       <height>16</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Background" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <horizontal_alignment use_class="true">0</horizontal_alignment>
-      <vertical_alignment use_class="true">0</vertical_alignment>
-      <rotation_step use_class="true">0</rotation_step>
       <auto_size>true</auto_size>
-      <wrap_words use_class="true">true</wrap_words>
     </widget>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>EDM activeSymbolClass</name>
-    <file>Valve.bob</file>
-    <x>338</x>
-    <y>220</y>
-    <width>50</width>
-    <height>50</height>
-    <resize>3</resize>
-    <group_name>EDM Group 0</group_name>
-    <transparent>true</transparent>
-    <scripts>
-      <script file="EmbeddedPy">
-        <text><![CDATA[# pvs[0] = $(P)$(R)V4_STS
-from org.csstudio.display.builder.runtime.script import PVUtil
-val = PVUtil.getDouble(pvs[0])
-if 0.0 <= val < 0.0:
-    widget.setPropertyValue('group_name', 'EDM Group 0')
-elif 0.0 <= val < 0.0:
-    widget.setPropertyValue('group_name', 'EDM Group 1')
-elif 0.0 <= val < 1.0:
-    widget.setPropertyValue('group_name', 'EDM Group 2')
-elif 1.0 <= val < 2.0:
-    widget.setPropertyValue('group_name', 'EDM Group 3')
-else:
-    widget.setPropertyValue('group_name', 'EDM Group 0')
-]]></text>
-        <pv_name>$(P)$(R)V4_STS</pv_name>
-      </script>
-    </scripts>
-    <tooltip>$(P)$(R)V4_STS</tooltip>
   </widget>
   <widget type="group" version="3.0.0">
     <name>EDM Group 12</name>
@@ -6256,16 +6015,16 @@ else:
     <y>495</y>
     <width>40</width>
     <height>20</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -6296,23 +6055,15 @@ else:
       <text>50%</text>
       <width>29</width>
       <height>16</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
-        <color name="Background" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <horizontal_alignment use_class="true">0</horizontal_alignment>
-      <vertical_alignment use_class="true">0</vertical_alignment>
-      <rotation_step use_class="true">0</rotation_step>
       <auto_size>true</auto_size>
-      <wrap_words use_class="true">true</wrap_words>
     </widget>
   </widget>
   <widget type="group" version="3.0.0">
@@ -6322,16 +6073,16 @@ else:
     <y>775</y>
     <width>158</width>
     <height>53</height>
-    <style use_class="true">3</style>
-    <font use_class="true">
+    <style>3</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -6344,32 +6095,22 @@ else:
           <pv_name>$(pv_name)</pv_name>
           <value>1</value>
         </action>
-        <action type="write_pv">
-          <description>Pause</description>
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-        </action>
-        <action type="write_pv">
-          <description>Resume</description>
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-        </action>
       </actions>
       <pv_name>$(P)$(R)EnginMode_CMD</pv_name>
-      <text>Resume</text>
+      <text>Engineering Mode</text>
       <x>5</x>
       <y>5</y>
       <width>150</width>
       <height>45</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -6386,6 +6127,86 @@ else:
       </rules>
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Pause</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)Pause_CMD</pv_name>
+      <text>Pause</text>
+      <x>5</x>
+      <y>5</y>
+      <width>150</width>
+      <height>45</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>false</value>
+          </exp>
+          <pv_name>=`$(P)$(R)ButtonsVis_STS`&amp;8?1:0</pv_name>
+        </rule>
+      </rules>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Resume</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)Resume_CMD</pv_name>
+      <text>Resume</text>
+      <x>5</x>
+      <y>5</y>
+      <width>150</width>
+      <height>45</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>false</value>
+          </exp>
+          <pv_name>=`$(P)$(R)ButtonsVis_STS`&amp;16?1:0</pv_name>
+        </rule>
+      </rules>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
   </widget>
   <widget type="group" version="3.0.0">
     <name>EDM Group 3</name>
@@ -6394,16 +6215,16 @@ else:
     <y>775</y>
     <width>1085</width>
     <height>55</height>
-    <style use_class="true">2</style>
-    <font use_class="true">
+    <style>2</style>
+    <font>
       <font family="Arial" style="REGULAR" size="15.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="29" green="41" blue="69">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="Read_Background" red="240" green="240" blue="240">
       </color>
     </background_color>
@@ -6423,15 +6244,15 @@ else:
       <y>4</y>
       <width>150</width>
       <height>45</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -6463,15 +6284,15 @@ else:
       <y>4</y>
       <width>150</width>
       <height>45</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -6503,15 +6324,15 @@ else:
       <y>4</y>
       <width>150</width>
       <height>45</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -6543,15 +6364,15 @@ else:
       <y>4</y>
       <width>150</width>
       <height>45</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -6583,15 +6404,15 @@ else:
       <y>4</y>
       <width>150</width>
       <height>45</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -6623,15 +6444,15 @@ else:
       <y>4</y>
       <width>150</width>
       <height>45</height>
-      <font use_class="true">
+      <font>
         <font family="Arial" style="REGULAR" size="14.0">
         </font>
       </font>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="255" green="255" blue="255">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color red="29" green="41" blue="69">
         </color>
       </background_color>
@@ -6664,15 +6485,15 @@ else:
     <y>780</y>
     <width>150</width>
     <height>45</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="255" green="255" blue="255">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="29" green="41" blue="69">
       </color>
     </background_color>
@@ -6704,15 +6525,15 @@ else:
     <y>780</y>
     <width>150</width>
     <height>45</height>
-    <font use_class="true">
+    <font>
       <font family="Arial" style="REGULAR" size="14.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color red="255" green="255" blue="255">
       </color>
     </foreground_color>
-    <background_color use_class="true">
+    <background_color>
       <color red="29" green="41" blue="69">
       </color>
     </background_color>
@@ -6738,14 +6559,9 @@ else:
         <pv_name>$(pv_name)</pv_name>
         <value>1</value>
       </action>
-      <action type="write_pv">
-        <description>Abort</description>
-        <pv_name>$(pv_name)</pv_name>
-        <value>1</value>
-      </action>
     </actions>
     <pv_name>$(P)$(R)ForceTopUp_CMD</pv_name>
-    <text>Abort</text>
+    <text>Buffer Top Up</text>
     <x>900</x>
     <y>780</y>
     <width>150</width>
@@ -6773,6 +6589,48 @@ else:
         <pv_name>=`$(P)$(R)ButtonsVis_STS`&amp;4?1:0</pv_name>
       </rule>
     </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM activeMessageButtonClass</name>
+    <class>LINE_BOX</class>
+    <actions>
+      <action type="write_pv">
+        <description>Abort</description>
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)Abort_CMD</pv_name>
+    <text>Abort</text>
+    <x>900</x>
+    <y>780</y>
+    <width>150</width>
+    <height>45</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="EDM visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>=`$(P)$(R)ButtonsVis_STS`&amp;2?1:0</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>EDM activeMessageButtonClass</name>
@@ -6813,5 +6671,6 @@ else:
         <pv_name>=`$(P)$(R)ButtonsVis_STS`&amp;64?1:0</pv_name>
       </rule>
     </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
 </display>
