@@ -1,0 +1,1425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-11-25 11:27:09 by ryi58813-->
+<display version="2.0.0">
+  <name>IO</name>
+  <x>1</x>
+  <y use_class="true">0</y>
+  <width>1280</width>
+  <height>910</height>
+  <background_color use_class="true">
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="polyline" version="2.0.0">
+    <name>EDM activeLineClass</name>
+    <x>195</x>
+    <y>6</y>
+    <width>1</width>
+    <height>450</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <arrow_length>15</arrow_length>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>Input / Output Data</text>
+    <width>1280</width>
+    <height>50</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>Analogue Outputs</text>
+    <x>1038</x>
+    <y>90</y>
+    <width>149</width>
+    <height>17</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)PumpCurr_MON</pv_name>
+    <x>743</x>
+    <y>128</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)L1Level_MON</pv_name>
+    <x>743</x>
+    <y>224</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)L2Level_MON</pv_name>
+    <x>743</x>
+    <y>256</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)P1Pressure_MON</pv_name>
+    <x>743</x>
+    <y>288</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)P2Pressure_MON</pv_name>
+    <x>743</x>
+    <y>320</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)F2Flow_MON</pv_name>
+    <x>743</x>
+    <y>384</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)FR1_TC_MON</pv_name>
+    <x>743</x>
+    <y>416</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)FR2_TC_MON</pv_name>
+    <x>743</x>
+    <y>448</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)FR3_TC_MON</pv_name>
+    <x>743</x>
+    <y>480</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)FR4_TC_MON</pv_name>
+    <x>743</x>
+    <y>512</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)EGH_Temp_MON</pv_name>
+    <x>743</x>
+    <y>544</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)PumpSpeed_MON</pv_name>
+    <x>1025</x>
+    <y>128</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)BufferPower_MON</pv_name>
+    <x>1025</x>
+    <y>160</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)EghPower_MON</pv_name>
+    <x>1025</x>
+    <y>192</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)PumpFreq_MON</pv_name>
+    <x>1025</x>
+    <y>288</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)T2_Temp_MON</pv_name>
+    <x>743</x>
+    <y>608</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)T1_Temp_MON</pv_name>
+    <x>743</x>
+    <y>576</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)T10_Temp_MON</pv_name>
+    <x>743</x>
+    <y>672</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <class>CUSTOM</class>
+    <text>Pump Speed
+
+Buffer Power
+
+EGH Power
+
+
+
+
+
+Pump Frequency</text>
+    <x>1136</x>
+    <y>133</y>
+    <width>107</width>
+    <height>207</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="12.5">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <class>CUSTOM</class>
+    <text>Pump Current
+
+
+
+
+
+L1 Level
+
+L2 Level
+
+P1 Pressure
+
+P2 Pressure
+
+
+
+F2 Flow
+
+FR1 T/C
+
+FR2 T/C
+
+FR3 T/C
+
+FR4 T/C
+
+EGH Temperature
+
+T1 Temperature
+
+T2 Temperature
+
+
+
+T10 Temperature</text>
+    <x>854</x>
+    <y>135</y>
+    <width>115</width>
+    <height>665</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="12.5">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>Input / Output Signals</text>
+    <width>1275</width>
+    <height>50</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>Analogue Inputs</text>
+    <x>767</x>
+    <y>90</y>
+    <width>149</width>
+    <height>17</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)Pump_Hours_MON</pv_name>
+    <x>744</x>
+    <y>704</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)Pump_HrsReset_MON</pv_name>
+    <x>743</x>
+    <y>736</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <class>CUSTOM</class>
+    <text>Pump Operating Hours
+
+Operating Hours Reset Counter</text>
+    <x>854</x>
+    <y>711</y>
+    <width>197</width>
+    <height>54</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="12.5">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)V10_SP_MON</pv_name>
+    <x>1025</x>
+    <y>256</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)V4_SP_MON</pv_name>
+    <x>1025</x>
+    <y>224</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)T4_TC_MON</pv_name>
+    <x>743</x>
+    <y>640</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)V10Pos_MON</pv_name>
+    <x>743</x>
+    <y>192</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)V4Pos_MON</pv_name>
+    <x>743</x>
+    <y>160</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>EDM activeXTextDspClass_noedit</name>
+    <pv_name>$(P)$(R)F1Flow_MON</pv_name>
+    <x>743</x>
+    <y>352</y>
+    <height>25</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <border_color use_class="true">
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>Identity: $(P)</text>
+    <x>103</x>
+    <y>842</y>
+    <width>1128</width>
+    <height>30</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <class>CUSTOM</class>
+    <text>V4 Position
+
+V10 Position
+
+
+
+
+
+
+
+
+
+F1 Flow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+T4 Temperature</text>
+    <x>854</x>
+    <y>169</y>
+    <width>101</width>
+    <height>589</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="12.5">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <class>CUSTOM</class>
+    <text>V4 Setpoint
+
+V10 Setpoint</text>
+    <x>1136</x>
+    <y>229</y>
+    <width>81</width>
+    <height>54</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="12.5">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 0</name>
+    <y>71</y>
+    <width>702</width>
+    <height>697</height>
+    <style use_class="true">0</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <class>CUSTOM</class>
+      <text>Pump_ERR
+
+Pump_At_Speed
+
+Pump_MCB_OK
+
+Heaters_MCB_OK
+
+Heaters_Enabled
+
+Reset_PB
+
+EPS_OK
+
+Local_Estop_OK
+
+Buffer ON
+
+EGH ON</text>
+      <x>67</x>
+      <y>46</y>
+      <width>116</width>
+      <height>309</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.5">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>EDM ByteClass</name>
+      <pv_name>$(P)$(R)DigitalIn1_MON</pv_name>
+      <x>23</x>
+      <y>35</y>
+      <width>35</width>
+      <height>256</height>
+      <startBit>8</startBit>
+      <bitReverse>true</bitReverse>
+      <horizontal>false</horizontal>
+      <square>true</square>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </on_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font use_class="true">
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>EDM ByteClass</name>
+      <pv_name>$(P)$(R)DigitalIn1_MON</pv_name>
+      <x>23</x>
+      <y>291</y>
+      <width>35</width>
+      <height>64</height>
+      <startBit>6</startBit>
+      <numBits>2</numBits>
+      <horizontal>false</horizontal>
+      <square>true</square>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </on_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font use_class="true">
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>EDM ByteClass</name>
+      <pv_name>$(P)$(R)DigitalOut1_MON</pv_name>
+      <x>262</x>
+      <y>35</y>
+      <width>35</width>
+      <height>256</height>
+      <startBit>8</startBit>
+      <bitReverse>true</bitReverse>
+      <horizontal>false</horizontal>
+      <square>true</square>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </on_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font use_class="true">
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Digital Outputs</text>
+      <x>373</x>
+      <width>111</width>
+      <height>17</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>EDM ByteClass</name>
+      <pv_name>$(P)$(R)DigitalOut2_MON</pv_name>
+      <x>508</x>
+      <y>35</y>
+      <width>35</width>
+      <height>256</height>
+      <bitReverse>true</bitReverse>
+      <horizontal>false</horizontal>
+      <square>true</square>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </on_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font use_class="true">
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <class>CUSTOM</class>
+      <text>Pump_ON
+
+Heaters_ON
+
+CC_Alarm_LP
+
+CC_RunMode_LP
+
+SSR1_ON
+
+SSR2_ON
+
+SSR3_ON
+
+SSR4_ON</text>
+      <x>307</x>
+      <y>46</y>
+      <width>114</width>
+      <height>244</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.5">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <class>CUSTOM</class>
+      <text>EPS_CC_OK
+
+
+
+EPS_CC_IN_Run
+
+
+
+Local_Alarm</text>
+      <x>552</x>
+      <y>46</y>
+      <width>112</width>
+      <height>169</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.5">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Digital Inputs</text>
+      <x>23</x>
+      <width>150</width>
+      <height>17</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 1</name>
+      <y>355</y>
+      <width>407</width>
+      <height>304</height>
+      <style use_class="true">0</style>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="15.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>EDM activeXTextClass</name>
+        <class>CUSTOM</class>
+        <text>V1_Closed
+
+V2_Closed
+
+V3_Closed
+
+V4_Closed
+
+V5_Closed
+
+V6_Closed
+
+Air_Pressure_OK
+
+V10_Closed</text>
+        <x>49</x>
+        <y>16</y>
+        <width>109</width>
+        <height>245</height>
+        <font>
+          <font family="Arial" style="REGULAR" size="12.5">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="byte_monitor" version="2.0.0">
+        <name>EDM ByteClass</name>
+        <pv_name>$(P)$(R)DigitalIn2_MON</pv_name>
+        <x>5</x>
+        <y>5</y>
+        <width>35</width>
+        <height>256</height>
+        <startBit>8</startBit>
+        <bitReverse>true</bitReverse>
+        <horizontal>false</horizontal>
+        <square>true</square>
+        <off_color use_class="true">
+          <color red="237" green="237" blue="237">
+          </color>
+        </off_color>
+        <on_color use_class="true">
+          <color name="Write_Background" red="128" green="255" blue="255">
+          </color>
+        </on_color>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <font use_class="true">
+          <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="byte_monitor" version="2.0.0">
+        <name>EDM ByteClass</name>
+        <pv_name>$(P)$(R)DigitalOut2_MON</pv_name>
+        <x>244</x>
+        <y>5</y>
+        <width>35</width>
+        <height>256</height>
+        <startBit>8</startBit>
+        <bitReverse>true</bitReverse>
+        <horizontal>false</horizontal>
+        <square>true</square>
+        <off_color use_class="true">
+          <color red="237" green="237" blue="237">
+          </color>
+        </off_color>
+        <on_color use_class="true">
+          <color name="Write_Background" red="128" green="255" blue="255">
+          </color>
+        </on_color>
+        <foreground_color use_class="true">
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <font use_class="true">
+          <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM activeXTextClass</name>
+        <class>CUSTOM</class>
+        <text>V1_OPEN
+
+V2_OPEN
+
+V3_OPEN
+
+V4_OPEN
+
+V5_OPEN
+
+V6_OPEN
+
+
+
+V10_OPEN</text>
+        <x>288</x>
+        <y>16</y>
+        <width>73</width>
+        <height>245</height>
+        <font>
+          <font family="Arial" style="REGULAR" size="12.5">
+          </font>
+        </font>
+        <foreground_color>
+          <color red="29" green="41" blue="69">
+          </color>
+        </foreground_color>
+        <auto_size>true</auto_size>
+      </widget>
+    </widget>
+  </widget>
+</display>

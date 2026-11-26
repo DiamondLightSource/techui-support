@@ -1,0 +1,38 @@
+/**
+\mainpage CryoCoolerXV EPICS Support Module
+\section intro_sec Introduction
+
+This is a vendor-imported support module for the Cryocooler XV by FMB-Berlin/FMB-Oxford.
+
+The original software is described in the <a href="../CryoCoolerXV_TechDesc.pdf">"GUI Software Technical Description"</a> document.
+
+Other documentation:
+<ul>
+<li><a href="../vapour%20pressure%20LN2.pdf">Boiling point of liquid N2 (LN2)</a>
+<li><a href="../Cryocooler%20XV%20User%20Manual%20Rev%202.2.pdf">Technical Manual (Cryocooler XV User Manual revision 2.2) - Aug 2017</a>
+<li><a href="../CryoCoolerXV_SoftUserMan.pdf">EPICS User Manual</a>
+<li><a href="../CryoCoolerXV_TechDesc.pdf">EPICS Technical Manual</a>
+</ul>
+
+\section dls Modifications at DLS
+
+These are notes on the modifications from the original vendor software.
+
+The software was delivered on a Debian PC running the EPICS distribution as packaged by NSLS-II.
+
+The paths were modified to match DLS specific locations.
+
+The csvlogger sequencer program uses the environment variable "HOME" to determine where files are written to.
+
+The IOC runs as user "cryocooler" on the Debian PC supplied and the
+log files were being saved to hard disk at the location
+/home/cryocooler/CCXV_DATA. The ioc startup script was modified to set
+HOME to save files under the path /dls/ops-data/CryoCooler/${IOCNAME}
+
+Similarly, the alarms are written under "HOME" to the file alarms.log
+by the FileLog component. The environment modification of HOME applies
+to this file too.
+
+**/
+
+/* Build instructions page will be generated from the xml file given to dls-xml-iocbuilder.py --doc */

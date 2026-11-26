@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-11-25 12:00:16 by ryi58813-->
+<display version="2.0.0">
+  <name>Trending</name>
+  <x>1</x>
+  <y use_class="true">0</y>
+  <width>1280</width>
+  <height>910</height>
+  <background_color use_class="true">
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM shellCmdClass</name>
+    <actions>
+      <action type="command">
+        <description>Start Trend Viewer</description>
+        <command>./plot.sh</command>
+      </action>
+    </actions>
+    <text>Start Trend Viewer</text>
+    <x>417</x>
+    <y>159</y>
+    <width>503</width>
+    <height>124</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+</display>

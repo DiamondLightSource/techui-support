@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-11-25 11:56:03 by ryi58813-->
+<display version="2.0.0">
+  <name>Pump</name>
+  <x>265</x>
+  <y use_class="true">0</y>
+  <width>500</width>
+  <height>200</height>
+  <background_color use_class="true">
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 0</name>
+    <class>LINE_BOX</class>
+    <x>20</x>
+    <y>100</y>
+    <width>70</width>
+    <height>70</height>
+    <style use_class="true">2</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM activeRectangleClass</name>
+      <x>5</x>
+      <y>5</y>
+      <width>61</width>
+      <height>61</height>
+      <visible>false</visible>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>EDM activeCircleClass</name>
+      <x>10</x>
+      <y>10</y>
+      <width>50</width>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Red LED: On" red="255" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>EDM activeLineClass</name>
+      <x>10</x>
+      <y>20</y>
+      <width>45</width>
+      <height>15</height>
+      <points>
+        <point x="0.0" y="15.0">
+        </point>
+        <point x="45.0" y="0.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrow_length>15</arrow_length>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>EDM activeLineClass</name>
+      <x>10</x>
+      <y>35</y>
+      <width>45</width>
+      <height>15</height>
+      <points>
+        <point x="45.0" y="14.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrow_length>15</arrow_length>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 1</name>
+    <class>LINE_BOX</class>
+    <x>100</x>
+    <y>100</y>
+    <width>70</width>
+    <height>70</height>
+    <style use_class="true">2</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM activeRectangleClass</name>
+      <x>5</x>
+      <y>5</y>
+      <width>61</width>
+      <height>61</height>
+      <visible>false</visible>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>EDM activeCircleClass</name>
+      <x>10</x>
+      <y>10</y>
+      <width>50</width>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>EDM activeLineClass</name>
+      <x>10</x>
+      <y>20</y>
+      <width>45</width>
+      <height>15</height>
+      <points>
+        <point x="0.0" y="15.0">
+        </point>
+        <point x="45.0" y="0.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrow_length>15</arrow_length>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>EDM activeLineClass</name>
+      <x>10</x>
+      <y>35</y>
+      <width>45</width>
+      <height>15</height>
+      <points>
+        <point x="45.0" y="14.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrow_length>15</arrow_length>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 2</name>
+    <class>LINE_BOX</class>
+    <x>175</x>
+    <y>100</y>
+    <width>70</width>
+    <height>70</height>
+    <style use_class="true">2</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM activeRectangleClass</name>
+      <x>5</x>
+      <y>5</y>
+      <width>61</width>
+      <height>61</height>
+      <visible>false</visible>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>EDM activeCircleClass</name>
+      <x>10</x>
+      <y>10</y>
+      <width>50</width>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Canvas" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>EDM activeLineClass</name>
+      <x>10</x>
+      <y>20</y>
+      <width>45</width>
+      <height>15</height>
+      <points>
+        <point x="0.0" y="15.0">
+        </point>
+        <point x="45.0" y="0.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrow_length>15</arrow_length>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>EDM activeLineClass</name>
+      <x>10</x>
+      <y>35</y>
+      <width>45</width>
+      <height>15</height>
+      <points>
+        <point x="45.0" y="14.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrow_length>15</arrow_length>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 3</name>
+    <class>LINE_BOX</class>
+    <x>250</x>
+    <y>100</y>
+    <width>70</width>
+    <height>70</height>
+    <style use_class="true">2</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM activeRectangleClass</name>
+      <x>5</x>
+      <y>5</y>
+      <width>61</width>
+      <height>61</height>
+      <visible>false</visible>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>EDM activeCircleClass</name>
+      <x>10</x>
+      <y>10</y>
+      <width>50</width>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Green LED: On" red="0" green="255" blue="0">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>EDM activeLineClass</name>
+      <x>10</x>
+      <y>20</y>
+      <width>45</width>
+      <height>15</height>
+      <points>
+        <point x="0.0" y="15.0">
+        </point>
+        <point x="45.0" y="0.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrow_length>15</arrow_length>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>EDM activeLineClass</name>
+      <x>10</x>
+      <y>35</y>
+      <width>45</width>
+      <height>15</height>
+      <points>
+        <point x="45.0" y="14.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrow_length>15</arrow_length>
+    </widget>
+  </widget>
+</display>

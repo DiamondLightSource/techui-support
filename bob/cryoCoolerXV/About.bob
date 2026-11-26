@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-11-25 09:20:06 by ryi58813-->
+<display version="2.0.0">
+  <name>About</name>
+  <x>586</x>
+  <y use_class="true">0</y>
+  <width>1274</width>
+  <height>958</height>
+  <background_color use_class="true">
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 0</name>
+    <x>876</x>
+    <y>696</y>
+    <width>216</width>
+    <height>105</height>
+    <style use_class="true">0</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>www . f m b - b e r l i n . com</text>
+      <x>8</x>
+      <y>48</y>
+      <width>178</width>
+      <height>16</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <auto_size>true</auto_size>
+      <wrap_words use_class="true">true</wrap_words>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>EDM activePngClass</name>
+      <file>logofmbb.png</file>
+      <x>5</x>
+      <y>5</y>
+      <width>168</width>
+      <height>40</height>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 1</name>
+    <x>145</x>
+    <y>697</y>
+    <width>216</width>
+    <height>105</height>
+    <style use_class="true">0</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="picture" version="2.0.0">
+      <name>EDM activePngClass</name>
+      <file>logofmbo.png</file>
+      <x>6</x>
+      <y>5</y>
+      <width>165</width>
+      <height>36</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>www . f m b - o x f o r d . com</text>
+      <x>5</x>
+      <y>46</y>
+      <width>183</width>
+      <height>16</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <auto_size>true</auto_size>
+      <wrap_words use_class="true">true</wrap_words>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM shellCmdClass</name>
+    <actions>
+      <action type="command">
+        <description>Execute Command</description>
+        <command>/opt/teamviewerqs/tv_bin/script/teamviewer</command>
+      </action>
+    </actions>
+    <text>Teamviewer</text>
+    <x>235</x>
+    <y>653</y>
+    <height>45</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>Remote
+Support</text>
+    <x>129</x>
+    <y>653</y>
+    <height>45</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM shellCmdClass</name>
+    <actions>
+      <action type="command">
+        <description>Execute Command</description>
+        <command>evince "$(which XV.gif| sed 's|data/XV.gif|documentation/Cryocooler XV User Manual Rev 2.2.pdf|')"</command>
+      </action>
+    </actions>
+    <text>PDF</text>
+    <x>235</x>
+    <y>575</y>
+    <height>45</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>Technical
+Manual</text>
+    <x>129</x>
+    <y>575</y>
+    <height>45</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM shellCmdClass</name>
+    <actions>
+      <action type="command">
+        <description>Execute Command</description>
+        <command>evince "$(which XV.gif| sed 's|data/XV.gif|documentation/vapour pressure LN2.pdf|')"</command>
+      </action>
+    </actions>
+    <text>PDF</text>
+    <x>235</x>
+    <y>502</y>
+    <height>45</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>Vapour Pressure
+of LN2</text>
+    <x>129</x>
+    <y>502</y>
+    <height>45</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM shellCmdClass</name>
+    <actions>
+      <action type="command">
+        <description>Execute Command</description>
+        <command>evince "$(which XV.gif| sed 's|data/XV.gif|documentation/CryoCoolerXV_TechDesc.pdf|')"</command>
+      </action>
+    </actions>
+    <text>PDF</text>
+    <x>902</x>
+    <y>653</y>
+    <height>45</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>EPICS
+Technical Manual</text>
+    <x>1008</x>
+    <y>653</y>
+    <height>45</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>EPICS
+User Manual</text>
+    <x>1008</x>
+    <y>575</y>
+    <height>45</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM shellCmdClass</name>
+    <actions>
+      <action type="command">
+        <description>Execute Command</description>
+        <command>evince "$(which XV.gif | sed 's|data/XV.gif|documentation/CryoCoolerXV_SoftUserMan.pdf|')"</command>
+      </action>
+    </actions>
+    <text>PDF</text>
+    <x>902</x>
+    <y>575</y>
+    <height>45</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>EDM cfcf6c8a_dbeb_11d2_8a97_00104b8742df</name>
+    <file>XV.gif</file>
+    <x>472</x>
+    <y>45</y>
+    <width>331</width>
+    <height>625</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>Identity: $(P)</text>
+    <x>103</x>
+    <y>878</y>
+    <width>1128</width>
+    <height>30</height>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 2</name>
+    <x>447</x>
+    <y>681</y>
+    <width>344</width>
+    <height>115</height>
+    <style use_class="true">0</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>EDM activeXTextDspClass_noedit</name>
+      <pv_name>$(P)$(R)CodeVer_MON</pv_name>
+      <x>259</x>
+      <y>59</y>
+      <width>40</width>
+      <height>14</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <precision>2</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>PLC Software Version</text>
+      <y>59</y>
+      <width>138</width>
+      <height>16</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <auto_size>true</auto_size>
+      <wrap_words use_class="true">true</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>IOC Software Version</text>
+      <y>39</y>
+      <width>136</width>
+      <height>16</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <auto_size>true</auto_size>
+      <wrap_words use_class="true">true</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>EDM activeXTextDspClass_noedit</name>
+      <pv_name>$(P)$(R)IOC_SW_VERSION.DESC</pv_name>
+      <x>258</x>
+      <y>39</y>
+      <width>40</width>
+      <height>14</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <show_units>false</show_units>
+      <horizontal_alignment use_class="true">1</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <border_color use_class="true">
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>$(REV)</text>
+      <x>258</x>
+      <y>19</y>
+      <width>46</width>
+      <height>16</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <auto_size>true</auto_size>
+      <wrap_words use_class="true">true</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>GUI Software Version</text>
+      <y>19</y>
+      <width>136</width>
+      <height>16</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <auto_size>true</auto_size>
+      <wrap_words use_class="true">true</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Application</text>
+      <x>1</x>
+      <width>69</width>
+      <height>16</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <auto_size>true</auto_size>
+      <wrap_words use_class="true">true</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Cryocooler XV Software</text>
+      <x>141</x>
+      <width>158</width>
+      <height>14</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">0</vertical_alignment>
+      <rotation_step use_class="true">0</rotation_step>
+      <wrap_words use_class="true">true</wrap_words>
+    </widget>
+  </widget>
+</display>

@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-11-26 08:51:46 by ryi58813-->
+<display version="2.0.0">
+  <name>HeaterS</name>
+  <x>573</x>
+  <y use_class="true">0</y>
+  <width>500</width>
+  <height>200</height>
+  <background_color use_class="true">
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <grid_step_x>1</grid_step_x>
+  <grid_step_y>1</grid_step_y>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 0</name>
+    <class>NO_BOX</class>
+    <x>215</x>
+    <y>35</y>
+    <width>14</width>
+    <height>44</height>
+    <style use_class="true">3</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM activeRectangleClass</name>
+      <width>14</width>
+      <height>44</height>
+      <visible>false</visible>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <width>14</width>
+      <height>12</height>
+      <start_angle>90.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <y>16</y>
+      <width>14</width>
+      <height>12</height>
+      <start_angle>90.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <y>24</y>
+      <width>15</width>
+      <height>12</height>
+      <start_angle>270.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <y>32</y>
+      <width>14</width>
+      <height>12</height>
+      <start_angle>90.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <y>8</y>
+      <width>15</width>
+      <height>12</height>
+      <start_angle>270.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 1</name>
+    <class>NO_BOX</class>
+    <x>251</x>
+    <y>36</y>
+    <width>14</width>
+    <height>44</height>
+    <style use_class="true">3</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM activeRectangleClass</name>
+      <width>14</width>
+      <height>44</height>
+      <visible>false</visible>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <width>14</width>
+      <height>12</height>
+      <start_angle>90.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <y>16</y>
+      <width>14</width>
+      <height>12</height>
+      <start_angle>90.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <y>8</y>
+      <width>15</width>
+      <height>12</height>
+      <start_angle>270.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <y>24</y>
+      <width>15</width>
+      <height>12</height>
+      <start_angle>270.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <y>32</y>
+      <width>14</width>
+      <height>12</height>
+      <start_angle>90.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 2</name>
+    <class>NO_BOX</class>
+    <x>285</x>
+    <y>35</y>
+    <width>14</width>
+    <height>44</height>
+    <style use_class="true">3</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM activeRectangleClass</name>
+      <width>14</width>
+      <height>44</height>
+      <visible>false</visible>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <width>14</width>
+      <height>12</height>
+      <start_angle>90.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Green LED: On" red="0" green="255" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <y>8</y>
+      <width>15</width>
+      <height>12</height>
+      <start_angle>270.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Green LED: On" red="0" green="255" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <y>16</y>
+      <width>14</width>
+      <height>12</height>
+      <start_angle>90.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Green LED: On" red="0" green="255" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <y>24</y>
+      <width>15</width>
+      <height>12</height>
+      <start_angle>270.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Green LED: On" red="0" green="255" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <y>32</y>
+      <width>14</width>
+      <height>12</height>
+      <start_angle>90.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Green LED: On" red="0" green="255" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>EDM Group 3</name>
+    <class>NO_BOX</class>
+    <x>320</x>
+    <y>35</y>
+    <width>14</width>
+    <height>44</height>
+    <style use_class="true">3</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>EDM activeRectangleClass</name>
+      <width>14</width>
+      <height>44</height>
+      <visible>false</visible>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Black" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <width>14</width>
+      <height>12</height>
+      <start_angle>90.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Red LED: On" red="255" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <y>8</y>
+      <width>15</width>
+      <height>12</height>
+      <start_angle>270.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Red LED: On" red="255" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <y>24</y>
+      <width>15</width>
+      <height>12</height>
+      <start_angle>270.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Red LED: On" red="255" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <y>16</y>
+      <width>14</width>
+      <height>12</height>
+      <start_angle>90.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Red LED: On" red="255" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>EDM activeArcClass</name>
+      <y>32</y>
+      <width>14</width>
+      <height>12</height>
+      <start_angle>90.0</start_angle>
+      <total_angle>180.0</total_angle>
+      <line_width>4</line_width>
+      <line_color>
+        <color name="Red LED: On" red="255" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Disconn/Invalid" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+</display>
